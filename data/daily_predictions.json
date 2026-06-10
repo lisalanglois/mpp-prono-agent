@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-10T13:28:25.882561+00:00",
+  "days": 2,
+  "count": 2,
+  "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
+  "predictions": [
+    {
+      "match": "Mexique - Afrique du Sud",
+      "home": "Mexique",
+      "away": "Afrique du Sud",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-11T19:00Z",
+      "venue": "Estadio Banorte",
+      "odds": {
+        "home": 1.4,
+        "draw": 4.5,
+        "away": 9.0
+      },
+      "home_form": "WWWDD",
+      "away_form": "WDLDL",
+      "source": "override",
+      "mpp_copy": "Mexique 2 - 0 Afrique du Sud"
+    },
+    {
+      "match": "Corée du Sud - Tchéquie",
+      "home": "Corée du Sud",
+      "away": "Tchéquie",
+      "score": "1-1",
+      "kickoff_utc": "2026-06-12T02:00Z",
+      "venue": "Estadio Akron",
+      "odds": {
+        "home": 2.65,
+        "draw": 3.15,
+        "away": 2.9
+      },
+      "home_form": "WWLLW",
+      "away_form": "WWWWW",
+      "source": "override",
+      "mpp_copy": "Corée du Sud 1 - 1 Tchéquie"
+    }
+  ]
+}

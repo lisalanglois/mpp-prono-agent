@@ -1,0 +1,71 @@
+# Génère les pronos du jour (ESPN) et publie sur GitHub Pages.
+# Le remplissage sur mpp.football reste manuel (pas d'API officielle MPP).
+
+name: Daily pronos CDM
+
+on:
+  schedule:
+    # Tous les jours à 8h UTC (10h Paris été / 9h hiver)
+    - cron: "0 8 * * *"
+  workflow_dispatch: # bouton "Run workflow" sur GitHub
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-pronos
+  cancel-in-progress: false
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate daily predictions
+        run: python scripts/export_daily.py --days 3
+
+      - name: Commit predictions if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/daily_predictions.json web/matches.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: pronos du jour $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+  pages:
+    needs: predict
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

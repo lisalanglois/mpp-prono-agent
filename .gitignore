@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+output/
+*.png
+apikey.txt
+.DS_Store
+bugsyyy.txt
+data/validation_report.json

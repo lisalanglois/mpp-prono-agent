@@ -1,0 +1,338 @@
+{
+  "Afrique du Sud": {
+    "scored": 1.4,
+    "conceded": 0.8,
+    "n": 39,
+    "id": 1531,
+    "source": "api"
+  },
+  "Algérie": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1532,
+    "source": "default"
+  },
+  "Allemagne": {
+    "scored": 2.0,
+    "conceded": 1.1,
+    "n": 34,
+    "id": 25,
+    "source": "api"
+  },
+  "Angleterre": {
+    "scored": 1.7,
+    "conceded": 0.8,
+    "n": 23,
+    "id": 10,
+    "source": "api"
+  },
+  "Arabie saoudite": {
+    "scored": 1.1,
+    "conceded": 1.2,
+    "n": 11,
+    "id": 23,
+    "source": "api"
+  },
+  "Argentine": {
+    "scored": 1.8,
+    "conceded": 0.7,
+    "n": 14,
+    "id": 26,
+    "source": "api"
+  },
+  "Australie": {
+    "scored": 1.5,
+    "conceded": 1.0,
+    "n": 14,
+    "id": 20,
+    "source": "api"
+  },
+  "Autriche": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 775,
+    "source": "default"
+  },
+  "Belgique": {
+    "scored": 2.0,
+    "conceded": 0.9,
+    "n": 15,
+    "id": 1,
+    "source": "api"
+  },
+  "Bosnie-Herzégovine": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1115,
+    "source": "default"
+  },
+  "Brésil": {
+    "scored": 1.9,
+    "conceded": 0.6,
+    "n": 11,
+    "id": 6,
+    "source": "api"
+  },
+  "Canada": {
+    "scored": 1.2,
+    "conceded": 1.25,
+    "n": 20,
+    "id": 5529,
+    "source": "api"
+  },
+  "Cap-Vert": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1534,
+    "source": "default"
+  },
+  "Colombie": {
+    "scored": 1.5,
+    "conceded": 0.9,
+    "n": 12,
+    "id": 113,
+    "source": "api"
+  },
+  "Corée du Sud": {
+    "scored": 1.85,
+    "conceded": 1.08,
+    "n": 13,
+    "id": 17,
+    "source": "api"
+  },
+  "Croatie": {
+    "scored": 2.1,
+    "conceded": 0.86,
+    "n": 29,
+    "id": 3,
+    "source": "api"
+  },
+  "Curaçao": {
+    "scored": 1.5,
+    "conceded": 1.22,
+    "n": 18,
+    "id": 5530,
+    "source": "api"
+  },
+  "Côte d'Ivoire": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1530,
+    "source": "default"
+  },
+  "Espagne": {
+    "scored": 1.9,
+    "conceded": 0.7,
+    "n": 27,
+    "id": 9,
+    "source": "api"
+  },
+  "France": {
+    "scored": 1.8,
+    "conceded": 0.9,
+    "n": 36,
+    "id": 2,
+    "source": "api"
+  },
+  "Ghana": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 19,
+    "source": "default"
+  },
+  "Haïti": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1539,
+    "source": "default"
+  },
+  "Irak": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1537,
+    "source": "default"
+  },
+  "Iran": {
+    "scored": 1.2,
+    "conceded": 0.7,
+    "n": 12,
+    "id": 22,
+    "source": "api"
+  },
+  "Japon": {
+    "scored": 1.6,
+    "conceded": 0.8,
+    "n": 20,
+    "id": 12,
+    "source": "api"
+  },
+  "Jordanie": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1536,
+    "source": "default"
+  },
+  "Maroc": {
+    "scored": 1.3,
+    "conceded": 0.8,
+    "n": 16,
+    "id": 31,
+    "source": "api"
+  },
+  "Mexique": {
+    "scored": 1.6,
+    "conceded": 1.0,
+    "n": 30,
+    "id": 16,
+    "source": "api"
+  },
+  "Norvège": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 8,
+    "source": "default"
+  },
+  "Nouvelle-Zélande": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1538,
+    "source": "default"
+  },
+  "Ouzbékistan": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1535,
+    "source": "default"
+  },
+  "Panama": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 11,
+    "source": "default"
+  },
+  "Paraguay": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 2379,
+    "source": "default"
+  },
+  "Pays-Bas": {
+    "scored": 2.2,
+    "conceded": 0.7,
+    "n": 18,
+    "id": 1118,
+    "source": "api"
+  },
+  "Portugal": {
+    "scored": 2.1,
+    "conceded": 0.8,
+    "n": 18,
+    "id": 27,
+    "source": "api"
+  },
+  "Qatar": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1567,
+    "source": "default"
+  },
+  "RD Congo": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1504,
+    "source": "default"
+  },
+  "Suisse": {
+    "scored": 1.4,
+    "conceded": 0.9,
+    "n": 16,
+    "id": 15,
+    "source": "api"
+  },
+  "Suède": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 5,
+    "source": "default"
+  },
+  "Sénégal": {
+    "scored": 1.4,
+    "conceded": 0.9,
+    "n": 14,
+    "id": 13,
+    "source": "api"
+  },
+  "Tchéquie": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 770,
+    "source": "default"
+  },
+  "Tunisie": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 28,
+    "source": "default"
+  },
+  "Turquie": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 777,
+    "source": "default"
+  },
+  "Uruguay": {
+    "scored": 1.3,
+    "conceded": 0.8,
+    "n": 14,
+    "id": 7,
+    "source": "api"
+  },
+  "Écosse": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 1108,
+    "source": "default"
+  },
+  "Égypte": {
+    "scored": 1.25,
+    "conceded": 1.25,
+    "n": 0,
+    "id": 32,
+    "source": "default"
+  },
+  "Équateur": {
+    "scored": 1.3,
+    "conceded": 0.9,
+    "n": 12,
+    "id": 2380,
+    "source": "api"
+  },
+  "États-Unis": {
+    "scored": 2.5,
+    "conceded": 0.7,
+    "n": 13,
+    "id": 2384,
+    "source": "api"
+  }
+}

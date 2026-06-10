@@ -1,0 +1,838 @@
+[
+  {
+    "id": "Mexique_-_Afrique_du_Sud",
+    "date": "11/06",
+    "home": "Mexique",
+    "away": "Afrique du Sud",
+    "suggested": "2-0",
+    "probs": {
+      "home": "68%",
+      "draw": "21%",
+      "away": "11%"
+    }
+  },
+  {
+    "id": "Corée_du_Sud_-_Tchéquie",
+    "date": "11/06",
+    "home": "Corée du Sud",
+    "away": "Tchéquie",
+    "suggested": "1-1",
+    "probs": {
+      "home": "36%",
+      "draw": "31%",
+      "away": "33%"
+    }
+  },
+  {
+    "id": "Canada_-_Bosnie-Herzégovine",
+    "date": "12/06",
+    "home": "Canada",
+    "away": "Bosnie-Herzégovine",
+    "suggested": "2-0",
+    "probs": {
+      "home": "53%",
+      "draw": "26%",
+      "away": "21%"
+    }
+  },
+  {
+    "id": "États-Unis_-_Paraguay",
+    "date": "13/06",
+    "home": "États-Unis",
+    "away": "Paraguay",
+    "suggested": "2-1",
+    "probs": {
+      "home": "49%",
+      "draw": "27%",
+      "away": "24%"
+    }
+  },
+  {
+    "id": "Qatar_-_Suisse",
+    "date": "13/06",
+    "home": "Qatar",
+    "away": "Suisse",
+    "suggested": "0-1",
+    "probs": {
+      "home": "8%",
+      "draw": "15%",
+      "away": "77%"
+    }
+  },
+  {
+    "id": "Brésil_-_Maroc",
+    "date": "14/06",
+    "home": "Brésil",
+    "away": "Maroc",
+    "suggested": "2-1",
+    "probs": {
+      "home": "57%",
+      "draw": "26%",
+      "away": "17%"
+    }
+  },
+  {
+    "id": "Haïti_-_Écosse",
+    "date": "14/06",
+    "home": "Haïti",
+    "away": "Écosse",
+    "suggested": "0-1",
+    "probs": {
+      "home": "16%",
+      "draw": "22%",
+      "away": "62%"
+    }
+  },
+  {
+    "id": "Australie_-_Turquie",
+    "date": "14/06",
+    "home": "Australie",
+    "away": "Turquie",
+    "suggested": "0-2",
+    "probs": {}
+  },
+  {
+    "id": "Allemagne_-_Curaçao",
+    "date": "14/06",
+    "home": "Allemagne",
+    "away": "Curaçao",
+    "suggested": "3-0",
+    "probs": {}
+  },
+  {
+    "id": "Pays-Bas_-_Japon",
+    "date": "14/06",
+    "home": "Pays-Bas",
+    "away": "Japon",
+    "suggested": "2-1",
+    "probs": {}
+  },
+  {
+    "id": "Côte_d'Ivoire_-_Équateur",
+    "date": "15/06",
+    "home": "Côte d'Ivoire",
+    "away": "Équateur",
+    "suggested": "1-1",
+    "probs": {}
+  },
+  {
+    "id": "Suède_-_Tunisie",
+    "date": "15/06",
+    "home": "Suède",
+    "away": "Tunisie",
+    "suggested": "2-1",
+    "probs": {}
+  },
+  {
+    "id": "Espagne_-_Cap-Vert",
+    "date": "15/06",
+    "home": "Espagne",
+    "away": "Cap-Vert",
+    "suggested": "3-0",
+    "probs": {}
+  },
+  {
+    "id": "Belgique_-_Égypte",
+    "date": "15/06",
+    "home": "Belgique",
+    "away": "Égypte",
+    "suggested": "2-0",
+    "probs": {}
+  },
+  {
+    "id": "Arabie_saoudite_-_Uruguay",
+    "date": "16/06",
+    "home": "Arabie saoudite",
+    "away": "Uruguay",
+    "suggested": "0-1",
+    "probs": {
+      "home": "12%",
+      "draw": "21%",
+      "away": "67%"
+    }
+  },
+  {
+    "id": "Iran_-_Nouvelle-Zélande",
+    "date": "16/06",
+    "home": "Iran",
+    "away": "Nouvelle-Zélande",
+    "suggested": "1-1",
+    "probs": {
+      "home": "50%",
+      "draw": "28%",
+      "away": "22%"
+    }
+  },
+  {
+    "id": "France_-_Sénégal",
+    "date": "16/06",
+    "home": "France",
+    "away": "Sénégal",
+    "suggested": "2-0",
+    "probs": {
+      "home": "65%",
+      "draw": "21%",
+      "away": "14%"
+    }
+  },
+  {
+    "id": "Irak_-_Norvège",
+    "date": "17/06",
+    "home": "Irak",
+    "away": "Norvège",
+    "suggested": "0-2",
+    "probs": {
+      "home": "7%",
+      "draw": "14%",
+      "away": "79%"
+    }
+  },
+  {
+    "id": "Argentine_-_Algérie",
+    "date": "17/06",
+    "home": "Argentine",
+    "away": "Algérie",
+    "suggested": "2-0",
+    "probs": {
+      "home": "68%",
+      "draw": "21%",
+      "away": "11%"
+    }
+  },
+  {
+    "id": "Autriche_-_Jordanie",
+    "date": "17/06",
+    "home": "Autriche",
+    "away": "Jordanie",
+    "suggested": "2-0",
+    "probs": {
+      "home": "73%",
+      "draw": "17%",
+      "away": "10%"
+    }
+  },
+  {
+    "id": "Portugal_-_RD_Congo",
+    "date": "17/06",
+    "home": "Portugal",
+    "away": "RD Congo",
+    "suggested": "2-0",
+    "probs": {
+      "home": "75%",
+      "draw": "17%",
+      "away": "9%"
+    }
+  },
+  {
+    "id": "Angleterre_-_Croatie",
+    "date": "18/06",
+    "home": "Angleterre",
+    "away": "Croatie",
+    "suggested": "2-1",
+    "probs": {
+      "home": "56%",
+      "draw": "25%",
+      "away": "20%"
+    }
+  },
+  {
+    "id": "Ghana_-_Panama",
+    "date": "18/06",
+    "home": "Ghana",
+    "away": "Panama",
+    "suggested": "1-1",
+    "probs": {
+      "home": "46%",
+      "draw": "28%",
+      "away": "26%"
+    }
+  },
+  {
+    "id": "Ouzbékistan_-_Colombie",
+    "date": "18/06",
+    "home": "Ouzbékistan",
+    "away": "Colombie",
+    "suggested": "0-1",
+    "probs": {
+      "home": "11%",
+      "draw": "21%",
+      "away": "68%"
+    }
+  },
+  {
+    "id": "Tchéquie_-_Afrique_du_Sud",
+    "date": "18/06",
+    "home": "Tchéquie",
+    "away": "Afrique du Sud",
+    "suggested": "1-1",
+    "probs": {
+      "home": "49%",
+      "draw": "28%",
+      "away": "23%"
+    }
+  },
+  {
+    "id": "Suisse_-_Bosnie-Herzégovine",
+    "date": "19/06",
+    "home": "Suisse",
+    "away": "Bosnie-Herzégovine",
+    "suggested": "2-0",
+    "probs": {
+      "home": "59%",
+      "draw": "23%",
+      "away": "17%"
+    }
+  },
+  {
+    "id": "Canada_-_Qatar",
+    "date": "19/06",
+    "home": "Canada",
+    "away": "Qatar",
+    "suggested": "2-0",
+    "probs": {
+      "home": "73%",
+      "draw": "18%",
+      "away": "9%"
+    }
+  },
+  {
+    "id": "Mexique_-_Corée_du_Sud",
+    "date": "19/06",
+    "home": "Mexique",
+    "away": "Corée du Sud",
+    "suggested": "2-1",
+    "probs": {
+      "home": "53%",
+      "draw": "26%",
+      "away": "20%"
+    }
+  },
+  {
+    "id": "États-Unis_-_Australie",
+    "date": "19/06",
+    "home": "États-Unis",
+    "away": "Australie",
+    "suggested": "2-1",
+    "probs": {
+      "home": "54%",
+      "draw": "24%",
+      "away": "21%"
+    }
+  },
+  {
+    "id": "Allemagne_-_Côte_dIvoire",
+    "date": "20/06",
+    "home": "Allemagne",
+    "away": "Côte d'Ivoire",
+    "suggested": "2-1",
+    "probs": {
+      "home": "62%",
+      "draw": "22%",
+      "away": "17%"
+    }
+  },
+  {
+    "id": "Équateur_-_Curaçao",
+    "date": "20/06",
+    "home": "Équateur",
+    "away": "Curaçao",
+    "suggested": "2-0",
+    "probs": {
+      "home": "80%",
+      "draw": "13%",
+      "away": "7%"
+    }
+  },
+  {
+    "id": "Tunisie_-_Japon",
+    "date": "20/06",
+    "home": "Tunisie",
+    "away": "Japon",
+    "suggested": "0-2",
+    "probs": {
+      "home": "22%",
+      "draw": "25%",
+      "away": "54%"
+    }
+  },
+  {
+    "id": "Espagne_-_Arabie_saoudite",
+    "date": "20/06",
+    "home": "Espagne",
+    "away": "Arabie saoudite",
+    "suggested": "3-0",
+    "probs": {
+      "home": "88%",
+      "draw": "8%",
+      "away": "4%"
+    }
+  },
+  {
+    "id": "Écosse_-_Maroc",
+    "date": "20/06",
+    "home": "Écosse",
+    "away": "Maroc",
+    "suggested": "0-2",
+    "probs": {
+      "home": "23%",
+      "draw": "29%",
+      "away": "48%"
+    }
+  },
+  {
+    "id": "Brésil_-_Haïti",
+    "date": "20/06",
+    "home": "Brésil",
+    "away": "Haïti",
+    "suggested": "3-0",
+    "probs": {
+      "home": "89%",
+      "draw": "7%",
+      "away": "4%"
+    }
+  },
+  {
+    "id": "Turquie_-_Paraguay",
+    "date": "20/06",
+    "home": "Turquie",
+    "away": "Paraguay",
+    "suggested": "1-1",
+    "probs": {
+      "home": "42%",
+      "draw": "30%",
+      "away": "28%"
+    }
+  },
+  {
+    "id": "Pays-Bas_-_Suède",
+    "date": "20/06",
+    "home": "Pays-Bas",
+    "away": "Suède",
+    "suggested": "2-1",
+    "probs": {
+      "home": "59%",
+      "draw": "23%",
+      "away": "18%"
+    }
+  },
+  {
+    "id": "Belgique_-_Iran",
+    "date": "22/06",
+    "home": "Belgique",
+    "away": "Iran",
+    "suggested": "2-0",
+    "probs": {
+      "home": "11%",
+      "draw": "40%",
+      "away": "49%"
+    }
+  },
+  {
+    "id": "Uruguay_-_Cap-Vert",
+    "date": "22/06",
+    "home": "Uruguay",
+    "away": "Cap-Vert",
+    "suggested": "2-0",
+    "probs": {
+      "home": "23%",
+      "draw": "34%",
+      "away": "43%"
+    }
+  },
+  {
+    "id": "Nouvelle-Zélande_-_Égypte",
+    "date": "22/06",
+    "home": "Nouvelle-Zélande",
+    "away": "Égypte",
+    "suggested": "0-2",
+    "probs": {
+      "home": "46%",
+      "draw": "36%",
+      "away": "18%"
+    }
+  },
+  {
+    "id": "Argentine_-_Autriche",
+    "date": "22/06",
+    "home": "Argentine",
+    "away": "Autriche",
+    "suggested": "2-0",
+    "probs": {
+      "home": "21%",
+      "draw": "35%",
+      "away": "44%"
+    }
+  },
+  {
+    "id": "France_-_Irak",
+    "date": "23/06",
+    "home": "France",
+    "away": "Irak",
+    "suggested": "3-0",
+    "probs": {
+      "home": "6%",
+      "draw": "44%",
+      "away": "50%"
+    }
+  },
+  {
+    "id": "Norvège_-_Sénégal",
+    "date": "23/06",
+    "home": "Norvège",
+    "away": "Sénégal",
+    "suggested": "0-0",
+    "probs": {
+      "home": "21%",
+      "draw": "34%",
+      "away": "45%"
+    }
+  },
+  {
+    "id": "Jordanie_-_Algérie",
+    "date": "23/06",
+    "home": "Jordanie",
+    "away": "Algérie",
+    "suggested": "0-1",
+    "probs": {
+      "home": "42%",
+      "draw": "39%",
+      "away": "19%"
+    }
+  },
+  {
+    "id": "Portugal_-_Ouzbékistan",
+    "date": "23/06",
+    "home": "Portugal",
+    "away": "Ouzbékistan",
+    "suggested": "3-0",
+    "probs": {
+      "home": "7%",
+      "draw": "44%",
+      "away": "49%"
+    }
+  },
+  {
+    "id": "Angleterre_-_Ghana",
+    "date": "24/06",
+    "home": "Angleterre",
+    "away": "Ghana",
+    "suggested": "2-0",
+    "probs": {
+      "home": "13%",
+      "draw": "38%",
+      "away": "49%"
+    }
+  },
+  {
+    "id": "Panama_-_Croatie",
+    "date": "24/06",
+    "home": "Panama",
+    "away": "Croatie",
+    "suggested": "0-2",
+    "probs": {
+      "home": "51%",
+      "draw": "38%",
+      "away": "11%"
+    }
+  },
+  {
+    "id": "Colombie_-_RD_Congo",
+    "date": "24/06",
+    "home": "Colombie",
+    "away": "RD Congo",
+    "suggested": "2-1",
+    "probs": {
+      "home": "25%",
+      "draw": "36%",
+      "away": "40%"
+    }
+  },
+  {
+    "id": "Suisse_-_Canada",
+    "date": "24/06",
+    "home": "Suisse",
+    "away": "Canada",
+    "suggested": "1-1",
+    "probs": {
+      "home": "22%",
+      "draw": "35%",
+      "away": "43%"
+    }
+  },
+  {
+    "id": "Bosnie-Herzégovine_-_Qatar",
+    "date": "25/06",
+    "home": "Bosnie-Herzégovine",
+    "away": "Qatar",
+    "suggested": "2-0",
+    "probs": {
+      "home": "28%",
+      "draw": "33%",
+      "away": "39%"
+    }
+  },
+  {
+    "id": "Écosse_-_Brésil",
+    "date": "25/06",
+    "home": "Écosse",
+    "away": "Brésil",
+    "suggested": "0-1",
+    "probs": {
+      "home": "46%",
+      "draw": "39%",
+      "away": "15%"
+    }
+  },
+  {
+    "id": "Maroc_-_Haïti",
+    "date": "25/06",
+    "home": "Maroc",
+    "away": "Haïti",
+    "suggested": "2-0",
+    "probs": {
+      "home": "8%",
+      "draw": "42%",
+      "away": "50%"
+    }
+  },
+  {
+    "id": "Tchéquie_-_Mexique",
+    "date": "25/06",
+    "home": "Tchéquie",
+    "away": "Mexique",
+    "suggested": "1-1",
+    "probs": {
+      "home": "36%",
+      "draw": "33%",
+      "away": "30%"
+    }
+  },
+  {
+    "id": "Afrique_du_Sud_-_Corée_du_Sud",
+    "date": "25/06",
+    "home": "Afrique du Sud",
+    "away": "Corée du Sud",
+    "suggested": "1-1",
+    "probs": {
+      "home": "38%",
+      "draw": "34%",
+      "away": "28%"
+    }
+  },
+  {
+    "id": "Équateur_-_Allemagne",
+    "date": "25/06",
+    "home": "Équateur",
+    "away": "Allemagne",
+    "suggested": "0-1",
+    "probs": {
+      "home": "46%",
+      "draw": "41%",
+      "away": "13%"
+    }
+  },
+  {
+    "id": "Curaçao_-_Côte_dIvoire",
+    "date": "25/06",
+    "home": "Curaçao",
+    "away": "Côte d'Ivoire",
+    "suggested": "0-1",
+    "probs": {
+      "home": "49%",
+      "draw": "35%",
+      "away": "16%"
+    }
+  },
+  {
+    "id": "Tunisie_-_Pays-Bas",
+    "date": "26/06",
+    "home": "Tunisie",
+    "away": "Pays-Bas",
+    "suggested": "0-1",
+    "probs": {
+      "home": "42%",
+      "draw": "40%",
+      "away": "18%"
+    }
+  },
+  {
+    "id": "Turquie_-_États-Unis",
+    "date": "26/06",
+    "home": "Turquie",
+    "away": "États-Unis",
+    "suggested": "0-0",
+    "probs": {
+      "home": "36%",
+      "draw": "34%",
+      "away": "31%"
+    }
+  },
+  {
+    "id": "Paraguay_-_Australie",
+    "date": "26/06",
+    "home": "Paraguay",
+    "away": "Australie",
+    "suggested": "0-0",
+    "probs": {
+      "home": "24%",
+      "draw": "34%",
+      "away": "42%"
+    }
+  },
+  {
+    "id": "Japon_-_Suède",
+    "date": "26/06",
+    "home": "Japon",
+    "away": "Suède",
+    "suggested": "1-1",
+    "probs": {
+      "home": "30%",
+      "draw": "34%",
+      "away": "35%"
+    }
+  },
+  {
+    "id": "Norvège_-_France",
+    "date": "27/06",
+    "home": "Norvège",
+    "away": "France",
+    "suggested": "1-2",
+    "probs": {
+      "home": "44%",
+      "draw": "34%",
+      "away": "21%"
+    }
+  },
+  {
+    "id": "Sénégal_-_Irak",
+    "date": "27/06",
+    "home": "Sénégal",
+    "away": "Irak",
+    "suggested": "2-0",
+    "probs": {
+      "home": "17%",
+      "draw": "36%",
+      "away": "47%"
+    }
+  },
+  {
+    "id": "Uruguay_-_Espagne",
+    "date": "27/06",
+    "home": "Uruguay",
+    "away": "Espagne",
+    "suggested": "0-2",
+    "probs": {
+      "home": "46%",
+      "draw": "36%",
+      "away": "18%"
+    }
+  },
+  {
+    "id": "Cap-Vert_-_Arabie_saoudite",
+    "date": "27/06",
+    "home": "Cap-Vert",
+    "away": "Arabie saoudite",
+    "suggested": "1-1",
+    "probs": {
+      "home": "31%",
+      "draw": "39%",
+      "away": "30%"
+    }
+  },
+  {
+    "id": "Nouvelle-Zélande_-_Belgique",
+    "date": "28/06",
+    "home": "Nouvelle-Zélande",
+    "away": "Belgique",
+    "suggested": "0-3",
+    "probs": {
+      "home": "52%",
+      "draw": "39%",
+      "away": "10%"
+    }
+  },
+  {
+    "id": "Égypte_-_Iran",
+    "date": "28/06",
+    "home": "Égypte",
+    "away": "Iran",
+    "suggested": "2-1",
+    "probs": {
+      "home": "26%",
+      "draw": "35%",
+      "away": "38%"
+    }
+  },
+  {
+    "id": "Panama_-_Angleterre",
+    "date": "28/06",
+    "home": "Panama",
+    "away": "Angleterre",
+    "suggested": "0-3",
+    "probs": {
+      "home": "50%",
+      "draw": "41%",
+      "away": "9%"
+    }
+  },
+  {
+    "id": "Croatie_-_Ghana",
+    "date": "28/06",
+    "home": "Croatie",
+    "away": "Ghana",
+    "suggested": "2-0",
+    "probs": {
+      "home": "18%",
+      "draw": "38%",
+      "away": "44%"
+    }
+  },
+  {
+    "id": "Colombie_-_Portugal",
+    "date": "28/06",
+    "home": "Colombie",
+    "away": "Portugal",
+    "suggested": "1-2",
+    "probs": {
+      "home": "50%",
+      "draw": "33%",
+      "away": "18%"
+    }
+  },
+  {
+    "id": "RD_Congo_-_Ouzbékistan",
+    "date": "28/06",
+    "home": "RD Congo",
+    "away": "Ouzbékistan",
+    "suggested": "2-1",
+    "probs": {
+      "home": "19%",
+      "draw": "33%",
+      "away": "48%"
+    }
+  },
+  {
+    "id": "Jordanie_-_Argentine",
+    "date": "28/06",
+    "home": "Jordanie",
+    "away": "Argentine",
+    "suggested": "0-3",
+    "probs": {
+      "home": "48%",
+      "draw": "42%",
+      "away": "9%"
+    }
+  },
+  {
+    "id": "Algérie_-_Autriche",
+    "date": "28/06",
+    "home": "Algérie",
+    "away": "Autriche",
+    "suggested": "1-1",
+    "probs": {
+      "home": "31%",
+      "draw": "34%",
+      "away": "35%"
+    }
+  }
+]
