@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T13:28:25.882561+00:00",
-  "days": 2,
-  "count": 2,
+  "generated_at": "2026-06-11T12:07:17.700641+00:00",
+  "days": 3,
+  "count": 7,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
     {
@@ -12,9 +12,9 @@
       "kickoff_utc": "2026-06-11T19:00Z",
       "venue": "Estadio Banorte",
       "odds": {
-        "home": 1.4,
-        "draw": 4.5,
-        "away": 9.0
+        "home": 1.425531914893617,
+        "draw": 4.4,
+        "away": 8.5
       },
       "home_form": "WWWDD",
       "away_form": "WDLDL",
@@ -29,14 +29,99 @@
       "kickoff_utc": "2026-06-12T02:00Z",
       "venue": "Estadio Akron",
       "odds": {
-        "home": 2.65,
-        "draw": 3.15,
-        "away": 2.9
+        "home": 2.7,
+        "draw": 3.1,
+        "away": 2.85
       },
       "home_form": "WWLLW",
       "away_form": "WWWWW",
       "source": "override",
       "mpp_copy": "Corée du Sud 1 - 1 Tchéquie"
+    },
+    {
+      "match": "Canada - Bosnie-Herzégovine",
+      "home": "Canada",
+      "away": "Bosnie-Herzégovine",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-12T19:00Z",
+      "venue": "BMO Field",
+      "odds": {
+        "home": 1.8333333333333335,
+        "draw": 3.55,
+        "away": 4.6
+      },
+      "home_form": "DWDDW",
+      "away_form": "DDWWD",
+      "source": "override",
+      "mpp_copy": "Canada 2 - 0 Bosnie-Herzégovine"
+    },
+    {
+      "match": "États-Unis - Paraguay",
+      "home": "États-Unis",
+      "away": "Paraguay",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-13T01:00Z",
+      "venue": "SoFi Stadium",
+      "odds": {
+        "home": 1.9523809523809523,
+        "draw": 3.4,
+        "away": 4.1
+      },
+      "home_form": "LWLLW",
+      "away_form": "WLWWL",
+      "source": "override",
+      "mpp_copy": "États-Unis 2 - 1 Paraguay"
+    },
+    {
+      "match": "Qatar - Suisse",
+      "home": "Qatar",
+      "away": "Suisse",
+      "score": "0-1",
+      "kickoff_utc": "2026-06-13T19:00Z",
+      "venue": "Levi's Stadium",
+      "odds": {
+        "home": 13.0,
+        "draw": 6.5,
+        "away": 1.2352941176470589
+      },
+      "home_form": "DLLWD",
+      "away_form": "DWDLD",
+      "source": "grille_mpp",
+      "mpp_copy": "Qatar 0 - 1 Suisse"
+    },
+    {
+      "match": "Brésil - Maroc",
+      "home": "Brésil",
+      "away": "Maroc",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-13T22:00Z",
+      "venue": "MetLife Stadium",
+      "odds": {
+        "home": 1.6896551724137931,
+        "draw": 3.75,
+        "away": 5.5
+      },
+      "home_form": "WWWLD",
+      "away_form": "DWWWD",
+      "source": "override",
+      "mpp_copy": "Brésil 2 - 1 Maroc"
+    },
+    {
+      "match": "Haïti - Écosse",
+      "home": "Haïti",
+      "away": "Écosse",
+      "score": "0-1",
+      "kickoff_utc": "2026-06-14T01:00Z",
+      "venue": "Gillette Stadium",
+      "odds": {
+        "home": 6.0,
+        "draw": 4.3,
+        "away": 1.5555555555555556
+      },
+      "home_form": "LWDLW",
+      "away_form": "WWLLW",
+      "source": "grille_mpp",
+      "mpp_copy": "Haïti 0 - 1 Écosse"
     }
   ]
 }
