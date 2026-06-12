@@ -33,6 +33,12 @@ SCORE_OLD = (
     "font-size:22px;font-weight:bold;text-align:center;color:#999;"
     "text-decoration:line-through;"
 )
+TEAM = "font-weight:bold;font-size:15px;color:#ffffff;"
+TEAM_CHANGE = "font-weight:bold;font-size:15px;color:#fff8e7;"
+SUB_ON_DARK = "text-align:center;color:#b8c5d0;font-size:12px;margin-top:10px;"
+SUB_ON_AMBER = "text-align:center;color:#e8dcc8;font-size:12px;margin-top:10px;"
+DATE_ON_DARK = "text-align:center;color:#7dd3a0;font-size:13px;margin-bottom:8px;"
+DATE_ON_AMBER = "text-align:center;color:#f0c674;font-size:13px;margin-bottom:8px;"
 
 
 def load_config() -> dict:
@@ -83,21 +89,24 @@ def _mpp_match_card(
     highlight: bool = False,
 ) -> str:
     box = BOX_CHANGE if highlight else BOX
-    date_line = f'<div style="text-align:center;color:#7dd3a0;font-size:13px;margin-bottom:8px;">{date}</div>' if date else ""
-    sub = f'<div style="text-align:center;color:#888;font-size:12px;margin-top:10px;">{subtitle}</div>' if subtitle else ""
+    team_style = TEAM_CHANGE if highlight else TEAM
+    date_style = DATE_ON_AMBER if highlight else DATE_ON_DARK
+    sub_style = SUB_ON_AMBER if highlight else SUB_ON_DARK
+    date_line = f'<div style="{date_style}">{date}</div>' if date else ""
+    sub = f'<div style="{sub_style}">{subtitle}</div>' if subtitle else ""
     old_line = ""
     if old_h is not None and old_a is not None and (old_h != h or old_a != a):
         old_line = (
-            f'<div style="text-align:center;color:#999;font-size:12px;margin-bottom:6px;">'
+            f'<div style="text-align:center;color:#b8c5d0;font-size:12px;margin-bottom:6px;">'
             f'Ancien prono : {_score_box(old_h, old_a, old=True)}</div>'
         )
     return f"""
     <div style="{box}">
       {date_line}
       <table width="100%" cellpadding="4"><tr>
-        <td align="right" style="font-weight:bold;font-size:15px;">{home}</td>
+        <td align="right" style="{team_style}">{home}</td>
         <td align="center" width="120">{old_line}{_score_box(h, a)}</td>
-        <td align="left" style="font-weight:bold;font-size:15px;">{away}</td>
+        <td align="left" style="{team_style}">{away}</td>
       </tr></table>
       {sub}
     </div>
