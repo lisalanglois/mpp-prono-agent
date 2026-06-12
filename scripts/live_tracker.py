@@ -110,6 +110,86 @@ def klement_predict(key: str, home: str, away: str, klement: dict) -> str | None
     return "home" if diff > 0 else "away"
 
 
+def split_score(score: str | None) -> tuple[str, str]:
+    if not score or "-" not in score:
+        return "—", "—"
+    h, a = score.split("-", 1)
+    return h.strip(), a.strip()
+
+
+def direction_label(outcome: str | None, home: str, away: str) -> str:
+    if outcome == "home":
+        return f"Victoire {home}"
+    if outcome == "away":
+        return f"Victoire {away}"
+    if outcome == "draw":
+        return "Match nul"
+    return "—"
+
+
+def enrich_match_row(row: dict) -> dict:
+    """Ajoute labels lisibles + verdict Lisa vs Klement."""
+    home, away = row["home"], row["away"]
+    ah, aa = split_score(row["actual_score"])
+    uh, ua = split_score(row.get("user_score"))
+
+    row["actual_home"] = ah
+    row["actual_away"] = aa
+    row["user_home"] = uh
+    row["user_away"] = ua
+    row["actual_direction"] = direction_label(row["actual_outcome"], home, away)
+    row["user_direction"] = direction_label(row.get("user_outcome"), home, away)
+    row["klement_direction"] = direction_label(row.get("klement_outcome"), home, away)
+
+    u, k = row.get("user_1n2"), row.get("klement_1n2")
+    if u and k:
+        row["direction_winner"] = "égalité"
+        row["verdict_short"] = "Lisa ✓ · Klement ✓ — même bonne direction"
+    elif u and k is False:
+        row["direction_winner"] = "lisa"
+        row["verdict_short"] = "Lisa ✓ · Klement ✗ — Lisa avait mieux vu"
+    elif k and u is False:
+        row["direction_winner"] = "klement"
+        row["verdict_short"] = "Klement ✓ · Lisa ✗ — Klement avait mieux vu"
+    elif u is False and k is False:
+        row["direction_winner"] = "égalité"
+        row["verdict_short"] = "Lisa ✗ · Klement ✗ — aucun des deux"
+    elif u is True:
+        row["direction_winner"] = "lisa"
+        row["verdict_short"] = "Lisa ✓ — bonne direction"
+    elif k is True:
+        row["direction_winner"] = "klement"
+        row["verdict_short"] = "Klement ✓ — bonne direction"
+    else:
+        row["direction_winner"] = "—"
+        row["verdict_short"] = "Pas assez de données"
+
+    if row.get("user_exact"):
+        row["verdict_short"] += " · Score exact de Lisa !"
+
+    return row
+
+
+def enrich_update(u: dict) -> dict:
+    ch, ca = split_score(u.get("current_score"))
+    sh, sa = split_score(u.get("suggested_score"))
+    u["current_home"] = ch
+    u["current_away"] = ca
+    u["suggested_home"] = sh
+    u["suggested_away"] = sa
+    if u.get("change"):
+        u["mpp_action"] = (
+            f"Sur mpp.football → {u['home']} vs {u['away']} ({u['date']}) "
+            f"→ remplace {ch}-{ca} par {sh}-{sa}"
+        )
+    else:
+        u["mpp_action"] = (
+            f"Sur mpp.football → {u['home']} vs {u['away']} ({u['date']}) "
+            f"→ garde {sh}-{sa} (pas de changement suggéré)"
+        )
+    return u
+
+
 def parse_match_date(d: str) -> date:
     day, month = map(int, d.split("/"))
     return date(2026, month, day)
@@ -159,7 +239,7 @@ def build_upcoming_updates(
         if current == suggested and len(involved) == 0:
             continue
 
-        updates.append({
+        updates.append(enrich_update({
             "date": m.date,
             "match": key,
             "home": m.home,
@@ -169,7 +249,7 @@ def build_upcoming_updates(
             "suggested_score": suggested,
             "change": current != suggested,
             "reason": " · ".join(reasons),
-        })
+        }))
 
     return sorted(updates, key=lambda u: (parse_match_date(u["date"]), u["match"]))
 
@@ -292,7 +372,7 @@ def run_tracker(state: dict | None = None) -> dict:
         model_o = model_predict(home_fr, away_fr)
         klement_o = klement_predict(key, home_fr, away_fr, klement)
 
-        rows.append({
+        rows.append(enrich_match_row({
             "key": key,
             "home": home_fr,
             "away": away_fr,
@@ -306,7 +386,7 @@ def run_tracker(state: dict | None = None) -> dict:
             "model_1n2": model_o == act_o,
             "klement_outcome": klement_o,
             "klement_1n2": klement_o == act_o if klement_o else None,
-        })
+        }))
 
     prev_keys = set(state.get("finished_keys", []))
     current_keys = {r["key"] for r in rows}
