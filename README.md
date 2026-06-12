@@ -99,7 +99,16 @@ python scripts/export_daily.py --stdout # afficher le JSON
 - Commit `data/daily_predictions.json` + `web/matches.json`
 - Déploie le site sur **GitHub Pages**
 
-Activer Pages : repo → Settings → Pages → Source = **GitHub Actions**.
+### Site web (GitHub Pages)
+
+URL une fois activé : **https://lisalanglois.github.io/mpp-prono-agent/**
+
+**Prérequis plan gratuit GitHub :** le repo doit être **public** (Pages indisponible en privé).
+
+1. Repo → **Settings** → **General** → **Change visibility** → Public  
+   (ou : `gh repo edit --visibility public --accept-visibility-change-consequences`)
+2. **Settings** → **Pages** → Source = **GitHub Actions**
+3. Le workflow `Deploy GitHub Pages` se lance à chaque push / après les pronos du jour
 
 > **Repo privé** : GitHub Pages n’est pas disponible sur le plan gratuit. Le workflow génère quand même les pronos et les commit sur `main` + artifact téléchargeable. Pour un site en ligne, rendre le repo public ou utiliser le script local.
 

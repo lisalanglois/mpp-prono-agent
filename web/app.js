@@ -5,6 +5,13 @@ let matches = [];
 async function loadMatches() {
   const res = await fetch("matches.json");
   matches = await res.json();
+  try {
+    const meta = await fetch("meta.json").then((r) => r.json());
+    if (meta.updated) {
+      const el = document.getElementById("updated");
+      if (el) el.textContent = "Dernière MAJ : " + new Date(meta.updated).toLocaleString("fr-FR");
+    }
+  } catch (_) {}
   render();
 }
 
