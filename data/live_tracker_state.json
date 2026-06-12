@@ -1,12 +1,14 @@
 {
   "sent_alerts": [],
   "finished_keys": [
+    "Canada - Bosnie-Herzégovine",
     "Corée du Sud - Tchéquie",
     "Mexique - Afrique du Sud"
   ],
   "last_email_fingerprint": "|",
   "urgent_notified": [
     "Canada - Bosnie-Herzégovine",
+    "Qatar - Suisse",
     "États-Unis - Paraguay"
   ]
 }
