@@ -35,26 +35,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Sync latest predictions into web
-        run: |
-          if [ -f data/daily_predictions.json ]; then
-            python3 -c "
-          import json
-          from pathlib import Path
-          daily = json.loads(Path('data/daily_predictions.json').read_text())
-          matches = json.loads(Path('web/matches.json').read_text())
-          by_key = {m['home'] + ' - ' + m['away']: m for m in matches}
-          for p in daily.get('predictions', []):
-              k = p.get('match')
-              if k in by_key and 'score' in p:
-                  h, a = p['score'].split('-')
-                  by_key[k]['suggested'] = p['score']
-                  by_key[k]['today'] = True
-          out = list(by_key.values())
-          out.sort(key=lambda x: (x['date'].split('/')[1], x['date'].split('/')[0]))
-          meta = {'updated': daily.get('generated_at'), 'site': 'mpp-prono-agent'}
-          Path('web/meta.json').write_text(json.dumps(meta, indent=2))
-          Path('web/matches.json').write_text(json.dumps(out, ensure_ascii=False, indent=2))
-          "
+        run: python scripts/sync_web.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
