@@ -101,6 +101,8 @@ python scripts/export_daily.py --stdout # afficher le JSON
 
 Activer Pages : repo → Settings → Pages → Source = **GitHub Actions**.
 
+> **Repo privé** : GitHub Pages n’est pas disponible sur le plan gratuit. Le workflow génère quand même les pronos et les commit sur `main` + artifact téléchargeable. Pour un site en ligne, rendre le repo public ou utiliser le script local.
+
 ### Remplissage auto sur mpp.football ?
 
 | Faisable | Détail |
@@ -115,7 +117,36 @@ Activer Pages : repo → Settings → Pages → Source = **GitHub Actions**.
 2. Tu ouvres `data/daily_predictions.json` ou la page GitHub Pages
 3. Tu recopies les scores sur [mpp.football](https://mpp.football) (2 min)
 
-Une automatisation Playwright (login + remplissage) serait possible mais fragile et déconseillée (CGU, mot de passe à stocker).
+### Remplissage auto MPP (Playwright) — optionnel
+
+Approche la plus simple : **session sauvegardée** après une connexion manuelle (pas de mot de passe dans le code).
+
+```bash
+pip install -r requirements-automation.txt
+playwright install chromium
+
+# 1) Une fois — tu te connectes dans le navigateur
+python scripts/mpp_autofill.py login
+
+# 2) Test sans toucher au site
+python scripts/mpp_autofill.py fill --dry-run
+
+# 3) Remplir les matchs du JSON du jour
+python scripts/mpp_autofill.py fill
+
+# 4) Ou toute ta grille (OVERRIDES)
+python scripts/mpp_autofill.py fill --all
+```
+
+| Avantage | Limite |
+|----------|--------|
+| 2 min au lieu de 20 pour la grille | Session expire → refaire `login` |
+| Pas d'API MPP requise | Si MPP change l'UI, script à ajuster |
+| Tourne en local | Pas idéal en GitHub Actions (session + OAuth) |
+
+**GitHub Actions** = génération des pronos. **Playwright** = saisie sur mpp.football en local.
+
+⚠️ Vérifie les CGU MPP ; `data/mpp_session.json` reste local (gitignored).
 
 ## Limites
 

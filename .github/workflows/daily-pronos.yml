@@ -1,18 +1,15 @@
-# Génère les pronos du jour (ESPN) et publie sur GitHub Pages.
-# Le remplissage sur mpp.football reste manuel (pas d'API officielle MPP).
+# Génère les pronos du jour (ESPN) et commit le JSON sur main.
+# Note : GitHub Pages indisponible sur repo privé (plan gratuit) — pas de job pages.
 
 name: Daily pronos CDM
 
 on:
   schedule:
-    # Tous les jours à 8h UTC (10h Paris été / 9h hiver)
     - cron: "0 8 * * *"
-  workflow_dispatch: # bouton "Run workflow" sur GitHub
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: daily-pronos
@@ -47,25 +44,11 @@ jobs:
             git push
           fi
 
-  pages:
-    needs: predict
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
+      - name: Upload pronos (artifact téléchargeable)
+        uses: actions/upload-artifact@v4
         with:
-          ref: main
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload site
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: web
-
-      - name: Deploy GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          name: pronos-du-jour
+          path: |
+            data/daily_predictions.json
+            web/matches.json
+          retention-days: 14

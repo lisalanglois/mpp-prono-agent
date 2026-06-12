@@ -1,0 +1,3 @@
+# Optionnel — remplissage auto MPP via Playwright
+-r requirements.txt
+playwright>=1.40

@@ -9,3 +9,6 @@ apikey.txt
 .DS_Store
 bugsyyy.txt
 data/validation_report.json
+data/mpp_session.json
+playwright-report/
+test-results/
