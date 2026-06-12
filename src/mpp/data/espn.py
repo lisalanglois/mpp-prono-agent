@@ -77,7 +77,25 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
     over_under = odds_block.get("overUnder")
 
     status_type = comp.get("status", {}).get("type", {})
-    status_short = status_type.get("short", status_type.get("name", ""))
+    status_short = (
+        status_type.get("detail")
+        or status_type.get("shortDetail")
+        or status_type.get("name", "")
+    )
+    status_name = status_type.get("name", "")
+    status_state = status_type.get("state", "")
+    status_completed = bool(status_type.get("completed", False))
+
+    # Normalise ESPN (STATUS_FULL_TIME → FT, etc.)
+    _norm = {
+        "STATUS_FULL_TIME": "FT",
+        "STATUS_FINAL": "FT",
+        "STATUS_FINAL_AET": "AET",
+        "STATUS_FINAL_PEN": "PEN",
+        "STATUS_FULL_TIME_PEN": "PEN",
+    }
+    status_short = _norm.get(status_name, status_short)
+
     home_score = home.get("score")
     away_score = away.get("score")
     if isinstance(home_score, dict):
@@ -89,6 +107,17 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
     else:
         away_goals = away_score
 
+    def _to_int(v: Any) -> int | None:
+        if v is None or v == "":
+            return None
+        try:
+            return int(v)
+        except (TypeError, ValueError):
+            return None
+
+    home_goals = _to_int(home_goals)
+    away_goals = _to_int(away_goals)
+
     return {
         "event_id": event.get("id"),
         "kickoff": event.get("date", ""),
@@ -99,6 +128,9 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
         "venue": comp.get("venue", {}).get("fullName", ""),
         "status": status_type.get("description", ""),
         "status_short": status_short,
+        "status_name": status_name,
+        "status_state": status_state,
+        "status_completed": status_completed,
         "home_goals": home_goals,
         "away_goals": away_goals,
         "odds": odds,
@@ -126,13 +158,28 @@ def fetch_scoreboard_range(start: date, end: date) -> list[dict[str, Any]]:
     return sorted(matches, key=lambda m: m["kickoff"])
 
 
+def is_match_finished(m: dict[str, Any]) -> bool:
+    """True si le match est terminé (pas un 0-0 planifié)."""
+    if m.get("home_goals") is None or m.get("away_goals") is None:
+        return False
+    if m.get("status_completed") or m.get("status_state") == "post":
+        return "SCHEDULED" not in str(m.get("status_name", "")).upper()
+    short = str(m.get("status_short", "")).upper()
+    if short in ("FT", "AET", "PEN"):
+        return True
+    if "FULL_TIME" in short or "FINAL" in short:
+        return True
+    desc = str(m.get("status", "")).lower()
+    return "full time" in desc or desc == "final"
+
+
 def fetch_finished_since(wc_start: date | None = None) -> list[dict[str, Any]]:
     """Matchs terminés depuis le début de la CDM."""
     start = wc_start or date(2026, 6, 11)
     end = date.today()
     finished = []
     for m in fetch_scoreboard_range(start, end):
-        if m.get("status_short") in ("FT", "AET", "PEN") and m.get("home_goals") is not None:
+        if is_match_finished(m):
             finished.append(m)
     return finished
 
