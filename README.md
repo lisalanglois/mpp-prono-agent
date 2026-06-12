@@ -148,6 +148,25 @@ MPP_ALERT_WEBHOOK=https://hooks.slack.com/... python scripts/live_tracker.py
 
 Alertes typiques : favori qui perd, trajectoire Klement compromise (ex. Brésil), série d'erreurs 1/N/2, match joué sans prono enregistré.
 
+### Multi-compétitions (Euro 2028, CDM 2030…)
+
+Calendrier dans `data/competitions.json`. Le workflow **`MPP Scheduler`** gère tout automatiquement :
+
+| Quand | Email |
+|-------|--------|
+| **J-7 à J-1** | Grille complète + vainqueur / buteur / bonus x2 + liens site & tracker |
+| **Pendant la comp** | Rappel avant chaque match avec score exact à mettre sur MPP |
+| **Après la finale** | Bilan final + lien classement MPP |
+
+```bash
+python scripts/mpp_scheduler.py --list              # voir les compétitions
+python scripts/mpp_scheduler.py --pre-comp euro2028 --dry-run  # aperçu email J-7
+```
+
+**Avant Euro 2028 / CDM 2030** : ajouter une grille (`scripts/mpp_grille_euro2028.py`) et mettre à jour `data/competitions.json` (`grid_module`). Sans grille, l'email J-7 rappelle les liens et les pronos globaux.
+
+Les secrets SMTP/GitHub restent les mêmes — aucune reconfig entre compétitions.
+
 ### Site web (GitHub Pages)
 
 URL une fois activé : **https://lisalanglois.github.io/mpp-prono-agent/**

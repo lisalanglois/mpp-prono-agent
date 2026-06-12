@@ -1,0 +1,62 @@
+{
+  "site_base": "https://lisalanglois.github.io/mpp-prono-agent",
+  "competitions": [
+    {
+      "id": "cdm2026",
+      "name": "Coupe du Monde 2026",
+      "short": "CDM 2026",
+      "start": "2026-06-11",
+      "end": "2026-07-19",
+      "espn_path": "fifa.world",
+      "grid_module": "mpp_grille_cdm",
+      "overrides_module": "export_web",
+      "pre_alert_days": 7,
+      "mpp_picks": {
+        "winner": { "label": "Vainqueur de la compétition", "value": "France" },
+        "top_scorer": { "label": "Meilleur buteur", "value": "Kylian Mbappé" },
+        "x2_bonus": {
+          "label": "Bonus x2 (match)",
+          "match": "France - Sénégal",
+          "score": "2-0",
+          "date": "16/06",
+          "note": "Match où tu doubles les points si score exact"
+        }
+      },
+      "pages": {
+        "grille": "/index.html",
+        "tracker": "/tracker.html"
+      }
+    },
+    {
+      "id": "euro2028",
+      "name": "Championnat d'Europe 2028",
+      "short": "Euro 2028",
+      "start": "2028-06-09",
+      "end": "2028-07-09",
+      "espn_path": "uefa.euro",
+      "grid_module": null,
+      "pre_alert_days": 7,
+      "mpp_picks": {
+        "winner": { "label": "Vainqueur", "value": "— à définir avant J-7" },
+        "top_scorer": { "label": "Meilleur buteur", "value": "— à définir" }
+      },
+      "pages": { "grille": "/index.html", "tracker": "/tracker.html" },
+      "note": "Grille à ajouter dans le repo avant l'Euro 2028 (scripts/mpp_grille_euro2028.py)"
+    },
+    {
+      "id": "cdm2030",
+      "name": "Coupe du Monde 2030",
+      "short": "CDM 2030",
+      "start": "2030-06-13",
+      "end": "2030-07-13",
+      "espn_path": "fifa.world",
+      "grid_module": null,
+      "pre_alert_days": 7,
+      "mpp_picks": {
+        "winner": { "label": "Vainqueur", "value": "— à définir avant J-7" }
+      },
+      "pages": { "grille": "/index.html", "tracker": "/tracker.html" },
+      "note": "Grille à ajouter avant la CDM 2030"
+    }
+  ]
+}

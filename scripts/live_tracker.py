@@ -39,6 +39,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from alert_email import send_alert_email, load_config
 from export_web import OVERRIDES
+from mpp.competitions import get_active_competition, parse_comp_date
 from mpp.data.espn import fetch_finished_since, fetch_upcoming_within
 from mpp.data.team_aliases import to_french
 from mpp_grille_cdm import MATCHES, analyze, _with_odds
@@ -292,12 +293,13 @@ def build_urgent_mpp(
     played_keys: set[str],
     updates_by_key: dict[str, dict],
     hours: int = 48,
+    espn_path: str = "fifa.world",
 ) -> list[dict]:
     """Matchs imminents avec le score exact à saisir sur mpp.football."""
     urgent: list[dict] = []
     paris = ZoneInfo("Europe/Paris")
 
-    for m in fetch_upcoming_within(hours=hours):
+    for m in fetch_upcoming_within(hours=hours, espn_path=espn_path):
         home_fr = to_french(m["home"])
         away_fr = to_french(m["away"])
         key = match_key(home_fr, away_fr)
@@ -419,10 +421,23 @@ def build_alerts(rows: list[dict], klement: dict) -> list[dict]:
     return unique
 
 
-def run_tracker(state: dict | None = None) -> dict:
+def run_tracker(state: dict | None = None, comp: dict | None = None) -> dict:
     state = state or {}
+    comp = comp or get_active_competition()
+    if not comp:
+        return {
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "competition_id": None,
+            "stats": {"played": 0, "user_1n2": 0, "user_exact": 0, "model_1n2": 0, "klement_1n2": 0,
+                      "user_1n2_pct": 0, "model_1n2_pct": 0, "klement_1n2_pct": 0, "user_exact_pct": 0},
+            "matches": [], "urgent_mpp": [], "alerts": [],
+        }
+
+    espn_path = comp.get("espn_path", "fifa.world")
+    wc_start = parse_comp_date(comp["start"])
+
     klement = load_klement()
-    finished = fetch_finished_since()
+    finished = fetch_finished_since(wc_start, espn_path=espn_path)
     rows = []
 
     for m in finished:
@@ -481,10 +496,14 @@ def run_tracker(state: dict | None = None) -> dict:
 
     updates_by_key = {u["match"]: u for u in upcoming_updates}
     urgent_hours = load_config().get("urgent_hours", 48)
-    urgent_mpp = build_urgent_mpp(current_keys, updates_by_key, hours=urgent_hours)
+    urgent_mpp = build_urgent_mpp(
+        current_keys, updates_by_key, hours=urgent_hours, espn_path=espn_path
+    )
 
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
+        "competition_id": comp.get("id"),
+        "competition_name": comp.get("name"),
         "stats": stats,
         "leader_1n2": max(
             [("toi", stats["user_1n2"]), ("modèle", stats["model_1n2"]), ("klement", stats["klement_1n2"])],
@@ -515,15 +534,32 @@ def send_webhook(url: str, payload: dict) -> None:
     urllib.request.urlopen(req, timeout=10)
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--webhook", help="URL Slack/n8n pour alertes")
-    parser.add_argument("--email", action="store_true", help="Forcer envoi email")
-    parser.add_argument("--dry-run-email", action="store_true", help="Afficher l'email sans envoyer")
-    args = parser.parse_args()
+def main(
+    comp: dict | None = None,
+    force_email: bool = False,
+    force_dry_run_email: bool = False,
+    _from_scheduler: bool = False,
+) -> None:
+    if _from_scheduler or comp is not None:
+        class _Args:
+            webhook = None
+            email = force_email
+            dry_run_email = force_dry_run_email
+        args = _Args()
+    else:
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--webhook", help="URL Slack/n8n pour alertes")
+        parser.add_argument("--email", action="store_true", help="Forcer envoi email")
+        parser.add_argument("--dry-run-email", action="store_true", help="Afficher l'email sans envoyer")
+        args = parser.parse_args()
+
+    active = comp or get_active_competition()
+    if not active:
+        print("ℹ️  Aucune compétition en cours")
+        return
 
     state = load_state()
-    payload = run_tracker(state)
+    payload = run_tracker(state, active)
     fresh_alerts = new_alerts_only(payload["alerts"], state)
     payload["new_alerts"] = fresh_alerts
 

@@ -1,0 +1,70 @@
+# Planificateur MPP multi-compétitions (CDM, Euro 2028, CDM 2030…)
+# J-7 : email grille complète · pendant : rappels match · après : bilan final
+
+name: MPP Scheduler
+
+on:
+  schedule:
+    # Quotidien 7h UTC — détecte J-7 et clôture
+    - cron: "0 7 * * *"
+    # Toutes les 2h — rappels avant match (si compétition active)
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: "Forcer email live tracker"
+        type: boolean
+        default: false
+      force_pre_comp:
+        description: "Forcer email J-7 (id compétition, ex. cdm2026)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mpp-scheduler
+  cancel-in-progress: false
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run MPP scheduler
+        env:
+          MPP_ALERT_WEBHOOK: ${{ secrets.MPP_ALERT_WEBHOOK }}
+          MPP_SMTP_USER: ${{ secrets.MPP_SMTP_USER }}
+          MPP_SMTP_PASSWORD: ${{ secrets.MPP_SMTP_PASSWORD }}
+          MPP_ALERT_EMAILS: ${{ secrets.MPP_ALERT_EMAILS }}
+        run: |
+          PRE="${{ github.event.inputs.force_pre_comp }}"
+          if [ -n "$PRE" ]; then
+            python scripts/mpp_scheduler.py --pre-comp "$PRE" --email
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_test_email }}" = "true" ]; then
+            python scripts/mpp_scheduler.py --email
+          else
+            python scripts/mpp_scheduler.py
+          fi
+
+      - name: Commit tracker state if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live_tracker.json data/live_tracker_state.json data/scheduler_state.json web/tracker.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: mpp scheduler $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

@@ -8,7 +8,12 @@ from typing import Any
 import pandas as pd
 import requests
 
-ESPN_SCOREBOARD = "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard"
+ESPN_SCOREBOARD_BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
+ESPN_SCOREBOARD = f"{ESPN_SCOREBOARD_BASE}/fifa.world/scoreboard"
+
+
+def scoreboard_url(espn_path: str = "fifa.world") -> str:
+    return f"{ESPN_SCOREBOARD_BASE}/{espn_path}/scoreboard"
 
 
 def american_to_decimal(american: int | float) -> float:
@@ -19,17 +24,17 @@ def american_to_decimal(american: int | float) -> float:
     return 1 + 100 / abs(a)
 
 
-def fetch_scoreboard(for_date: date | None = None) -> dict[str, Any]:
-    """Scoreboard FIFA World Cup pour une date (défaut : aujourd'hui)."""
+def fetch_scoreboard(for_date: date | None = None, espn_path: str = "fifa.world") -> dict[str, Any]:
+    """Scoreboard ESPN pour une compétition (ex. fifa.world, uefa.euro)."""
     params: dict[str, str] = {}
     if for_date:
         params["dates"] = for_date.strftime("%Y%m%d")
-    resp = requests.get(ESPN_SCOREBOARD, params=params, timeout=20)
+    resp = requests.get(scoreboard_url(espn_path), params=params, timeout=20)
     resp.raise_for_status()
     return resp.json()
 
 
-def fetch_upcoming_days(days: int = 3) -> list[dict[str, Any]]:
+def fetch_upcoming_days(days: int = 3, espn_path: str = "fifa.world") -> list[dict[str, Any]]:
     """Matchs à venir sur N jours (scoreboard ESPN jour par jour)."""
     matches: list[dict[str, Any]] = []
     today = date.today()
@@ -37,7 +42,7 @@ def fetch_upcoming_days(days: int = 3) -> list[dict[str, Any]]:
 
     for offset in range(days):
         d = today + timedelta(days=offset)
-        data = fetch_scoreboard(d)
+        data = fetch_scoreboard(d, espn_path=espn_path)
         for event in data.get("events", []):
             eid = event.get("id", "")
             if eid in seen:
@@ -139,13 +144,15 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
     }
 
 
-def fetch_scoreboard_range(start: date, end: date) -> list[dict[str, Any]]:
-    """Tous les matchs CDM entre deux dates (inclus)."""
+def fetch_scoreboard_range(
+    start: date, end: date, espn_path: str = "fifa.world"
+) -> list[dict[str, Any]]:
+    """Tous les matchs entre deux dates (inclus)."""
     matches: list[dict[str, Any]] = []
     seen: set[str] = set()
     d = start
     while d <= end:
-        data = fetch_scoreboard(d)
+        data = fetch_scoreboard(d, espn_path=espn_path)
         for event in data.get("events", []):
             eid = event.get("id", "")
             if eid in seen:
@@ -158,7 +165,7 @@ def fetch_scoreboard_range(start: date, end: date) -> list[dict[str, Any]]:
     return sorted(matches, key=lambda m: m["kickoff"])
 
 
-def fetch_upcoming_within(hours: int = 48) -> list[dict[str, Any]]:
+def fetch_upcoming_within(hours: int = 48, espn_path: str = "fifa.world") -> list[dict[str, Any]]:
     """Matchs CDM pas encore joués dont le coup d'envoi est dans les N prochaines heures."""
     now = datetime.now(timezone.utc)
     deadline = now + timedelta(hours=hours)
@@ -170,7 +177,7 @@ def fetch_upcoming_within(hours: int = 48) -> list[dict[str, Any]]:
 
     d = start_date
     while d <= end_date:
-        data = fetch_scoreboard(d)
+        data = fetch_scoreboard(d, espn_path=espn_path)
         for event in data.get("events", []):
             eid = event.get("id", "")
             if eid in seen:
@@ -195,6 +202,19 @@ def fetch_upcoming_within(hours: int = 48) -> list[dict[str, Any]]:
     return sorted(upcoming, key=lambda m: m.get("kickoff", ""))
 
 
+def fetch_finished_since(
+    wc_start: date | None = None, espn_path: str = "fifa.world"
+) -> list[dict[str, Any]]:
+    """Matchs terminés depuis le début de la compétition."""
+    start = wc_start or date(2026, 6, 11)
+    end = date.today()
+    finished = []
+    for m in fetch_scoreboard_range(start, end, espn_path=espn_path):
+        if is_match_finished(m):
+            finished.append(m)
+    return finished
+
+
 def is_match_finished(m: dict[str, Any]) -> bool:
     """True si le match est terminé (pas un 0-0 planifié)."""
     if m.get("home_goals") is None or m.get("away_goals") is None:
@@ -208,17 +228,6 @@ def is_match_finished(m: dict[str, Any]) -> bool:
         return True
     desc = str(m.get("status", "")).lower()
     return "full time" in desc or desc == "final"
-
-
-def fetch_finished_since(wc_start: date | None = None) -> list[dict[str, Any]]:
-    """Matchs terminés depuis le début de la CDM."""
-    start = wc_start or date(2026, 6, 11)
-    end = date.today()
-    finished = []
-    for m in fetch_scoreboard_range(start, end):
-        if is_match_finished(m):
-            finished.append(m)
-    return finished
 
 
 def form_string_to_points(form: str, n: int = 5) -> float:
