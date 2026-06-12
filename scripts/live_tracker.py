@@ -30,15 +30,16 @@ import os
 import sys
 import urllib.request
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from alert_email import send_alert_email
+from alert_email import send_alert_email, load_config
 from export_web import OVERRIDES
-from mpp.data.espn import fetch_finished_since
+from mpp.data.espn import fetch_finished_since, fetch_upcoming_within
 from mpp.data.team_aliases import to_french
 from mpp_grille_cdm import MATCHES, analyze, _with_odds
 
@@ -274,6 +275,70 @@ def model_predict(home: str, away: str) -> str:
     return score_outcome(score)
 
 
+def format_hours_until(hours: float) -> str:
+    if hours < 1:
+        return f"dans {int(hours * 60)} min"
+    if hours < 24:
+        h = int(hours) if hours == int(hours) else round(hours, 1)
+        return f"dans {h} h"
+    days = int(hours // 24)
+    rest = int(hours % 24)
+    if rest:
+        return f"dans {days} j {rest} h"
+    return f"dans {days} j"
+
+
+def build_urgent_mpp(
+    played_keys: set[str],
+    updates_by_key: dict[str, dict],
+    hours: int = 48,
+) -> list[dict]:
+    """Matchs imminents avec le score exact à saisir sur mpp.football."""
+    urgent: list[dict] = []
+    paris = ZoneInfo("Europe/Paris")
+
+    for m in fetch_upcoming_within(hours=hours):
+        home_fr = to_french(m["home"])
+        away_fr = to_french(m["away"])
+        key = match_key(home_fr, away_fr)
+        if key in played_keys:
+            continue
+
+        upd = updates_by_key.get(key)
+        if upd and upd.get("change"):
+            score = upd["suggested_score"]
+            note = "Score ajusté après les derniers résultats"
+        else:
+            score = OVERRIDES.get(key) or model_score(home_fr, away_fr)
+            note = "Ton prono enregistré — recopie tel quel sur MPP"
+
+        sh, sa = split_score(score)
+        kickoff = datetime.fromisoformat(m["kickoff"].replace("Z", "+00:00"))
+        kickoff_paris = kickoff.astimezone(paris)
+        h_until = m.get("hours_until", 0)
+
+        urgent.append({
+            "key": key,
+            "home": home_fr,
+            "away": away_fr,
+            "date": kickoff_paris.strftime("%d/%m"),
+            "kickoff_paris": kickoff_paris.strftime("%d/%m à %H:%M"),
+            "hours_until": h_until,
+            "hours_label": format_hours_until(h_until),
+            "score": score,
+            "score_home": sh,
+            "score_away": sa,
+            "note": note,
+            "mpp_instruction": (
+                f"Sur mpp.football → {home_fr} vs {away_fr} "
+                f"→ mets {sh} - {sa}"
+            ),
+            "changed": bool(upd and upd.get("change")),
+        })
+
+    return urgent
+
+
 def build_alerts(rows: list[dict], klement: dict) -> list[dict]:
     alerts: list[dict] = []
     user_wrong_streak = 0
@@ -414,6 +479,10 @@ def run_tracker(state: dict | None = None) -> dict:
 
     alerts = build_alerts(rows, klement)
 
+    updates_by_key = {u["match"]: u for u in upcoming_updates}
+    urgent_hours = load_config().get("urgent_hours", 48)
+    urgent_mpp = build_urgent_mpp(current_keys, updates_by_key, hours=urgent_hours)
+
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "stats": stats,
@@ -428,6 +497,7 @@ def run_tracker(state: dict | None = None) -> dict:
         "new_finished_keys": sorted(new_keys),
         "recent_results": recent_results,
         "upcoming_updates": upcoming_updates,
+        "urgent_mpp": urgent_mpp,
     }
     return payload
 
@@ -482,6 +552,13 @@ def main() -> None:
     if payload.get("new_finished_keys"):
         print(f"\n🆕 Nouveaux résultats: {', '.join(payload['new_finished_keys'])}")
 
+    urgent = payload.get("urgent_mpp") or []
+    if urgent:
+        print(f"\n⏰ {len(urgent)} match(s) à valider sur MPP bientôt:")
+        for u in urgent:
+            print(f"  {u['hours_label']} · {u['kickoff_paris']} — {u['home']} vs {u['away']}")
+            print(f"       → METS {u['score_home']} - {u['score_away']}  ({u['note']})")
+
     updates = payload.get("upcoming_updates") or []
     if updates:
         print(f"\n📋 {len(updates)} prono(s) à revoir avant match:")
@@ -509,18 +586,34 @@ def main() -> None:
         except Exception as exc:
             print(f"⚠️  Webhook échoué: {exc}")
 
-    should_email = args.email or args.dry_run_email or bool(payload.get("new_finished_keys"))
+    fresh_urgent = [
+        u for u in (payload.get("urgent_mpp") or [])
+        if u["hours_until"] <= load_config().get("urgent_remind_hours", 24)
+        and u["key"] not in set(state.get("urgent_notified", []))
+    ]
+
+    should_email = (
+        args.email
+        or args.dry_run_email
+        or bool(payload.get("new_finished_keys"))
+        or bool(fresh_urgent)
+    )
     email_fp = "|".join(payload.get("new_finished_keys", [])) + "|" + "|".join(
         f"{u['match']}:{u['suggested_score']}" for u in updates
     )
     if should_email and email_fp and email_fp == state.get("last_email_fingerprint"):
         should_email = args.email or args.dry_run_email
 
-    if should_email and (payload.get("new_finished_keys") or args.email or args.dry_run_email):
+    if should_email and (payload.get("new_finished_keys") or fresh_urgent or args.email or args.dry_run_email):
         try:
             if send_alert_email(payload, dry_run=args.dry_run_email):
                 if not args.dry_run_email:
-                    state["last_email_fingerprint"] = email_fp
+                    if fresh_alerts:
+                        state["last_email_fingerprint"] = email_fp
+                    notified = set(state.get("urgent_notified", []))
+                    for u in fresh_urgent:
+                        notified.add(u["key"])
+                    state["urgent_notified"] = sorted(notified)[-50:]
                     print("📧 Email envoyé")
         except Exception as exc:
             print(f"⚠️  Email échoué: {exc}")

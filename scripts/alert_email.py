@@ -182,6 +182,25 @@ def format_email_html(payload: dict) -> str:
     """
     html += _intro_html(cfg)
 
+    urgent = payload.get("urgent_mpp") or []
+    if urgent:
+        html += """
+        <div style="background:#fff3cd;border:2px solid #c9a227;border-radius:12px;padding:16px;margin:20px 0;">
+          <h3 style="margin:0 0 8px;color:#856404;">⏰ À valider sur mpp.football AVANT le coup d'envoi</h3>
+          <p style="font-size:13px;color:#856404;margin:0 0 12px;">
+            Recopie <strong>exactement</strong> ces scores dans l'app (cases domicile - extérieur) :
+          </p>
+        """
+        for u in urgent:
+            html += _mpp_match_card(
+                u["home"], u["away"],
+                u["score_home"], u["score_away"],
+                date=f"<strong>{u['hours_label']}</strong> · {u['kickoff_paris']} (Paris)",
+                subtitle=f"→ {u['mpp_instruction']}<br><em>{u['note']}</em>",
+                highlight=u.get("changed", False),
+            )
+        html += "</div>"
+
     recent = payload.get("recent_results") or []
     if recent:
         html += "<h3 style='margin-top:24px;'>🆕 Nouveau(x) depuis le dernier mail</h3>"
@@ -278,6 +297,16 @@ def format_email_text(payload: dict) -> str:
         "",
     ]
 
+    urgent = payload.get("urgent_mpp") or []
+    if urgent:
+        lines.append("⏰ À VALIDER SUR mpp.football (AVANT COUP D'ENVOI)")
+        for u in urgent:
+            lines.append(f"\n{u['hours_label'].upper()} · {u['kickoff_paris']} — {u['home']} vs {u['away']}")
+            lines.append(f"   METS : {u['score_home']} - {u['score_away']}")
+            lines.append(f"   {u['mpp_instruction']}")
+            lines.append(f"   ({u['note']})")
+        lines.append("")
+
     recent = payload.get("recent_results") or []
     if recent:
         lines.append("── DERNIER(S) MATCH(S) ──")
@@ -323,6 +352,10 @@ def format_email_text(payload: dict) -> str:
 
 
 def email_subject(payload: dict) -> str:
+    urgent = payload.get("urgent_mpp") or []
+    if urgent:
+        u = urgent[0]
+        return f"⏰ {u['home']}–{u['away']} {u['hours_label']} → mets {u['score_home']}-{u['score_away']} sur MPP"
     recent = payload.get("recent_results") or []
     if recent:
         r = recent[-1]

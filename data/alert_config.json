@@ -7,5 +7,7 @@
   "sender_name": "MPP Prono Agent",
   "user_label": "Lisa",
   "mpp_url": "https://mpp.football",
-  "klement_blurb": "Joachim Klement, économiste — son modèle macro (PIB, population, climat…) avait prévu les Pays-Bas champion. On compare seulement qui gagne ou si c'est nul (1/N/2), pas le score exact."
+  "klement_blurb": "Joachim Klement, économiste — son modèle macro (PIB, population, climat…) avait prévu les Pays-Bas champion. On compare seulement qui gagne ou si c'est nul (1/N/2), pas le score exact.",
+  "urgent_hours": 48,
+  "urgent_remind_hours": 24
 }

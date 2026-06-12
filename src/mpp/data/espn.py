@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from typing import Any
 
 import pandas as pd
@@ -156,6 +156,43 @@ def fetch_scoreboard_range(start: date, end: date) -> list[dict[str, Any]]:
                 matches.append(parsed)
         d += timedelta(days=1)
     return sorted(matches, key=lambda m: m["kickoff"])
+
+
+def fetch_upcoming_within(hours: int = 48) -> list[dict[str, Any]]:
+    """Matchs CDM pas encore joués dont le coup d'envoi est dans les N prochaines heures."""
+    now = datetime.now(timezone.utc)
+    deadline = now + timedelta(hours=hours)
+    end_date = deadline.date()
+    start_date = now.date()
+
+    upcoming: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    d = start_date
+    while d <= end_date:
+        data = fetch_scoreboard(d)
+        for event in data.get("events", []):
+            eid = event.get("id", "")
+            if eid in seen:
+                continue
+            seen.add(eid)
+            parsed = parse_event(event)
+            if not parsed or is_match_finished(parsed):
+                continue
+            if parsed.get("status_state") == "post":
+                continue
+            kickoff_raw = parsed.get("kickoff")
+            if not kickoff_raw:
+                continue
+            kickoff = datetime.fromisoformat(kickoff_raw.replace("Z", "+00:00"))
+            if kickoff < now or kickoff > deadline:
+                continue
+            parsed["kickoff_dt"] = kickoff.isoformat()
+            parsed["hours_until"] = round((kickoff - now).total_seconds() / 3600, 1)
+            upcoming.append(parsed)
+        d += timedelta(days=1)
+
+    return sorted(upcoming, key=lambda m: m.get("kickoff", ""))
 
 
 def is_match_finished(m: dict[str, Any]) -> bool:

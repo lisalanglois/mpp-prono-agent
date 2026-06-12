@@ -40,6 +40,21 @@ function render(data) {
       <strong>${cfgUser}</strong> = ta grille · <strong>Klement</strong> = économiste (modèle macro, Pays-Bas champion).<br>
       On compare surtout <strong>1/N/2</strong> (qui gagne ou nul) — le score exact est un bonus.
     </div>
+  `;
+
+  if (data.urgent_mpp?.length) {
+    html += `<h2 class="section-title" style="color:#f0c674;">⏰ À valider sur mpp.football</h2>`;
+    html += `<p class="hint">Recopie <strong>exactement</strong> ces scores avant le coup d'envoi :</p>`;
+    for (const u of data.urgent_mpp) {
+      html += mppCard(u.home, u.away, u.score_home, u.score_away, {
+        date: `${u.hours_label} · ${u.kickoff_paris}`,
+        subtitle: `→ ${u.mpp_instruction} (${u.note})`,
+        change: u.changed,
+      });
+    }
+  }
+
+  html += `
     <div class="scoreboard">
       <div class="score-card ${data.leader_1n2 === "toi" ? "leader" : ""}">
         <div class="label">${cfgUser}</div>
