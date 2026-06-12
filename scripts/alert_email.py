@@ -119,8 +119,59 @@ def _intro_html(cfg: dict) -> str:
     """
 
 
+def _recap_table(payload: dict, user: str) -> str:
+    """Tableau match par match — évite la confusion sur le X/Y."""
+    matches = payload.get("matches") or []
+    if not matches:
+        return ""
+    rows = ""
+    for m in matches:
+        u = "✅" if m.get("user_1n2") else "❌" if m.get("user_1n2") is False else "—"
+        k = "✅" if m.get("klement_1n2") else "❌" if m.get("klement_1n2") is False else "—"
+        exact = " · score exact !" if m.get("user_exact") else ""
+        rows += f"""
+        <tr>
+          <td style="padding:6px;border-bottom:1px solid #eee;">{m['home']} – {m['away']}</td>
+          <td style="padding:6px;border-bottom:1px solid #eee;text-align:center;"><strong>{m['actual_score']}</strong></td>
+          <td style="padding:6px;border-bottom:1px solid #eee;text-align:center;">{m.get('user_score') or '—'}{exact}</td>
+          <td style="padding:6px;border-bottom:1px solid #eee;text-align:center;">{u}</td>
+          <td style="padding:6px;border-bottom:1px solid #eee;text-align:center;">{k}</td>
+        </tr>"""
+    n = len(matches)
+    u_total = payload.get("stats", {}).get("user_1n2", 0)
+    return f"""
+    <h3 style="margin-top:24px;">📋 Récap des {n} match(s) joué(s)</h3>
+    <p style="font-size:13px;color:#666;margin-bottom:8px;">
+      Le <strong>{u_total}/{n}</strong> = {u_total} bonne(s) direction(s) sur {n} match(s) (pas « un demi-score » par match).
+    </p>
+    <table width="100%" style="font-size:13px;border-collapse:collapse;">
+      <tr style="background:#eee;">
+        <th align="left">Match</th><th>Résultat</th><th>{user}</th><th>{user} 1/N/2</th><th>Klement</th>
+      </tr>
+      {rows}
+    </table>
+    """
+
+
+def _recap_text(payload: dict, user: str) -> list[str]:
+    matches = payload.get("matches") or []
+    if not matches:
+        return []
+    lines = [f"── RÉCAP ({len(matches)} matchs joués) ──"]
+    lines.append(f"(Le 1/2 = 1 bonne direction sur {len(matches)} matchs, pas un demi-score)")
+    for m in matches:
+        u = "✓" if m.get("user_1n2") else "✗" if m.get("user_1n2") is False else "—"
+        k = "✓" if m.get("klement_1n2") else "✗" if m.get("klement_1n2") is False else "—"
+        ex = " + score exact" if m.get("user_exact") else ""
+        lines.append(
+            f"• {m['home']}-{m['away']} → {m['actual_score']} | "
+            f"{user} {m.get('user_score','—')}{ex} [{u}] | Klement [{k}]"
+        )
+    lines.append("")
+    return lines
+
+
 def format_email_html(payload: dict) -> str:
-    s = payload["stats"]
     cfg = load_config()
     user = cfg.get("user_label", "Lisa")
 
@@ -133,7 +184,7 @@ def format_email_html(payload: dict) -> str:
 
     recent = payload.get("recent_results") or []
     if recent:
-        html += f"<h3 style='margin-top:24px;'>🏁 Dernier(s) match(s) terminé(s)</h3>"
+        html += "<h3 style='margin-top:24px;'>🆕 Nouveau(x) depuis le dernier mail</h3>"
         for r in recent:
             html += f"""
             <p style="font-size:15px;margin:8px 0;"><strong>{r['home']} vs {r['away']}</strong></p>
@@ -157,16 +208,24 @@ def format_email_html(payload: dict) -> str:
             </div>
             """
 
-    # Bilan global
+    # Bilan global (toujours après le détail match par match)
+    html += _recap_table(payload, user)
+
+    s = payload["stats"]
+    played = s["played"]
     html += f"""
-    <h3 style="margin-top:24px;">📊 Bilan direction (1/N/2)</h3>
+    <h3 style="margin-top:24px;">📊 Total direction (1/N/2)</h3>
+    <p style="font-size:13px;color:#666;">
+      Sur <strong>{played} match{'s' if played != 1 else ''} joué{'s' if played != 1 else ''}</strong> depuis le début de la CDM :
+    </p>
     <table width="100%" style="font-size:14px;" cellpadding="6">
-      <tr style="background:#eee;"><th></th><th>Correct</th><th>%</th></tr>
-      <tr><td><strong>{user}</strong></td><td>{s['user_1n2']}/{s['played']}</td><td>{s['user_1n2_pct']}%</td></tr>
-      <tr><td>Modèle IA</td><td>{s['model_1n2']}/{s['played']}</td><td>{s['model_1n2_pct']}%</td></tr>
-      <tr><td>Klement</td><td>{s['klement_1n2']}/{s['played']}</td><td>{s['klement_1n2_pct']}%</td></tr>
+      <tr style="background:#eee;"><th></th><th>Bonnes directions</th><th>%</th></tr>
+      <tr><td><strong>{user}</strong></td><td>{s['user_1n2']} sur {played}</td><td>{s['user_1n2_pct']}%</td></tr>
+      <tr><td>Modèle IA</td><td>{s['model_1n2']} sur {played}</td><td>{s['model_1n2_pct']}%</td></tr>
+      <tr><td>Klement</td><td>{s['klement_1n2']} sur {played}</td><td>{s['klement_1n2_pct']}%</td></tr>
     </table>
     <p style="font-size:13px;color:#666;">
+      Scores exacts {user} : <strong>{s['user_exact']} sur {played}</strong><br>
       Vainqueur MPP : <strong>{cfg.get('mpp_winner_pick', payload.get('mpp_winner_pick'))}</strong> ·
       Klement avait : <strong>{payload.get('klement_winner_pick', '—')}</strong>
     </p>
@@ -229,10 +288,14 @@ def format_email_text(payload: dict) -> str:
             lines.append(f"  ▶ {r.get('verdict_short')}")
         lines.append("")
 
+    lines += _recap_text(payload, user)
+
     lines += [
-        "── BILAN DIRECTION ──",
-        f"{user} : {s['user_1n2']}/{s['played']} ({s['user_1n2_pct']}%)",
-        f"Modèle : {s['model_1n2_pct']}% · Klement : {s['klement_1n2_pct']}%",
+        "── TOTAL DIRECTION (1/N/2) ──",
+        f"Sur {s['played']} matchs joués :",
+        f"{user} : {s['user_1n2']} bonne(s) direction(s) sur {s['played']} ({s['user_1n2_pct']}%)",
+        f"Modèle : {s['model_1n2']} sur {s['played']} · Klement : {s['klement_1n2']} sur {s['played']}",
+        f"Scores exacts {user} : {s['user_exact']} sur {s['played']}",
         "",
     ]
 
