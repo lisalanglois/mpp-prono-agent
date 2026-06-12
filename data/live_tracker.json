@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-06-12T12:58:47.242749+00:00",
+  "stats": {
+    "played": 0,
+    "user_1n2": 0,
+    "user_exact": 0,
+    "model_1n2": 0,
+    "klement_1n2": 0,
+    "user_1n2_pct": 0,
+    "model_1n2_pct": 0,
+    "klement_1n2_pct": 0,
+    "user_exact_pct": 0
+  },
+  "leader_1n2": "toi",
+  "mpp_winner_pick": "France",
+  "klement_winner_pick": "Pays-Bas",
+  "alerts": [],
+  "matches": [],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
+  "new_alerts": []
+}

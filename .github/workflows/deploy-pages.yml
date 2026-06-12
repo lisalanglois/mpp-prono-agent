@@ -9,10 +9,11 @@ on:
     paths:
       - "web/**"
       - "data/daily_predictions.json"
+      - "data/live_tracker.json"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
   workflow_run:
-    workflows: ["Daily pronos CDM"]
+    workflows: ["Daily pronos CDM", "Live tracker CDM"]
     types: [completed]
 
 permissions:

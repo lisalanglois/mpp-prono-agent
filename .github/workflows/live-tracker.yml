@@ -1,0 +1,61 @@
+# Met à jour les stats live (toi vs modèle vs Klement) après chaque match CDM.
+# Commit tracker.json + déclenche le déploiement Pages.
+
+name: Live tracker CDM
+
+on:
+  schedule:
+    # Toutes les 2h pendant la CDM (11 juin – 19 juillet 2026 UTC)
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      send_test_email:
+        description: "Envoyer un email de test (même sans nouveau match)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-tracker
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update live tracker
+        env:
+          MPP_ALERT_WEBHOOK: ${{ secrets.MPP_ALERT_WEBHOOK }}
+          MPP_SMTP_USER: ${{ secrets.MPP_SMTP_USER }}
+          MPP_SMTP_PASSWORD: ${{ secrets.MPP_SMTP_PASSWORD }}
+          MPP_ALERT_EMAILS: ${{ secrets.MPP_ALERT_EMAILS }}
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_test_email }}" = "true" ]; then
+            python scripts/live_tracker.py --email
+          else
+            python scripts/live_tracker.py
+          fi
+
+      - name: Commit tracker if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/live_tracker.json data/live_tracker_state.json web/tracker.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: live tracker $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

@@ -60,7 +60,7 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
     home = next(c for c in competitors if c.get("homeAway") == "home")
     away = next(c for c in competitors if c.get("homeAway") == "away")
 
-    odds_block = (comp.get("odds") or [{}])[0]
+    odds_block = (comp.get("odds") or [{}])[0] or {}
     ml = odds_block.get("moneyline", {})
 
     odds: dict[str, float] | None = None
@@ -76,6 +76,19 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
 
     over_under = odds_block.get("overUnder")
 
+    status_type = comp.get("status", {}).get("type", {})
+    status_short = status_type.get("short", status_type.get("name", ""))
+    home_score = home.get("score")
+    away_score = away.get("score")
+    if isinstance(home_score, dict):
+        home_goals = home_score.get("value")
+    else:
+        home_goals = home_score
+    if isinstance(away_score, dict):
+        away_goals = away_score.get("value")
+    else:
+        away_goals = away_score
+
     return {
         "event_id": event.get("id"),
         "kickoff": event.get("date", ""),
@@ -84,11 +97,44 @@ def parse_event(event: dict[str, Any]) -> dict[str, Any] | None:
         "home_form": home.get("form", ""),
         "away_form": away.get("form", ""),
         "venue": comp.get("venue", {}).get("fullName", ""),
-        "status": comp.get("status", {}).get("type", {}).get("description", ""),
+        "status": status_type.get("description", ""),
+        "status_short": status_short,
+        "home_goals": home_goals,
+        "away_goals": away_goals,
         "odds": odds,
         "over_under": over_under,
         "competition": "World Cup 2026",
     }
+
+
+def fetch_scoreboard_range(start: date, end: date) -> list[dict[str, Any]]:
+    """Tous les matchs CDM entre deux dates (inclus)."""
+    matches: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    d = start
+    while d <= end:
+        data = fetch_scoreboard(d)
+        for event in data.get("events", []):
+            eid = event.get("id", "")
+            if eid in seen:
+                continue
+            seen.add(eid)
+            parsed = parse_event(event)
+            if parsed:
+                matches.append(parsed)
+        d += timedelta(days=1)
+    return sorted(matches, key=lambda m: m["kickoff"])
+
+
+def fetch_finished_since(wc_start: date | None = None) -> list[dict[str, Any]]:
+    """Matchs terminés depuis le début de la CDM."""
+    start = wc_start or date(2026, 6, 11)
+    end = date.today()
+    finished = []
+    for m in fetch_scoreboard_range(start, end):
+        if m.get("status_short") in ("FT", "AET", "PEN") and m.get("home_goals") is not None:
+            finished.append(m)
+    return finished
 
 
 def form_string_to_points(form: str, n: int = 5) -> float:

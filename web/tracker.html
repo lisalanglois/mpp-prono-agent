@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Tracker — CDM 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .nav { margin-top: 0.75rem; font-size: 0.85rem; }
+    .nav a { color: #1d9bf0; text-decoration: none; margin-right: 1rem; }
+    .scoreboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+    .score-card {
+      background: #192734;
+      border: 1px solid #2f3b47;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .score-card .label { font-size: 0.75rem; color: #8b98a5; text-transform: uppercase; }
+    .score-card .value { font-size: 1.5rem; font-weight: 700; margin-top: 0.25rem; }
+    .score-card.leader { border-color: #7dd3a0; }
+    .alert-box {
+      background: #2a2010;
+      border: 1px solid #4a3a20;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .alert-box.warning { background: #2a1510; border-color: #6a3020; }
+    .alert-box.info { background: #10202a; border-color: #204060; }
+    .result-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      gap: 0.5rem;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #2f3b47;
+      font-size: 0.9rem;
+    }
+    .result-row:last-child { border-bottom: none; }
+    .badge {
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.25rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+    .badge.ok { background: #1a4d2e; color: #7dd3a0; }
+    .badge.ko { background: #4d1a1a; color: #f87171; }
+    .badge.na { background: #2f3b47; color: #8b98a5; }
+    .winner-picks { color: #8b98a5; font-size: 0.85rem; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📊 Live Tracker CDM 2026</h1>
+    <p class="subtitle">Qui prend la bonne direction après chaque match ?</p>
+    <p class="subtitle" id="updated"></p>
+    <nav class="nav">
+      <a href="index.html">← Grille pronos</a>
+    </nav>
+  </header>
+
+  <main id="app" style="max-width:720px;margin:0 auto;padding:1rem;">
+    <p id="loading">Chargement…</p>
+  </main>
+
+  <script src="tracker.js"></script>
+</body>
+</html>

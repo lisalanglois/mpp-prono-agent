@@ -99,6 +99,55 @@ python scripts/export_daily.py --stdout # afficher le JSON
 - Commit `data/daily_predictions.json` + `web/matches.json`
 - Déploie le site sur **GitHub Pages**
 
+### Live tracker (stats après chaque match)
+
+Compare **ta grille** vs **modèle Poisson** vs **Klement** (macro) sur les matchs déjà joués.
+
+```bash
+python scripts/live_tracker.py
+# Aperçu email sans envoyer :
+python scripts/live_tracker.py --dry-run-email
+```
+
+**Destinataires** (par défaut dans `data/alert_config.json`) :
+- lisalanglois.photograpie@gmail.com
+- juliette.hamonic@gmail.com
+
+**Secrets GitHub** (Settings → Secrets → Actions) pour l'envoi auto :
+
+| Secret | Valeur |
+|--------|--------|
+| `MPP_SMTP_USER` | `lisalanglois.photograpie@gmail.com` |
+| `MPP_SMTP_PASSWORD` | [Mot de passe d'application Google](https://myaccount.google.com/apppasswords) |
+| `MPP_ALERT_EMAILS` | *(optionnel)* override des destinataires, séparés par des virgules |
+
+L'email part **après chaque nouveau match terminé** et contient :
+- Les derniers résultats
+- Les **pronos à revoir avant match** (date, équipes, score actuel → suggéré)
+- Les alertes (favori qui perd, trajectoire Klement, etc.)
+
+En local, même config via `.env` :
+```bash
+MPP_SMTP_USER=lisalanglois.photograpie@gmail.com
+MPP_SMTP_PASSWORD=xxxx xxxx xxxx xxxx
+```
+
+Alertes Slack/n8n (optionnel) :
+```bash
+MPP_ALERT_WEBHOOK=https://hooks.slack.com/... python scripts/live_tracker.py
+```
+
+**GitHub Actions** (`.github/workflows/live-tracker.yml`) :
+- Tourne **toutes les 2h** pendant la CDM
+- Récupère les scores ESPN (matchs terminés)
+- Met à jour `data/live_tracker.json` + `web/tracker.json`
+- Envoie une alerte si `MPP_ALERT_WEBHOOK` est configuré dans les secrets du repo
+- Envoie un **email** à Lisa + Juliette si `MPP_SMTP_USER` / `MPP_SMTP_PASSWORD` sont configurés
+
+**Dashboard :** [tracker.html](https://lisalanglois.github.io/mpp-prono-agent/tracker.html)
+
+Alertes typiques : favori qui perd, trajectoire Klement compromise (ex. Brésil), série d'erreurs 1/N/2, match joué sans prono enregistré.
+
 ### Site web (GitHub Pages)
 
 URL une fois activé : **https://lisalanglois.github.io/mpp-prono-agent/**
