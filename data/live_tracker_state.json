@@ -1,17 +1,22 @@
 {
-  "sent_alerts": [],
+  "sent_alerts": [
+    "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)"
+  ],
   "finished_keys": [
     "Canada - Bosnie-Herzégovine",
     "Corée du Sud - Tchéquie",
     "Mexique - Afrique du Sud",
+    "Qatar - Suisse",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "|",
+  "last_email_fingerprint": "Qatar - Suisse|Canada - Qatar:3-0|Suisse - Bosnie-Herzégovine:3-0|Suisse - Canada:0-0|Bosnie-Herzégovine - Qatar:0-0",
   "urgent_notified": [
+    "Allemagne - Curaçao",
     "Australie - Türkiye",
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
     "Haïti - Écosse",
+    "Pays-Bas - Japon",
     "Qatar - Suisse",
     "États-Unis - Paraguay"
   ]

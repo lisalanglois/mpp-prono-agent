@@ -1,22 +1,29 @@
 {
-  "updated_at": "2026-06-13T19:14:43.878336+00:00",
+  "updated_at": "2026-06-13T21:06:51.524954+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 4,
+    "played": 5,
     "user_1n2": 2,
     "user_exact": 1,
     "model_1n2": 2,
     "klement_1n2": 4,
-    "user_1n2_pct": 50.0,
-    "model_1n2_pct": 50.0,
-    "klement_1n2_pct": 100.0,
-    "user_exact_pct": 25.0
+    "user_1n2_pct": 40.0,
+    "model_1n2_pct": 40.0,
+    "klement_1n2_pct": 80.0,
+    "user_exact_pct": 20.0
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
   "klement_winner_pick": "Pays-Bas",
-  "alerts": [],
+  "alerts": [
+    {
+      "level": "warning",
+      "match": "Qatar - Suisse",
+      "message": "Match joué sans prono dans ta grille (1-1)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    }
+  ],
   "matches": [
     {
       "key": "Mexique - Afrique du Sud",
@@ -113,11 +120,135 @@
       "klement_direction": "Victoire États-Unis",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Qatar - Suisse",
+      "home": "Qatar",
+      "away": "Suisse",
+      "actual_score": "1-1",
+      "actual_outcome": "draw",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "away",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Match nul",
+      "user_direction": "—",
+      "klement_direction": "Victoire Suisse",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
-  "upcoming_updates": [],
+  "new_finished_keys": [
+    "Qatar - Suisse"
+  ],
+  "recent_results": [
+    {
+      "key": "Qatar - Suisse",
+      "home": "Qatar",
+      "away": "Suisse",
+      "actual_score": "1-1",
+      "actual_outcome": "draw",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "away",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Match nul",
+      "user_direction": "—",
+      "klement_direction": "Victoire Suisse",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
+  "upcoming_updates": [
+    {
+      "date": "19/06",
+      "match": "Canada - Qatar",
+      "home": "Canada",
+      "away": "Qatar",
+      "teams_to_review": [
+        "Qatar"
+      ],
+      "current_score": "2-0",
+      "suggested_score": "3-0",
+      "change": true,
+      "reason": "Qatar - Suisse terminé 1-1",
+      "current_home": "2",
+      "current_away": "0",
+      "suggested_home": "3",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → Canada vs Qatar (19/06) → remplace 2-0 par 3-0"
+    },
+    {
+      "date": "19/06",
+      "match": "Suisse - Bosnie-Herzégovine",
+      "home": "Suisse",
+      "away": "Bosnie-Herzégovine",
+      "teams_to_review": [
+        "Suisse"
+      ],
+      "current_score": "2-0",
+      "suggested_score": "3-0",
+      "change": true,
+      "reason": "Qatar - Suisse terminé 1-1",
+      "current_home": "2",
+      "current_away": "0",
+      "suggested_home": "3",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → Suisse vs Bosnie-Herzégovine (19/06) → remplace 2-0 par 3-0"
+    },
+    {
+      "date": "24/06",
+      "match": "Suisse - Canada",
+      "home": "Suisse",
+      "away": "Canada",
+      "teams_to_review": [
+        "Suisse"
+      ],
+      "current_score": "1-1",
+      "suggested_score": "0-0",
+      "change": true,
+      "reason": "Qatar - Suisse terminé 1-1",
+      "current_home": "1",
+      "current_away": "1",
+      "suggested_home": "0",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → Suisse vs Canada (24/06) → remplace 1-1 par 0-0"
+    },
+    {
+      "date": "25/06",
+      "match": "Bosnie-Herzégovine - Qatar",
+      "home": "Bosnie-Herzégovine",
+      "away": "Qatar",
+      "teams_to_review": [
+        "Qatar"
+      ],
+      "current_score": "2-0",
+      "suggested_score": "0-0",
+      "change": true,
+      "reason": "Qatar - Suisse terminé 1-1",
+      "current_home": "2",
+      "current_away": "0",
+      "suggested_home": "0",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → Bosnie-Herzégovine vs Qatar (25/06) → remplace 2-0 par 0-0"
+    }
+  ],
   "urgent_mpp": [
     {
       "key": "Brésil - Maroc",
@@ -125,8 +256,8 @@
       "away": "Maroc",
       "date": "14/06",
       "kickoff_paris": "14/06 à 00:00",
-      "hours_until": 2.8,
-      "hours_label": "dans 2.8 h",
+      "hours_until": 0.9,
+      "hours_label": "dans 54 min",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -140,8 +271,8 @@
       "away": "Écosse",
       "date": "14/06",
       "kickoff_paris": "14/06 à 03:00",
-      "hours_until": 5.8,
-      "hours_label": "dans 5.8 h",
+      "hours_until": 3.9,
+      "hours_label": "dans 3.9 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -155,8 +286,8 @@
       "away": "Türkiye",
       "date": "14/06",
       "kickoff_paris": "14/06 à 06:00",
-      "hours_until": 8.8,
-      "hours_label": "dans 8.8 h",
+      "hours_until": 6.9,
+      "hours_label": "dans 6.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -170,8 +301,8 @@
       "away": "Curaçao",
       "date": "14/06",
       "kickoff_paris": "14/06 à 19:00",
-      "hours_until": 21.8,
-      "hours_label": "dans 21.8 h",
+      "hours_until": 19.9,
+      "hours_label": "dans 19.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -185,8 +316,8 @@
       "away": "Japon",
       "date": "14/06",
       "kickoff_paris": "14/06 à 22:00",
-      "hours_until": 24.8,
-      "hours_label": "dans 1 j",
+      "hours_until": 22.9,
+      "hours_label": "dans 22.9 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -200,8 +331,8 @@
       "away": "Équateur",
       "date": "15/06",
       "kickoff_paris": "15/06 à 01:00",
-      "hours_until": 27.8,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 25.9,
+      "hours_label": "dans 1 j 1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -215,8 +346,8 @@
       "away": "Tunisie",
       "date": "15/06",
       "kickoff_paris": "15/06 à 04:00",
-      "hours_until": 30.8,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 28.9,
+      "hours_label": "dans 1 j 4 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -230,8 +361,8 @@
       "away": "Cap-Vert",
       "date": "15/06",
       "kickoff_paris": "15/06 à 18:00",
-      "hours_until": 44.8,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 42.9,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -245,8 +376,8 @@
       "away": "Égypte",
       "date": "15/06",
       "kickoff_paris": "15/06 à 21:00",
-      "hours_until": 47.8,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.9,
+      "hours_label": "dans 1 j 21 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -255,5 +386,12 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Qatar - Suisse",
+      "message": "Match joué sans prono dans ta grille (1-1)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    }
+  ]
 }
