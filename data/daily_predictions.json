@@ -1,43 +1,9 @@
 {
-  "generated_at": "2026-06-12T11:41:19.451032+00:00",
+  "generated_at": "2026-06-13T10:24:51.656792+00:00",
   "days": 3,
-  "count": 10,
+  "count": 12,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Canada - Bosnie-Herzégovine",
-      "home": "Canada",
-      "away": "Bosnie-Herzégovine",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-12T19:00Z",
-      "venue": "BMO Field",
-      "odds": {
-        "home": 1.8333333333333335,
-        "draw": 3.5,
-        "away": 4.8
-      },
-      "home_form": "DWDDW",
-      "away_form": "DDWWD",
-      "source": "override",
-      "mpp_copy": "Canada 2 - 0 Bosnie-Herzégovine"
-    },
-    {
-      "match": "États-Unis - Paraguay",
-      "home": "États-Unis",
-      "away": "Paraguay",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-13T01:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.2,
-        "away": 3.9
-      },
-      "home_form": "LWLLW",
-      "away_form": "WLWWL",
-      "source": "override",
-      "mpp_copy": "États-Unis 2 - 1 Paraguay"
-    },
     {
       "match": "Qatar - Suisse",
       "home": "Qatar",
@@ -46,8 +12,8 @@
       "kickoff_utc": "2026-06-13T19:00Z",
       "venue": "Levi's Stadium",
       "odds": {
-        "home": 15.0,
-        "draw": 6.5,
+        "home": 14.0,
+        "draw": 7.0,
         "away": 1.2105263157894737
       },
       "home_form": "DLLWD",
@@ -63,9 +29,9 @@
       "kickoff_utc": "2026-06-13T22:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 1.6451612903225805,
-        "draw": 3.9,
-        "away": 5.75
+        "home": 1.6896551724137931,
+        "draw": 3.7,
+        "away": 5.5
       },
       "home_form": "WWWLD",
       "away_form": "DWWWD",
@@ -80,9 +46,9 @@
       "kickoff_utc": "2026-06-14T01:00Z",
       "venue": "Gillette Stadium",
       "odds": {
-        "home": 6.0,
-        "draw": 4.2,
-        "away": 1.5714285714285714
+        "home": 5.75,
+        "draw": 4.4,
+        "away": 1.5555555555555556
       },
       "home_form": "LWDLW",
       "away_form": "WWLLW",
@@ -115,7 +81,7 @@
       "venue": "NRG Stadium",
       "odds": {
         "home": 1.0333333333333334,
-        "draw": 16.0,
+        "draw": 15.0,
         "away": 29.0
       },
       "home_form": "WWWWW",
@@ -166,13 +132,81 @@
       "venue": "Estadio BBVA",
       "odds": {
         "home": 1.9090909090909092,
-        "draw": 3.45,
+        "draw": 3.55,
         "away": 4.3
       },
       "home_form": "DLWWD",
       "away_form": "LLDWL",
       "source": "override",
       "mpp_copy": "Suède 2 - 1 Tunisie"
+    },
+    {
+      "match": "Espagne - Cap-Vert",
+      "home": "Espagne",
+      "away": "Cap-Vert",
+      "score": "3-0",
+      "kickoff_utc": "2026-06-15T16:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "odds": {
+        "home": 1.0833333333333333,
+        "draw": 12.0,
+        "away": 26.0
+      },
+      "home_form": "WDDWD",
+      "away_form": "WWLLL",
+      "source": "espn_poisson",
+      "mpp_copy": "Espagne 3 - 0 Cap-Vert"
+    },
+    {
+      "match": "Belgique - Égypte",
+      "home": "Belgique",
+      "away": "Égypte",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-15T19:00Z",
+      "venue": "Lumen Field",
+      "odds": {
+        "home": 1.5882352941176472,
+        "draw": 3.95,
+        "away": 5.75
+      },
+      "home_form": "WWDWW",
+      "away_form": "LWDWL",
+      "source": "override",
+      "mpp_copy": "Belgique 2 - 0 Égypte"
+    },
+    {
+      "match": "Arabie saoudite - Uruguay",
+      "home": "Arabie saoudite",
+      "away": "Uruguay",
+      "score": "0-1",
+      "kickoff_utc": "2026-06-15T22:00Z",
+      "venue": "Hard Rock Stadium",
+      "odds": {
+        "home": 8.0,
+        "draw": 4.5,
+        "away": 1.4444444444444444
+      },
+      "home_form": "DWLLL",
+      "away_form": "DDLDW",
+      "source": "grille_mpp",
+      "mpp_copy": "Arabie saoudite 0 - 1 Uruguay"
+    },
+    {
+      "match": "Iran - Nouvelle-Zélande",
+      "home": "Iran",
+      "away": "Nouvelle-Zélande",
+      "score": "1-1",
+      "kickoff_utc": "2026-06-16T01:00Z",
+      "venue": "SoFi Stadium",
+      "odds": {
+        "home": 1.8333333333333335,
+        "draw": 3.5,
+        "away": 4.7
+      },
+      "home_form": "WWWLL",
+      "away_form": "LLWLL",
+      "source": "grille_mpp",
+      "mpp_copy": "Iran 1 - 1 Nouvelle-Zélande"
     }
   ]
 }
