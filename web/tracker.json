@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-14T02:56:14.260567+00:00",
+  "updated_at": "2026-06-14T08:10:26.276355+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 6,
+    "played": 8,
     "user_1n2": 2,
     "user_exact": 1,
-    "model_1n2": 2,
-    "klement_1n2": 4,
-    "user_1n2_pct": 33.3,
-    "model_1n2_pct": 33.3,
-    "klement_1n2_pct": 66.7,
-    "user_exact_pct": 16.7
+    "model_1n2": 3,
+    "klement_1n2": 5,
+    "user_1n2_pct": 25.0,
+    "model_1n2_pct": 37.5,
+    "klement_1n2_pct": 62.5,
+    "user_exact_pct": 12.5
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -22,6 +22,24 @@
       "match": "Qatar - Suisse",
       "message": "Match joué sans prono dans ta grille (1-1)",
       "action": "Compléter sur mpp.football pour les prochains matchs"
+    },
+    {
+      "level": "warning",
+      "match": "Haïti - Écosse",
+      "message": "Match joué sans prono dans ta grille (0-1)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    },
+    {
+      "level": "warning",
+      "match": "Australie - Türkiye",
+      "message": "Match joué sans prono dans ta grille (2-0)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (5/8 1N/2) devance ta grille (2/8)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
   "matches": [
@@ -168,50 +186,141 @@
       "klement_direction": "Victoire Brésil",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+    },
+    {
+      "key": "Haïti - Écosse",
+      "home": "Haïti",
+      "away": "Écosse",
+      "actual_score": "0-1",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "away",
+      "model_1n2": true,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Écosse",
+      "user_direction": "—",
+      "klement_direction": "Victoire Écosse",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Australie - Türkiye",
+      "home": "Australie",
+      "away": "Türkiye",
+      "actual_score": "2-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "2",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Australie",
+      "user_direction": "—",
+      "klement_direction": "Match nul",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
   "new_finished_keys": [
-    "Brésil - Maroc"
+    "Australie - Türkiye",
+    "Haïti - Écosse"
   ],
   "recent_results": [
     {
-      "key": "Brésil - Maroc",
-      "home": "Brésil",
-      "away": "Maroc",
-      "actual_score": "1-1",
-      "actual_outcome": "draw",
-      "user_score": "2-1",
-      "user_outcome": "home",
-      "user_1n2": false,
+      "key": "Haïti - Écosse",
+      "home": "Haïti",
+      "away": "Écosse",
+      "actual_score": "0-1",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
       "user_exact": false,
-      "model_outcome": "home",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": false,
-      "actual_home": "1",
+      "model_outcome": "away",
+      "model_1n2": true,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
       "actual_away": "1",
-      "user_home": "2",
-      "user_away": "1",
-      "actual_direction": "Match nul",
-      "user_direction": "Victoire Brésil",
-      "klement_direction": "Victoire Brésil",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Écosse",
+      "user_direction": "—",
+      "klement_direction": "Victoire Écosse",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Australie - Türkiye",
+      "home": "Australie",
+      "away": "Türkiye",
+      "actual_score": "2-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "2",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Australie",
+      "user_direction": "—",
+      "klement_direction": "Match nul",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
   "upcoming_updates": [
+    {
+      "date": "19/06",
+      "match": "États-Unis - Australie",
+      "home": "États-Unis",
+      "away": "Australie",
+      "teams_to_review": [
+        "Australie"
+      ],
+      "current_score": "2-1",
+      "suggested_score": "1-0",
+      "change": true,
+      "reason": "Australie - Türkiye terminé 2-0",
+      "current_home": "2",
+      "current_away": "1",
+      "suggested_home": "1",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → États-Unis vs Australie (19/06) → remplace 2-1 par 1-0"
+    },
     {
       "date": "20/06",
       "match": "Brésil - Haïti",
       "home": "Brésil",
       "away": "Haïti",
       "teams_to_review": [
-        "Brésil"
+        "Haïti"
       ],
       "current_score": "3-0",
       "suggested_score": "3-0",
       "change": false,
-      "reason": "Brésil - Maroc terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Haïti - Écosse terminé 0-1",
       "current_home": "3",
       "current_away": "0",
       "suggested_home": "3",
@@ -224,12 +333,12 @@
       "home": "Écosse",
       "away": "Maroc",
       "teams_to_review": [
-        "Maroc"
+        "Écosse"
       ],
       "current_score": "0-2",
       "suggested_score": "1-1",
       "change": true,
-      "reason": "Brésil - Maroc terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Haïti - Écosse terminé 0-1",
       "current_home": "0",
       "current_away": "2",
       "suggested_home": "1",
@@ -242,12 +351,12 @@
       "home": "Maroc",
       "away": "Haïti",
       "teams_to_review": [
-        "Maroc"
+        "Haïti"
       ],
       "current_score": "2-0",
       "suggested_score": "1-0",
       "change": true,
-      "reason": "Brésil - Maroc terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Haïti - Écosse terminé 0-1",
       "current_home": "2",
       "current_away": "0",
       "suggested_home": "1",
@@ -260,43 +369,46 @@
       "home": "Écosse",
       "away": "Brésil",
       "teams_to_review": [
-        "Brésil"
+        "Écosse"
       ],
       "current_score": "0-1",
       "suggested_score": "0-1",
       "change": false,
-      "reason": "Brésil - Maroc terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Haïti - Écosse terminé 0-1",
       "current_home": "0",
       "current_away": "1",
       "suggested_home": "0",
       "suggested_away": "1",
       "mpp_action": "Sur mpp.football → Écosse vs Brésil (25/06) → garde 0-1 (pas de changement suggéré)"
+    },
+    {
+      "date": "26/06",
+      "match": "Paraguay - Australie",
+      "home": "Paraguay",
+      "away": "Australie",
+      "teams_to_review": [
+        "Australie"
+      ],
+      "current_score": "0-0",
+      "suggested_score": "0-0",
+      "change": false,
+      "reason": "Australie - Türkiye terminé 2-0",
+      "current_home": "0",
+      "current_away": "0",
+      "suggested_home": "0",
+      "suggested_away": "0",
+      "mpp_action": "Sur mpp.football → Paraguay vs Australie (26/06) → garde 0-0 (pas de changement suggéré)"
     }
   ],
   "urgent_mpp": [
-    {
-      "key": "Australie - Türkiye",
-      "home": "Australie",
-      "away": "Türkiye",
-      "date": "14/06",
-      "kickoff_paris": "14/06 à 06:00",
-      "hours_until": 1.1,
-      "hours_label": "dans 1.1 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Australie vs Türkiye → mets 1 - 1",
-      "changed": false
-    },
     {
       "key": "Allemagne - Curaçao",
       "home": "Allemagne",
       "away": "Curaçao",
       "date": "14/06",
       "kickoff_paris": "14/06 à 19:00",
-      "hours_until": 14.1,
-      "hours_label": "dans 14.1 h",
+      "hours_until": 8.8,
+      "hours_label": "dans 8.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -310,8 +422,8 @@
       "away": "Japon",
       "date": "14/06",
       "kickoff_paris": "14/06 à 22:00",
-      "hours_until": 17.1,
-      "hours_label": "dans 17.1 h",
+      "hours_until": 11.8,
+      "hours_label": "dans 11.8 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -325,8 +437,8 @@
       "away": "Équateur",
       "date": "15/06",
       "kickoff_paris": "15/06 à 01:00",
-      "hours_until": 20.1,
-      "hours_label": "dans 20.1 h",
+      "hours_until": 14.8,
+      "hours_label": "dans 14.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -340,8 +452,8 @@
       "away": "Tunisie",
       "date": "15/06",
       "kickoff_paris": "15/06 à 04:00",
-      "hours_until": 23.1,
-      "hours_label": "dans 23.1 h",
+      "hours_until": 17.8,
+      "hours_label": "dans 17.8 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -355,8 +467,8 @@
       "away": "Cap-Vert",
       "date": "15/06",
       "kickoff_paris": "15/06 à 18:00",
-      "hours_until": 37.1,
-      "hours_label": "dans 1 j 13 h",
+      "hours_until": 31.8,
+      "hours_label": "dans 1 j 7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -370,8 +482,8 @@
       "away": "Égypte",
       "date": "15/06",
       "kickoff_paris": "15/06 à 21:00",
-      "hours_until": 40.1,
-      "hours_label": "dans 1 j 16 h",
+      "hours_until": 34.8,
+      "hours_label": "dans 1 j 10 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -385,8 +497,8 @@
       "away": "Uruguay",
       "date": "16/06",
       "kickoff_paris": "16/06 à 00:00",
-      "hours_until": 43.1,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 37.8,
+      "hours_label": "dans 1 j 13 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -400,8 +512,8 @@
       "away": "Nouvelle-Zélande",
       "date": "16/06",
       "kickoff_paris": "16/06 à 03:00",
-      "hours_until": 46.1,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 40.8,
+      "hours_label": "dans 1 j 16 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -410,5 +522,24 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Haïti - Écosse",
+      "message": "Match joué sans prono dans ta grille (0-1)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    },
+    {
+      "level": "warning",
+      "match": "Australie - Türkiye",
+      "message": "Match joué sans prono dans ta grille (2-0)",
+      "action": "Compléter sur mpp.football pour les prochains matchs"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (5/8 1N/2) devance ta grille (2/8)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }

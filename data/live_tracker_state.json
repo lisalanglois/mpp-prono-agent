@@ -1,16 +1,21 @@
 {
   "sent_alerts": [
+    "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
+    "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
+    "warning|Haïti - Écosse|Match joué sans prono dans ta grille (0-1)",
     "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)"
   ],
   "finished_keys": [
+    "Australie - Türkiye",
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
     "Corée du Sud - Tchéquie",
+    "Haïti - Écosse",
     "Mexique - Afrique du Sud",
     "Qatar - Suisse",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Qatar - Suisse|Canada - Qatar:3-0|Suisse - Bosnie-Herzégovine:3-0|Suisse - Canada:0-0|Bosnie-Herzégovine - Qatar:0-0",
+  "last_email_fingerprint": "Australie - Türkiye|Haïti - Écosse|États-Unis - Australie:1-0|Brésil - Haïti:3-0|Écosse - Maroc:1-1|Maroc - Haïti:1-0|Écosse - Brésil:0-1|Paraguay - Australie:0-0",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Australie - Türkiye",
