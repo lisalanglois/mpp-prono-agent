@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T19:15:45.556206+00:00",
+  "updated_at": "2026-06-14T21:03:53.883494+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -266,133 +266,18 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Allemagne - Curaçao"
-  ],
-  "recent_results": [
-    {
-      "key": "Allemagne - Curaçao",
-      "home": "Allemagne",
-      "away": "Curaçao",
-      "actual_score": "7-1",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "7",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Allemagne",
-      "user_direction": "—",
-      "klement_direction": "Victoire Allemagne",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "20/06",
-      "match": "Allemagne - Côte d'Ivoire",
-      "home": "Allemagne",
-      "away": "Côte d'Ivoire",
-      "teams_to_review": [
-        "Allemagne"
-      ],
-      "current_score": "2-1",
-      "suggested_score": "3-0",
-      "change": true,
-      "reason": "Allemagne - Curaçao terminé 7-1",
-      "current_home": "2",
-      "current_away": "1",
-      "suggested_home": "3",
-      "suggested_away": "0",
-      "mpp_action": "Sur mpp.football → Allemagne vs Côte d'Ivoire (20/06) → remplace 2-1 par 3-0"
-    },
-    {
-      "date": "20/06",
-      "match": "Équateur - Curaçao",
-      "home": "Équateur",
-      "away": "Curaçao",
-      "teams_to_review": [
-        "Curaçao"
-      ],
-      "current_score": "2-0",
-      "suggested_score": "3-0",
-      "change": true,
-      "reason": "Allemagne - Curaçao terminé 7-1",
-      "current_home": "2",
-      "current_away": "0",
-      "suggested_home": "3",
-      "suggested_away": "0",
-      "mpp_action": "Sur mpp.football → Équateur vs Curaçao (20/06) → remplace 2-0 par 3-0"
-    },
-    {
-      "date": "25/06",
-      "match": "Curaçao - Côte d'Ivoire",
-      "home": "Curaçao",
-      "away": "Côte d'Ivoire",
-      "teams_to_review": [
-        "Curaçao"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": false,
-      "reason": "Allemagne - Curaçao terminé 7-1",
-      "current_home": "0",
-      "current_away": "1",
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "Sur mpp.football → Curaçao vs Côte d'Ivoire (25/06) → garde 0-1 (pas de changement suggéré)"
-    },
-    {
-      "date": "25/06",
-      "match": "Équateur - Allemagne",
-      "home": "Équateur",
-      "away": "Allemagne",
-      "teams_to_review": [
-        "Allemagne"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": false,
-      "reason": "Allemagne - Curaçao terminé 7-1",
-      "current_home": "0",
-      "current_away": "1",
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "Sur mpp.football → Équateur vs Allemagne (25/06) → garde 0-1 (pas de changement suggéré)"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
-    {
-      "key": "Pays-Bas - Japon",
-      "home": "Pays-Bas",
-      "away": "Japon",
-      "date": "14/06",
-      "kickoff_paris": "14/06 à 22:00",
-      "hours_until": 0.7,
-      "hours_label": "dans 42 min",
-      "score": "2-1",
-      "score_home": "2",
-      "score_away": "1",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Pays-Bas vs Japon → mets 2 - 1",
-      "changed": false
-    },
     {
       "key": "Côte d'Ivoire - Équateur",
       "home": "Côte d'Ivoire",
       "away": "Équateur",
       "date": "15/06",
       "kickoff_paris": "15/06 à 01:00",
-      "hours_until": 3.7,
-      "hours_label": "dans 3.7 h",
+      "hours_until": 1.9,
+      "hours_label": "dans 1.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -406,8 +291,8 @@
       "away": "Tunisie",
       "date": "15/06",
       "kickoff_paris": "15/06 à 04:00",
-      "hours_until": 6.7,
-      "hours_label": "dans 6.7 h",
+      "hours_until": 4.9,
+      "hours_label": "dans 4.9 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -421,8 +306,8 @@
       "away": "Cap-Vert",
       "date": "15/06",
       "kickoff_paris": "15/06 à 18:00",
-      "hours_until": 20.7,
-      "hours_label": "dans 20.7 h",
+      "hours_until": 18.9,
+      "hours_label": "dans 18.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -436,8 +321,8 @@
       "away": "Égypte",
       "date": "15/06",
       "kickoff_paris": "15/06 à 21:00",
-      "hours_until": 23.7,
-      "hours_label": "dans 23.7 h",
+      "hours_until": 21.9,
+      "hours_label": "dans 21.9 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -451,8 +336,8 @@
       "away": "Uruguay",
       "date": "16/06",
       "kickoff_paris": "16/06 à 00:00",
-      "hours_until": 26.7,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 24.9,
+      "hours_label": "dans 1 j",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -466,8 +351,8 @@
       "away": "Nouvelle-Zélande",
       "date": "16/06",
       "kickoff_paris": "16/06 à 03:00",
-      "hours_until": 29.7,
-      "hours_label": "dans 1 j 5 h",
+      "hours_until": 27.9,
+      "hours_label": "dans 1 j 3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -481,8 +366,8 @@
       "away": "Sénégal",
       "date": "16/06",
       "kickoff_paris": "16/06 à 21:00",
-      "hours_until": 47.7,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.9,
+      "hours_label": "dans 1 j 21 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -491,18 +376,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Allemagne - Curaçao",
-      "message": "Match joué sans prono dans ta grille (7-1)",
-      "action": "Compléter sur mpp.football pour les prochains matchs"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (6/9 1N/2) devance ta grille (2/9)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
