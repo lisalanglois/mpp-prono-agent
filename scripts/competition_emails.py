@@ -62,7 +62,6 @@ def build_pre_competition_payload(comp: dict) -> dict:
             "score_home": rec["score_home"],
             "score_away": rec["score_away"],
             "klement_override": rec.get("klement_override", False),
-            "recommend_reason": rec.get("reason", ""),
         })
     picks = comp.get("mpp_picks", {})
     days = comp.get("days_until_start", "?")

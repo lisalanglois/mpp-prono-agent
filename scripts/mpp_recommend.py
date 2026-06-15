@@ -16,15 +16,6 @@ def _outcome(score: str) -> str:
     return "draw"
 
 
-def _direction_label(outcome: str | None, home: str, away: str) -> str:
-    if outcome == "home":
-        return f"victoire {home}"
-    if outcome == "away":
-        return f"victoire {away}"
-    if outcome == "draw":
-        return "match nul"
-    return "—"
-
 
 def _get_match(home: str, away: str):
     return next((x for x in MATCHES if x.home == home and x.away == away), None)
@@ -110,12 +101,7 @@ def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
             "score_away": a,
             "source": "klement",
             "klement_override": True,
-            "reason": (
-                f"Klement voit {_direction_label(k_o, home, away)} "
-                f"(ta grille : {_direction_label(user_o, home, away)} {user_score}) "
-                f"→ mets {rec}"
-            ),
-            "mpp_instruction": f"mpp.football → {home} vs {away} → mets {h} - {a}",
+            "mpp_instruction": f"mpp.football → {home} vs {away} → {h} - {a}",
         }
 
     h, a = user_score.split("-")
@@ -129,6 +115,5 @@ def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
         "score_away": a.strip(),
         "source": "grille",
         "klement_override": False,
-        "reason": f"→ mets {user_score} (recopie tel quel)",
-        "mpp_instruction": f"mpp.football → {home} vs {away} → mets {h.strip()} - {a.strip()}",
+        "mpp_instruction": f"mpp.football → {home} vs {away} → {h.strip()} - {a.strip()}",
     }

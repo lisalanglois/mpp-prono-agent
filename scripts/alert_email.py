@@ -195,21 +195,13 @@ def format_email_html(payload: dict) -> str:
     if urgent:
         html += """
         <div style="background:#fff3cd;border:2px solid #c9a227;border-radius:12px;padding:16px;margin:20px 0;">
-          <h3 style="margin:0 0 8px;color:#856404;">⏰ À mettre sur mpp.football — copie-colle</h3>
-          <p style="font-size:13px;color:#856404;margin:0 0 12px;">
-            <strong>Un seul score par match.</strong> Si Klement diverge de ta grille, le mail suit Klement automatiquement.
-          </p>
+          <h3 style="margin:0 0 12px;color:#856404;">⏰ À mettre sur mpp.football</h3>
         """
         for u in urgent:
-            override_tag = " · <strong style='color:#c9a227;'>corrigé Klement</strong>" if u.get("klement_override") else ""
             html += _mpp_match_card(
                 u["home"], u["away"],
                 u["score_home"], u["score_away"],
-                date=f"<strong>{u['hours_label']}</strong> · {u['kickoff_paris']} (Paris){override_tag}",
-                subtitle=f"<strong>{u['mpp_instruction']}</strong><br>{u['note']}",
-                old_h=u.get("user_score", "").split("-")[0] if u.get("klement_override") and u.get("user_score") else None,
-                old_a=u.get("user_score", "").split("-")[1] if u.get("klement_override") and u.get("user_score") and "-" in u.get("user_score", "") else None,
-                highlight=u.get("klement_override") or u.get("changed", False),
+                date=f"<strong>{u['hours_label']}</strong> · {u['kickoff_paris']} (Paris)",
             )
         html += "</div>"
 
@@ -265,16 +257,11 @@ def format_email_html(payload: dict) -> str:
     updates = payload.get("upcoming_updates") or []
     if updates:
         html += "<h3 style='margin-top:24px;'>📋 À mettre sur mpp.football (avant le match)</h3>"
-        html += "<p style='font-size:13px;color:#666;'>Recopie ces scores dans l'app — cases comme ci-dessous :</p>"
         for u in updates:
             html += _mpp_match_card(
                 u["home"], u["away"],
                 u.get("suggested_home", "—"), u.get("suggested_away", "—"),
                 date=f"{u['date']} — match à venir",
-                subtitle=u.get("mpp_action", u.get("reason", "")),
-                old_h=u.get("current_home") if u.get("change") else None,
-                old_a=u.get("current_away") if u.get("change") else None,
-                highlight=u.get("change", False),
             )
 
     alerts = payload.get("new_alerts") or payload.get("alerts") or []
@@ -311,14 +298,10 @@ def format_email_text(payload: dict) -> str:
 
     urgent = payload.get("urgent_mpp") or []
     if urgent:
-        lines.append("⏰ À METTRE SUR mpp.football (copie-colle)")
+        lines.append("⏰ À METTRE SUR mpp.football")
         for u in urgent:
-            tag = " [Klement]" if u.get("klement_override") else ""
-            lines.append(f"\n{u['hours_label'].upper()} · {u['kickoff_paris']} — {u['home']} vs {u['away']}{tag}")
+            lines.append(f"\n{u['hours_label'].upper()} · {u['kickoff_paris']} — {u['home']} vs {u['away']}")
             lines.append(f"   → METS : {u['score_home']} - {u['score_away']}")
-            if u.get("klement_override"):
-                lines.append(f"   (ta grille : {u.get('user_score')} — on suit Klement)")
-            lines.append(f"   {u['note']}")
         lines.append("")
 
     recent = payload.get("recent_results") or []
@@ -347,11 +330,7 @@ def format_email_text(payload: dict) -> str:
         lines.append("── À METTRE SUR mpp.football ──")
         for u in updates:
             lines.append(f"\n📅 {u['date']} — {u['home']} vs {u['away']}")
-            if u.get("change"):
-                lines.append(f"   Remplace {u['current_score']} par → {u['suggested_score']}")
-            else:
-                lines.append(f"   Garde → {u['suggested_score']}")
-            lines.append(f"   {u.get('mpp_action', u.get('reason', ''))}")
+            lines.append(f"   → METS : {u.get('suggested_home', '—')} - {u.get('suggested_away', '—')}")
         lines.append("")
 
     alerts = payload.get("new_alerts") or payload.get("alerts") or []

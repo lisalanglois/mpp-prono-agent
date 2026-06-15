@@ -174,22 +174,10 @@ def enrich_match_row(row: dict) -> dict:
 
 
 def enrich_update(u: dict) -> dict:
-    ch, ca = split_score(u.get("current_score"))
     sh, sa = split_score(u.get("suggested_score"))
-    u["current_home"] = ch
-    u["current_away"] = ca
     u["suggested_home"] = sh
     u["suggested_away"] = sa
-    if u.get("change"):
-        u["mpp_action"] = (
-            f"Sur mpp.football → {u['home']} vs {u['away']} ({u['date']}) "
-            f"→ remplace {ch}-{ca} par {sh}-{sa}"
-        )
-    else:
-        u["mpp_action"] = (
-            f"Sur mpp.football → {u['home']} vs {u['away']} ({u['date']}) "
-            f"→ garde {sh}-{sa} (pas de changement suggéré)"
-        )
+    u["mpp_action"] = f"→ mets {sh} - {sa}"
     return u
 
 
@@ -314,8 +302,6 @@ def build_urgent_mpp(
 
         rec = recommend_mpp_score(home_fr, away_fr, klement)
         score = rec["recommended_score"]
-        note = rec["reason"]
-
         sh, sa = rec["score_home"], rec["score_away"]
         kickoff = datetime.fromisoformat(m["kickoff"].replace("Z", "+00:00"))
         kickoff_paris = kickoff.astimezone(paris)
@@ -334,7 +320,6 @@ def build_urgent_mpp(
             "score_away": sa,
             "user_score": rec.get("user_score"),
             "klement_override": rec.get("klement_override", False),
-            "note": note,
             "mpp_instruction": rec["mpp_instruction"],
             "changed": rec.get("klement_override") or bool(
                 updates_by_key.get(key, {}).get("change")
@@ -596,15 +581,13 @@ def main(
         print(f"\n⏰ {len(urgent)} match(s) à valider sur MPP bientôt:")
         for u in urgent:
             print(f"  {u['hours_label']} · {u['kickoff_paris']} — {u['home']} vs {u['away']}")
-            print(f"       → METS {u['score_home']} - {u['score_away']}  ({u['note']})")
+            print(f"       → METS {u['score_home']} - {u['score_away']}")
 
     updates = payload.get("upcoming_updates") or []
     if updates:
         print(f"\n📋 {len(updates)} prono(s) à revoir avant match:")
         for u in updates:
-            ch = " ← changement" if u["change"] else ""
-            print(f"  {u['date']} {u['match']}: {u['current_score']} → {u['suggested_score']}{ch}")
-            print(f"       {u['reason']}")
+            print(f"  {u['date']} {u['match']}: → METS {u['suggested_score']}")
 
     if payload["alerts"]:
         print(f"\n🔔 {len(payload['alerts'])} alerte(s) ({len(fresh_alerts)} nouvelle(s)):")
