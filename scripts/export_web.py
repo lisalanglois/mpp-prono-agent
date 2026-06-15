@@ -82,6 +82,7 @@ OVERRIDES: dict[str, str] = {
     "Côte d'Ivoire - Équateur": "1-1",
     "Suède - Tunisie": "2-1",
     "Belgique - Égypte": "2-0",
+    "Espagne - Cap-Vert": "2-0",
     "Australie - Turquie": "0-2",
     "Pays-Bas - Japon": "2-1",
     "Uruguay - Espagne": "0-2",
@@ -97,7 +98,7 @@ OVERRIDES: dict[str, str] = {
 EXTRA = [
     ("15/06", "Côte d'Ivoire", "Équateur", "1-1"),
     ("15/06", "Suède", "Tunisie", "2-1"),
-    ("15/06", "Espagne", "Cap-Vert", "3-0"),
+    ("15/06", "Espagne", "Cap-Vert", "2-0"),
     ("15/06", "Belgique", "Égypte", "2-0"),
     ("14/06", "Australie", "Turquie", "0-2"),
     ("14/06", "Allemagne", "Curaçao", "3-0"),
