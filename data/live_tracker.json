@@ -1,53 +1,22 @@
 {
-  "updated_at": "2026-06-15T07:13:38.925166+00:00",
+  "updated_at": "2026-06-15T07:23:20.242543+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
     "played": 12,
-    "user_1n2": 3,
-    "user_exact": 1,
-    "model_1n2": 4,
+    "user_1n2": 5,
+    "user_exact": 2,
+    "model_1n2": 5,
     "klement_1n2": 7,
-    "user_1n2_pct": 25.0,
-    "model_1n2_pct": 33.3,
+    "user_1n2_pct": 41.7,
+    "model_1n2_pct": 41.7,
     "klement_1n2_pct": 58.3,
-    "user_exact_pct": 8.3
+    "user_exact_pct": 16.7
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
   "klement_winner_pick": "Pays-Bas",
-  "alerts": [
-    {
-      "level": "warning",
-      "match": "Qatar - Suisse",
-      "message": "Match joué sans prono dans ta grille (1-1)",
-      "action": "Compléter sur mpp.football pour les prochains matchs"
-    },
-    {
-      "level": "warning",
-      "match": "Haïti - Écosse",
-      "message": "Match joué sans prono dans ta grille (0-1)",
-      "action": "Compléter sur mpp.football pour les prochains matchs"
-    },
-    {
-      "level": "warning",
-      "match": "Australie - Türkiye",
-      "message": "Match joué sans prono dans ta grille (2-0)",
-      "action": "Compléter sur mpp.football pour les prochains matchs"
-    },
-    {
-      "level": "warning",
-      "match": "Allemagne - Curaçao",
-      "message": "Match joué sans prono dans ta grille (7-1)",
-      "action": "Compléter sur mpp.football pour les prochains matchs"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (7/12 1N/2) devance ta grille (3/12)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ],
+  "alerts": [],
   "matches": [
     {
       "key": "Mexique - Afrique du Sud",
@@ -151,9 +120,9 @@
       "away": "Suisse",
       "actual_score": "1-1",
       "actual_outcome": "draw",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
+      "user_score": "0-1",
+      "user_outcome": "away",
+      "user_1n2": false,
       "user_exact": false,
       "model_outcome": "away",
       "model_1n2": false,
@@ -161,13 +130,13 @@
       "klement_1n2": false,
       "actual_home": "1",
       "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
+      "user_home": "0",
+      "user_away": "1",
       "actual_direction": "Match nul",
-      "user_direction": "—",
+      "user_direction": "Victoire Suisse",
       "klement_direction": "Victoire Suisse",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     },
     {
       "key": "Brésil - Maroc",
@@ -199,47 +168,47 @@
       "away": "Écosse",
       "actual_score": "0-1",
       "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
+      "user_score": "0-1",
+      "user_outcome": "away",
+      "user_1n2": true,
+      "user_exact": true,
       "model_outcome": "away",
       "model_1n2": true,
       "klement_outcome": "away",
       "klement_1n2": true,
       "actual_home": "0",
       "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
+      "user_home": "0",
+      "user_away": "1",
       "actual_direction": "Victoire Écosse",
-      "user_direction": "—",
+      "user_direction": "Victoire Écosse",
       "klement_direction": "Victoire Écosse",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction · Score exact de Lisa !"
     },
     {
-      "key": "Australie - Türkiye",
+      "key": "Australie - Turquie",
       "home": "Australie",
-      "away": "Türkiye",
+      "away": "Turquie",
       "actual_score": "2-0",
       "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
+      "user_score": "0-2",
+      "user_outcome": "away",
+      "user_1n2": false,
       "user_exact": false,
-      "model_outcome": "draw",
+      "model_outcome": "away",
       "model_1n2": false,
       "klement_outcome": "draw",
       "klement_1n2": false,
       "actual_home": "2",
       "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
+      "user_home": "0",
+      "user_away": "2",
       "actual_direction": "Victoire Australie",
-      "user_direction": "—",
+      "user_direction": "Victoire Turquie",
       "klement_direction": "Match nul",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     },
     {
       "key": "Allemagne - Curaçao",
@@ -247,23 +216,23 @@
       "away": "Curaçao",
       "actual_score": "7-1",
       "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
+      "user_score": "3-0",
+      "user_outcome": "home",
+      "user_1n2": true,
       "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
+      "model_outcome": "home",
+      "model_1n2": true,
       "klement_outcome": "home",
       "klement_1n2": true,
       "actual_home": "7",
       "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
+      "user_home": "3",
+      "user_away": "0",
       "actual_direction": "Victoire Allemagne",
-      "user_direction": "—",
+      "user_direction": "Victoire Allemagne",
       "klement_direction": "Victoire Allemagne",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     },
     {
       "key": "Pays-Bas - Japon",
@@ -338,105 +307,9 @@
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Suède - Tunisie"
-  ],
-  "recent_results": [
-    {
-      "key": "Suède - Tunisie",
-      "home": "Suède",
-      "away": "Tunisie",
-      "actual_score": "5-1",
-      "actual_outcome": "home",
-      "user_score": "2-1",
-      "user_outcome": "home",
-      "user_1n2": true,
-      "user_exact": false,
-      "model_outcome": "home",
-      "model_1n2": true,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "5",
-      "actual_away": "1",
-      "user_home": "2",
-      "user_away": "1",
-      "actual_direction": "Victoire Suède",
-      "user_direction": "Victoire Suède",
-      "klement_direction": "Victoire Suède",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "20/06",
-      "match": "Pays-Bas - Suède",
-      "home": "Pays-Bas",
-      "away": "Suède",
-      "teams_to_review": [
-        "Suède"
-      ],
-      "current_score": "2-1",
-      "suggested_score": "2-1",
-      "change": false,
-      "reason": "Suède - Tunisie terminé 5-1",
-      "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 2 - 1"
-    },
-    {
-      "date": "20/06",
-      "match": "Tunisie - Japon",
-      "home": "Tunisie",
-      "away": "Japon",
-      "teams_to_review": [
-        "Tunisie"
-      ],
-      "current_score": "0-2",
-      "suggested_score": "0-2",
-      "change": false,
-      "reason": "Suède - Tunisie terminé 5-1",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "2",
-      "mpp_action": "→ mets 0 - 2"
-    },
-    {
-      "date": "26/06",
-      "match": "Japon - Suède",
-      "home": "Japon",
-      "away": "Suède",
-      "teams_to_review": [
-        "Suède"
-      ],
-      "current_score": "1-0",
-      "suggested_score": "1-0",
-      "change": true,
-      "reason": "Suède - Tunisie terminé 5-1",
-      "klement_override": true,
-      "suggested_home": "1",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 1 - 0"
-    },
-    {
-      "date": "26/06",
-      "match": "Tunisie - Pays-Bas",
-      "home": "Tunisie",
-      "away": "Pays-Bas",
-      "teams_to_review": [
-        "Tunisie"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": false,
-      "reason": "Suède - Tunisie terminé 5-1",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 0 - 1"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
     {
       "key": "Espagne - Cap-Vert",
@@ -444,15 +317,15 @@
       "away": "Cap-Vert",
       "date": "15/06",
       "kickoff_paris": "15/06 à 18:00",
-      "hours_until": 8.8,
-      "hours_label": "dans 8.8 h",
-      "score": "2-0",
-      "score_home": "2",
+      "hours_until": 8.6,
+      "hours_label": "dans 8.6 h",
+      "score": "3-0",
+      "score_home": "3",
       "score_away": "0",
-      "user_score": "1-1",
-      "klement_override": true,
-      "mpp_instruction": "mpp.football → Espagne vs Cap-Vert → 2 - 0",
-      "changed": true
+      "user_score": "3-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Espagne vs Cap-Vert → 3 - 0",
+      "changed": false
     },
     {
       "key": "Belgique - Égypte",
@@ -460,8 +333,8 @@
       "away": "Égypte",
       "date": "15/06",
       "kickoff_paris": "15/06 à 21:00",
-      "hours_until": 11.8,
-      "hours_label": "dans 11.8 h",
+      "hours_until": 11.6,
+      "hours_label": "dans 11.6 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -476,8 +349,8 @@
       "away": "Uruguay",
       "date": "16/06",
       "kickoff_paris": "16/06 à 00:00",
-      "hours_until": 14.8,
-      "hours_label": "dans 14.8 h",
+      "hours_until": 14.6,
+      "hours_label": "dans 14.6 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -492,8 +365,8 @@
       "away": "Nouvelle-Zélande",
       "date": "16/06",
       "kickoff_paris": "16/06 à 03:00",
-      "hours_until": 17.8,
-      "hours_label": "dans 17.8 h",
+      "hours_until": 17.6,
+      "hours_label": "dans 17.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -508,7 +381,7 @@
       "away": "Sénégal",
       "date": "16/06",
       "kickoff_paris": "16/06 à 21:00",
-      "hours_until": 35.8,
+      "hours_until": 35.6,
       "hours_label": "dans 1 j 11 h",
       "score": "2-0",
       "score_home": "2",
@@ -524,7 +397,7 @@
       "away": "Norvège",
       "date": "17/06",
       "kickoff_paris": "17/06 à 00:00",
-      "hours_until": 38.8,
+      "hours_until": 38.6,
       "hours_label": "dans 1 j 14 h",
       "score": "0-2",
       "score_home": "0",
@@ -540,7 +413,7 @@
       "away": "Algérie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 03:00",
-      "hours_until": 41.8,
+      "hours_until": 41.6,
       "hours_label": "dans 1 j 17 h",
       "score": "2-0",
       "score_home": "2",
@@ -556,7 +429,7 @@
       "away": "Jordanie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 06:00",
-      "hours_until": 44.8,
+      "hours_until": 44.6,
       "hours_label": "dans 1 j 20 h",
       "score": "2-0",
       "score_home": "2",
@@ -567,12 +440,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (7/12 1N/2) devance ta grille (3/12)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }

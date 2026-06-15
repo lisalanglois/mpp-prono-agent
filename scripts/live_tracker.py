@@ -38,7 +38,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from alert_email import send_alert_email, load_config
-from export_web import OVERRIDES
+from export_web import get_user_score, match_key
 from mpp_recommend import recommend_mpp_score
 from mpp.competitions import get_active_competition, parse_comp_date
 from mpp.data.espn import fetch_finished_since, fetch_upcoming_within
@@ -226,7 +226,7 @@ def build_upcoming_updates(
 
         rec = recommend_mpp_score(m.home, m.away, klement)
         suggested = rec["recommended_score"]
-        current = OVERRIDES.get(key, suggested)
+        current = get_user_score(m.home, m.away) or suggested
         reasons = [trigger_reason.get(t, f"{t} : résultat récent à prendre en compte") for t in sorted(involved)]
 
         if current == suggested and len(involved) == 0:
@@ -264,7 +264,7 @@ def build_trigger_reasons(rows: list[dict], new_keys: set[str]) -> dict[str, str
 
 
 def model_predict(home: str, away: str) -> str:
-    score = OVERRIDES.get(f"{home} - {away}", model_score(home, away))
+    score = get_user_score(home, away) or model_score(home, away)
     return score_outcome(score)
 
 
@@ -373,8 +373,8 @@ def build_alerts(rows: list[dict], klement: dict) -> list[dict]:
             alerts.append({
                 "level": "warning",
                 "match": row["key"],
-                "message": f"Match joué sans prono dans ta grille ({row['actual_score']})",
-                "action": "Compléter sur mpp.football pour les prochains matchs",
+                "message": f"Score non suivi par le tracker pour {row['key']} ({row['actual_score']})",
+                "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)",
             })
 
     if user_wrong_streak >= 3:
@@ -435,7 +435,7 @@ def run_tracker(state: dict | None = None, comp: dict | None = None) -> dict:
         act = actual_score(m)
         act_o = outcome(int(m["home_goals"]), int(m["away_goals"]))
 
-        user_score = OVERRIDES.get(key)
+        user_score = get_user_score(home_fr, away_fr)
         user_o = score_outcome(user_score) if user_score else None
         model_o = model_predict(home_fr, away_fr)
         klement_o = klement_predict(key, home_fr, away_fr, klement)

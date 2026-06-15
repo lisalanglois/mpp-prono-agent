@@ -123,6 +123,8 @@ EN_TO_FR: dict[str, str] = {
     "Netherlands": "Pays-Bas",
     "Sweden": "Suède",
     "Turkey": "Turquie",
+    "Türkiye": "Turquie",
+    "Turkiye": "Turquie",
     "Australia": "Australie",
     "Spain": "Espagne",
     "Poland": "Pologne",

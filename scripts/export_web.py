@@ -12,8 +12,37 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from mpp_grille_cdm import MATCHES, analyze
 
+# Noms canoniques (ESPN / MPP peuvent varier)
+TEAM_CANONICAL: dict[str, str] = {
+    "Türkiye": "Turquie",
+    "Turkiye": "Turquie",
+}
+
+
+def canonical_team(name: str) -> str:
+    return TEAM_CANONICAL.get(name.strip(), name.strip())
+
+
+def match_key(home: str, away: str) -> str:
+    return f"{canonical_team(home)} - {canonical_team(away)}"
+
+
+def get_user_score(home: str, away: str) -> str | None:
+    """Score Lisa — OVERRIDES puis EXTRA (grille site)."""
+    key = match_key(home, away)
+    if key in OVERRIDES:
+        return OVERRIDES[key]
+    for _date, h, a, score in EXTRA:
+        if match_key(h, a) == key:
+            return score
+    return None
+
+
 # Corrections manuelles (meilleur ratio MPP)
 OVERRIDES: dict[str, str] = {
+    "Qatar - Suisse": "0-1",
+    "Haïti - Écosse": "0-1",
+    "Allemagne - Curaçao": "3-0",
     "Mexique - Afrique du Sud": "2-0",
     "Corée du Sud - Tchéquie": "1-1",
     "France - Sénégal": "2-0",

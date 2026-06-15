@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from export_web import OVERRIDES
+from export_web import get_user_score, match_key
 from mpp_grille_cdm import MATCHES, _with_odds, analyze
 from mpp.models.poisson import score_matrix, top_exact_scores
 
@@ -73,8 +73,8 @@ def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
     Un seul score à mettre sur mpp.football.
     Klement corrige surtout quand ta grille dit nul mais Klement voit un favori.
     """
-    key = f"{home} - {away}"
-    user_score = OVERRIDES.get(key) or _model_score(home, away)
+    key = match_key(home, away)
+    user_score = get_user_score(home, away) or _model_score(home, away)
     user_o = _outcome(user_score)
     k_o = klement_outcome(key, home, away, klement)
 
