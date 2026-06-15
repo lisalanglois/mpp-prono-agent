@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-15T03:29:22.560663+00:00",
+  "updated_at": "2026-06-15T07:13:38.925166+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 11,
-    "user_1n2": 2,
+    "played": 12,
+    "user_1n2": 3,
     "user_exact": 1,
-    "model_1n2": 3,
-    "klement_1n2": 6,
-    "user_1n2_pct": 18.2,
-    "model_1n2_pct": 27.3,
-    "klement_1n2_pct": 54.5,
-    "user_exact_pct": 9.1
+    "model_1n2": 4,
+    "klement_1n2": 7,
+    "user_1n2_pct": 25.0,
+    "model_1n2_pct": 33.3,
+    "klement_1n2_pct": 58.3,
+    "user_exact_pct": 8.3
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -44,7 +44,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (6/11 1N/2) devance ta grille (2/11)",
+      "message": "Klement (7/12 1N/2) devance ta grille (3/12)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -312,109 +312,129 @@
       "klement_direction": "Victoire Équateur",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+    },
+    {
+      "key": "Suède - Tunisie",
+      "home": "Suède",
+      "away": "Tunisie",
+      "actual_score": "5-1",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "5",
+      "actual_away": "1",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Suède",
+      "user_direction": "Victoire Suède",
+      "klement_direction": "Victoire Suède",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
   "new_finished_keys": [
-    "Côte d'Ivoire - Équateur"
+    "Suède - Tunisie"
   ],
   "recent_results": [
     {
-      "key": "Côte d'Ivoire - Équateur",
-      "home": "Côte d'Ivoire",
-      "away": "Équateur",
-      "actual_score": "1-0",
+      "key": "Suède - Tunisie",
+      "home": "Suède",
+      "away": "Tunisie",
+      "actual_score": "5-1",
       "actual_outcome": "home",
-      "user_score": "1-1",
-      "user_outcome": "draw",
-      "user_1n2": false,
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
       "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": false,
-      "actual_home": "1",
-      "actual_away": "0",
-      "user_home": "1",
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "5",
+      "actual_away": "1",
+      "user_home": "2",
       "user_away": "1",
-      "actual_direction": "Victoire Côte d'Ivoire",
-      "user_direction": "Match nul",
-      "klement_direction": "Victoire Équateur",
+      "actual_direction": "Victoire Suède",
+      "user_direction": "Victoire Suède",
+      "klement_direction": "Victoire Suède",
       "direction_winner": "égalité",
-      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
   "upcoming_updates": [
     {
       "date": "20/06",
-      "match": "Allemagne - Côte d'Ivoire",
-      "home": "Allemagne",
-      "away": "Côte d'Ivoire",
+      "match": "Pays-Bas - Suède",
+      "home": "Pays-Bas",
+      "away": "Suède",
       "teams_to_review": [
-        "Côte d'Ivoire"
+        "Suède"
       ],
       "current_score": "2-1",
-      "suggested_score": "3-0",
-      "change": true,
-      "reason": "Côte d'Ivoire - Équateur terminé 1-0 (ton 1/N/2 incorrect)",
-      "current_home": "2",
-      "current_away": "1",
-      "suggested_home": "3",
-      "suggested_away": "0",
-      "mpp_action": "Sur mpp.football → Allemagne vs Côte d'Ivoire (20/06) → remplace 2-1 par 3-0"
+      "suggested_score": "2-1",
+      "change": false,
+      "reason": "Suède - Tunisie terminé 5-1",
+      "klement_override": false,
+      "suggested_home": "2",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 2 - 1"
     },
     {
       "date": "20/06",
-      "match": "Équateur - Curaçao",
-      "home": "Équateur",
-      "away": "Curaçao",
+      "match": "Tunisie - Japon",
+      "home": "Tunisie",
+      "away": "Japon",
       "teams_to_review": [
-        "Équateur"
+        "Tunisie"
       ],
-      "current_score": "2-0",
-      "suggested_score": "3-0",
+      "current_score": "0-2",
+      "suggested_score": "0-2",
+      "change": false,
+      "reason": "Suède - Tunisie terminé 5-1",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "2",
+      "mpp_action": "→ mets 0 - 2"
+    },
+    {
+      "date": "26/06",
+      "match": "Japon - Suède",
+      "home": "Japon",
+      "away": "Suède",
+      "teams_to_review": [
+        "Suède"
+      ],
+      "current_score": "1-0",
+      "suggested_score": "1-0",
       "change": true,
-      "reason": "Côte d'Ivoire - Équateur terminé 1-0 (ton 1/N/2 incorrect)",
-      "current_home": "2",
-      "current_away": "0",
-      "suggested_home": "3",
+      "reason": "Suède - Tunisie terminé 5-1",
+      "klement_override": true,
+      "suggested_home": "1",
       "suggested_away": "0",
-      "mpp_action": "Sur mpp.football → Équateur vs Curaçao (20/06) → remplace 2-0 par 3-0"
+      "mpp_action": "→ mets 1 - 0"
     },
     {
-      "date": "25/06",
-      "match": "Curaçao - Côte d'Ivoire",
-      "home": "Curaçao",
-      "away": "Côte d'Ivoire",
+      "date": "26/06",
+      "match": "Tunisie - Pays-Bas",
+      "home": "Tunisie",
+      "away": "Pays-Bas",
       "teams_to_review": [
-        "Côte d'Ivoire"
+        "Tunisie"
       ],
       "current_score": "0-1",
       "suggested_score": "0-1",
       "change": false,
-      "reason": "Côte d'Ivoire - Équateur terminé 1-0 (ton 1/N/2 incorrect)",
-      "current_home": "0",
-      "current_away": "1",
+      "reason": "Suède - Tunisie terminé 5-1",
+      "klement_override": false,
       "suggested_home": "0",
       "suggested_away": "1",
-      "mpp_action": "Sur mpp.football → Curaçao vs Côte d'Ivoire (25/06) → garde 0-1 (pas de changement suggéré)"
-    },
-    {
-      "date": "25/06",
-      "match": "Équateur - Allemagne",
-      "home": "Équateur",
-      "away": "Allemagne",
-      "teams_to_review": [
-        "Équateur"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": false,
-      "reason": "Côte d'Ivoire - Équateur terminé 1-0 (ton 1/N/2 incorrect)",
-      "current_home": "0",
-      "current_away": "1",
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "Sur mpp.football → Équateur vs Allemagne (25/06) → garde 0-1 (pas de changement suggéré)"
+      "mpp_action": "→ mets 0 - 1"
     }
   ],
   "urgent_mpp": [
@@ -424,14 +444,15 @@
       "away": "Cap-Vert",
       "date": "15/06",
       "kickoff_paris": "15/06 à 18:00",
-      "hours_until": 12.5,
-      "hours_label": "dans 12.5 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Espagne vs Cap-Vert → mets 1 - 1",
-      "changed": false
+      "hours_until": 8.8,
+      "hours_label": "dans 8.8 h",
+      "score": "2-0",
+      "score_home": "2",
+      "score_away": "0",
+      "user_score": "1-1",
+      "klement_override": true,
+      "mpp_instruction": "mpp.football → Espagne vs Cap-Vert → 2 - 0",
+      "changed": true
     },
     {
       "key": "Belgique - Égypte",
@@ -439,13 +460,14 @@
       "away": "Égypte",
       "date": "15/06",
       "kickoff_paris": "15/06 à 21:00",
-      "hours_until": 15.5,
-      "hours_label": "dans 15.5 h",
+      "hours_until": 11.8,
+      "hours_label": "dans 11.8 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Belgique vs Égypte → mets 2 - 0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Belgique vs Égypte → 2 - 0",
       "changed": false
     },
     {
@@ -454,13 +476,14 @@
       "away": "Uruguay",
       "date": "16/06",
       "kickoff_paris": "16/06 à 00:00",
-      "hours_until": 18.5,
-      "hours_label": "dans 18.5 h",
+      "hours_until": 14.8,
+      "hours_label": "dans 14.8 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Arabie saoudite vs Uruguay → mets 0 - 1",
+      "user_score": "0-1",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Arabie saoudite vs Uruguay → 0 - 1",
       "changed": false
     },
     {
@@ -469,13 +492,14 @@
       "away": "Nouvelle-Zélande",
       "date": "16/06",
       "kickoff_paris": "16/06 à 03:00",
-      "hours_until": 21.5,
-      "hours_label": "dans 21.5 h",
+      "hours_until": 17.8,
+      "hours_label": "dans 17.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Iran vs Nouvelle-Zélande → mets 1 - 1",
+      "user_score": "1-1",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Iran vs Nouvelle-Zélande → 1 - 1",
       "changed": false
     },
     {
@@ -484,13 +508,14 @@
       "away": "Sénégal",
       "date": "16/06",
       "kickoff_paris": "16/06 à 21:00",
-      "hours_until": 39.5,
-      "hours_label": "dans 1 j 15 h",
+      "hours_until": 35.8,
+      "hours_label": "dans 1 j 11 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → France vs Sénégal → mets 2 - 0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → France vs Sénégal → 2 - 0",
       "changed": false
     },
     {
@@ -499,13 +524,14 @@
       "away": "Norvège",
       "date": "17/06",
       "kickoff_paris": "17/06 à 00:00",
-      "hours_until": 42.5,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 38.8,
+      "hours_label": "dans 1 j 14 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Irak vs Norvège → mets 0 - 2",
+      "user_score": "0-2",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Irak vs Norvège → 0 - 2",
       "changed": false
     },
     {
@@ -514,13 +540,30 @@
       "away": "Algérie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 03:00",
-      "hours_until": 45.5,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 41.8,
+      "hours_label": "dans 1 j 17 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
-      "note": "Ton prono enregistré — recopie tel quel sur MPP",
-      "mpp_instruction": "Sur mpp.football → Argentine vs Algérie → mets 2 - 0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Argentine vs Algérie → 2 - 0",
+      "changed": false
+    },
+    {
+      "key": "Autriche - Jordanie",
+      "home": "Autriche",
+      "away": "Jordanie",
+      "date": "17/06",
+      "kickoff_paris": "17/06 à 06:00",
+      "hours_until": 44.8,
+      "hours_label": "dans 1 j 20 h",
+      "score": "2-0",
+      "score_home": "2",
+      "score_away": "0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Autriche vs Jordanie → 2 - 0",
       "changed": false
     }
   ],
@@ -528,7 +571,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (6/11 1N/2) devance ta grille (2/11)",
+      "message": "Klement (7/12 1N/2) devance ta grille (3/12)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
