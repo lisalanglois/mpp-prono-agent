@@ -2,6 +2,7 @@
   "sent_alerts": [
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
+    "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
     "warning|Allemagne - Curaçao|Match joué sans prono dans ta grille (7-1)",
     "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
@@ -14,13 +15,14 @@
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
     "Corée du Sud - Tchéquie",
+    "Côte d'Ivoire - Équateur",
     "Haïti - Écosse",
     "Mexique - Afrique du Sud",
     "Pays-Bas - Japon",
     "Qatar - Suisse",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Pays-Bas - Japon|Pays-Bas - Suède:1-0|Tunisie - Japon:0-2|Japon - Suède:1-1|Tunisie - Pays-Bas:0-1",
+  "last_email_fingerprint": "Côte d'Ivoire - Équateur|Allemagne - Côte d'Ivoire:3-0|Équateur - Curaçao:3-0|Curaçao - Côte d'Ivoire:0-1|Équateur - Allemagne:0-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Arabie saoudite - Uruguay",
@@ -31,6 +33,7 @@
     "Côte d'Ivoire - Équateur",
     "Espagne - Cap-Vert",
     "Haïti - Écosse",
+    "Iran - Nouvelle-Zélande",
     "Pays-Bas - Japon",
     "Qatar - Suisse",
     "Suède - Tunisie",
