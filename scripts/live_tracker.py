@@ -39,6 +39,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 from alert_email import send_alert_email, load_config
 from export_web import OVERRIDES
+from mpp_recommend import recommend_mpp_score
 from mpp.competitions import get_active_competition, parse_comp_date
 from mpp.data.espn import fetch_finished_since, fetch_upcoming_within
 from mpp.data.team_aliases import to_french
@@ -219,6 +220,7 @@ def build_upcoming_updates(
     affected_teams: set[str],
     played_keys: set[str],
     trigger_reason: dict[str, str],
+    klement: dict,
 ) -> list[dict]:
     """Pronos futurs à revoir : date, équipes, score actuel vs suggéré."""
     today = date.today()
@@ -234,7 +236,8 @@ def build_upcoming_updates(
         if not involved:
             continue
 
-        suggested = model_score(m.home, m.away)
+        rec = recommend_mpp_score(m.home, m.away, klement)
+        suggested = rec["recommended_score"]
         current = OVERRIDES.get(key, suggested)
         reasons = [trigger_reason.get(t, f"{t} : résultat récent à prendre en compte") for t in sorted(involved)]
 
@@ -249,8 +252,9 @@ def build_upcoming_updates(
             "teams_to_review": sorted(involved),
             "current_score": current,
             "suggested_score": suggested,
-            "change": current != suggested,
-            "reason": " · ".join(reasons),
+            "change": current != suggested or rec.get("klement_override"),
+            "reason": " · ".join(reasons) if reasons else rec.get("reason", ""),
+            "klement_override": rec.get("klement_override"),
         }))
 
     return sorted(updates, key=lambda u: (parse_match_date(u["date"]), u["match"]))
@@ -299,6 +303,8 @@ def build_urgent_mpp(
     urgent: list[dict] = []
     paris = ZoneInfo("Europe/Paris")
 
+    klement = load_klement()
+
     for m in fetch_upcoming_within(hours=hours, espn_path=espn_path):
         home_fr = to_french(m["home"])
         away_fr = to_french(m["away"])
@@ -306,15 +312,11 @@ def build_urgent_mpp(
         if key in played_keys:
             continue
 
-        upd = updates_by_key.get(key)
-        if upd and upd.get("change"):
-            score = upd["suggested_score"]
-            note = "Score ajusté après les derniers résultats"
-        else:
-            score = OVERRIDES.get(key) or model_score(home_fr, away_fr)
-            note = "Ton prono enregistré — recopie tel quel sur MPP"
+        rec = recommend_mpp_score(home_fr, away_fr, klement)
+        score = rec["recommended_score"]
+        note = rec["reason"]
 
-        sh, sa = split_score(score)
+        sh, sa = rec["score_home"], rec["score_away"]
         kickoff = datetime.fromisoformat(m["kickoff"].replace("Z", "+00:00"))
         kickoff_paris = kickoff.astimezone(paris)
         h_until = m.get("hours_until", 0)
@@ -330,12 +332,13 @@ def build_urgent_mpp(
             "score": score,
             "score_home": sh,
             "score_away": sa,
+            "user_score": rec.get("user_score"),
+            "klement_override": rec.get("klement_override", False),
             "note": note,
-            "mpp_instruction": (
-                f"Sur mpp.football → {home_fr} vs {away_fr} "
-                f"→ mets {sh} - {sa}"
+            "mpp_instruction": rec["mpp_instruction"],
+            "changed": rec.get("klement_override") or bool(
+                updates_by_key.get(key, {}).get("change")
             ),
-            "changed": bool(upd and upd.get("change")),
         })
 
     return urgent
@@ -475,7 +478,7 @@ def run_tracker(state: dict | None = None, comp: dict | None = None) -> dict:
     trigger_reasons = build_trigger_reasons(rows, new_keys)
     affected_teams = teams_from_new_results(rows, new_keys)
     upcoming_updates = (
-        build_upcoming_updates(affected_teams, current_keys, trigger_reasons)
+        build_upcoming_updates(affected_teams, current_keys, trigger_reasons, klement)
         if new_keys
         else []
     )

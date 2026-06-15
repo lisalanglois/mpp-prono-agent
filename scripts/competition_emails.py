@@ -47,9 +47,23 @@ def _send_raw(subject: str, text: str, html: str) -> bool:
 def build_pre_competition_payload(comp: dict) -> dict:
     _ensure_paths()
     from mpp.competitions import comp_urls, grid_to_rows, parse_comp_date
+    from mpp_recommend import recommend_mpp_score
+
+    klement_path = ROOT / "data" / "klement_predictions.json"
+    klement = json.loads(klement_path.read_text()) if klement_path.exists() else {}
 
     urls = comp_urls(comp)
-    rows = grid_to_rows(comp)
+    rows = []
+    for r in grid_to_rows(comp):
+        rec = recommend_mpp_score(r["home"], r["away"], klement)
+        rows.append({
+            **r,
+            "score": rec["recommended_score"],
+            "score_home": rec["score_home"],
+            "score_away": rec["score_away"],
+            "klement_override": rec.get("klement_override", False),
+            "recommend_reason": rec.get("reason", ""),
+        })
     picks = comp.get("mpp_picks", {})
     days = comp.get("days_until_start", "?")
 
