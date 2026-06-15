@@ -19,6 +19,14 @@ on:
         description: "Forcer email J-7 (id compétition, ex. cdm2026)"
         type: string
         default: ""
+      send_bonus_questions:
+        description: "Envoyer les réponses questions bonus MPP"
+        type: boolean
+        default: false
+      bonus_email_to:
+        description: "Destinataire(s) bonus, séparés par des virgules (optionnel)"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -49,7 +57,14 @@ jobs:
           MPP_ALERT_EMAILS: ${{ secrets.MPP_ALERT_EMAILS }}
         run: |
           PRE="${{ github.event.inputs.force_pre_comp }}"
-          if [ -n "$PRE" ]; then
+          BONUS_TO="${{ github.event.inputs.bonus_email_to }}"
+          if [ "${{ github.event.inputs.send_bonus_questions }}" = "true" ]; then
+            ARGS=""
+            if [ -n "$BONUS_TO" ]; then
+              ARGS="--to $BONUS_TO"
+            fi
+            python scripts/send_bonus_questions_email.py $ARGS
+          elif [ -n "$PRE" ]; then
             python scripts/mpp_scheduler.py --pre-comp "$PRE" --email
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_test_email }}" = "true" ]; then
             python scripts/mpp_scheduler.py --email
