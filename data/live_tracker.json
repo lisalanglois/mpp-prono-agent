@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-16T03:26:32.149560+00:00",
+  "updated_at": "2026-06-16T09:20:44.238586+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -422,198 +422,9 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Arabie saoudite - Uruguay",
-    "Iran - Nouvelle-Zélande"
-  ],
-  "recent_results": [
-    {
-      "key": "Arabie saoudite - Uruguay",
-      "home": "Arabie saoudite",
-      "away": "Uruguay",
-      "actual_score": "1-1",
-      "actual_outcome": "draw",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "away",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": false,
-      "actual_home": "1",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Match nul",
-      "user_direction": "—",
-      "klement_direction": "Victoire Uruguay",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
-    },
-    {
-      "key": "Iran - Nouvelle-Zélande",
-      "home": "Iran",
-      "away": "Nouvelle-Zélande",
-      "actual_score": "2-2",
-      "actual_outcome": "draw",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": true,
-      "klement_outcome": "draw",
-      "klement_1n2": true,
-      "actual_home": "2",
-      "actual_away": "2",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Match nul",
-      "user_direction": "—",
-      "klement_direction": "Match nul",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "20/06",
-      "match": "Espagne - Arabie saoudite",
-      "home": "Espagne",
-      "away": "Arabie saoudite",
-      "teams_to_review": [
-        "Arabie saoudite"
-      ],
-      "current_score": "3-0",
-      "suggested_score": "3-0",
-      "change": false,
-      "reason": "Arabie saoudite - Uruguay terminé 1-1",
-      "klement_override": false,
-      "suggested_home": "3",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 3 - 0"
-    },
-    {
-      "date": "22/06",
-      "match": "Belgique - Iran",
-      "home": "Belgique",
-      "away": "Iran",
-      "teams_to_review": [
-        "Iran"
-      ],
-      "current_score": "2-0",
-      "suggested_score": "2-0",
-      "change": false,
-      "reason": "Iran - Nouvelle-Zélande terminé 2-2",
-      "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 2 - 0"
-    },
-    {
-      "date": "22/06",
-      "match": "Nouvelle-Zélande - Égypte",
-      "home": "Nouvelle-Zélande",
-      "away": "Égypte",
-      "teams_to_review": [
-        "Nouvelle-Zélande"
-      ],
-      "current_score": "0-2",
-      "suggested_score": "0-2",
-      "change": false,
-      "reason": "Iran - Nouvelle-Zélande terminé 2-2",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "2",
-      "mpp_action": "→ mets 0 - 2"
-    },
-    {
-      "date": "22/06",
-      "match": "Uruguay - Cap-Vert",
-      "home": "Uruguay",
-      "away": "Cap-Vert",
-      "teams_to_review": [
-        "Uruguay"
-      ],
-      "current_score": "2-0",
-      "suggested_score": "2-0",
-      "change": false,
-      "reason": "Arabie saoudite - Uruguay terminé 1-1",
-      "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 2 - 0"
-    },
-    {
-      "date": "27/06",
-      "match": "Cap-Vert - Arabie saoudite",
-      "home": "Cap-Vert",
-      "away": "Arabie saoudite",
-      "teams_to_review": [
-        "Arabie saoudite"
-      ],
-      "current_score": "1-1",
-      "suggested_score": "1-1",
-      "change": false,
-      "reason": "Arabie saoudite - Uruguay terminé 1-1",
-      "klement_override": false,
-      "suggested_home": "1",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 1 - 1"
-    },
-    {
-      "date": "27/06",
-      "match": "Uruguay - Espagne",
-      "home": "Uruguay",
-      "away": "Espagne",
-      "teams_to_review": [
-        "Uruguay"
-      ],
-      "current_score": "0-2",
-      "suggested_score": "0-2",
-      "change": false,
-      "reason": "Arabie saoudite - Uruguay terminé 1-1",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "2",
-      "mpp_action": "→ mets 0 - 2"
-    },
-    {
-      "date": "28/06",
-      "match": "Nouvelle-Zélande - Belgique",
-      "home": "Nouvelle-Zélande",
-      "away": "Belgique",
-      "teams_to_review": [
-        "Nouvelle-Zélande"
-      ],
-      "current_score": "0-3",
-      "suggested_score": "0-3",
-      "change": false,
-      "reason": "Iran - Nouvelle-Zélande terminé 2-2",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "3",
-      "mpp_action": "→ mets 0 - 3"
-    },
-    {
-      "date": "28/06",
-      "match": "Égypte - Iran",
-      "home": "Égypte",
-      "away": "Iran",
-      "teams_to_review": [
-        "Iran"
-      ],
-      "current_score": "2-1",
-      "suggested_score": "2-1",
-      "change": false,
-      "reason": "Iran - Nouvelle-Zélande terminé 2-2",
-      "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 2 - 1"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
     {
       "key": "France - Sénégal",
@@ -621,8 +432,8 @@
       "away": "Sénégal",
       "date": "16/06",
       "kickoff_paris": "16/06 à 21:00",
-      "hours_until": 15.6,
-      "hours_label": "dans 15.6 h",
+      "hours_until": 9.7,
+      "hours_label": "dans 9.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -637,8 +448,8 @@
       "away": "Norvège",
       "date": "17/06",
       "kickoff_paris": "17/06 à 00:00",
-      "hours_until": 18.6,
-      "hours_label": "dans 18.6 h",
+      "hours_until": 12.7,
+      "hours_label": "dans 12.7 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -653,8 +464,8 @@
       "away": "Algérie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 03:00",
-      "hours_until": 21.6,
-      "hours_label": "dans 21.6 h",
+      "hours_until": 15.7,
+      "hours_label": "dans 15.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -669,8 +480,8 @@
       "away": "Jordanie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 06:00",
-      "hours_until": 24.6,
-      "hours_label": "dans 1 j",
+      "hours_until": 18.7,
+      "hours_label": "dans 18.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -685,8 +496,8 @@
       "away": "RD Congo",
       "date": "17/06",
       "kickoff_paris": "17/06 à 19:00",
-      "hours_until": 37.6,
-      "hours_label": "dans 1 j 13 h",
+      "hours_until": 31.7,
+      "hours_label": "dans 1 j 7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -701,8 +512,8 @@
       "away": "Croatie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 22:00",
-      "hours_until": 40.6,
-      "hours_label": "dans 1 j 16 h",
+      "hours_until": 34.7,
+      "hours_label": "dans 1 j 10 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -717,8 +528,8 @@
       "away": "Panama",
       "date": "18/06",
       "kickoff_paris": "18/06 à 01:00",
-      "hours_until": 43.6,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 37.7,
+      "hours_label": "dans 1 j 13 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -733,8 +544,8 @@
       "away": "Colombie",
       "date": "18/06",
       "kickoff_paris": "18/06 à 04:00",
-      "hours_until": 46.6,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 40.7,
+      "hours_label": "dans 1 j 16 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -744,24 +555,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Arabie saoudite - Uruguay",
-      "message": "Score non suivi par le tracker pour Arabie saoudite - Uruguay (1-1)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "warning",
-      "match": "Iran - Nouvelle-Zélande",
-      "message": "Score non suivi par le tracker pour Iran - Nouvelle-Zélande (2-2)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (8/16 1N/2) devance ta grille (5/16)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
