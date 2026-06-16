@@ -1,77 +1,9 @@
 {
-  "generated_at": "2026-06-15T13:51:08.410200+00:00",
+  "generated_at": "2026-06-16T12:49:46.111586+00:00",
   "days": 3,
   "count": 12,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Espagne - Cap-Vert",
-      "home": "Espagne",
-      "away": "Cap-Vert",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-15T16:00Z",
-      "venue": "Mercedes-Benz Stadium",
-      "odds": {
-        "home": 1.0714285714285714,
-        "draw": 14.0,
-        "away": 31.0
-      },
-      "home_form": "WDDWD",
-      "away_form": "WWLLL",
-      "source": "override",
-      "mpp_copy": "Espagne 2 - 0 Cap-Vert"
-    },
-    {
-      "match": "Belgique - Égypte",
-      "home": "Belgique",
-      "away": "Égypte",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-15T19:00Z",
-      "venue": "Lumen Field",
-      "odds": {
-        "home": 1.5714285714285714,
-        "draw": 4.0,
-        "away": 5.75
-      },
-      "home_form": "WWDWW",
-      "away_form": "LWDWL",
-      "source": "override",
-      "mpp_copy": "Belgique 2 - 0 Égypte"
-    },
-    {
-      "match": "Arabie saoudite - Uruguay",
-      "home": "Arabie saoudite",
-      "away": "Uruguay",
-      "score": "0-1",
-      "kickoff_utc": "2026-06-15T22:00Z",
-      "venue": "Hard Rock Stadium",
-      "odds": {
-        "home": 8.0,
-        "draw": 4.3,
-        "away": 1.4545454545454546
-      },
-      "home_form": "DWLLL",
-      "away_form": "DDLDW",
-      "source": "grille_mpp",
-      "mpp_copy": "Arabie saoudite 0 - 1 Uruguay"
-    },
-    {
-      "match": "Iran - Nouvelle-Zélande",
-      "home": "Iran",
-      "away": "Nouvelle-Zélande",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-16T01:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 1.8,
-        "draw": 3.5,
-        "away": 5.0
-      },
-      "home_form": "WWWLL",
-      "away_form": "LLWLL",
-      "source": "grille_mpp",
-      "mpp_copy": "Iran 1 - 1 Nouvelle-Zélande"
-    },
     {
       "match": "France - Sénégal",
       "home": "France",
@@ -80,8 +12,8 @@
       "kickoff_utc": "2026-06-16T19:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 1.4761904761904763,
-        "draw": 4.4,
+        "home": 1.4651162790697674,
+        "draw": 4.6,
         "away": 7.0
       },
       "home_form": "WLWWW",
@@ -97,9 +29,9 @@
       "kickoff_utc": "2026-06-16T22:00Z",
       "venue": "Gillette Stadium",
       "odds": {
-        "home": 15.0,
-        "draw": 7.0,
-        "away": 1.1904761904761905
+        "home": 14.0,
+        "draw": 6.5,
+        "away": 1.2222222222222223
       },
       "home_form": "LDWWW",
       "away_form": "DWDLW",
@@ -114,9 +46,9 @@
       "kickoff_utc": "2026-06-17T01:00Z",
       "venue": "GEHA Field at Arrowhead Stadium",
       "odds": {
-        "home": 1.392156862745098,
-        "draw": 4.6,
-        "away": 9.5
+        "home": 1.4444444444444444,
+        "draw": 4.5,
+        "away": 7.5
       },
       "home_form": "WWWWW",
       "away_form": "WWDWL",
@@ -131,9 +63,9 @@
       "kickoff_utc": "2026-06-17T04:00Z",
       "venue": "Levi's Stadium",
       "odds": {
-        "home": 1.3448275862068966,
+        "home": 1.3703703703703702,
         "draw": 5.25,
-        "away": 9.0
+        "away": 8.5
       },
       "home_form": "WWWDW",
       "away_form": "LLDDD",
@@ -148,7 +80,7 @@
       "kickoff_utc": "2026-06-17T17:00Z",
       "venue": "NRG Stadium",
       "odds": {
-        "home": 1.2857142857142856,
+        "home": 1.2777777777777777,
         "draw": 5.75,
         "away": 11.0
       },
@@ -182,8 +114,8 @@
       "kickoff_utc": "2026-06-17T23:00Z",
       "venue": "BMO Field",
       "odds": {
-        "home": 2.2,
-        "draw": 3.45,
+        "home": 2.25,
+        "draw": 3.3,
         "away": 3.4
       },
       "home_form": "DLLLL",
@@ -199,14 +131,82 @@
       "kickoff_utc": "2026-06-18T02:00Z",
       "venue": "Estadio Banorte",
       "odds": {
-        "home": 9.0,
-        "draw": 4.7,
-        "away": 1.392156862745098
+        "home": 9.5,
+        "draw": 4.8,
+        "away": 1.3773584905660377
       },
       "home_form": "LLWWD",
       "away_form": "WWLLW",
       "source": "grille_mpp",
       "mpp_copy": "Ouzbékistan 0 - 1 Colombie"
+    },
+    {
+      "match": "Tchéquie - Afrique du Sud",
+      "home": "Tchéquie",
+      "away": "Afrique du Sud",
+      "score": "1-1",
+      "kickoff_utc": "2026-06-18T16:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "odds": {
+        "home": 1.7692307692307692,
+        "draw": 3.75,
+        "away": 4.9
+      },
+      "home_form": "LWWWW",
+      "away_form": "LWDLD",
+      "source": "grille_mpp",
+      "mpp_copy": "Tchéquie 1 - 1 Afrique du Sud"
+    },
+    {
+      "match": "Suisse - Bosnie-Herzégovine",
+      "home": "Suisse",
+      "away": "Bosnie-Herzégovine",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-18T19:00Z",
+      "venue": "SoFi Stadium",
+      "odds": {
+        "home": 1.5882352941176472,
+        "draw": 4.1,
+        "away": 5.75
+      },
+      "home_form": "DDWDL",
+      "away_form": "DDDWW",
+      "source": "override",
+      "mpp_copy": "Suisse 2 - 0 Bosnie-Herzégovine"
+    },
+    {
+      "match": "Canada - Qatar",
+      "home": "Canada",
+      "away": "Qatar",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-18T22:00Z",
+      "venue": "BC Place",
+      "odds": {
+        "home": 1.2777777777777777,
+        "draw": 5.75,
+        "away": 11.0
+      },
+      "home_form": "DDWDD",
+      "away_form": "DDLLW",
+      "source": "override",
+      "mpp_copy": "Canada 2 - 0 Qatar"
+    },
+    {
+      "match": "Mexique - Corée du Sud",
+      "home": "Mexique",
+      "away": "Corée du Sud",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-19T01:00Z",
+      "venue": "Estadio Akron",
+      "odds": {
+        "home": 2.0,
+        "draw": 3.35,
+        "away": 4.1
+      },
+      "home_form": "WWWWD",
+      "away_form": "WWWLL",
+      "source": "override",
+      "mpp_copy": "Mexique 2 - 1 Corée du Sud"
     }
   ]
 }
