@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-16T19:33:31.446997+00:00",
+  "updated_at": "2026-06-16T22:07:18.592189+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 16,
-    "user_1n2": 5,
+    "played": 17,
+    "user_1n2": 6,
     "user_exact": 2,
-    "model_1n2": 6,
-    "klement_1n2": 8,
-    "user_1n2_pct": 31.2,
-    "model_1n2_pct": 37.5,
-    "klement_1n2_pct": 50.0,
-    "user_exact_pct": 12.5
+    "model_1n2": 7,
+    "klement_1n2": 9,
+    "user_1n2_pct": 35.3,
+    "model_1n2_pct": 41.2,
+    "klement_1n2_pct": 52.9,
+    "user_exact_pct": 11.8
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -32,7 +32,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (8/16 1N/2) devance ta grille (5/16)",
+      "message": "Klement (9/17 1N/2) devance ta grille (6/17)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -420,36 +420,140 @@
       "klement_direction": "Match nul",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "France - Sénégal",
+      "home": "France",
+      "away": "Sénégal",
+      "actual_score": "3-1",
+      "actual_outcome": "home",
+      "user_score": "2-0",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "1",
+      "user_home": "2",
+      "user_away": "0",
+      "actual_direction": "Victoire France",
+      "user_direction": "Victoire France",
+      "klement_direction": "Victoire France",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
-  "upcoming_updates": [],
-  "urgent_mpp": [
+  "new_finished_keys": [
+    "France - Sénégal"
+  ],
+  "recent_results": [
     {
-      "key": "Irak - Norvège",
-      "home": "Irak",
-      "away": "Norvège",
-      "date": "17/06",
-      "kickoff_paris": "17/06 à 00:00",
-      "hours_until": 2.4,
-      "hours_label": "dans 2.4 h",
-      "score": "0-2",
-      "score_home": "0",
-      "score_away": "2",
-      "user_score": "0-2",
+      "key": "France - Sénégal",
+      "home": "France",
+      "away": "Sénégal",
+      "actual_score": "3-1",
+      "actual_outcome": "home",
+      "user_score": "2-0",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "1",
+      "user_home": "2",
+      "user_away": "0",
+      "actual_direction": "Victoire France",
+      "user_direction": "Victoire France",
+      "klement_direction": "Victoire France",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    }
+  ],
+  "upcoming_updates": [
+    {
+      "date": "23/06",
+      "match": "France - Irak",
+      "home": "France",
+      "away": "Irak",
+      "teams_to_review": [
+        "France"
+      ],
+      "current_score": "3-0",
+      "suggested_score": "3-0",
+      "change": false,
+      "reason": "France - Sénégal terminé 3-1",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Irak vs Norvège → 0 - 2",
-      "changed": false
+      "suggested_home": "3",
+      "suggested_away": "0",
+      "mpp_action": "→ mets 3 - 0"
     },
+    {
+      "date": "23/06",
+      "match": "Norvège - Sénégal",
+      "home": "Norvège",
+      "away": "Sénégal",
+      "teams_to_review": [
+        "Sénégal"
+      ],
+      "current_score": "0-0",
+      "suggested_score": "0-0",
+      "change": false,
+      "reason": "France - Sénégal terminé 3-1",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "0",
+      "mpp_action": "→ mets 0 - 0"
+    },
+    {
+      "date": "27/06",
+      "match": "Norvège - France",
+      "home": "Norvège",
+      "away": "France",
+      "teams_to_review": [
+        "France"
+      ],
+      "current_score": "1-2",
+      "suggested_score": "1-2",
+      "change": false,
+      "reason": "France - Sénégal terminé 3-1",
+      "klement_override": false,
+      "suggested_home": "1",
+      "suggested_away": "2",
+      "mpp_action": "→ mets 1 - 2"
+    },
+    {
+      "date": "27/06",
+      "match": "Sénégal - Irak",
+      "home": "Sénégal",
+      "away": "Irak",
+      "teams_to_review": [
+        "Sénégal"
+      ],
+      "current_score": "2-0",
+      "suggested_score": "2-0",
+      "change": false,
+      "reason": "France - Sénégal terminé 3-1",
+      "klement_override": false,
+      "suggested_home": "2",
+      "suggested_away": "0",
+      "mpp_action": "→ mets 2 - 0"
+    }
+  ],
+  "urgent_mpp": [
     {
       "key": "Argentine - Algérie",
       "home": "Argentine",
       "away": "Algérie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 03:00",
-      "hours_until": 5.4,
-      "hours_label": "dans 5.4 h",
+      "hours_until": 2.9,
+      "hours_label": "dans 2.9 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -464,8 +568,8 @@
       "away": "Jordanie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 06:00",
-      "hours_until": 8.4,
-      "hours_label": "dans 8.4 h",
+      "hours_until": 5.9,
+      "hours_label": "dans 5.9 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -480,8 +584,8 @@
       "away": "RD Congo",
       "date": "17/06",
       "kickoff_paris": "17/06 à 19:00",
-      "hours_until": 21.4,
-      "hours_label": "dans 21.4 h",
+      "hours_until": 18.9,
+      "hours_label": "dans 18.9 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -496,8 +600,8 @@
       "away": "Croatie",
       "date": "17/06",
       "kickoff_paris": "17/06 à 22:00",
-      "hours_until": 24.4,
-      "hours_label": "dans 1 j",
+      "hours_until": 21.9,
+      "hours_label": "dans 21.9 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -512,8 +616,8 @@
       "away": "Panama",
       "date": "18/06",
       "kickoff_paris": "18/06 à 01:00",
-      "hours_until": 27.4,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 24.9,
+      "hours_label": "dans 1 j",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -528,8 +632,8 @@
       "away": "Colombie",
       "date": "18/06",
       "kickoff_paris": "18/06 à 04:00",
-      "hours_until": 30.4,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 27.9,
+      "hours_label": "dans 1 j 3 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -544,8 +648,8 @@
       "away": "Afrique du Sud",
       "date": "18/06",
       "kickoff_paris": "18/06 à 18:00",
-      "hours_until": 44.4,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 41.9,
+      "hours_label": "dans 1 j 17 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -560,8 +664,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "18/06",
       "kickoff_paris": "18/06 à 21:00",
-      "hours_until": 47.4,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 44.9,
+      "hours_label": "dans 1 j 20 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -569,7 +673,30 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Suisse vs Bosnie-Herzégovine → 2 - 0",
       "changed": false
+    },
+    {
+      "key": "Canada - Qatar",
+      "home": "Canada",
+      "away": "Qatar",
+      "date": "19/06",
+      "kickoff_paris": "19/06 à 00:00",
+      "hours_until": 47.9,
+      "hours_label": "dans 1 j 23 h",
+      "score": "2-0",
+      "score_home": "2",
+      "score_away": "0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Canada vs Qatar → 2 - 0",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (9/17 1N/2) devance ta grille (6/17)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }

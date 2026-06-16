@@ -6,6 +6,7 @@
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
+    "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
     "warning|Allemagne - Curaçao|Match joué sans prono dans ta grille (7-1)",
     "warning|Arabie saoudite - Uruguay|Score non suivi par le tracker pour Arabie saoudite - Uruguay (1-1)",
     "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
@@ -23,6 +24,7 @@
     "Corée du Sud - Tchéquie",
     "Côte d'Ivoire - Équateur",
     "Espagne - Cap-Vert",
+    "France - Sénégal",
     "Haïti - Écosse",
     "Iran - Nouvelle-Zélande",
     "Mexique - Afrique du Sud",
@@ -31,9 +33,10 @@
     "Suède - Tunisie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Arabie saoudite - Uruguay|Iran - Nouvelle-Zélande|Espagne - Arabie saoudite:3-0|Belgique - Iran:2-0|Nouvelle-Zélande - Égypte:0-2|Uruguay - Cap-Vert:2-0|Cap-Vert - Arabie saoudite:1-1|Uruguay - Espagne:0-2|Nouvelle-Zélande - Belgique:0-3|Égypte - Iran:2-1",
+  "last_email_fingerprint": "France - Sénégal|France - Irak:3-0|Norvège - Sénégal:0-0|Norvège - France:1-2|Sénégal - Irak:2-0",
   "urgent_notified": [
     "Allemagne - Curaçao",
+    "Angleterre - Croatie",
     "Arabie saoudite - Uruguay",
     "Argentine - Algérie",
     "Australie - Türkiye",
