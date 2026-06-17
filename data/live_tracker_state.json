@@ -1,6 +1,7 @@
 {
   "sent_alerts": [
     "info|—|Klement (10/18 1N/2) devance ta grille (6/18)",
+    "info|—|Klement (12/20 1N/2) devance ta grille (8/20)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -19,7 +20,9 @@
   "finished_keys": [
     "Allemagne - Curaçao",
     "Arabie saoudite - Uruguay",
+    "Argentine - Algérie",
     "Australie - Turquie",
+    "Autriche - Jordanie",
     "Belgique - Égypte",
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
@@ -36,7 +39,7 @@
     "Suède - Tunisie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Irak - Norvège|France - Irak:3-0|Norvège - Sénégal:0-0|Norvège - France:1-2|Sénégal - Irak:2-0",
+  "last_email_fingerprint": "Argentine - Algérie|Autriche - Jordanie|Argentine - Autriche:2-0|Jordanie - Algérie:0-1|Algérie - Autriche:0-1|Jordanie - Argentine:0-3",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Angleterre - Croatie",
