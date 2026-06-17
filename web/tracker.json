@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-17T20:05:06.281386+00:00",
+  "updated_at": "2026-06-17T23:19:02.282175+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 21,
-    "user_1n2": 8,
+    "played": 22,
+    "user_1n2": 9,
     "user_exact": 2,
-    "model_1n2": 10,
-    "klement_1n2": 12,
-    "user_1n2_pct": 38.1,
-    "model_1n2_pct": 47.6,
-    "klement_1n2_pct": 57.1,
-    "user_exact_pct": 9.5
+    "model_1n2": 11,
+    "klement_1n2": 13,
+    "user_1n2_pct": 40.9,
+    "model_1n2_pct": 50.0,
+    "klement_1n2_pct": 59.1,
+    "user_exact_pct": 9.1
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -38,7 +38,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (12/21 1N/2) devance ta grille (8/21)",
+      "message": "Klement (13/22 1N/2) devance ta grille (9/22)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -546,132 +546,140 @@
       "klement_direction": "Victoire Portugal",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+    },
+    {
+      "key": "Angleterre - Croatie",
+      "home": "Angleterre",
+      "away": "Croatie",
+      "actual_score": "4-2",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "4",
+      "actual_away": "2",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Angleterre",
+      "user_direction": "Victoire Angleterre",
+      "klement_direction": "Victoire Angleterre",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
   "new_finished_keys": [
-    "Portugal - RD Congo"
+    "Angleterre - Croatie"
   ],
   "recent_results": [
     {
-      "key": "Portugal - RD Congo",
-      "home": "Portugal",
-      "away": "RD Congo",
-      "actual_score": "1-1",
-      "actual_outcome": "draw",
-      "user_score": "2-0",
+      "key": "Angleterre - Croatie",
+      "home": "Angleterre",
+      "away": "Croatie",
+      "actual_score": "4-2",
+      "actual_outcome": "home",
+      "user_score": "2-1",
       "user_outcome": "home",
-      "user_1n2": false,
+      "user_1n2": true,
       "user_exact": false,
       "model_outcome": "home",
-      "model_1n2": false,
+      "model_1n2": true,
       "klement_outcome": "home",
-      "klement_1n2": false,
-      "actual_home": "1",
-      "actual_away": "1",
+      "klement_1n2": true,
+      "actual_home": "4",
+      "actual_away": "2",
       "user_home": "2",
-      "user_away": "0",
-      "actual_direction": "Match nul",
-      "user_direction": "Victoire Portugal",
-      "klement_direction": "Victoire Portugal",
+      "user_away": "1",
+      "actual_direction": "Victoire Angleterre",
+      "user_direction": "Victoire Angleterre",
+      "klement_direction": "Victoire Angleterre",
       "direction_winner": "égalité",
-      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
   "upcoming_updates": [
     {
-      "date": "23/06",
-      "match": "Portugal - Ouzbékistan",
-      "home": "Portugal",
-      "away": "Ouzbékistan",
+      "date": "24/06",
+      "match": "Angleterre - Ghana",
+      "home": "Angleterre",
+      "away": "Ghana",
       "teams_to_review": [
-        "Portugal"
+        "Angleterre"
       ],
-      "current_score": "3-0",
-      "suggested_score": "3-0",
+      "current_score": "2-0",
+      "suggested_score": "2-0",
       "change": false,
-      "reason": "Portugal - RD Congo terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Angleterre - Croatie terminé 4-2",
       "klement_override": false,
-      "suggested_home": "3",
+      "suggested_home": "2",
       "suggested_away": "0",
-      "mpp_action": "→ mets 3 - 0"
+      "mpp_action": "→ mets 2 - 0"
     },
     {
       "date": "24/06",
-      "match": "Colombie - RD Congo",
-      "home": "Colombie",
-      "away": "RD Congo",
+      "match": "Panama - Croatie",
+      "home": "Panama",
+      "away": "Croatie",
       "teams_to_review": [
-        "RD Congo"
+        "Croatie"
       ],
-      "current_score": "2-1",
-      "suggested_score": "2-1",
+      "current_score": "0-2",
+      "suggested_score": "0-2",
       "change": false,
-      "reason": "Portugal - RD Congo terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Angleterre - Croatie terminé 4-2",
       "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 2 - 1"
-    },
-    {
-      "date": "28/06",
-      "match": "Colombie - Portugal",
-      "home": "Colombie",
-      "away": "Portugal",
-      "teams_to_review": [
-        "Portugal"
-      ],
-      "current_score": "1-2",
-      "suggested_score": "1-2",
-      "change": false,
-      "reason": "Portugal - RD Congo terminé 1-1 (ton 1/N/2 incorrect)",
-      "klement_override": false,
-      "suggested_home": "1",
+      "suggested_home": "0",
       "suggested_away": "2",
-      "mpp_action": "→ mets 1 - 2"
+      "mpp_action": "→ mets 0 - 2"
     },
     {
       "date": "28/06",
-      "match": "RD Congo - Ouzbékistan",
-      "home": "RD Congo",
-      "away": "Ouzbékistan",
+      "match": "Croatie - Ghana",
+      "home": "Croatie",
+      "away": "Ghana",
       "teams_to_review": [
-        "RD Congo"
+        "Croatie"
       ],
-      "current_score": "2-1",
-      "suggested_score": "2-1",
+      "current_score": "2-0",
+      "suggested_score": "2-0",
       "change": false,
-      "reason": "Portugal - RD Congo terminé 1-1 (ton 1/N/2 incorrect)",
+      "reason": "Angleterre - Croatie terminé 4-2",
       "klement_override": false,
       "suggested_home": "2",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 2 - 1"
+      "suggested_away": "0",
+      "mpp_action": "→ mets 2 - 0"
+    },
+    {
+      "date": "28/06",
+      "match": "Panama - Angleterre",
+      "home": "Panama",
+      "away": "Angleterre",
+      "teams_to_review": [
+        "Angleterre"
+      ],
+      "current_score": "0-3",
+      "suggested_score": "0-3",
+      "change": false,
+      "reason": "Angleterre - Croatie terminé 4-2",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "3",
+      "mpp_action": "→ mets 0 - 3"
     }
   ],
   "urgent_mpp": [
-    {
-      "key": "Ghana - Panama",
-      "home": "Ghana",
-      "away": "Panama",
-      "date": "18/06",
-      "kickoff_paris": "18/06 à 01:00",
-      "hours_until": 2.9,
-      "hours_label": "dans 2.9 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": "1-1",
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Ghana vs Panama → 1 - 1",
-      "changed": false
-    },
     {
       "key": "Ouzbékistan - Colombie",
       "home": "Ouzbékistan",
       "away": "Colombie",
       "date": "18/06",
       "kickoff_paris": "18/06 à 04:00",
-      "hours_until": 5.9,
-      "hours_label": "dans 5.9 h",
+      "hours_until": 2.7,
+      "hours_label": "dans 2.7 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -686,8 +694,8 @@
       "away": "Afrique du Sud",
       "date": "18/06",
       "kickoff_paris": "18/06 à 18:00",
-      "hours_until": 19.9,
-      "hours_label": "dans 19.9 h",
+      "hours_until": 16.7,
+      "hours_label": "dans 16.7 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -702,8 +710,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "18/06",
       "kickoff_paris": "18/06 à 21:00",
-      "hours_until": 22.9,
-      "hours_label": "dans 22.9 h",
+      "hours_until": 19.7,
+      "hours_label": "dans 19.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -718,8 +726,8 @@
       "away": "Qatar",
       "date": "19/06",
       "kickoff_paris": "19/06 à 00:00",
-      "hours_until": 25.9,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 22.7,
+      "hours_label": "dans 22.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -734,8 +742,8 @@
       "away": "Corée du Sud",
       "date": "19/06",
       "kickoff_paris": "19/06 à 03:00",
-      "hours_until": 28.9,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 25.7,
+      "hours_label": "dans 1 j 1 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -750,8 +758,8 @@
       "away": "Australie",
       "date": "19/06",
       "kickoff_paris": "19/06 à 21:00",
-      "hours_until": 46.9,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 43.7,
+      "hours_label": "dans 1 j 19 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -759,13 +767,29 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → États-Unis vs Australie → 2 - 1",
       "changed": false
+    },
+    {
+      "key": "Écosse - Maroc",
+      "home": "Écosse",
+      "away": "Maroc",
+      "date": "20/06",
+      "kickoff_paris": "20/06 à 00:00",
+      "hours_until": 46.7,
+      "hours_label": "dans 1 j 22 h",
+      "score": "0-2",
+      "score_home": "0",
+      "score_away": "2",
+      "user_score": "0-2",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Écosse vs Maroc → 0 - 2",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (12/21 1N/2) devance ta grille (8/21)",
+      "message": "Klement (13/22 1N/2) devance ta grille (9/22)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
