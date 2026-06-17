@@ -2,6 +2,7 @@
   "sent_alerts": [
     "info|—|Klement (10/18 1N/2) devance ta grille (6/18)",
     "info|—|Klement (12/20 1N/2) devance ta grille (8/20)",
+    "info|—|Klement (12/21 1N/2) devance ta grille (8/21)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -35,11 +36,12 @@
     "Iran - Nouvelle-Zélande",
     "Mexique - Afrique du Sud",
     "Pays-Bas - Japon",
+    "Portugal - RD Congo",
     "Qatar - Suisse",
     "Suède - Tunisie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Argentine - Algérie|Autriche - Jordanie|Argentine - Autriche:2-0|Jordanie - Algérie:0-1|Algérie - Autriche:0-1|Jordanie - Argentine:0-3",
+  "last_email_fingerprint": "Portugal - RD Congo|Portugal - Ouzbékistan:3-0|Colombie - RD Congo:2-1|Colombie - Portugal:1-2|RD Congo - Ouzbékistan:2-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Angleterre - Croatie",
@@ -61,6 +63,7 @@
     "Pays-Bas - Japon",
     "Portugal - RD Congo",
     "Qatar - Suisse",
+    "Suisse - Bosnie-Herzégovine",
     "Suède - Tunisie",
     "Tchéquie - Afrique du Sud",
     "États-Unis - Paraguay"
