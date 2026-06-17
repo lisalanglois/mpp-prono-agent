@@ -1,5 +1,6 @@
 {
   "sent_alerts": [
+    "info|—|Klement (10/18 1N/2) devance ta grille (6/18)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -11,6 +12,7 @@
     "warning|Arabie saoudite - Uruguay|Score non suivi par le tracker pour Arabie saoudite - Uruguay (1-1)",
     "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
     "warning|Haïti - Écosse|Match joué sans prono dans ta grille (0-1)",
+    "warning|Irak - Norvège|Score non suivi par le tracker pour Irak - Norvège (1-4)",
     "warning|Iran - Nouvelle-Zélande|Score non suivi par le tracker pour Iran - Nouvelle-Zélande (2-2)",
     "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)"
   ],
@@ -26,6 +28,7 @@
     "Espagne - Cap-Vert",
     "France - Sénégal",
     "Haïti - Écosse",
+    "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
     "Mexique - Afrique du Sud",
     "Pays-Bas - Japon",
@@ -33,7 +36,7 @@
     "Suède - Tunisie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "France - Sénégal|France - Irak:3-0|Norvège - Sénégal:0-0|Norvège - France:1-2|Sénégal - Irak:2-0",
+  "last_email_fingerprint": "Irak - Norvège|France - Irak:3-0|Norvège - Sénégal:0-0|Norvège - France:1-2|Sénégal - Irak:2-0",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Angleterre - Croatie",
@@ -47,9 +50,11 @@
     "Côte d'Ivoire - Équateur",
     "Espagne - Cap-Vert",
     "France - Sénégal",
+    "Ghana - Panama",
     "Haïti - Écosse",
     "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
+    "Ouzbékistan - Colombie",
     "Pays-Bas - Japon",
     "Portugal - RD Congo",
     "Qatar - Suisse",
