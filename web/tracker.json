@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-18T02:53:44.933642+00:00",
+  "updated_at": "2026-06-18T08:40:05.782159+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 23,
+    "played": 24,
     "user_1n2": 9,
     "user_exact": 2,
-    "model_1n2": 11,
-    "klement_1n2": 13,
-    "user_1n2_pct": 39.1,
-    "model_1n2_pct": 47.8,
-    "klement_1n2_pct": 56.5,
-    "user_exact_pct": 8.7
+    "model_1n2": 12,
+    "klement_1n2": 14,
+    "user_1n2_pct": 37.5,
+    "model_1n2_pct": 50.0,
+    "klement_1n2_pct": 58.3,
+    "user_exact_pct": 8.3
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -36,9 +36,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Ouzbékistan - Colombie",
+      "message": "Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (13/23 1N/2) devance ta grille (9/23)",
+      "message": "Klement (14/24 1N/2) devance ta grille (9/24)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -594,105 +600,129 @@
       "klement_direction": "Match nul",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+    },
+    {
+      "key": "Ouzbékistan - Colombie",
+      "home": "Ouzbékistan",
+      "away": "Colombie",
+      "actual_score": "1-3",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "away",
+      "model_1n2": true,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "3",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Colombie",
+      "user_direction": "—",
+      "klement_direction": "Victoire Colombie",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
   "new_finished_keys": [
-    "Ghana - Panama"
+    "Ouzbékistan - Colombie"
   ],
   "recent_results": [
     {
-      "key": "Ghana - Panama",
-      "home": "Ghana",
-      "away": "Panama",
-      "actual_score": "1-0",
-      "actual_outcome": "home",
-      "user_score": "1-1",
-      "user_outcome": "draw",
-      "user_1n2": false,
+      "key": "Ouzbékistan - Colombie",
+      "home": "Ouzbékistan",
+      "away": "Colombie",
+      "actual_score": "1-3",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
       "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "draw",
-      "klement_1n2": false,
+      "model_outcome": "away",
+      "model_1n2": true,
+      "klement_outcome": "away",
+      "klement_1n2": true,
       "actual_home": "1",
-      "actual_away": "0",
-      "user_home": "1",
-      "user_away": "1",
-      "actual_direction": "Victoire Ghana",
-      "user_direction": "Match nul",
-      "klement_direction": "Match nul",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
+      "actual_away": "3",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Colombie",
+      "user_direction": "—",
+      "klement_direction": "Victoire Colombie",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
   "upcoming_updates": [
     {
-      "date": "24/06",
-      "match": "Angleterre - Ghana",
-      "home": "Angleterre",
-      "away": "Ghana",
+      "date": "23/06",
+      "match": "Portugal - Ouzbékistan",
+      "home": "Portugal",
+      "away": "Ouzbékistan",
       "teams_to_review": [
-        "Ghana"
+        "Ouzbékistan"
       ],
-      "current_score": "2-0",
-      "suggested_score": "2-0",
+      "current_score": "3-0",
+      "suggested_score": "3-0",
       "change": false,
-      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
+      "reason": "Ouzbékistan - Colombie terminé 1-3",
       "klement_override": false,
-      "suggested_home": "2",
+      "suggested_home": "3",
       "suggested_away": "0",
-      "mpp_action": "→ mets 2 - 0"
+      "mpp_action": "→ mets 3 - 0"
     },
     {
       "date": "24/06",
-      "match": "Panama - Croatie",
-      "home": "Panama",
-      "away": "Croatie",
+      "match": "Colombie - RD Congo",
+      "home": "Colombie",
+      "away": "RD Congo",
       "teams_to_review": [
-        "Panama"
+        "Colombie"
       ],
-      "current_score": "0-2",
-      "suggested_score": "0-2",
+      "current_score": "2-1",
+      "suggested_score": "2-1",
       "change": false,
-      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
+      "reason": "Ouzbékistan - Colombie terminé 1-3",
       "klement_override": false,
-      "suggested_home": "0",
+      "suggested_home": "2",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 2 - 1"
+    },
+    {
+      "date": "28/06",
+      "match": "Colombie - Portugal",
+      "home": "Colombie",
+      "away": "Portugal",
+      "teams_to_review": [
+        "Colombie"
+      ],
+      "current_score": "1-2",
+      "suggested_score": "1-2",
+      "change": false,
+      "reason": "Ouzbékistan - Colombie terminé 1-3",
+      "klement_override": false,
+      "suggested_home": "1",
       "suggested_away": "2",
-      "mpp_action": "→ mets 0 - 2"
+      "mpp_action": "→ mets 1 - 2"
     },
     {
       "date": "28/06",
-      "match": "Croatie - Ghana",
-      "home": "Croatie",
-      "away": "Ghana",
+      "match": "RD Congo - Ouzbékistan",
+      "home": "RD Congo",
+      "away": "Ouzbékistan",
       "teams_to_review": [
-        "Ghana"
+        "Ouzbékistan"
       ],
-      "current_score": "2-0",
-      "suggested_score": "2-0",
+      "current_score": "2-1",
+      "suggested_score": "2-1",
       "change": false,
-      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
+      "reason": "Ouzbékistan - Colombie terminé 1-3",
       "klement_override": false,
       "suggested_home": "2",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 2 - 0"
-    },
-    {
-      "date": "28/06",
-      "match": "Panama - Angleterre",
-      "home": "Panama",
-      "away": "Angleterre",
-      "teams_to_review": [
-        "Panama"
-      ],
-      "current_score": "0-3",
-      "suggested_score": "0-3",
-      "change": false,
-      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "3",
-      "mpp_action": "→ mets 0 - 3"
+      "suggested_away": "1",
+      "mpp_action": "→ mets 2 - 1"
     }
   ],
   "urgent_mpp": [
@@ -702,8 +732,8 @@
       "away": "Afrique du Sud",
       "date": "18/06",
       "kickoff_paris": "18/06 à 18:00",
-      "hours_until": 13.1,
-      "hours_label": "dans 13.1 h",
+      "hours_until": 7.3,
+      "hours_label": "dans 7.3 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -718,8 +748,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "18/06",
       "kickoff_paris": "18/06 à 21:00",
-      "hours_until": 16.1,
-      "hours_label": "dans 16.1 h",
+      "hours_until": 10.3,
+      "hours_label": "dans 10.3 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -734,8 +764,8 @@
       "away": "Qatar",
       "date": "19/06",
       "kickoff_paris": "19/06 à 00:00",
-      "hours_until": 19.1,
-      "hours_label": "dans 19.1 h",
+      "hours_until": 13.3,
+      "hours_label": "dans 13.3 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -750,8 +780,8 @@
       "away": "Corée du Sud",
       "date": "19/06",
       "kickoff_paris": "19/06 à 03:00",
-      "hours_until": 22.1,
-      "hours_label": "dans 22.1 h",
+      "hours_until": 16.3,
+      "hours_label": "dans 16.3 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -766,8 +796,8 @@
       "away": "Australie",
       "date": "19/06",
       "kickoff_paris": "19/06 à 21:00",
-      "hours_until": 40.1,
-      "hours_label": "dans 1 j 16 h",
+      "hours_until": 34.3,
+      "hours_label": "dans 1 j 10 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -782,8 +812,8 @@
       "away": "Maroc",
       "date": "20/06",
       "kickoff_paris": "20/06 à 00:00",
-      "hours_until": 43.1,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 37.3,
+      "hours_label": "dans 1 j 13 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -798,8 +828,8 @@
       "away": "Haïti",
       "date": "20/06",
       "kickoff_paris": "20/06 à 02:30",
-      "hours_until": 45.6,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 39.8,
+      "hours_label": "dans 1 j 15 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -807,13 +837,35 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Brésil vs Haïti → 3 - 0",
       "changed": false
+    },
+    {
+      "key": "Turquie - Paraguay",
+      "home": "Turquie",
+      "away": "Paraguay",
+      "date": "20/06",
+      "kickoff_paris": "20/06 à 05:00",
+      "hours_until": 42.3,
+      "hours_label": "dans 1 j 18 h",
+      "score": "1-0",
+      "score_home": "1",
+      "score_away": "0",
+      "user_score": "1-1",
+      "klement_override": true,
+      "mpp_instruction": "mpp.football → Turquie vs Paraguay → 1 - 0",
+      "changed": true
     }
   ],
   "new_alerts": [
     {
+      "level": "warning",
+      "match": "Ouzbékistan - Colombie",
+      "message": "Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (13/23 1N/2) devance ta grille (9/23)",
+      "message": "Klement (14/24 1N/2) devance ta grille (9/24)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
