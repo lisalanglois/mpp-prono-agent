@@ -6,6 +6,7 @@
     "info|—|Klement (13/22 1N/2) devance ta grille (9/22)",
     "info|—|Klement (13/23 1N/2) devance ta grille (9/23)",
     "info|—|Klement (14/24 1N/2) devance ta grille (9/24)",
+    "info|—|Klement (14/25 1N/2) devance ta grille (9/25)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -20,7 +21,8 @@
     "warning|Irak - Norvège|Score non suivi par le tracker pour Irak - Norvège (1-4)",
     "warning|Iran - Nouvelle-Zélande|Score non suivi par le tracker pour Iran - Nouvelle-Zélande (2-2)",
     "warning|Ouzbékistan - Colombie|Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
-    "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)"
+    "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)",
+    "warning|Tchéquie - Afrique du Sud|Score non suivi par le tracker pour Tchéquie - Afrique du Sud (1-1)"
   ],
   "finished_keys": [
     "Allemagne - Curaçao",
@@ -46,9 +48,10 @@
     "Portugal - RD Congo",
     "Qatar - Suisse",
     "Suède - Tunisie",
+    "Tchéquie - Afrique du Sud",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Ouzbékistan - Colombie|Portugal - Ouzbékistan:3-0|Colombie - RD Congo:2-1|Colombie - Portugal:1-2|RD Congo - Ouzbékistan:2-1",
+  "last_email_fingerprint": "Tchéquie - Afrique du Sud|Afrique du Sud - Corée du Sud:0-1|Tchéquie - Mexique:0-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Angleterre - Croatie",
@@ -75,6 +78,7 @@
     "Suisse - Bosnie-Herzégovine",
     "Suède - Tunisie",
     "Tchéquie - Afrique du Sud",
+    "États-Unis - Australie",
     "États-Unis - Paraguay"
   ]
 }
