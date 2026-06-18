@@ -1,77 +1,9 @@
 {
-  "generated_at": "2026-06-17T12:13:22.470881+00:00",
+  "generated_at": "2026-06-18T11:47:54.557505+00:00",
   "days": 3,
-  "count": 12,
+  "count": 11,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Portugal - RD Congo",
-      "home": "Portugal",
-      "away": "RD Congo",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-17T17:00Z",
-      "venue": "NRG Stadium",
-      "odds": {
-        "home": 1.2777777777777777,
-        "draw": 5.5,
-        "away": 12.0
-      },
-      "home_form": "WWWDW",
-      "away_form": "LDWWL",
-      "source": "override",
-      "mpp_copy": "Portugal 2 - 0 RD Congo"
-    },
-    {
-      "match": "Angleterre - Croatie",
-      "home": "Angleterre",
-      "away": "Croatie",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-17T20:00Z",
-      "venue": "AT&T Stadium",
-      "odds": {
-        "home": 1.7142857142857144,
-        "draw": 3.7,
-        "away": 5.25
-      },
-      "home_form": "WWLDW",
-      "away_form": "WLLWW",
-      "source": "override",
-      "mpp_copy": "Angleterre 2 - 1 Croatie"
-    },
-    {
-      "match": "Ghana - Panama",
-      "home": "Ghana",
-      "away": "Panama",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-17T23:00Z",
-      "venue": "BMO Field",
-      "odds": {
-        "home": 2.4,
-        "draw": 3.2,
-        "away": 3.2
-      },
-      "home_form": "DLLLL",
-      "away_form": "DWLWD",
-      "source": "override",
-      "mpp_copy": "Ghana 1 - 1 Panama"
-    },
-    {
-      "match": "Ouzbékistan - Colombie",
-      "home": "Ouzbékistan",
-      "away": "Colombie",
-      "score": "0-1",
-      "kickoff_utc": "2026-06-18T02:00Z",
-      "venue": "Estadio Banorte",
-      "odds": {
-        "home": 9.5,
-        "draw": 4.9,
-        "away": 1.3703703703703702
-      },
-      "home_form": "LLWWD",
-      "away_form": "WWLLW",
-      "source": "grille_mpp",
-      "mpp_copy": "Ouzbékistan 0 - 1 Colombie"
-    },
     {
       "match": "Tchéquie - Afrique du Sud",
       "home": "Tchéquie",
@@ -80,8 +12,8 @@
       "kickoff_utc": "2026-06-18T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.7692307692307692,
-        "draw": 3.75,
+        "home": 1.8,
+        "draw": 3.55,
         "away": 4.9
       },
       "home_form": "LWWWW",
@@ -97,9 +29,9 @@
       "kickoff_utc": "2026-06-18T19:00Z",
       "venue": "SoFi Stadium",
       "odds": {
-        "home": 1.5405405405405406,
-        "draw": 4.2,
-        "away": 6.5
+        "home": 1.5555555555555556,
+        "draw": 4.1,
+        "away": 6.0
       },
       "home_form": "DDWDL",
       "away_form": "DDDWW",
@@ -114,8 +46,8 @@
       "kickoff_utc": "2026-06-18T22:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 1.2857142857142856,
-        "draw": 5.75,
+        "home": 1.2941176470588236,
+        "draw": 5.5,
         "away": 11.0
       },
       "home_form": "DDWDD",
@@ -133,7 +65,7 @@
       "odds": {
         "home": 2.05,
         "draw": 3.3,
-        "away": 4.0
+        "away": 3.95
       },
       "home_form": "WWWWD",
       "away_form": "WWWLL",
@@ -148,8 +80,8 @@
       "kickoff_utc": "2026-06-19T19:00Z",
       "venue": "Lumen Field",
       "odds": {
-        "home": 1.606060606060606,
-        "draw": 4.3,
+        "home": 1.5882352941176472,
+        "draw": 4.4,
         "away": 5.25
       },
       "home_form": "WLWLL",
@@ -165,7 +97,7 @@
       "kickoff_utc": "2026-06-19T22:00Z",
       "venue": "Gillette Stadium",
       "odds": {
-        "home": 5.0,
+        "home": 5.25,
         "draw": 3.65,
         "away": 1.7407407407407407
       },
@@ -207,6 +139,57 @@
       "away_form": "LWLWW",
       "source": "grille_mpp",
       "mpp_copy": "Turquie 1 - 1 Paraguay"
+    },
+    {
+      "match": "Pays-Bas - Suède",
+      "home": "Pays-Bas",
+      "away": "Suède",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-20T17:00Z",
+      "venue": "NRG Stadium",
+      "odds": {
+        "home": 1.7142857142857144,
+        "draw": 3.95,
+        "away": 4.9
+      },
+      "home_form": "DWLDW",
+      "away_form": "WDLWW",
+      "source": "override",
+      "mpp_copy": "Pays-Bas 2 - 1 Suède"
+    },
+    {
+      "match": "Allemagne - Côte d'Ivoire",
+      "home": "Allemagne",
+      "away": "Côte d'Ivoire",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-20T20:00Z",
+      "venue": "BMO Field",
+      "odds": {
+        "home": 1.5405405405405406,
+        "draw": 4.6,
+        "away": 5.75
+      },
+      "home_form": "WWWWW",
+      "away_form": "WWWWL",
+      "source": "override",
+      "mpp_copy": "Allemagne 2 - 1 Côte d'Ivoire"
+    },
+    {
+      "match": "Équateur - Curaçao",
+      "home": "Équateur",
+      "away": "Curaçao",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-21T00:00Z",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "odds": {
+        "home": 1.1,
+        "draw": 10.5,
+        "away": 23.0
+      },
+      "home_form": "LWWDD",
+      "away_form": "LWLLL",
+      "source": "override",
+      "mpp_copy": "Équateur 2 - 0 Curaçao"
     }
   ]
 }
