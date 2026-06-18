@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-17T23:19:02.282175+00:00",
+  "updated_at": "2026-06-18T02:53:44.933642+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 22,
+    "played": 23,
     "user_1n2": 9,
     "user_exact": 2,
     "model_1n2": 11,
     "klement_1n2": 13,
-    "user_1n2_pct": 40.9,
-    "model_1n2_pct": 50.0,
-    "klement_1n2_pct": 59.1,
-    "user_exact_pct": 9.1
+    "user_1n2_pct": 39.1,
+    "model_1n2_pct": 47.8,
+    "klement_1n2_pct": 56.5,
+    "user_exact_pct": 8.7
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -38,7 +38,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (13/22 1N/2) devance ta grille (9/22)",
+      "message": "Klement (13/23 1N/2) devance ta grille (9/23)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -570,35 +570,59 @@
       "klement_direction": "Victoire Angleterre",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Ghana - Panama",
+      "home": "Ghana",
+      "away": "Panama",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": "1-1",
+      "user_outcome": "draw",
+      "user_1n2": false,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "1",
+      "user_away": "1",
+      "actual_direction": "Victoire Ghana",
+      "user_direction": "Match nul",
+      "klement_direction": "Match nul",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     }
   ],
   "new_finished_keys": [
-    "Angleterre - Croatie"
+    "Ghana - Panama"
   ],
   "recent_results": [
     {
-      "key": "Angleterre - Croatie",
-      "home": "Angleterre",
-      "away": "Croatie",
-      "actual_score": "4-2",
+      "key": "Ghana - Panama",
+      "home": "Ghana",
+      "away": "Panama",
+      "actual_score": "1-0",
       "actual_outcome": "home",
-      "user_score": "2-1",
-      "user_outcome": "home",
-      "user_1n2": true,
+      "user_score": "1-1",
+      "user_outcome": "draw",
+      "user_1n2": false,
       "user_exact": false,
-      "model_outcome": "home",
-      "model_1n2": true,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "4",
-      "actual_away": "2",
-      "user_home": "2",
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "1",
       "user_away": "1",
-      "actual_direction": "Victoire Angleterre",
-      "user_direction": "Victoire Angleterre",
-      "klement_direction": "Victoire Angleterre",
+      "actual_direction": "Victoire Ghana",
+      "user_direction": "Match nul",
+      "klement_direction": "Match nul",
       "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     }
   ],
   "upcoming_updates": [
@@ -608,12 +632,12 @@
       "home": "Angleterre",
       "away": "Ghana",
       "teams_to_review": [
-        "Angleterre"
+        "Ghana"
       ],
       "current_score": "2-0",
       "suggested_score": "2-0",
       "change": false,
-      "reason": "Angleterre - Croatie terminé 4-2",
+      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
       "klement_override": false,
       "suggested_home": "2",
       "suggested_away": "0",
@@ -625,12 +649,12 @@
       "home": "Panama",
       "away": "Croatie",
       "teams_to_review": [
-        "Croatie"
+        "Panama"
       ],
       "current_score": "0-2",
       "suggested_score": "0-2",
       "change": false,
-      "reason": "Angleterre - Croatie terminé 4-2",
+      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
       "klement_override": false,
       "suggested_home": "0",
       "suggested_away": "2",
@@ -642,12 +666,12 @@
       "home": "Croatie",
       "away": "Ghana",
       "teams_to_review": [
-        "Croatie"
+        "Ghana"
       ],
       "current_score": "2-0",
       "suggested_score": "2-0",
       "change": false,
-      "reason": "Angleterre - Croatie terminé 4-2",
+      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
       "klement_override": false,
       "suggested_home": "2",
       "suggested_away": "0",
@@ -659,12 +683,12 @@
       "home": "Panama",
       "away": "Angleterre",
       "teams_to_review": [
-        "Angleterre"
+        "Panama"
       ],
       "current_score": "0-3",
       "suggested_score": "0-3",
       "change": false,
-      "reason": "Angleterre - Croatie terminé 4-2",
+      "reason": "Ghana - Panama terminé 1-0 (ton 1/N/2 incorrect)",
       "klement_override": false,
       "suggested_home": "0",
       "suggested_away": "3",
@@ -673,29 +697,13 @@
   ],
   "urgent_mpp": [
     {
-      "key": "Ouzbékistan - Colombie",
-      "home": "Ouzbékistan",
-      "away": "Colombie",
-      "date": "18/06",
-      "kickoff_paris": "18/06 à 04:00",
-      "hours_until": 2.7,
-      "hours_label": "dans 2.7 h",
-      "score": "0-1",
-      "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-1",
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Ouzbékistan vs Colombie → 0 - 1",
-      "changed": false
-    },
-    {
       "key": "Tchéquie - Afrique du Sud",
       "home": "Tchéquie",
       "away": "Afrique du Sud",
       "date": "18/06",
       "kickoff_paris": "18/06 à 18:00",
-      "hours_until": 16.7,
-      "hours_label": "dans 16.7 h",
+      "hours_until": 13.1,
+      "hours_label": "dans 13.1 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -710,8 +718,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "18/06",
       "kickoff_paris": "18/06 à 21:00",
-      "hours_until": 19.7,
-      "hours_label": "dans 19.7 h",
+      "hours_until": 16.1,
+      "hours_label": "dans 16.1 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -726,8 +734,8 @@
       "away": "Qatar",
       "date": "19/06",
       "kickoff_paris": "19/06 à 00:00",
-      "hours_until": 22.7,
-      "hours_label": "dans 22.7 h",
+      "hours_until": 19.1,
+      "hours_label": "dans 19.1 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -742,8 +750,8 @@
       "away": "Corée du Sud",
       "date": "19/06",
       "kickoff_paris": "19/06 à 03:00",
-      "hours_until": 25.7,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 22.1,
+      "hours_label": "dans 22.1 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -758,8 +766,8 @@
       "away": "Australie",
       "date": "19/06",
       "kickoff_paris": "19/06 à 21:00",
-      "hours_until": 43.7,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 40.1,
+      "hours_label": "dans 1 j 16 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -774,8 +782,8 @@
       "away": "Maroc",
       "date": "20/06",
       "kickoff_paris": "20/06 à 00:00",
-      "hours_until": 46.7,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 43.1,
+      "hours_label": "dans 1 j 19 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -783,13 +791,29 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Écosse vs Maroc → 0 - 2",
       "changed": false
+    },
+    {
+      "key": "Brésil - Haïti",
+      "home": "Brésil",
+      "away": "Haïti",
+      "date": "20/06",
+      "kickoff_paris": "20/06 à 02:30",
+      "hours_until": 45.6,
+      "hours_label": "dans 1 j 21 h",
+      "score": "3-0",
+      "score_home": "3",
+      "score_away": "0",
+      "user_score": "3-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Brésil vs Haïti → 3 - 0",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (13/22 1N/2) devance ta grille (9/22)",
+      "message": "Klement (13/23 1N/2) devance ta grille (9/23)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
