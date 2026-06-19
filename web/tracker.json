@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-06-18T23:30:17.114790+00:00",
+  "updated_at": "2026-06-19T03:39:44.768138+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 26,
-    "user_1n2": 10,
+    "played": 28,
+    "user_1n2": 12,
     "user_exact": 2,
-    "model_1n2": 14,
-    "klement_1n2": 15,
-    "user_1n2_pct": 38.5,
-    "model_1n2_pct": 53.8,
-    "klement_1n2_pct": 57.7,
-    "user_exact_pct": 7.7
+    "model_1n2": 16,
+    "klement_1n2": 16,
+    "user_1n2_pct": 42.9,
+    "model_1n2_pct": 57.1,
+    "klement_1n2_pct": 57.1,
+    "user_exact_pct": 7.1
   },
-  "leader_1n2": "klement",
+  "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
   "klement_winner_pick": "Pays-Bas",
   "alerts": [
@@ -50,7 +50,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (15/26 1N/2) devance ta grille (10/26)",
+      "message": "Klement (16/28 1N/2) devance ta grille (12/28)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -678,17 +678,12 @@
       "klement_direction": "Victoire Suisse",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Suisse - Bosnie-Herzégovine"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Suisse - Bosnie-Herzégovine",
-      "home": "Suisse",
-      "away": "Bosnie-Herzégovine",
-      "actual_score": "4-1",
+      "key": "Canada - Qatar",
+      "home": "Canada",
+      "away": "Qatar",
+      "actual_score": "6-0",
       "actual_outcome": "home",
       "user_score": "2-0",
       "user_outcome": "home",
@@ -698,15 +693,93 @@
       "model_1n2": true,
       "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "4",
-      "actual_away": "1",
+      "actual_home": "6",
+      "actual_away": "0",
       "user_home": "2",
       "user_away": "0",
-      "actual_direction": "Victoire Suisse",
-      "user_direction": "Victoire Suisse",
-      "klement_direction": "Victoire Suisse",
+      "actual_direction": "Victoire Canada",
+      "user_direction": "Victoire Canada",
+      "klement_direction": "Victoire Canada",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Mexique - Corée du Sud",
+      "home": "Mexique",
+      "away": "Corée du Sud",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Mexique",
+      "user_direction": "Victoire Mexique",
+      "klement_direction": "Match nul",
+      "direction_winner": "lisa",
+      "verdict_short": "Lisa ✓ · Klement ✗ — Lisa avait mieux vu"
+    }
+  ],
+  "new_finished_keys": [
+    "Canada - Qatar",
+    "Mexique - Corée du Sud"
+  ],
+  "recent_results": [
+    {
+      "key": "Canada - Qatar",
+      "home": "Canada",
+      "away": "Qatar",
+      "actual_score": "6-0",
+      "actual_outcome": "home",
+      "user_score": "2-0",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "6",
+      "actual_away": "0",
+      "user_home": "2",
+      "user_away": "0",
+      "actual_direction": "Victoire Canada",
+      "user_direction": "Victoire Canada",
+      "klement_direction": "Victoire Canada",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Mexique - Corée du Sud",
+      "home": "Mexique",
+      "away": "Corée du Sud",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Mexique",
+      "user_direction": "Victoire Mexique",
+      "klement_direction": "Match nul",
+      "direction_winner": "lisa",
+      "verdict_short": "Lisa ✓ · Klement ✗ — Lisa avait mieux vu"
     }
   ],
   "upcoming_updates": [
@@ -716,12 +789,12 @@
       "home": "Suisse",
       "away": "Canada",
       "teams_to_review": [
-        "Suisse"
+        "Canada"
       ],
       "current_score": "1-1",
       "suggested_score": "1-0",
       "change": true,
-      "reason": "Suisse - Bosnie-Herzégovine terminé 4-1",
+      "reason": "Canada - Qatar terminé 6-0",
       "klement_override": true,
       "suggested_home": "1",
       "suggested_away": "0",
@@ -729,47 +802,65 @@
     },
     {
       "date": "25/06",
+      "match": "Afrique du Sud - Corée du Sud",
+      "home": "Afrique du Sud",
+      "away": "Corée du Sud",
+      "teams_to_review": [
+        "Corée du Sud"
+      ],
+      "current_score": "1-1",
+      "suggested_score": "0-1",
+      "change": true,
+      "reason": "Mexique - Corée du Sud terminé 1-0",
+      "klement_override": true,
+      "suggested_home": "0",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 0 - 1"
+    },
+    {
+      "date": "25/06",
       "match": "Bosnie-Herzégovine - Qatar",
       "home": "Bosnie-Herzégovine",
       "away": "Qatar",
       "teams_to_review": [
-        "Bosnie-Herzégovine"
+        "Qatar"
       ],
       "current_score": "2-0",
       "suggested_score": "2-0",
       "change": false,
-      "reason": "Suisse - Bosnie-Herzégovine terminé 4-1",
+      "reason": "Canada - Qatar terminé 6-0",
       "klement_override": false,
       "suggested_home": "2",
       "suggested_away": "0",
       "mpp_action": "→ mets 2 - 0"
+    },
+    {
+      "date": "25/06",
+      "match": "Tchéquie - Mexique",
+      "home": "Tchéquie",
+      "away": "Mexique",
+      "teams_to_review": [
+        "Mexique"
+      ],
+      "current_score": "1-1",
+      "suggested_score": "0-1",
+      "change": true,
+      "reason": "Mexique - Corée du Sud terminé 1-0",
+      "klement_override": true,
+      "suggested_home": "0",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 0 - 1"
     }
   ],
   "urgent_mpp": [
-    {
-      "key": "Mexique - Corée du Sud",
-      "home": "Mexique",
-      "away": "Corée du Sud",
-      "date": "19/06",
-      "kickoff_paris": "19/06 à 03:00",
-      "hours_until": 1.5,
-      "hours_label": "dans 1.5 h",
-      "score": "2-1",
-      "score_home": "2",
-      "score_away": "1",
-      "user_score": "2-1",
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Mexique vs Corée du Sud → 2 - 1",
-      "changed": false
-    },
     {
       "key": "États-Unis - Australie",
       "home": "États-Unis",
       "away": "Australie",
       "date": "19/06",
       "kickoff_paris": "19/06 à 21:00",
-      "hours_until": 19.5,
-      "hours_label": "dans 19.5 h",
+      "hours_until": 15.3,
+      "hours_label": "dans 15.3 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -784,8 +875,8 @@
       "away": "Maroc",
       "date": "20/06",
       "kickoff_paris": "20/06 à 00:00",
-      "hours_until": 22.5,
-      "hours_label": "dans 22.5 h",
+      "hours_until": 18.3,
+      "hours_label": "dans 18.3 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -800,8 +891,8 @@
       "away": "Haïti",
       "date": "20/06",
       "kickoff_paris": "20/06 à 02:30",
-      "hours_until": 25.0,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 20.8,
+      "hours_label": "dans 20.8 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -816,8 +907,8 @@
       "away": "Paraguay",
       "date": "20/06",
       "kickoff_paris": "20/06 à 05:00",
-      "hours_until": 27.5,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 23.3,
+      "hours_label": "dans 23.3 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -832,8 +923,8 @@
       "away": "Suède",
       "date": "20/06",
       "kickoff_paris": "20/06 à 19:00",
-      "hours_until": 41.5,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 37.3,
+      "hours_label": "dans 1 j 13 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -848,8 +939,8 @@
       "away": "Côte d'Ivoire",
       "date": "20/06",
       "kickoff_paris": "20/06 à 22:00",
-      "hours_until": 44.5,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 40.3,
+      "hours_label": "dans 1 j 16 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -857,13 +948,29 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Allemagne vs Côte d'Ivoire → 2 - 1",
       "changed": false
+    },
+    {
+      "key": "Équateur - Curaçao",
+      "home": "Équateur",
+      "away": "Curaçao",
+      "date": "21/06",
+      "kickoff_paris": "21/06 à 02:00",
+      "hours_until": 44.3,
+      "hours_label": "dans 1 j 20 h",
+      "score": "2-0",
+      "score_home": "2",
+      "score_away": "0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Équateur vs Curaçao → 2 - 0",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (15/26 1N/2) devance ta grille (10/26)",
+      "message": "Klement (16/28 1N/2) devance ta grille (12/28)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]

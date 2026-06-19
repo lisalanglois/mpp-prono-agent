@@ -8,6 +8,7 @@
     "info|—|Klement (14/24 1N/2) devance ta grille (9/24)",
     "info|—|Klement (14/25 1N/2) devance ta grille (9/25)",
     "info|—|Klement (15/26 1N/2) devance ta grille (10/26)",
+    "info|—|Klement (16/28 1N/2) devance ta grille (12/28)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -35,6 +36,7 @@
     "Belgique - Égypte",
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
+    "Canada - Qatar",
     "Corée du Sud - Tchéquie",
     "Côte d'Ivoire - Équateur",
     "Espagne - Cap-Vert",
@@ -44,6 +46,7 @@
     "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
     "Mexique - Afrique du Sud",
+    "Mexique - Corée du Sud",
     "Ouzbékistan - Colombie",
     "Pays-Bas - Japon",
     "Portugal - RD Congo",
@@ -53,7 +56,7 @@
     "Tchéquie - Afrique du Sud",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Suisse - Bosnie-Herzégovine|Suisse - Canada:1-0|Bosnie-Herzégovine - Qatar:2-0",
+  "last_email_fingerprint": "Canada - Qatar|Mexique - Corée du Sud|Suisse - Canada:1-0|Afrique du Sud - Corée du Sud:0-1|Bosnie-Herzégovine - Qatar:2-0|Tchéquie - Mexique:0-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Angleterre - Croatie",
@@ -62,6 +65,7 @@
     "Australie - Türkiye",
     "Autriche - Jordanie",
     "Belgique - Égypte",
+    "Brésil - Haïti",
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
     "Canada - Qatar",
@@ -80,6 +84,7 @@
     "Suisse - Bosnie-Herzégovine",
     "Suède - Tunisie",
     "Tchéquie - Afrique du Sud",
+    "Turquie - Paraguay",
     "Écosse - Maroc",
     "États-Unis - Australie",
     "États-Unis - Paraguay"
