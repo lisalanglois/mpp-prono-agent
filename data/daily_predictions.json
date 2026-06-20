@@ -1,77 +1,9 @@
 {
-  "generated_at": "2026-06-19T12:02:31.707348+00:00",
+  "generated_at": "2026-06-20T10:29:41.087427+00:00",
   "days": 3,
   "count": 12,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "États-Unis - Australie",
-      "home": "États-Unis",
-      "away": "Australie",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-19T19:00Z",
-      "venue": "Lumen Field",
-      "odds": {
-        "home": 1.625,
-        "draw": 4.3,
-        "away": 5.25
-      },
-      "home_form": "WLWLL",
-      "away_form": "WDLWW",
-      "source": "override",
-      "mpp_copy": "États-Unis 2 - 1 Australie"
-    },
-    {
-      "match": "Écosse - Maroc",
-      "home": "Écosse",
-      "away": "Maroc",
-      "score": "0-2",
-      "kickoff_utc": "2026-06-19T22:00Z",
-      "venue": "Gillette Stadium",
-      "odds": {
-        "home": 5.75,
-        "draw": 3.65,
-        "away": 1.6896551724137931
-      },
-      "home_form": "WWWLL",
-      "away_form": "DDWWW",
-      "source": "override",
-      "mpp_copy": "Écosse 0 - 2 Maroc"
-    },
-    {
-      "match": "Brésil - Haïti",
-      "home": "Brésil",
-      "away": "Haïti",
-      "score": "3-0",
-      "kickoff_utc": "2026-06-20T00:30Z",
-      "venue": "Lincoln Financial Field",
-      "odds": {
-        "home": 1.1,
-        "draw": 11.0,
-        "away": 23.0
-      },
-      "home_form": "DWWWL",
-      "away_form": "LLWDL",
-      "source": "grille_mpp",
-      "mpp_copy": "Brésil 3 - 0 Haïti"
-    },
-    {
-      "match": "Turquie - Paraguay",
-      "home": "Turquie",
-      "away": "Paraguay",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-20T03:00Z",
-      "venue": "Levi's Stadium",
-      "odds": {
-        "home": 2.1,
-        "draw": 3.4,
-        "away": 3.75
-      },
-      "home_form": "LWWWW",
-      "away_form": "LWLWW",
-      "source": "grille_mpp",
-      "mpp_copy": "Turquie 1 - 1 Paraguay"
-    },
     {
       "match": "Pays-Bas - Suède",
       "home": "Pays-Bas",
@@ -80,9 +12,9 @@
       "kickoff_utc": "2026-06-20T17:00Z",
       "venue": "NRG Stadium",
       "odds": {
-        "home": 1.7692307692307692,
-        "draw": 3.9,
-        "away": 4.5
+        "home": 1.7142857142857144,
+        "draw": 4.1,
+        "away": 4.7
       },
       "home_form": "DWLDW",
       "away_form": "WDLWW",
@@ -97,9 +29,9 @@
       "kickoff_utc": "2026-06-20T20:00Z",
       "venue": "BMO Field",
       "odds": {
-        "home": 1.5405405405405406,
-        "draw": 4.6,
-        "away": 5.5
+        "home": 1.5128205128205128,
+        "draw": 4.7,
+        "away": 6.0
       },
       "home_form": "WWWWW",
       "away_form": "WWWWL",
@@ -114,9 +46,9 @@
       "kickoff_utc": "2026-06-21T00:00Z",
       "venue": "GEHA Field at Arrowhead Stadium",
       "odds": {
-        "home": 1.1,
-        "draw": 10.5,
-        "away": 23.0
+        "home": 1.1333333333333333,
+        "draw": 9.0,
+        "away": 21.0
       },
       "home_form": "LWWDD",
       "away_form": "LWLLL",
@@ -131,9 +63,9 @@
       "kickoff_utc": "2026-06-21T04:00Z",
       "venue": "Estadio BBVA",
       "odds": {
-        "home": 7.0,
+        "home": 6.5,
         "draw": 4.1,
-        "away": 1.526315789473684
+        "away": 1.5555555555555556
       },
       "home_form": "LLLDW",
       "away_form": "DWWWW",
@@ -148,8 +80,8 @@
       "kickoff_utc": "2026-06-21T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.1,
-        "draw": 10.5,
+        "home": 1.0909090909090908,
+        "draw": 11.0,
         "away": 26.0
       },
       "home_form": "DWDDW",
@@ -182,9 +114,9 @@
       "kickoff_utc": "2026-06-21T22:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 1.4651162790697674,
-        "draw": 4.2,
-        "away": 8.0
+        "home": 1.434782608695652,
+        "draw": 4.4,
+        "away": 8.5
       },
       "home_form": "DDDLD",
       "away_form": "DWWLL",
@@ -207,6 +139,74 @@
       "away_form": "DLWDW",
       "source": "override",
       "mpp_copy": "Nouvelle-Zélande 0 - 2 Égypte"
+    },
+    {
+      "match": "Argentine - Autriche",
+      "home": "Argentine",
+      "away": "Autriche",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-22T17:00Z",
+      "venue": "AT&T Stadium",
+      "odds": {
+        "home": 1.5882352941176472,
+        "draw": 4.0,
+        "away": 6.0
+      },
+      "home_form": "WWWWW",
+      "away_form": "WWWWD",
+      "source": "override",
+      "mpp_copy": "Argentine 2 - 0 Autriche"
+    },
+    {
+      "match": "France - Irak",
+      "home": "France",
+      "away": "Irak",
+      "score": "3-0",
+      "kickoff_utc": "2026-06-22T21:00Z",
+      "venue": "Lincoln Financial Field",
+      "odds": {
+        "home": 1.0833333333333333,
+        "draw": 12.0,
+        "away": 29.0
+      },
+      "home_form": "WWLWW",
+      "away_form": "LLDWW",
+      "source": "override",
+      "mpp_copy": "France 3 - 0 Irak"
+    },
+    {
+      "match": "Norvège - Sénégal",
+      "home": "Norvège",
+      "away": "Sénégal",
+      "score": "0-0",
+      "kickoff_utc": "2026-06-23T00:00Z",
+      "venue": "MetLife Stadium",
+      "odds": {
+        "home": 2.35,
+        "draw": 3.5,
+        "away": 2.95
+      },
+      "home_form": "WDWDL",
+      "away_form": "LDLWW",
+      "source": "grille_mpp",
+      "mpp_copy": "Norvège 0 - 0 Sénégal"
+    },
+    {
+      "match": "Jordanie - Algérie",
+      "home": "Jordanie",
+      "away": "Algérie",
+      "score": "0-1",
+      "kickoff_utc": "2026-06-23T03:00Z",
+      "venue": "Levi's Stadium",
+      "odds": {
+        "home": 6.0,
+        "draw": 4.2,
+        "away": 1.5714285714285714
+      },
+      "home_form": "LLLDD",
+      "away_form": "LWWDW",
+      "source": "grille_mpp",
+      "mpp_copy": "Jordanie 0 - 1 Algérie"
     }
   ]
 }
