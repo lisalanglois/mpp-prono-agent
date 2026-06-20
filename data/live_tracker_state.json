@@ -12,6 +12,7 @@
     "info|—|Klement (17/29 1N/2) devance ta grille (13/29)",
     "info|—|Klement (19/31 1N/2) devance ta grille (14/31)",
     "info|—|Klement (19/32 1N/2) devance ta grille (14/32)",
+    "info|—|Klement (20/33 1N/2) devance ta grille (15/33)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -55,6 +56,7 @@
     "Mexique - Corée du Sud",
     "Ouzbékistan - Colombie",
     "Pays-Bas - Japon",
+    "Pays-Bas - Suède",
     "Portugal - RD Congo",
     "Qatar - Suisse",
     "Suisse - Bosnie-Herzégovine",
@@ -65,7 +67,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Turquie - Paraguay|Paraguay - Australie:0-1|Turquie - États-Unis:0-1",
+  "last_email_fingerprint": "Pays-Bas - Suède|Japon - Suède:1-0|Tunisie - Pays-Bas:0-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Allemagne - Côte d'Ivoire",
@@ -74,6 +76,7 @@
     "Argentine - Algérie",
     "Australie - Türkiye",
     "Autriche - Jordanie",
+    "Belgique - Iran",
     "Belgique - Égypte",
     "Brésil - Haïti",
     "Brésil - Maroc",
