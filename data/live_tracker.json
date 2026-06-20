@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-20T21:09:07.127186+00:00",
+  "updated_at": "2026-06-20T23:01:06.875474+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 33,
-    "user_1n2": 15,
-    "user_exact": 2,
-    "model_1n2": 20,
-    "klement_1n2": 20,
-    "user_1n2_pct": 45.5,
-    "model_1n2_pct": 60.6,
-    "klement_1n2_pct": 60.6,
-    "user_exact_pct": 6.1
+    "played": 34,
+    "user_1n2": 16,
+    "user_exact": 3,
+    "model_1n2": 21,
+    "klement_1n2": 21,
+    "user_1n2_pct": 47.1,
+    "model_1n2_pct": 61.8,
+    "klement_1n2_pct": 61.8,
+    "user_exact_pct": 8.8
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -62,7 +62,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (20/33 1N/2) devance ta grille (15/33)",
+      "message": "Klement (21/34 1N/2) devance ta grille (16/34)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -858,11 +858,97 @@
       "klement_direction": "Victoire Pays-Bas",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Allemagne - Côte d'Ivoire",
+      "home": "Allemagne",
+      "away": "Côte d'Ivoire",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": true,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Allemagne",
+      "user_direction": "Victoire Allemagne",
+      "klement_direction": "Victoire Allemagne",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction · Score exact de Lisa !"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
-  "upcoming_updates": [],
+  "new_finished_keys": [
+    "Allemagne - Côte d'Ivoire"
+  ],
+  "recent_results": [
+    {
+      "key": "Allemagne - Côte d'Ivoire",
+      "home": "Allemagne",
+      "away": "Côte d'Ivoire",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": "2-1",
+      "user_outcome": "home",
+      "user_1n2": true,
+      "user_exact": true,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "2",
+      "user_away": "1",
+      "actual_direction": "Victoire Allemagne",
+      "user_direction": "Victoire Allemagne",
+      "klement_direction": "Victoire Allemagne",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction · Score exact de Lisa !"
+    }
+  ],
+  "upcoming_updates": [
+    {
+      "date": "25/06",
+      "match": "Curaçao - Côte d'Ivoire",
+      "home": "Curaçao",
+      "away": "Côte d'Ivoire",
+      "teams_to_review": [
+        "Côte d'Ivoire"
+      ],
+      "current_score": "0-1",
+      "suggested_score": "0-1",
+      "change": false,
+      "reason": "Allemagne - Côte d'Ivoire terminé 2-1 (score exact ✓)",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 0 - 1"
+    },
+    {
+      "date": "25/06",
+      "match": "Équateur - Allemagne",
+      "home": "Équateur",
+      "away": "Allemagne",
+      "teams_to_review": [
+        "Allemagne"
+      ],
+      "current_score": "0-1",
+      "suggested_score": "0-1",
+      "change": false,
+      "reason": "Allemagne - Côte d'Ivoire terminé 2-1 (score exact ✓)",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 0 - 1"
+    }
+  ],
   "urgent_mpp": [
     {
       "key": "Équateur - Curaçao",
@@ -870,8 +956,8 @@
       "away": "Curaçao",
       "date": "21/06",
       "kickoff_paris": "21/06 à 02:00",
-      "hours_until": 2.8,
-      "hours_label": "dans 2.8 h",
+      "hours_until": 1.0,
+      "hours_label": "dans 1 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -886,8 +972,8 @@
       "away": "Japon",
       "date": "21/06",
       "kickoff_paris": "21/06 à 06:00",
-      "hours_until": 6.8,
-      "hours_label": "dans 6.8 h",
+      "hours_until": 5.0,
+      "hours_label": "dans 5 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -902,8 +988,8 @@
       "away": "Arabie saoudite",
       "date": "21/06",
       "kickoff_paris": "21/06 à 18:00",
-      "hours_until": 18.8,
-      "hours_label": "dans 18.8 h",
+      "hours_until": 17.0,
+      "hours_label": "dans 17 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -918,8 +1004,8 @@
       "away": "Iran",
       "date": "21/06",
       "kickoff_paris": "21/06 à 21:00",
-      "hours_until": 21.8,
-      "hours_label": "dans 21.8 h",
+      "hours_until": 20.0,
+      "hours_label": "dans 20 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -934,8 +1020,8 @@
       "away": "Cap-Vert",
       "date": "22/06",
       "kickoff_paris": "22/06 à 00:00",
-      "hours_until": 24.8,
-      "hours_label": "dans 1 j",
+      "hours_until": 23.0,
+      "hours_label": "dans 23 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -950,8 +1036,8 @@
       "away": "Égypte",
       "date": "22/06",
       "kickoff_paris": "22/06 à 03:00",
-      "hours_until": 27.8,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 26.0,
+      "hours_label": "dans 1 j 2 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -966,8 +1052,8 @@
       "away": "Autriche",
       "date": "22/06",
       "kickoff_paris": "22/06 à 19:00",
-      "hours_until": 43.8,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 42.0,
+      "hours_label": "dans 1 j 18 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -982,8 +1068,8 @@
       "away": "Irak",
       "date": "22/06",
       "kickoff_paris": "22/06 à 23:00",
-      "hours_until": 47.8,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 46.0,
+      "hours_label": "dans 1 j 22 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -993,5 +1079,12 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (21/34 1N/2) devance ta grille (16/34)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
