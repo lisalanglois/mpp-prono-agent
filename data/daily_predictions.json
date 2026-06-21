@@ -1,77 +1,9 @@
 {
-  "generated_at": "2026-06-20T10:29:41.087427+00:00",
+  "generated_at": "2026-06-21T11:13:03.873042+00:00",
   "days": 3,
   "count": 12,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Pays-Bas - Suède",
-      "home": "Pays-Bas",
-      "away": "Suède",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-20T17:00Z",
-      "venue": "NRG Stadium",
-      "odds": {
-        "home": 1.7142857142857144,
-        "draw": 4.1,
-        "away": 4.7
-      },
-      "home_form": "DWLDW",
-      "away_form": "WDLWW",
-      "source": "override",
-      "mpp_copy": "Pays-Bas 2 - 1 Suède"
-    },
-    {
-      "match": "Allemagne - Côte d'Ivoire",
-      "home": "Allemagne",
-      "away": "Côte d'Ivoire",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-20T20:00Z",
-      "venue": "BMO Field",
-      "odds": {
-        "home": 1.5128205128205128,
-        "draw": 4.7,
-        "away": 6.0
-      },
-      "home_form": "WWWWW",
-      "away_form": "WWWWL",
-      "source": "override",
-      "mpp_copy": "Allemagne 2 - 1 Côte d'Ivoire"
-    },
-    {
-      "match": "Équateur - Curaçao",
-      "home": "Équateur",
-      "away": "Curaçao",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-21T00:00Z",
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "odds": {
-        "home": 1.1333333333333333,
-        "draw": 9.0,
-        "away": 21.0
-      },
-      "home_form": "LWWDD",
-      "away_form": "LWLLL",
-      "source": "override",
-      "mpp_copy": "Équateur 2 - 0 Curaçao"
-    },
-    {
-      "match": "Tunisie - Japon",
-      "home": "Tunisie",
-      "away": "Japon",
-      "score": "0-2",
-      "kickoff_utc": "2026-06-21T04:00Z",
-      "venue": "Estadio BBVA",
-      "odds": {
-        "home": 6.5,
-        "draw": 4.1,
-        "away": 1.5555555555555556
-      },
-      "home_form": "LLLDW",
-      "away_form": "DWWWW",
-      "source": "grille_mpp",
-      "mpp_copy": "Tunisie 0 - 2 Japon"
-    },
     {
       "match": "Espagne - Arabie saoudite",
       "home": "Espagne",
@@ -80,9 +12,9 @@
       "kickoff_utc": "2026-06-21T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.0909090909090908,
+        "home": 1.1,
         "draw": 11.0,
-        "away": 26.0
+        "away": 21.0
       },
       "home_form": "DWDDW",
       "away_form": "DDWLL",
@@ -97,8 +29,8 @@
       "kickoff_utc": "2026-06-21T19:00Z",
       "venue": "SoFi Stadium",
       "odds": {
-        "home": 1.4444444444444444,
-        "draw": 4.6,
+        "home": 1.425531914893617,
+        "draw": 4.8,
         "away": 7.5
       },
       "home_form": "DWWDW",
@@ -114,8 +46,8 @@
       "kickoff_utc": "2026-06-21T22:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 1.434782608695652,
-        "draw": 4.4,
+        "home": 1.4545454545454546,
+        "draw": 4.2,
         "away": 8.5
       },
       "home_form": "DDDLD",
@@ -131,9 +63,9 @@
       "kickoff_utc": "2026-06-22T01:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 5.5,
-        "draw": 4.2,
-        "away": 1.606060606060606
+        "home": 6.0,
+        "draw": 4.1,
+        "away": 1.5714285714285714
       },
       "home_form": "DLLWL",
       "away_form": "DLWDW",
@@ -148,9 +80,9 @@
       "kickoff_utc": "2026-06-22T17:00Z",
       "venue": "AT&T Stadium",
       "odds": {
-        "home": 1.5882352941176472,
+        "home": 1.5714285714285714,
         "draw": 4.0,
-        "away": 6.0
+        "away": 6.5
       },
       "home_form": "WWWWW",
       "away_form": "WWWWD",
@@ -165,9 +97,9 @@
       "kickoff_utc": "2026-06-22T21:00Z",
       "venue": "Lincoln Financial Field",
       "odds": {
-        "home": 1.0833333333333333,
+        "home": 1.0714285714285714,
         "draw": 12.0,
-        "away": 29.0
+        "away": 31.0
       },
       "home_form": "WWLWW",
       "away_form": "LLDWW",
@@ -182,9 +114,9 @@
       "kickoff_utc": "2026-06-23T00:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 2.35,
+        "home": 2.3,
         "draw": 3.5,
-        "away": 2.95
+        "away": 3.1
       },
       "home_form": "WDWDL",
       "away_form": "LDLWW",
@@ -207,6 +139,74 @@
       "away_form": "LWWDW",
       "source": "grille_mpp",
       "mpp_copy": "Jordanie 0 - 1 Algérie"
+    },
+    {
+      "match": "Portugal - Ouzbékistan",
+      "home": "Portugal",
+      "away": "Ouzbékistan",
+      "score": "3-0",
+      "kickoff_utc": "2026-06-23T17:00Z",
+      "venue": "NRG Stadium",
+      "odds": {
+        "home": 1.2105263157894737,
+        "draw": 7.0,
+        "away": 14.0
+      },
+      "home_form": "DWWWD",
+      "away_form": "LLLWW",
+      "source": "override",
+      "mpp_copy": "Portugal 3 - 0 Ouzbékistan"
+    },
+    {
+      "match": "Angleterre - Ghana",
+      "home": "Angleterre",
+      "away": "Ghana",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-23T20:00Z",
+      "venue": "Gillette Stadium",
+      "odds": {
+        "home": 1.2222222222222223,
+        "draw": 6.5,
+        "away": 14.0
+      },
+      "home_form": "WWWLD",
+      "away_form": "WDLLL",
+      "source": "override",
+      "mpp_copy": "Angleterre 2 - 0 Ghana"
+    },
+    {
+      "match": "Panama - Croatie",
+      "home": "Panama",
+      "away": "Croatie",
+      "score": "0-2",
+      "kickoff_utc": "2026-06-23T23:00Z",
+      "venue": "BMO Field",
+      "odds": {
+        "home": 6.5,
+        "draw": 4.1,
+        "away": 1.5405405405405406
+      },
+      "home_form": "LDWLW",
+      "away_form": "LWLLW",
+      "source": "override",
+      "mpp_copy": "Panama 0 - 2 Croatie"
+    },
+    {
+      "match": "Colombie - RD Congo",
+      "home": "Colombie",
+      "away": "RD Congo",
+      "score": "2-1",
+      "kickoff_utc": "2026-06-24T02:00Z",
+      "venue": "Estadio Akron",
+      "odds": {
+        "home": 1.5128205128205128,
+        "draw": 4.2,
+        "away": 7.0
+      },
+      "home_form": "WWWLL",
+      "away_form": "DLDWW",
+      "source": "override",
+      "mpp_copy": "Colombie 2 - 1 RD Congo"
     }
   ]
 }
