@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T08:23:26.966494+00:00",
+  "updated_at": "2026-06-21T10:25:22.097820+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -938,71 +938,9 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Tunisie - Japon"
-  ],
-  "recent_results": [
-    {
-      "key": "Tunisie - Japon",
-      "home": "Tunisie",
-      "away": "Japon",
-      "actual_score": "0-4",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "away",
-      "model_1n2": true,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "0",
-      "actual_away": "4",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Japon",
-      "user_direction": "—",
-      "klement_direction": "Victoire Japon",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "26/06",
-      "match": "Japon - Suède",
-      "home": "Japon",
-      "away": "Suède",
-      "teams_to_review": [
-        "Japon"
-      ],
-      "current_score": "1-0",
-      "suggested_score": "1-0",
-      "change": true,
-      "reason": "Tunisie - Japon terminé 0-4",
-      "klement_override": true,
-      "suggested_home": "1",
-      "suggested_away": "0",
-      "mpp_action": "→ mets 1 - 0"
-    },
-    {
-      "date": "26/06",
-      "match": "Tunisie - Pays-Bas",
-      "home": "Tunisie",
-      "away": "Pays-Bas",
-      "teams_to_review": [
-        "Tunisie"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": false,
-      "reason": "Tunisie - Japon terminé 0-4",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 0 - 1"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
     {
       "key": "Espagne - Arabie saoudite",
@@ -1010,8 +948,8 @@
       "away": "Arabie saoudite",
       "date": "21/06",
       "kickoff_paris": "21/06 à 18:00",
-      "hours_until": 7.6,
-      "hours_label": "dans 7.6 h",
+      "hours_until": 5.6,
+      "hours_label": "dans 5.6 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1026,8 +964,8 @@
       "away": "Iran",
       "date": "21/06",
       "kickoff_paris": "21/06 à 21:00",
-      "hours_until": 10.6,
-      "hours_label": "dans 10.6 h",
+      "hours_until": 8.6,
+      "hours_label": "dans 8.6 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1042,8 +980,8 @@
       "away": "Cap-Vert",
       "date": "22/06",
       "kickoff_paris": "22/06 à 00:00",
-      "hours_until": 13.6,
-      "hours_label": "dans 13.6 h",
+      "hours_until": 11.6,
+      "hours_label": "dans 11.6 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1058,8 +996,8 @@
       "away": "Égypte",
       "date": "22/06",
       "kickoff_paris": "22/06 à 03:00",
-      "hours_until": 16.6,
-      "hours_label": "dans 16.6 h",
+      "hours_until": 14.6,
+      "hours_label": "dans 14.6 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -1074,8 +1012,8 @@
       "away": "Autriche",
       "date": "22/06",
       "kickoff_paris": "22/06 à 19:00",
-      "hours_until": 32.6,
-      "hours_label": "dans 1 j 8 h",
+      "hours_until": 30.6,
+      "hours_label": "dans 1 j 6 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1090,8 +1028,8 @@
       "away": "Irak",
       "date": "22/06",
       "kickoff_paris": "22/06 à 23:00",
-      "hours_until": 36.6,
-      "hours_label": "dans 1 j 12 h",
+      "hours_until": 34.6,
+      "hours_label": "dans 1 j 10 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1106,8 +1044,8 @@
       "away": "Sénégal",
       "date": "23/06",
       "kickoff_paris": "23/06 à 02:00",
-      "hours_until": 39.6,
-      "hours_label": "dans 1 j 15 h",
+      "hours_until": 37.6,
+      "hours_label": "dans 1 j 13 h",
       "score": "0-0",
       "score_home": "0",
       "score_away": "0",
@@ -1122,8 +1060,8 @@
       "away": "Algérie",
       "date": "23/06",
       "kickoff_paris": "23/06 à 05:00",
-      "hours_until": 42.6,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 40.6,
+      "hours_label": "dans 1 j 16 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -1133,18 +1071,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Tunisie - Japon",
-      "message": "Score non suivi par le tracker pour Tunisie - Japon (0-4)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (22/36 1N/2) devance ta grille (16/36)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
