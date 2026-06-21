@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-21T19:20:48.145397+00:00",
+  "updated_at": "2026-06-21T21:08:12.125890+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 37,
+    "played": 38,
     "user_1n2": 16,
     "user_exact": 3,
     "model_1n2": 23,
     "klement_1n2": 23,
-    "user_1n2_pct": 43.2,
-    "model_1n2_pct": 62.2,
-    "klement_1n2_pct": 62.2,
-    "user_exact_pct": 8.1
+    "user_1n2_pct": 42.1,
+    "model_1n2_pct": 60.5,
+    "klement_1n2_pct": 60.5,
+    "user_exact_pct": 7.9
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -74,7 +74,7 @@
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (23/37 1N/2) devance ta grille (16/37)",
+      "message": "Klement (23/38 1N/2) devance ta grille (16/38)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -966,71 +966,95 @@
       "klement_direction": "Victoire Espagne",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Belgique - Iran",
+      "home": "Belgique",
+      "away": "Iran",
+      "actual_score": "0-0",
+      "actual_outcome": "draw",
+      "user_score": "2-0",
+      "user_outcome": "home",
+      "user_1n2": false,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "0",
+      "actual_away": "0",
+      "user_home": "2",
+      "user_away": "0",
+      "actual_direction": "Match nul",
+      "user_direction": "Victoire Belgique",
+      "klement_direction": "Victoire Belgique",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     }
   ],
   "new_finished_keys": [
-    "Espagne - Arabie saoudite"
+    "Belgique - Iran"
   ],
   "recent_results": [
     {
-      "key": "Espagne - Arabie saoudite",
-      "home": "Espagne",
-      "away": "Arabie saoudite",
-      "actual_score": "4-0",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
+      "key": "Belgique - Iran",
+      "home": "Belgique",
+      "away": "Iran",
+      "actual_score": "0-0",
+      "actual_outcome": "draw",
+      "user_score": "2-0",
+      "user_outcome": "home",
+      "user_1n2": false,
       "user_exact": false,
       "model_outcome": "home",
-      "model_1n2": true,
+      "model_1n2": false,
       "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "4",
+      "klement_1n2": false,
+      "actual_home": "0",
       "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Espagne",
-      "user_direction": "—",
-      "klement_direction": "Victoire Espagne",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
+      "user_home": "2",
+      "user_away": "0",
+      "actual_direction": "Match nul",
+      "user_direction": "Victoire Belgique",
+      "klement_direction": "Victoire Belgique",
+      "direction_winner": "égalité",
+      "verdict_short": "Lisa ✗ · Klement ✗ — aucun des deux"
     }
   ],
   "upcoming_updates": [
     {
-      "date": "27/06",
-      "match": "Cap-Vert - Arabie saoudite",
-      "home": "Cap-Vert",
-      "away": "Arabie saoudite",
+      "date": "28/06",
+      "match": "Nouvelle-Zélande - Belgique",
+      "home": "Nouvelle-Zélande",
+      "away": "Belgique",
       "teams_to_review": [
-        "Arabie saoudite"
+        "Belgique"
       ],
-      "current_score": "1-1",
-      "suggested_score": "1-1",
+      "current_score": "0-3",
+      "suggested_score": "0-3",
       "change": false,
-      "reason": "Espagne - Arabie saoudite terminé 4-0",
-      "klement_override": false,
-      "suggested_home": "1",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 1 - 1"
-    },
-    {
-      "date": "27/06",
-      "match": "Uruguay - Espagne",
-      "home": "Uruguay",
-      "away": "Espagne",
-      "teams_to_review": [
-        "Espagne"
-      ],
-      "current_score": "0-2",
-      "suggested_score": "0-2",
-      "change": false,
-      "reason": "Espagne - Arabie saoudite terminé 4-0",
+      "reason": "Belgique - Iran terminé 0-0 (ton 1/N/2 incorrect)",
       "klement_override": false,
       "suggested_home": "0",
-      "suggested_away": "2",
-      "mpp_action": "→ mets 0 - 2"
+      "suggested_away": "3",
+      "mpp_action": "→ mets 0 - 3"
+    },
+    {
+      "date": "28/06",
+      "match": "Égypte - Iran",
+      "home": "Égypte",
+      "away": "Iran",
+      "teams_to_review": [
+        "Iran"
+      ],
+      "current_score": "2-1",
+      "suggested_score": "2-1",
+      "change": false,
+      "reason": "Belgique - Iran terminé 0-0 (ton 1/N/2 incorrect)",
+      "klement_override": false,
+      "suggested_home": "2",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 2 - 1"
     }
   ],
   "urgent_mpp": [
@@ -1040,8 +1064,8 @@
       "away": "Cap-Vert",
       "date": "22/06",
       "kickoff_paris": "22/06 à 00:00",
-      "hours_until": 2.7,
-      "hours_label": "dans 2.7 h",
+      "hours_until": 0.9,
+      "hours_label": "dans 54 min",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1056,8 +1080,8 @@
       "away": "Égypte",
       "date": "22/06",
       "kickoff_paris": "22/06 à 03:00",
-      "hours_until": 5.7,
-      "hours_label": "dans 5.7 h",
+      "hours_until": 3.9,
+      "hours_label": "dans 3.9 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -1072,8 +1096,8 @@
       "away": "Autriche",
       "date": "22/06",
       "kickoff_paris": "22/06 à 19:00",
-      "hours_until": 21.7,
-      "hours_label": "dans 21.7 h",
+      "hours_until": 19.9,
+      "hours_label": "dans 19.9 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1088,8 +1112,8 @@
       "away": "Irak",
       "date": "22/06",
       "kickoff_paris": "22/06 à 23:00",
-      "hours_until": 25.7,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 23.9,
+      "hours_label": "dans 23.9 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1104,8 +1128,8 @@
       "away": "Sénégal",
       "date": "23/06",
       "kickoff_paris": "23/06 à 02:00",
-      "hours_until": 28.7,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 26.9,
+      "hours_label": "dans 1 j 2 h",
       "score": "0-0",
       "score_home": "0",
       "score_away": "0",
@@ -1120,8 +1144,8 @@
       "away": "Algérie",
       "date": "23/06",
       "kickoff_paris": "23/06 à 05:00",
-      "hours_until": 31.7,
-      "hours_label": "dans 1 j 7 h",
+      "hours_until": 29.9,
+      "hours_label": "dans 1 j 5 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -1136,8 +1160,8 @@
       "away": "Ouzbékistan",
       "date": "23/06",
       "kickoff_paris": "23/06 à 19:00",
-      "hours_until": 45.7,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 43.9,
+      "hours_label": "dans 1 j 19 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1145,19 +1169,29 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Portugal vs Ouzbékistan → 3 - 0",
       "changed": false
+    },
+    {
+      "key": "Angleterre - Ghana",
+      "home": "Angleterre",
+      "away": "Ghana",
+      "date": "23/06",
+      "kickoff_paris": "23/06 à 22:00",
+      "hours_until": 46.9,
+      "hours_label": "dans 1 j 22 h",
+      "score": "2-0",
+      "score_home": "2",
+      "score_away": "0",
+      "user_score": "2-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Angleterre vs Ghana → 2 - 0",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
-      "level": "warning",
-      "match": "Espagne - Arabie saoudite",
-      "message": "Score non suivi par le tracker pour Espagne - Arabie saoudite (4-0)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
       "level": "info",
       "match": "—",
-      "message": "Klement (23/37 1N/2) devance ta grille (16/37)",
+      "message": "Klement (23/38 1N/2) devance ta grille (16/38)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
