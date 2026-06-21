@@ -14,6 +14,7 @@
     "info|—|Klement (19/32 1N/2) devance ta grille (14/32)",
     "info|—|Klement (20/33 1N/2) devance ta grille (15/33)",
     "info|—|Klement (21/34 1N/2) devance ta grille (16/34)",
+    "info|—|Klement (21/35 1N/2) devance ta grille (16/35)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -66,10 +67,11 @@
     "Tchéquie - Afrique du Sud",
     "Turquie - Paraguay",
     "Écosse - Maroc",
+    "Équateur - Curaçao",
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Allemagne - Côte d'Ivoire|Curaçao - Côte d'Ivoire:0-1|Équateur - Allemagne:0-1",
+  "last_email_fingerprint": "Équateur - Curaçao|Curaçao - Côte d'Ivoire:0-1|Équateur - Allemagne:0-1",
   "urgent_notified": [
     "Allemagne - Curaçao",
     "Allemagne - Côte d'Ivoire",
@@ -93,6 +95,7 @@
     "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
     "Mexique - Corée du Sud",
+    "Nouvelle-Zélande - Égypte",
     "Ouzbékistan - Colombie",
     "Pays-Bas - Japon",
     "Pays-Bas - Suède",
