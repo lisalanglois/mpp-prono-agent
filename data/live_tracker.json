@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-21T17:22:34.424393+00:00",
+  "updated_at": "2026-06-21T19:20:48.145397+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 36,
+    "played": 37,
     "user_1n2": 16,
     "user_exact": 3,
-    "model_1n2": 22,
-    "klement_1n2": 22,
-    "user_1n2_pct": 44.4,
-    "model_1n2_pct": 61.1,
-    "klement_1n2_pct": 61.1,
-    "user_exact_pct": 8.3
+    "model_1n2": 23,
+    "klement_1n2": 23,
+    "user_1n2_pct": 43.2,
+    "model_1n2_pct": 62.2,
+    "klement_1n2_pct": 62.2,
+    "user_exact_pct": 8.1
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -66,9 +66,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Espagne - Arabie saoudite",
+      "message": "Score non suivi par le tracker pour Espagne - Arabie saoudite (4-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (22/36 1N/2) devance ta grille (16/36)",
+      "message": "Klement (23/37 1N/2) devance ta grille (16/37)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -936,36 +942,106 @@
       "klement_direction": "Victoire Japon",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Espagne - Arabie saoudite",
+      "home": "Espagne",
+      "away": "Arabie saoudite",
+      "actual_score": "4-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "4",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
-  "upcoming_updates": [],
-  "urgent_mpp": [
+  "new_finished_keys": [
+    "Espagne - Arabie saoudite"
+  ],
+  "recent_results": [
     {
-      "key": "Belgique - Iran",
-      "home": "Belgique",
-      "away": "Iran",
-      "date": "21/06",
-      "kickoff_paris": "21/06 à 21:00",
-      "hours_until": 1.6,
-      "hours_label": "dans 1.6 h",
-      "score": "2-0",
-      "score_home": "2",
-      "score_away": "0",
-      "user_score": "2-0",
+      "key": "Espagne - Arabie saoudite",
+      "home": "Espagne",
+      "away": "Arabie saoudite",
+      "actual_score": "4-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "home",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "4",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "upcoming_updates": [
+    {
+      "date": "27/06",
+      "match": "Cap-Vert - Arabie saoudite",
+      "home": "Cap-Vert",
+      "away": "Arabie saoudite",
+      "teams_to_review": [
+        "Arabie saoudite"
+      ],
+      "current_score": "1-1",
+      "suggested_score": "1-1",
+      "change": false,
+      "reason": "Espagne - Arabie saoudite terminé 4-0",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Belgique vs Iran → 2 - 0",
-      "changed": false
+      "suggested_home": "1",
+      "suggested_away": "1",
+      "mpp_action": "→ mets 1 - 1"
     },
+    {
+      "date": "27/06",
+      "match": "Uruguay - Espagne",
+      "home": "Uruguay",
+      "away": "Espagne",
+      "teams_to_review": [
+        "Espagne"
+      ],
+      "current_score": "0-2",
+      "suggested_score": "0-2",
+      "change": false,
+      "reason": "Espagne - Arabie saoudite terminé 4-0",
+      "klement_override": false,
+      "suggested_home": "0",
+      "suggested_away": "2",
+      "mpp_action": "→ mets 0 - 2"
+    }
+  ],
+  "urgent_mpp": [
     {
       "key": "Uruguay - Cap-Vert",
       "home": "Uruguay",
       "away": "Cap-Vert",
       "date": "22/06",
       "kickoff_paris": "22/06 à 00:00",
-      "hours_until": 4.6,
-      "hours_label": "dans 4.6 h",
+      "hours_until": 2.7,
+      "hours_label": "dans 2.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -980,8 +1056,8 @@
       "away": "Égypte",
       "date": "22/06",
       "kickoff_paris": "22/06 à 03:00",
-      "hours_until": 7.6,
-      "hours_label": "dans 7.6 h",
+      "hours_until": 5.7,
+      "hours_label": "dans 5.7 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -996,8 +1072,8 @@
       "away": "Autriche",
       "date": "22/06",
       "kickoff_paris": "22/06 à 19:00",
-      "hours_until": 23.6,
-      "hours_label": "dans 23.6 h",
+      "hours_until": 21.7,
+      "hours_label": "dans 21.7 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1012,8 +1088,8 @@
       "away": "Irak",
       "date": "22/06",
       "kickoff_paris": "22/06 à 23:00",
-      "hours_until": 27.6,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 25.7,
+      "hours_label": "dans 1 j 1 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1028,8 +1104,8 @@
       "away": "Sénégal",
       "date": "23/06",
       "kickoff_paris": "23/06 à 02:00",
-      "hours_until": 30.6,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 28.7,
+      "hours_label": "dans 1 j 4 h",
       "score": "0-0",
       "score_home": "0",
       "score_away": "0",
@@ -1044,8 +1120,8 @@
       "away": "Algérie",
       "date": "23/06",
       "kickoff_paris": "23/06 à 05:00",
-      "hours_until": 33.6,
-      "hours_label": "dans 1 j 9 h",
+      "hours_until": 31.7,
+      "hours_label": "dans 1 j 7 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -1060,8 +1136,8 @@
       "away": "Ouzbékistan",
       "date": "23/06",
       "kickoff_paris": "23/06 à 19:00",
-      "hours_until": 47.6,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.7,
+      "hours_label": "dans 1 j 21 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1071,5 +1147,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Espagne - Arabie saoudite",
+      "message": "Score non suivi par le tracker pour Espagne - Arabie saoudite (4-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (23/37 1N/2) devance ta grille (16/37)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
