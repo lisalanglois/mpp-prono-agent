@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T19:20:06.404607+00:00",
+  "updated_at": "2026-06-22T21:57:45.383952+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -1064,96 +1064,18 @@
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction · Score exact de Lisa !"
     }
   ],
-  "new_finished_keys": [
-    "Argentine - Autriche"
-  ],
-  "recent_results": [
-    {
-      "key": "Argentine - Autriche",
-      "home": "Argentine",
-      "away": "Autriche",
-      "actual_score": "2-0",
-      "actual_outcome": "home",
-      "user_score": "2-0",
-      "user_outcome": "home",
-      "user_1n2": true,
-      "user_exact": true,
-      "model_outcome": "home",
-      "model_1n2": true,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "2",
-      "actual_away": "0",
-      "user_home": "2",
-      "user_away": "0",
-      "actual_direction": "Victoire Argentine",
-      "user_direction": "Victoire Argentine",
-      "klement_direction": "Victoire Argentine",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction · Score exact de Lisa !"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "28/06",
-      "match": "Algérie - Autriche",
-      "home": "Algérie",
-      "away": "Autriche",
-      "teams_to_review": [
-        "Autriche"
-      ],
-      "current_score": "0-1",
-      "suggested_score": "0-1",
-      "change": true,
-      "reason": "Argentine - Autriche terminé 2-0 (score exact ✓)",
-      "klement_override": true,
-      "suggested_home": "0",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 0 - 1"
-    },
-    {
-      "date": "28/06",
-      "match": "Jordanie - Argentine",
-      "home": "Jordanie",
-      "away": "Argentine",
-      "teams_to_review": [
-        "Argentine"
-      ],
-      "current_score": "0-3",
-      "suggested_score": "0-3",
-      "change": false,
-      "reason": "Argentine - Autriche terminé 2-0 (score exact ✓)",
-      "klement_override": false,
-      "suggested_home": "0",
-      "suggested_away": "3",
-      "mpp_action": "→ mets 0 - 3"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
-    {
-      "key": "France - Irak",
-      "home": "France",
-      "away": "Irak",
-      "date": "22/06",
-      "kickoff_paris": "22/06 à 23:00",
-      "hours_until": 1.7,
-      "hours_label": "dans 1.7 h",
-      "score": "3-0",
-      "score_home": "3",
-      "score_away": "0",
-      "user_score": "3-0",
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → France vs Irak → 3 - 0",
-      "changed": false
-    },
     {
       "key": "Norvège - Sénégal",
       "home": "Norvège",
       "away": "Sénégal",
       "date": "23/06",
       "kickoff_paris": "23/06 à 02:00",
-      "hours_until": 4.7,
-      "hours_label": "dans 4.7 h",
+      "hours_until": 2.0,
+      "hours_label": "dans 2 h",
       "score": "0-0",
       "score_home": "0",
       "score_away": "0",
@@ -1168,8 +1090,8 @@
       "away": "Algérie",
       "date": "23/06",
       "kickoff_paris": "23/06 à 05:00",
-      "hours_until": 7.7,
-      "hours_label": "dans 7.7 h",
+      "hours_until": 5.0,
+      "hours_label": "dans 5 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
@@ -1184,8 +1106,8 @@
       "away": "Ouzbékistan",
       "date": "23/06",
       "kickoff_paris": "23/06 à 19:00",
-      "hours_until": 21.7,
-      "hours_label": "dans 21.7 h",
+      "hours_until": 19.0,
+      "hours_label": "dans 19 h",
       "score": "3-0",
       "score_home": "3",
       "score_away": "0",
@@ -1200,8 +1122,8 @@
       "away": "Ghana",
       "date": "23/06",
       "kickoff_paris": "23/06 à 22:00",
-      "hours_until": 24.7,
-      "hours_label": "dans 1 j",
+      "hours_until": 22.0,
+      "hours_label": "dans 22 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1216,8 +1138,8 @@
       "away": "Croatie",
       "date": "24/06",
       "kickoff_paris": "24/06 à 01:00",
-      "hours_until": 27.7,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 25.0,
+      "hours_label": "dans 1 j 1 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -1232,8 +1154,8 @@
       "away": "RD Congo",
       "date": "24/06",
       "kickoff_paris": "24/06 à 04:00",
-      "hours_until": 30.7,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 28.0,
+      "hours_label": "dans 1 j 4 h",
       "score": "2-1",
       "score_home": "2",
       "score_away": "1",
@@ -1248,8 +1170,8 @@
       "away": "Qatar",
       "date": "24/06",
       "kickoff_paris": "24/06 à 21:00",
-      "hours_until": 47.7,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.0,
+      "hours_label": "dans 1 j 21 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1264,8 +1186,8 @@
       "away": "Canada",
       "date": "24/06",
       "kickoff_paris": "24/06 à 21:00",
-      "hours_until": 47.7,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.0,
+      "hours_label": "dans 1 j 21 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
@@ -1275,12 +1197,5 @@
       "changed": true
     }
   ],
-  "new_alerts": [
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (24/41 1N/2) devance ta grille (18/41)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
