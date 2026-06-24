@@ -27,6 +27,10 @@ on:
         description: "Email récap scores V2 à mettre à jour sur mpp.football"
         type: boolean
         default: false
+      send_grille_guide:
+        description: "Email guide V3 fiable (quoi mettre sur mpp.football)"
+        type: boolean
+        default: false
       bonus_email_to:
         description: "Destinataire(s) bonus, séparés par des virgules (optionnel)"
         type: string
@@ -70,6 +74,8 @@ jobs:
             python scripts/send_bonus_questions_email.py $ARGS
           elif [ "${{ github.event.inputs.send_v2_update }}" = "true" ]; then
             python scripts/send_v2_update_email.py
+          elif [ "${{ github.event.inputs.send_grille_guide }}" = "true" ]; then
+            python scripts/send_grille_guide_email.py
           elif [ -n "$PRE" ]; then
             python scripts/mpp_scheduler.py --pre-comp "$PRE" --email
           elif [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.send_test_email }}" = "true" ]; then

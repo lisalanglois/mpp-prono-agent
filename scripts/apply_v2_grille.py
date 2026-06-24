@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Applique la stratégie V2 sur les matchs restants et met à jour export_web.OVERRIDES."""
+"""Applique la stratégie V3 sur les matchs restants et met à jour export_web.OVERRIDES."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ from mpp_recommend import recommend_mpp_score, load_klement  # noqa: E402
 
 EXPORT_WEB = ROOT / "scripts" / "export_web.py"
 BACKUP_DIR = ROOT / "data"
-CHANGES_PATH = BACKUP_DIR / "v2_grille_changes.json"
+CHANGES_PATH = BACKUP_DIR / "v3_grille_changes.json"
 
 
 def played_keys() -> set[str]:
@@ -81,9 +81,9 @@ def apply() -> dict:
             "away": m.away,
             "old_score": old or None,
             "new_score": new,
-            "tier": rec.get("tier"),
-            "target_outcome": rec.get("target_outcome"),
-            "p_draw": rec.get("p_draw"),
+            "confidence": rec.get("confidence"),
+            "reason": rec.get("reason"),
+            "crowd": rec.get("crowd"),
             "mpp_instruction": rec["mpp_instruction"],
         }
         if old and old != new:
@@ -98,7 +98,7 @@ def apply() -> dict:
 
     payload = {
         "applied_at": datetime.now(timezone.utc).isoformat(),
-        "strategy": "V2",
+        "strategy": "V3",
         "played_skipped": len(played),
         "backup": str(backup_path),
         "changes": changes,
@@ -111,12 +111,12 @@ def apply() -> dict:
 
 def main() -> None:
     payload = apply()
-    print(f"✅ Stratégie V2 appliquée — {len(payload['changes'])} modification(s)")
+    print(f"✅ Stratégie V3 appliquée — {len(payload['changes'])} modification(s)")
     print(f"   Backup : {payload['backup']}")
     print(f"   Détail : {CHANGES_PATH}")
     for c in payload["changes"]:
         old = c.get("old_score") or "—"
-        print(f"   • {c['key']}: {old} → {c['new_score']} (tier {c.get('tier')})")
+        print(f"   • {c['key']}: {old} → {c['new_score']} ({c.get('confidence')})")
 
 
 if __name__ == "__main__":
