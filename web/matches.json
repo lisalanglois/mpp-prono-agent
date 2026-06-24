@@ -480,7 +480,7 @@
     "date": "23/06",
     "home": "Norvège",
     "away": "Sénégal",
-    "suggested": "0-0",
+    "suggested": "1-1",
     "probs": {
       "home": "21%",
       "draw": "34%",
@@ -564,7 +564,7 @@
     "date": "25/06",
     "home": "Bosnie-Herzégovine",
     "away": "Qatar",
-    "suggested": "2-0",
+    "suggested": "1-1",
     "probs": {
       "home": "28%",
       "draw": "33%",
@@ -588,7 +588,7 @@
     "date": "25/06",
     "home": "Maroc",
     "away": "Haïti",
-    "suggested": "2-0",
+    "suggested": "1-0",
     "probs": {
       "home": "8%",
       "draw": "42%",
@@ -660,7 +660,7 @@
     "date": "26/06",
     "home": "Turquie",
     "away": "États-Unis",
-    "suggested": "0-0",
+    "suggested": "1-1",
     "probs": {
       "home": "36%",
       "draw": "34%",
@@ -672,7 +672,7 @@
     "date": "26/06",
     "home": "Paraguay",
     "away": "Australie",
-    "suggested": "0-0",
+    "suggested": "1-1",
     "probs": {
       "home": "24%",
       "draw": "34%",
@@ -696,7 +696,7 @@
     "date": "27/06",
     "home": "Norvège",
     "away": "France",
-    "suggested": "1-2",
+    "suggested": "0-1",
     "probs": {
       "home": "44%",
       "draw": "34%",
@@ -708,7 +708,7 @@
     "date": "27/06",
     "home": "Sénégal",
     "away": "Irak",
-    "suggested": "2-0",
+    "suggested": "1-0",
     "probs": {
       "home": "17%",
       "draw": "36%",
@@ -720,7 +720,7 @@
     "date": "27/06",
     "home": "Uruguay",
     "away": "Espagne",
-    "suggested": "0-2",
+    "suggested": "0-1",
     "probs": {
       "home": "46%",
       "draw": "36%",
@@ -744,7 +744,7 @@
     "date": "28/06",
     "home": "Nouvelle-Zélande",
     "away": "Belgique",
-    "suggested": "0-3",
+    "suggested": "0-1",
     "probs": {
       "home": "52%",
       "draw": "39%",
@@ -756,7 +756,7 @@
     "date": "28/06",
     "home": "Égypte",
     "away": "Iran",
-    "suggested": "2-1",
+    "suggested": "1-1",
     "probs": {
       "home": "26%",
       "draw": "35%",
@@ -768,7 +768,7 @@
     "date": "28/06",
     "home": "Panama",
     "away": "Angleterre",
-    "suggested": "0-3",
+    "suggested": "0-1",
     "probs": {
       "home": "50%",
       "draw": "41%",
@@ -780,7 +780,7 @@
     "date": "28/06",
     "home": "Croatie",
     "away": "Ghana",
-    "suggested": "2-0",
+    "suggested": "1-1",
     "probs": {
       "home": "18%",
       "draw": "38%",
@@ -792,7 +792,7 @@
     "date": "28/06",
     "home": "Colombie",
     "away": "Portugal",
-    "suggested": "1-2",
+    "suggested": "0-1",
     "probs": {
       "home": "50%",
       "draw": "33%",
@@ -804,7 +804,7 @@
     "date": "28/06",
     "home": "RD Congo",
     "away": "Ouzbékistan",
-    "suggested": "2-1",
+    "suggested": "1-1",
     "probs": {
       "home": "19%",
       "draw": "33%",
@@ -816,7 +816,7 @@
     "date": "28/06",
     "home": "Jordanie",
     "away": "Argentine",
-    "suggested": "0-3",
+    "suggested": "0-1",
     "probs": {
       "home": "48%",
       "draw": "42%",

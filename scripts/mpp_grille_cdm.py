@@ -118,13 +118,13 @@ def pick_mpp_score_v2(
         if candidates:
             return candidates[0][0], f"favori ({fav_pct:.0f}%)"
 
-    # Match serré / nul probable (>38% nul communauté ou proba)
-    if p_draw > 0.28 or crowd_draw > 38:
+    # Match serré / nul probable — CDM 2026 : taux nuls ~29 % (boost vs historique)
+    if p_draw > 0.26 or crowd_draw > 35:
         for score in ("1-1", "0-0", "2-2"):
             for s, p in top[:10]:
-                if s == score and p >= sp * 0.55:
-                    if score != stat or crowd_draw > 45:
-                        return score, "profil nul"
+                if s == score and p >= sp * 0.50:
+                    if score != stat or crowd_draw > 40:
+                        return score, "profil nul CDM"
 
     # Favori modéré → différencier si 2e score proche
     for score, prob in top[1:6]:

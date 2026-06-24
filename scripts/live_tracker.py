@@ -321,9 +321,7 @@ def build_urgent_mpp(
             "user_score": rec.get("user_score"),
             "klement_override": rec.get("klement_override", False),
             "mpp_instruction": rec["mpp_instruction"],
-            "changed": rec.get("klement_override") or bool(
-                updates_by_key.get(key, {}).get("change")
-            ),
+            "changed": rec.get("changed") or rec.get("klement_override", False),
         })
 
     return urgent
