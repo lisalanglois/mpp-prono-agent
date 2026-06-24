@@ -1,77 +1,9 @@
 {
-  "generated_at": "2026-06-23T10:58:27.549332+00:00",
+  "generated_at": "2026-06-24T10:45:06.136990+00:00",
   "days": 3,
-  "count": 16,
+  "count": 18,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Portugal - Ouzbékistan",
-      "home": "Portugal",
-      "away": "Ouzbékistan",
-      "score": "3-0",
-      "kickoff_utc": "2026-06-23T17:00Z",
-      "venue": "NRG Stadium",
-      "odds": {
-        "home": 1.1428571428571428,
-        "draw": 8.5,
-        "away": 19.0
-      },
-      "home_form": "DWWWD",
-      "away_form": "LLLWW",
-      "source": "override",
-      "mpp_copy": "Portugal 3 - 0 Ouzbékistan"
-    },
-    {
-      "match": "Angleterre - Ghana",
-      "home": "Angleterre",
-      "away": "Ghana",
-      "score": "2-0",
-      "kickoff_utc": "2026-06-23T20:00Z",
-      "venue": "Gillette Stadium",
-      "odds": {
-        "home": 1.2,
-        "draw": 7.0,
-        "away": 15.0
-      },
-      "home_form": "WWWLD",
-      "away_form": "WDLLL",
-      "source": "override",
-      "mpp_copy": "Angleterre 2 - 0 Ghana"
-    },
-    {
-      "match": "Panama - Croatie",
-      "home": "Panama",
-      "away": "Croatie",
-      "score": "0-2",
-      "kickoff_utc": "2026-06-23T23:00Z",
-      "venue": "BMO Field",
-      "odds": {
-        "home": 7.0,
-        "draw": 4.4,
-        "away": 1.4878048780487805
-      },
-      "home_form": "LDWLW",
-      "away_form": "LWLLW",
-      "source": "override",
-      "mpp_copy": "Panama 0 - 2 Croatie"
-    },
-    {
-      "match": "Colombie - RD Congo",
-      "home": "Colombie",
-      "away": "RD Congo",
-      "score": "2-1",
-      "kickoff_utc": "2026-06-24T02:00Z",
-      "venue": "Estadio Akron",
-      "odds": {
-        "home": 1.5555555555555556,
-        "draw": 4.0,
-        "away": 6.5
-      },
-      "home_form": "WWWLL",
-      "away_form": "DLDWW",
-      "source": "override",
-      "mpp_copy": "Colombie 2 - 1 RD Congo"
-    },
     {
       "match": "Bosnie-Herzégovine - Qatar",
       "home": "Bosnie-Herzégovine",
@@ -93,7 +25,7 @@
       "match": "Suisse - Canada",
       "home": "Suisse",
       "away": "Canada",
-      "score": "1-1",
+      "score": "1-0",
       "kickoff_utc": "2026-06-24T19:00Z",
       "venue": "BC Place",
       "odds": {
@@ -104,41 +36,41 @@
       "home_form": "WDDWD",
       "away_form": "WDDWD",
       "source": "override",
-      "mpp_copy": "Suisse 1 - 1 Canada"
+      "mpp_copy": "Suisse 1 - 0 Canada"
     },
     {
       "match": "Maroc - Haïti",
       "home": "Maroc",
       "away": "Haïti",
-      "score": "2-0",
+      "score": "3-0",
       "kickoff_utc": "2026-06-24T22:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.1739130434782608,
-        "draw": 7.5,
-        "away": 17.0
+        "home": 1.1904761904761905,
+        "draw": 7.0,
+        "away": 16.0
       },
       "home_form": "WDDWW",
       "away_form": "LLLWD",
       "source": "override",
-      "mpp_copy": "Maroc 2 - 0 Haïti"
+      "mpp_copy": "Maroc 3 - 0 Haïti"
     },
     {
       "match": "Écosse - Brésil",
       "home": "Écosse",
       "away": "Brésil",
-      "score": "0-1",
+      "score": "0-3",
       "kickoff_utc": "2026-06-24T22:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 7.5,
-        "draw": 5.25,
-        "away": 1.392156862745098
+        "home": 9.5,
+        "draw": 5.5,
+        "away": 1.3225806451612903
       },
       "home_form": "LWWWL",
       "away_form": "WDWWW",
-      "source": "grille_mpp",
-      "mpp_copy": "Écosse 0 - 1 Brésil"
+      "source": "override",
+      "mpp_copy": "Écosse 0 - 3 Brésil"
     },
     {
       "match": "Tchéquie - Mexique",
@@ -161,24 +93,24 @@
       "match": "Afrique du Sud - Corée du Sud",
       "home": "Afrique du Sud",
       "away": "Corée du Sud",
-      "score": "1-1",
+      "score": "0-1",
       "kickoff_utc": "2026-06-25T01:00Z",
       "venue": "Estadio BBVA",
       "odds": {
-        "home": 5.25,
-        "draw": 3.85,
-        "away": 1.6896551724137931
+        "home": 5.5,
+        "draw": 3.95,
+        "away": 1.6666666666666665
       },
       "home_form": "DLWDL",
       "away_form": "LWWWL",
       "source": "override",
-      "mpp_copy": "Afrique du Sud 1 - 1 Corée du Sud"
+      "mpp_copy": "Afrique du Sud 0 - 1 Corée du Sud"
     },
     {
       "match": "Curaçao - Côte d'Ivoire",
       "home": "Curaçao",
       "away": "Côte d'Ivoire",
-      "score": "0-1",
+      "score": "0-3",
       "kickoff_utc": "2026-06-25T20:00Z",
       "venue": "Lincoln Financial Field",
       "odds": {
@@ -188,25 +120,25 @@
       },
       "home_form": "DLWLL",
       "away_form": "LWWWW",
-      "source": "grille_mpp",
-      "mpp_copy": "Curaçao 0 - 1 Côte d'Ivoire"
+      "source": "override",
+      "mpp_copy": "Curaçao 0 - 3 Côte d'Ivoire"
     },
     {
       "match": "Équateur - Allemagne",
       "home": "Équateur",
       "away": "Allemagne",
-      "score": "0-1",
+      "score": "0-3",
       "kickoff_utc": "2026-06-25T20:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 3.65,
+        "home": 3.75,
         "draw": 4.1,
-        "away": 1.9090909090909092
+        "away": 1.8695652173913042
       },
       "home_form": "DLWWD",
       "away_form": "WWWWW",
-      "source": "grille_mpp",
-      "mpp_copy": "Équateur 0 - 1 Allemagne"
+      "source": "override",
+      "mpp_copy": "Équateur 0 - 3 Allemagne"
     },
     {
       "match": "Japon - Suède",
@@ -216,20 +148,20 @@
       "kickoff_utc": "2026-06-25T23:00Z",
       "venue": "AT&T Stadium",
       "odds": {
-        "home": 1.9523809523809523,
-        "draw": 3.45,
-        "away": 4.3
+        "home": 1.8695652173913042,
+        "draw": 3.55,
+        "away": 4.4
       },
       "home_form": "WDWWW",
       "away_form": "LWDLW",
-      "source": "grille_mpp",
+      "source": "override",
       "mpp_copy": "Japon 1 - 1 Suède"
     },
     {
       "match": "Tunisie - Pays-Bas",
       "home": "Tunisie",
       "away": "Pays-Bas",
-      "score": "0-1",
+      "score": "0-3",
       "kickoff_utc": "2026-06-25T23:00Z",
       "venue": "GEHA Field at Arrowhead Stadium",
       "odds": {
@@ -239,31 +171,31 @@
       },
       "home_form": "LLLLD",
       "away_form": "WDWLD",
-      "source": "grille_mpp",
-      "mpp_copy": "Tunisie 0 - 1 Pays-Bas"
+      "source": "override",
+      "mpp_copy": "Tunisie 0 - 3 Pays-Bas"
     },
     {
       "match": "Paraguay - Australie",
       "home": "Paraguay",
       "away": "Australie",
-      "score": "0-0",
+      "score": "1-0",
       "kickoff_utc": "2026-06-26T02:00Z",
       "venue": "Levi's Stadium",
       "odds": {
         "home": 2.95,
         "draw": 2.2,
-        "away": 3.95
+        "away": 4.0
       },
       "home_form": "WLWLW",
       "away_form": "LWDLW",
-      "source": "grille_mpp",
-      "mpp_copy": "Paraguay 0 - 0 Australie"
+      "source": "override",
+      "mpp_copy": "Paraguay 1 - 0 Australie"
     },
     {
       "match": "Turquie - États-Unis",
       "home": "Turquie",
       "away": "États-Unis",
-      "score": "0-0",
+      "score": "1-1",
       "kickoff_utc": "2026-06-26T02:00Z",
       "venue": "SoFi Stadium",
       "odds": {
@@ -273,8 +205,110 @@
       },
       "home_form": "LLWWW",
       "away_form": "WWLWL",
-      "source": "grille_mpp",
-      "mpp_copy": "Turquie 0 - 0 États-Unis"
+      "source": "override",
+      "mpp_copy": "Turquie 1 - 1 États-Unis"
+    },
+    {
+      "match": "Norvège - France",
+      "home": "Norvège",
+      "away": "France",
+      "score": "0-2",
+      "kickoff_utc": "2026-06-26T19:00Z",
+      "venue": "Gillette Stadium",
+      "odds": {
+        "home": 4.7,
+        "draw": 4.3,
+        "away": 1.6666666666666665
+      },
+      "home_form": "WWDWD",
+      "away_form": "WWWLW",
+      "source": "override",
+      "mpp_copy": "Norvège 0 - 2 France"
+    },
+    {
+      "match": "Sénégal - Irak",
+      "home": "Sénégal",
+      "away": "Irak",
+      "score": "3-0",
+      "kickoff_utc": "2026-06-26T19:00Z",
+      "venue": "BMO Field",
+      "odds": {
+        "home": 1.2222222222222223,
+        "draw": 7.0,
+        "away": 12.0
+      },
+      "home_form": "LLDLW",
+      "away_form": "LLLDW",
+      "source": "override",
+      "mpp_copy": "Sénégal 3 - 0 Irak"
+    },
+    {
+      "match": "Cap-Vert - Arabie saoudite",
+      "home": "Cap-Vert",
+      "away": "Arabie saoudite",
+      "score": "1-1",
+      "kickoff_utc": "2026-06-27T00:00Z",
+      "venue": "NRG Stadium",
+      "odds": {
+        "home": 2.5,
+        "draw": 3.4,
+        "away": 2.9
+      },
+      "home_form": "DDWWL",
+      "away_form": "LDDWL",
+      "source": "override",
+      "mpp_copy": "Cap-Vert 1 - 1 Arabie saoudite"
+    },
+    {
+      "match": "Uruguay - Espagne",
+      "home": "Uruguay",
+      "away": "Espagne",
+      "score": "0-3",
+      "kickoff_utc": "2026-06-27T00:00Z",
+      "venue": "Estadio Akron",
+      "odds": {
+        "home": 7.5,
+        "draw": 4.2,
+        "away": 1.4878048780487805
+      },
+      "home_form": "DDDDL",
+      "away_form": "WDWDD",
+      "source": "override",
+      "mpp_copy": "Uruguay 0 - 3 Espagne"
+    },
+    {
+      "match": "Égypte - Iran",
+      "home": "Égypte",
+      "away": "Iran",
+      "score": "2-0",
+      "kickoff_utc": "2026-06-27T03:00Z",
+      "venue": "Lumen Field",
+      "odds": {
+        "home": 2.5,
+        "draw": 2.65,
+        "away": 3.8
+      },
+      "home_form": "WDLWD",
+      "away_form": "DDWWW",
+      "source": "override",
+      "mpp_copy": "Égypte 2 - 0 Iran"
+    },
+    {
+      "match": "Nouvelle-Zélande - Belgique",
+      "home": "Nouvelle-Zélande",
+      "away": "Belgique",
+      "score": "0-3",
+      "kickoff_utc": "2026-06-27T03:00Z",
+      "venue": "BC Place",
+      "odds": {
+        "home": 15.0,
+        "draw": 7.5,
+        "away": 1.1904761904761905
+      },
+      "home_form": "LDLLW",
+      "away_form": "DDWWD",
+      "source": "override",
+      "mpp_copy": "Nouvelle-Zélande 0 - 3 Belgique"
     }
   ]
 }
