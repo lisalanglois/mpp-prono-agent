@@ -82,8 +82,7 @@ def format_text(guide: dict) -> str:
         "⚽ MPP — Guide grille V3 (fiable)",
         f"Généré : {guide['generated_at'][:19].replace('T', ' ')} UTC",
         "",
-        "Logique : 1/N/2 = foule MPP → cotes ESPN → Klement | score exact = Poisson",
-        "Nul uniquement si foule nul ≥ 38–40 % sans favori clair ≥ 55 %.",
+        "Logique : 1/N/2 = foule MPP → cotes → Klement | score exact = Poisson + différenciation (pas 1-0 par défaut).",
         "",
     ]
 
@@ -97,7 +96,9 @@ def format_text(guide: dict) -> str:
             lines.append("")
             lines.append(f"📅 {r['date']} — {r['home']} vs {r['away']}")
             lines.append(f"   Actuel : {r['user_score']}  →  METS : {r['recommended_score'].replace('-', ' - ')}")
-            lines.append(f"   Pourquoi : {r['reason']} | foule {r['crowd']}% | confiance {r['confidence']}")
+            lines.append(f"   1/N/2 : {r['reason']} | foule {r['crowd']}%")
+            if r.get("exact_note"):
+                lines.append(f"   Score exact : {r['exact_note']}")
 
     if guide["to_set"]:
         lines.append("")

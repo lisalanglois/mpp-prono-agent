@@ -1,10 +1,7 @@
 """Score MPP — stratégie V3 (CDM 2026).
 
-Hiérarchie fiable pour le 1/N/2 :
-  1. Foule MPP (% vainqueur / nul)
-  2. Cotes ESPN (si dispo)
-  3. Klement (tie-break match serré)
-Poisson sert uniquement au score exact, calibré sur cotes ou foule (pas les points MPP plats).
+1/N/2 : foule MPP → cotes ESPN → Klement.
+Score exact : Poisson + différenciation MPP (éviter 1-0 / 0-1 banals si alternative viable).
 """
 
 from __future__ import annotations
@@ -13,8 +10,9 @@ import json
 from pathlib import Path
 
 from export_web import get_user_score, match_key
-from mpp_grille_cdm import MATCHES, _with_odds, fit_lambdas_from_decimal, mpp_probs
+from mpp_grille_cdm import MATCHES, _with_odds, fit_lambdas_from_decimal
 from mpp.models.poisson import MPP_CROWD_SCORES, score_matrix, top_exact_scores
+from mpp.mpp_strategy import pick_mpp_score
 
 ROOT = Path(__file__).resolve().parents[1]
 KLEMENT_PATH = ROOT / "data" / "klement_predictions.json"
@@ -87,19 +85,26 @@ def _odds_favorite(m) -> tuple[str, float] | None:
     return best, imp[best] * 100
 
 
-def _matrix_and_top(m):
-    """λ Poisson : cotes ESPN > foule MPP (jamais points MPP seuls)."""
+def _blend_and_matrix(home: str, away: str):
+    m = _get_match(home, away)
+    if not m:
+        return None, {"home": 1 / 3, "draw": 1 / 3, "away": 1 / 3}, []
     m = _with_odds(m)
     if m.odds_home:
-        lh, la, _ = fit_lambdas_from_decimal(m.odds_home, m.odds_draw, m.odds_away)
+        lh, la, blend = fit_lambdas_from_decimal(m.odds_home, m.odds_draw, m.odds_away)
     else:
-        # Foule MPP → pseudo-cotes (signal bien plus fiable que pts 87/102/120)
         ch = max(m.crowd_home, 8) / 100
         cd = max(m.crowd_draw, 8) / 100
         ca = max(m.crowd_away, 8) / 100
-        lh, la, _ = fit_lambdas_from_decimal(1 / ch, 1 / cd, 1 / ca)
+        lh, la, blend = fit_lambdas_from_decimal(1 / ch, 1 / cd, 1 / ca)
     mat = score_matrix(lh, la)
-    return m, top_exact_scores(mat, 12)
+    top = top_exact_scores(mat, 12)
+    return m, blend, top
+
+
+def _matrix_and_top(m):
+    m2, _, top = _blend_and_matrix(m.home, m.away)
+    return m2, top
 
 
 def _draw_allowed(m, k_o: str | None, k_diff: int) -> bool:
@@ -196,41 +201,66 @@ def _best_exact_for_outcome(
     target: str,
     m,
     confidence: str,
-) -> str:
+    blend: dict[str, float],
+) -> tuple[str, str]:
+    """Score exact MPP : bon 1/N/2 + différenciation vs grilles banals."""
     candidates = [(s, p) for s, p in top if _outcome(s) == target]
     if not candidates:
-        return {"home": "1-0", "away": "0-1", "draw": "1-1"}[target]
+        fallback = {
+            "home": "2-0",
+            "away": "0-2",
+            "draw": "1-1" if m.crowd_draw >= 35 else "0-0",
+        }
+        return fallback[target], "défaut MPP"
 
     cf, cp = _crowd_favorite(m)
-    strong_fav = cp >= 78 or (m.odds_home and min(m.odds_home, m.odds_away or 99) < 1.35)
+    stat_s, stat_p = candidates[0]
+    conf_label = {"high": "élevé", "medium": "modéré", "low": "faible"}.get(confidence, "modéré")
 
+    # Gros favori (≥ 78 %) → viser 2-0 / 3-0 / 0-2 (tes exacts J1-J2 : 2-0, 3-0, 2-1)
+    if cp >= 78 and cf == target:
+        prefs = (
+            ("3-0", "2-0", "3-1", "2-1", "4-0")
+            if target == "home"
+            else ("0-3", "0-2", "1-3", "1-2", "0-4")
+        )
+        for score in prefs:
+            for s, p in candidates:
+                if s == score and p >= stat_p * 0.40:
+                    if s not in MPP_CROWD_SCORES or score in ("3-0", "0-3", "3-1", "1-3"):
+                        return s, f"favori {cp:.0f}% · diff MPP"
+        for s, p in candidates:
+            if s not in MPP_CROWD_SCORES and p >= stat_p * 0.45:
+                return s, f"favori {cp:.0f}% · rare"
+
+    # Favori modéré (55–77 %) → 2-0 / 2-1 / 0-2 plutôt que 1-0 / 0-1
+    if cp >= CROWD_STRONG and cf == target:
+        prefs = (
+            ("2-0", "2-1", "3-0", "3-1")
+            if target == "home"
+            else ("0-2", "1-2", "0-3", "1-3")
+        )
+        for score in prefs:
+            for s, p in candidates:
+                if s == score and p >= stat_p * 0.50:
+                    return s, f"favori {cp:.0f}% · diff vs 1-0"
+
+    # Nul → différencier 0-0 / 2-2 si 1-1 trop banal
     if target == "draw":
-        pref = ("1-1", "0-0", "2-2") if m.crowd_draw >= 35 else ("0-0", "1-1", "2-2")
-        for score in pref:
-            for s, _ in candidates:
-                if s == score:
-                    return s
-        return candidates[0][0]
+        if m.crowd_draw >= 40:
+            for score in ("1-1", "0-0", "2-2"):
+                for s, p in candidates:
+                    if s == score and p >= stat_p * 0.45:
+                        note = "nul foule" if score == "1-1" else "nul différencié"
+                        return s, note
+        score, prob, note = pick_mpp_score(candidates, conf_label, blend)
+        return score, note
 
-    if target in ("home", "away"):
-        if strong_fav:
-            for score in ("1-0", "2-0", "2-1", "0-1", "0-2"):
-                for s, _ in candidates:
-                    if s == score and _outcome(s) == target:
-                        return s
-        if confidence == "high" and cp >= 70:
-            for score in ("1-0", "2-0", "2-1"):
-                for s, _ in candidates:
-                    if s == score and _outcome(s) == target:
-                        return s
-        # Différenciation MPP : score moins banal si proba proche
-        best_s, best_p = candidates[0]
-        for s, p in candidates[1:5]:
-            if s not in MPP_CROWD_SCORES and p >= best_p * 0.55:
-                return s
-        return best_s
-
-    return candidates[0][0]
+    # Stratégie MPP standard sur candidats filtrés (même 1/N/2)
+    score, prob, note = pick_mpp_score(candidates, conf_label, blend)
+    if score in MPP_CROWD_SCORES and stat_s not in MPP_CROWD_SCORES:
+        return stat_s, "stat max (moins risqué)"
+    return score, note
 
 
 def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
@@ -245,9 +275,10 @@ def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
         return _result(key, home, away, user_score, score, h, a, "low", "grille", "—", "draw", None)
 
     m2, top = _matrix_and_top(m)
+    _, blend, _ = _blend_and_matrix(home, away)
     target, reason = _target_outcome_v3(m2, key, klement)
     conf = _confidence(m2, target, reason)
-    rec = _best_exact_for_outcome(top, target, m2, conf)
+    rec, exact_note = _best_exact_for_outcome(top, target, m2, conf, blend)
 
     user_o = _outcome(user_score) if user_score else None
     changed = user_score is not None and user_score != rec
@@ -265,12 +296,13 @@ def recommend_mpp_score(home: str, away: str, klement: dict) -> dict:
         needs_action=needs_action,
         crowd=f"{m.crowd_home:.0f}/{m.crowd_draw:.0f}/{m.crowd_away:.0f}",
         has_odds=bool(m2.odds_home),
+        exact_note=exact_note,
     )
 
 
 def _result(
     key, home, away, user_score, rec, h, a, conf, source, reason, target, k_o,
-    *, changed=False, needs_action=False, crowd="", has_odds=False,
+    *, changed=False, needs_action=False, crowd="", has_odds=False, exact_note="",
 ) -> dict:
     return {
         "key": key,
@@ -283,6 +315,7 @@ def _result(
         "confidence": conf,
         "source": source,
         "reason": reason,
+        "exact_note": exact_note,
         "target_outcome": target,
         "klement_outcome": k_o,
         "changed": changed,
