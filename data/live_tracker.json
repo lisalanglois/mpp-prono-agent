@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T07:35:09.228376+00:00",
+  "updated_at": "2026-06-24T10:14:18.532551+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -1244,71 +1244,9 @@
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Colombie - RD Congo"
-  ],
-  "recent_results": [
-    {
-      "key": "Colombie - RD Congo",
-      "home": "Colombie",
-      "away": "RD Congo",
-      "actual_score": "1-0",
-      "actual_outcome": "home",
-      "user_score": "2-1",
-      "user_outcome": "home",
-      "user_1n2": true,
-      "user_exact": false,
-      "model_outcome": "home",
-      "model_1n2": true,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "0",
-      "user_home": "2",
-      "user_away": "1",
-      "actual_direction": "Victoire Colombie",
-      "user_direction": "Victoire Colombie",
-      "klement_direction": "Victoire Colombie",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
-    }
-  ],
-  "upcoming_updates": [
-    {
-      "date": "28/06",
-      "match": "Colombie - Portugal",
-      "home": "Colombie",
-      "away": "Portugal",
-      "teams_to_review": [
-        "Colombie"
-      ],
-      "current_score": "1-2",
-      "suggested_score": "1-2",
-      "change": false,
-      "reason": "Colombie - RD Congo terminé 1-0",
-      "klement_override": false,
-      "suggested_home": "1",
-      "suggested_away": "2",
-      "mpp_action": "→ mets 1 - 2"
-    },
-    {
-      "date": "28/06",
-      "match": "RD Congo - Ouzbékistan",
-      "home": "RD Congo",
-      "away": "Ouzbékistan",
-      "teams_to_review": [
-        "RD Congo"
-      ],
-      "current_score": "2-1",
-      "suggested_score": "2-1",
-      "change": false,
-      "reason": "Colombie - RD Congo terminé 1-0",
-      "klement_override": false,
-      "suggested_home": "2",
-      "suggested_away": "1",
-      "mpp_action": "→ mets 2 - 1"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
+  "upcoming_updates": [],
   "urgent_mpp": [
     {
       "key": "Bosnie-Herzégovine - Qatar",
@@ -1316,8 +1254,8 @@
       "away": "Qatar",
       "date": "24/06",
       "kickoff_paris": "24/06 à 21:00",
-      "hours_until": 11.4,
-      "hours_label": "dans 11.4 h",
+      "hours_until": 8.8,
+      "hours_label": "dans 8.8 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1332,15 +1270,15 @@
       "away": "Canada",
       "date": "24/06",
       "kickoff_paris": "24/06 à 21:00",
-      "hours_until": 11.4,
-      "hours_label": "dans 11.4 h",
+      "hours_until": 8.8,
+      "hours_label": "dans 8.8 h",
       "score": "1-0",
       "score_home": "1",
       "score_away": "0",
-      "user_score": "1-1",
-      "klement_override": true,
+      "user_score": "1-0",
+      "klement_override": false,
       "mpp_instruction": "mpp.football → Suisse vs Canada → 1 - 0",
-      "changed": true
+      "changed": false
     },
     {
       "key": "Maroc - Haïti",
@@ -1348,14 +1286,14 @@
       "away": "Haïti",
       "date": "25/06",
       "kickoff_paris": "25/06 à 00:00",
-      "hours_until": 14.4,
-      "hours_label": "dans 14.4 h",
-      "score": "2-0",
-      "score_home": "2",
+      "hours_until": 11.8,
+      "hours_label": "dans 11.8 h",
+      "score": "3-0",
+      "score_home": "3",
       "score_away": "0",
-      "user_score": "2-0",
+      "user_score": "3-0",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Maroc vs Haïti → 2 - 0",
+      "mpp_instruction": "mpp.football → Maroc vs Haïti → 3 - 0",
       "changed": false
     },
     {
@@ -1364,14 +1302,14 @@
       "away": "Brésil",
       "date": "25/06",
       "kickoff_paris": "25/06 à 00:00",
-      "hours_until": 14.4,
-      "hours_label": "dans 14.4 h",
-      "score": "0-1",
+      "hours_until": 11.8,
+      "hours_label": "dans 11.8 h",
+      "score": "0-3",
       "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-1",
+      "score_away": "3",
+      "user_score": "0-3",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Écosse vs Brésil → 0 - 1",
+      "mpp_instruction": "mpp.football → Écosse vs Brésil → 0 - 3",
       "changed": false
     },
     {
@@ -1380,15 +1318,15 @@
       "away": "Mexique",
       "date": "25/06",
       "kickoff_paris": "25/06 à 03:00",
-      "hours_until": 17.4,
-      "hours_label": "dans 17.4 h",
-      "score": "0-1",
-      "score_home": "0",
+      "hours_until": 14.8,
+      "hours_label": "dans 14.8 h",
+      "score": "1-1",
+      "score_home": "1",
       "score_away": "1",
       "user_score": "1-1",
-      "klement_override": true,
-      "mpp_instruction": "mpp.football → Tchéquie vs Mexique → 0 - 1",
-      "changed": true
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Tchéquie vs Mexique → 1 - 1",
+      "changed": false
     },
     {
       "key": "Afrique du Sud - Corée du Sud",
@@ -1396,15 +1334,15 @@
       "away": "Corée du Sud",
       "date": "25/06",
       "kickoff_paris": "25/06 à 03:00",
-      "hours_until": 17.4,
-      "hours_label": "dans 17.4 h",
+      "hours_until": 14.8,
+      "hours_label": "dans 14.8 h",
       "score": "0-1",
       "score_home": "0",
       "score_away": "1",
-      "user_score": "1-1",
-      "klement_override": true,
+      "user_score": "0-1",
+      "klement_override": false,
       "mpp_instruction": "mpp.football → Afrique du Sud vs Corée du Sud → 0 - 1",
-      "changed": true
+      "changed": false
     },
     {
       "key": "Curaçao - Côte d'Ivoire",
@@ -1412,14 +1350,14 @@
       "away": "Côte d'Ivoire",
       "date": "25/06",
       "kickoff_paris": "25/06 à 22:00",
-      "hours_until": 36.4,
-      "hours_label": "dans 1 j 12 h",
-      "score": "0-1",
+      "hours_until": 33.8,
+      "hours_label": "dans 1 j 9 h",
+      "score": "0-3",
       "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-1",
+      "score_away": "3",
+      "user_score": "0-3",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Curaçao vs Côte d'Ivoire → 0 - 1",
+      "mpp_instruction": "mpp.football → Curaçao vs Côte d'Ivoire → 0 - 3",
       "changed": false
     },
     {
@@ -1428,14 +1366,14 @@
       "away": "Allemagne",
       "date": "25/06",
       "kickoff_paris": "25/06 à 22:00",
-      "hours_until": 36.4,
-      "hours_label": "dans 1 j 12 h",
-      "score": "0-1",
+      "hours_until": 33.8,
+      "hours_label": "dans 1 j 9 h",
+      "score": "0-3",
       "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-1",
+      "score_away": "3",
+      "user_score": "0-3",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Équateur vs Allemagne → 0 - 1",
+      "mpp_instruction": "mpp.football → Équateur vs Allemagne → 0 - 3",
       "changed": false
     },
     {
@@ -1444,15 +1382,15 @@
       "away": "Suède",
       "date": "26/06",
       "kickoff_paris": "26/06 à 01:00",
-      "hours_until": 39.4,
-      "hours_label": "dans 1 j 15 h",
-      "score": "1-0",
+      "hours_until": 36.8,
+      "hours_label": "dans 1 j 12 h",
+      "score": "1-1",
       "score_home": "1",
-      "score_away": "0",
+      "score_away": "1",
       "user_score": "1-1",
-      "klement_override": true,
-      "mpp_instruction": "mpp.football → Japon vs Suède → 1 - 0",
-      "changed": true
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Japon vs Suède → 1 - 1",
+      "changed": false
     },
     {
       "key": "Tunisie - Pays-Bas",
@@ -1460,14 +1398,14 @@
       "away": "Pays-Bas",
       "date": "26/06",
       "kickoff_paris": "26/06 à 01:00",
-      "hours_until": 39.4,
-      "hours_label": "dans 1 j 15 h",
-      "score": "0-1",
+      "hours_until": 36.8,
+      "hours_label": "dans 1 j 12 h",
+      "score": "0-3",
       "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-1",
+      "score_away": "3",
+      "user_score": "0-3",
       "klement_override": false,
-      "mpp_instruction": "mpp.football → Tunisie vs Pays-Bas → 0 - 1",
+      "mpp_instruction": "mpp.football → Tunisie vs Pays-Bas → 0 - 3",
       "changed": false
     },
     {
@@ -1476,15 +1414,15 @@
       "away": "Australie",
       "date": "26/06",
       "kickoff_paris": "26/06 à 04:00",
-      "hours_until": 42.4,
-      "hours_label": "dans 1 j 18 h",
-      "score": "0-1",
-      "score_home": "0",
-      "score_away": "1",
-      "user_score": "0-0",
-      "klement_override": true,
-      "mpp_instruction": "mpp.football → Paraguay vs Australie → 0 - 1",
-      "changed": true
+      "hours_until": 39.8,
+      "hours_label": "dans 1 j 15 h",
+      "score": "1-0",
+      "score_home": "1",
+      "score_away": "0",
+      "user_score": "1-0",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Paraguay vs Australie → 1 - 0",
+      "changed": false
     },
     {
       "key": "Turquie - États-Unis",
@@ -1492,23 +1430,16 @@
       "away": "États-Unis",
       "date": "26/06",
       "kickoff_paris": "26/06 à 04:00",
-      "hours_until": 42.4,
-      "hours_label": "dans 1 j 18 h",
-      "score": "0-1",
-      "score_home": "0",
+      "hours_until": 39.8,
+      "hours_label": "dans 1 j 15 h",
+      "score": "1-1",
+      "score_home": "1",
       "score_away": "1",
-      "user_score": "0-0",
-      "klement_override": true,
-      "mpp_instruction": "mpp.football → Turquie vs États-Unis → 0 - 1",
-      "changed": true
+      "user_score": "1-1",
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Turquie vs États-Unis → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (29/48 1N/2) devance ta grille (22/48)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
