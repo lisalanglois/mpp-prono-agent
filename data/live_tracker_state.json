@@ -25,6 +25,7 @@
     "info|—|Klement (27/45 1N/2) devance ta grille (20/45)",
     "info|—|Klement (27/46 1N/2) devance ta grille (20/46)",
     "info|—|Klement (28/47 1N/2) devance ta grille (21/47)",
+    "info|—|Klement (29/48 1N/2) devance ta grille (22/48)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -64,6 +65,7 @@
     "Brésil - Maroc",
     "Canada - Bosnie-Herzégovine",
     "Canada - Qatar",
+    "Colombie - RD Congo",
     "Corée du Sud - Tchéquie",
     "Côte d'Ivoire - Équateur",
     "Espagne - Arabie saoudite",
@@ -97,7 +99,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Panama - Croatie|Croatie - Ghana:2-0|Panama - Angleterre:0-3",
+  "last_email_fingerprint": "Colombie - RD Congo|Colombie - Portugal:1-2|RD Congo - Ouzbékistan:2-1",
   "urgent_notified": [
     "Allemagne - Côte d'Ivoire",
     "Angleterre - Croatie",
