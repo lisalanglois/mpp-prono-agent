@@ -19,9 +19,20 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 GUIDE_PATH = ROOT / "data" / "grille_guide.json"
+CHANGES_PATH = ROOT / "data" / "v3_grille_changes.json"
 
 
-def build_html(guide: dict) -> str:
+def _action_rows(guide: dict) -> list[dict]:
+    """Actions à faire sur mpp.football (depuis dernier apply V3 si dispo)."""
+    if CHANGES_PATH.exists():
+        payload = json.loads(CHANGES_PATH.read_text(encoding="utf-8"))
+        rows = payload.get("changes") or []
+        if rows:
+            return rows
+    return guide["to_change"] + guide["to_set"]
+
+
+def build_html(guide: dict, actions: list[dict]) -> str:
     cfg = load_config()
     html = f"""
     <html><body style="font-family:-apple-system,sans-serif;color:#222;max-width:560px;margin:0 auto;padding:12px;">
@@ -30,38 +41,32 @@ def build_html(guide: dict) -> str:
     <div style="background:#e8f4fd;border-radius:8px;padding:14px;font-size:14px;margin:16px 0;">
       <strong>1/N/2</strong> : foule MPP → cotes ESPN → Klement<br>
       <strong>Score exact</strong> : Poisson (calibré foule/cotes)<br>
-      <strong>Nul</strong> : seulement si foule nul élevée sans favori &gt; 55 %
+      <strong>Nul</strong> : seulement si foule nul élevée sans favori &gt; 55 %<br>
+      <em>Remplace le mail V2 (nuls forcés à tort).</em>
     </div>
     """
 
-    s = guide["summary"]
-    html += f"<p><strong>{s['to_change']} à modifier</strong> · {s['to_set']} à saisir · {s['ok']} OK · {s['review']} à vérifier</p>"
+    html += f"<p><strong>{len(actions)} action(s)</strong> sur mpp.football · {guide['summary']['ok']} autres matchs OK</p>"
 
-    if guide["to_change"]:
+    if actions:
         html += '<div style="background:#fff3cd;border:2px solid #c9a227;border-radius:12px;padding:16px;margin:20px 0;">'
-        html += f"<h3>🔁 {len(guide['to_change'])} score(s) à modifier</h3>"
-        for r in guide["to_change"]:
-            nh, na = r["recommended_score"].split("-")
+        html += f"<h3>🔁 {len(actions)} score(s) à mettre à jour</h3>"
+        for r in actions:
+            nh, na = r["new_score"].split("-")
+            old = r.get("old_score")
             oh, oa = (None, None)
-            if r.get("user_score") and "-" in r["user_score"]:
-                oh, oa = r["user_score"].split("-")
+            if old and old not in ("(nouveau)", "—", None) and "-" in str(old):
+                oh, oa = old.split("-")
+            reason = r.get("reason") or ""
+            crowd = r.get("crowd") or ""
+            conf = r.get("confidence") or ""
             html += _mpp_match_card(
                 r["home"], r["away"], nh.strip(), na.strip(),
-                date=f"<strong>{r['date']}</strong> · {r['reason']} · foule {r['crowd']}%",
-                subtitle=r["mpp_instruction"],
+                date=f"<strong>{r.get('date', '')}</strong> · {reason} · foule {crowd}% · {conf}",
+                subtitle=r.get("mpp_instruction", ""),
                 old_h=oh, old_a=oa, highlight=True,
             )
         html += "</div>"
-
-    if guide["to_set"]:
-        html += "<h3>➕ À saisir</h3>"
-        for r in guide["to_set"]:
-            h, a = r["recommended_score"].split("-")
-            html += _mpp_match_card(
-                r["home"], r["away"], h.strip(), a.strip(),
-                date=f"{r['date']} · {r['reason']}",
-                subtitle=r["mpp_instruction"],
-            )
 
     if guide["review"]:
         html += '<div style="background:#f8f9fa;border-radius:8px;padding:12px;margin:16px 0;">'
@@ -75,19 +80,41 @@ def build_html(guide: dict) -> str:
     return html
 
 
+def format_actions_text(guide: dict, actions: list[dict]) -> str:
+    lines = [
+        "⚽ MPP — Guide grille V3 (fiable)",
+        f"Généré : {guide['generated_at'][:19].replace('T', ' ')} UTC",
+        "",
+        "Remplace le mail V2. Logique : foule MPP → cotes → Klement ; Poisson = score exact.",
+        "",
+        f"═══ {len(actions)} ACTION(S) sur mpp.football ═══",
+    ]
+    for r in actions:
+        old = r.get("old_score") or "—"
+        lines.append("")
+        lines.append(f"📅 {r.get('date', '')} — {r['home']} vs {r['away']}")
+        lines.append(f"   Actuel (V2 / app) : {old}")
+        lines.append(f"   → METS : {r['new_score'].replace('-', ' - ')}")
+        lines.append(f"   {r.get('reason', '')} | foule {r.get('crowd', '')}% | confiance {r.get('confidence', '')}")
+    lines.append("")
+    lines.append(f"✅ {guide['summary']['ok']} autres matchs : ne pas toucher")
+    lines.append("→ https://mpp.football")
+    return "\n".join(lines)
+
+
 def send(*, dry_run: bool = False) -> bool:
     guide = build_guide()
     GUIDE_PATH.write_text(json.dumps(guide, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    actions = _action_rows(guide)
 
     to_addrs = recipients()
     if not to_addrs:
         print("⚠️  Aucun destinataire")
         return False
 
-    s = guide["summary"]
-    subject = f"⚽ MPP V3 — {s['to_change']} modif + {s['to_set']} à saisir (guide fiable)"
-    text = format_text(guide)
-    html = build_html(guide)
+    subject = f"⚽ MPP V3 — {len(actions)} score(s) à mettre sur mpp.football (guide fiable)"
+    text = format_actions_text(guide, actions)
+    html = build_html(guide, actions)
 
     if dry_run:
         print(f"[dry-run] To: {', '.join(to_addrs)}")
