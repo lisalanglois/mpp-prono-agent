@@ -29,6 +29,7 @@
     "info|—|Klement (31/50 1N/2) devance ta grille (24/50)",
     "info|—|Klement (33/52 1N/2) devance ta grille (26/52)",
     "info|—|Klement (34/54 1N/2) devance ta grille (26/54)",
+    "info|—|Klement (34/56 1N/2) devance ta grille (27/56)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -50,7 +51,8 @@
     "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)",
     "warning|Tchéquie - Afrique du Sud|Score non suivi par le tracker pour Tchéquie - Afrique du Sud (1-1)",
     "warning|Tunisie - Japon|Score non suivi par le tracker pour Tunisie - Japon (0-4)",
-    "warning|Turquie - Paraguay|Score non suivi par le tracker pour Turquie - Paraguay (0-1)"
+    "warning|Turquie - Paraguay|Score non suivi par le tracker pour Turquie - Paraguay (0-1)",
+    "warning|Équateur - Allemagne|Favori Allemagne n'a pas gagné comme prévu (2-1)"
   ],
   "finished_keys": [
     "Afrique du Sud - Corée du Sud",
@@ -72,6 +74,7 @@
     "Canada - Qatar",
     "Colombie - RD Congo",
     "Corée du Sud - Tchéquie",
+    "Curaçao - Côte d'Ivoire",
     "Côte d'Ivoire - Équateur",
     "Espagne - Arabie saoudite",
     "Espagne - Cap-Vert",
@@ -104,11 +107,12 @@
     "Uruguay - Cap-Vert",
     "Écosse - Brésil",
     "Écosse - Maroc",
+    "Équateur - Allemagne",
     "Équateur - Curaçao",
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Afrique du Sud - Corée du Sud|Tchéquie - Mexique|",
+  "last_email_fingerprint": "Curaçao - Côte d'Ivoire|Équateur - Allemagne|",
   "urgent_notified": [
     "Belgique - Iran",
     "Belgique - Égypte",
