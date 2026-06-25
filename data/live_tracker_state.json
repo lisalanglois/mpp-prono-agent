@@ -28,6 +28,7 @@
     "info|—|Klement (29/48 1N/2) devance ta grille (22/48)",
     "info|—|Klement (31/50 1N/2) devance ta grille (24/50)",
     "info|—|Klement (33/52 1N/2) devance ta grille (26/52)",
+    "info|—|Klement (34/54 1N/2) devance ta grille (26/54)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -52,6 +53,7 @@
     "warning|Turquie - Paraguay|Score non suivi par le tracker pour Turquie - Paraguay (0-1)"
   ],
   "finished_keys": [
+    "Afrique du Sud - Corée du Sud",
     "Allemagne - Curaçao",
     "Allemagne - Côte d'Ivoire",
     "Angleterre - Croatie",
@@ -96,6 +98,7 @@
     "Suisse - Canada",
     "Suède - Tunisie",
     "Tchéquie - Afrique du Sud",
+    "Tchéquie - Mexique",
     "Tunisie - Japon",
     "Turquie - Paraguay",
     "Uruguay - Cap-Vert",
@@ -105,7 +108,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Maroc - Haïti|Écosse - Brésil|",
+  "last_email_fingerprint": "Afrique du Sud - Corée du Sud|Tchéquie - Mexique|",
   "urgent_notified": [
     "Australie - Türkiye",
     "Autriche - Jordanie",
