@@ -1,111 +1,9 @@
 {
-  "generated_at": "2026-06-25T10:38:07.888560+00:00",
+  "generated_at": "2026-06-26T10:47:17.939636+00:00",
   "days": 3,
-  "count": 18,
+  "count": 13,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Curaçao - Côte d'Ivoire",
-      "home": "Curaçao",
-      "away": "Côte d'Ivoire",
-      "score": "0-3",
-      "kickoff_utc": "2026-06-25T20:00Z",
-      "venue": "Lincoln Financial Field",
-      "odds": {
-        "home": 16.0,
-        "draw": 8.0,
-        "away": 1.1739130434782608
-      },
-      "home_form": "DLWLL",
-      "away_form": "LWWWW",
-      "source": "override",
-      "mpp_copy": "Curaçao 0 - 3 Côte d'Ivoire"
-    },
-    {
-      "match": "Équateur - Allemagne",
-      "home": "Équateur",
-      "away": "Allemagne",
-      "score": "0-3",
-      "kickoff_utc": "2026-06-25T20:00Z",
-      "venue": "MetLife Stadium",
-      "odds": {
-        "home": 5.25,
-        "draw": 4.9,
-        "away": 1.5405405405405406
-      },
-      "home_form": "DLWWD",
-      "away_form": "WWWWW",
-      "source": "override",
-      "mpp_copy": "Équateur 0 - 3 Allemagne"
-    },
-    {
-      "match": "Japon - Suède",
-      "home": "Japon",
-      "away": "Suède",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-25T23:00Z",
-      "venue": "AT&T Stadium",
-      "odds": {
-        "home": 1.9090909090909092,
-        "draw": 3.5,
-        "away": 4.4
-      },
-      "home_form": "WDWWW",
-      "away_form": "LWDLW",
-      "source": "override",
-      "mpp_copy": "Japon 1 - 1 Suède"
-    },
-    {
-      "match": "Tunisie - Pays-Bas",
-      "home": "Tunisie",
-      "away": "Pays-Bas",
-      "score": "0-3",
-      "kickoff_utc": "2026-06-25T23:00Z",
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "odds": {
-        "home": 26.0,
-        "draw": 11.0,
-        "away": 1.0909090909090908
-      },
-      "home_form": "LLLLD",
-      "away_form": "WDWLD",
-      "source": "override",
-      "mpp_copy": "Tunisie 0 - 3 Pays-Bas"
-    },
-    {
-      "match": "Paraguay - Australie",
-      "home": "Paraguay",
-      "away": "Australie",
-      "score": "1-0",
-      "kickoff_utc": "2026-06-26T02:00Z",
-      "venue": "Levi's Stadium",
-      "odds": {
-        "home": 2.75,
-        "draw": 2.3,
-        "away": 4.2
-      },
-      "home_form": "WLWLW",
-      "away_form": "LWDLW",
-      "source": "override",
-      "mpp_copy": "Paraguay 1 - 0 Australie"
-    },
-    {
-      "match": "Turquie - États-Unis",
-      "home": "Turquie",
-      "away": "États-Unis",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-26T02:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 3.7,
-        "draw": 4.0,
-        "away": 1.9090909090909092
-      },
-      "home_form": "LLWWW",
-      "away_form": "WWLWL",
-      "source": "override",
-      "mpp_copy": "Turquie 1 - 1 États-Unis"
-    },
     {
       "match": "Norvège - France",
       "home": "Norvège",
@@ -114,9 +12,9 @@
       "kickoff_utc": "2026-06-26T19:00Z",
       "venue": "Gillette Stadium",
       "odds": {
-        "home": 5.0,
-        "draw": 4.4,
-        "away": 1.625
+        "home": 4.6,
+        "draw": 4.7,
+        "away": 1.6451612903225805
       },
       "home_form": "WWDWD",
       "away_form": "WWWLW",
@@ -131,8 +29,8 @@
       "kickoff_utc": "2026-06-26T19:00Z",
       "venue": "BMO Field",
       "odds": {
-        "home": 1.2222222222222223,
-        "draw": 7.0,
+        "home": 1.2352941176470589,
+        "draw": 6.5,
         "away": 12.0
       },
       "home_form": "LLDLW",
@@ -148,9 +46,9 @@
       "kickoff_utc": "2026-06-27T00:00Z",
       "venue": "NRG Stadium",
       "odds": {
-        "home": 2.55,
-        "draw": 3.35,
-        "away": 2.85
+        "home": 2.65,
+        "draw": 3.3,
+        "away": 2.7
       },
       "home_form": "DDWWL",
       "away_form": "LDDWL",
@@ -165,9 +63,9 @@
       "kickoff_utc": "2026-06-27T00:00Z",
       "venue": "Estadio Akron",
       "odds": {
-        "home": 7.5,
-        "draw": 4.2,
-        "away": 1.4878048780487805
+        "home": 6.0,
+        "draw": 3.8,
+        "away": 1.625
       },
       "home_form": "DDDDL",
       "away_form": "WDWDD",
@@ -183,7 +81,7 @@
       "venue": "Lumen Field",
       "odds": {
         "home": 2.5,
-        "draw": 2.65,
+        "draw": 2.6,
         "away": 3.8
       },
       "home_form": "WDLWD",
@@ -199,9 +97,9 @@
       "kickoff_utc": "2026-06-27T03:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 17.0,
-        "draw": 8.5,
-        "away": 1.1538461538461537
+        "home": 15.0,
+        "draw": 8.0,
+        "away": 1.1904761904761905
       },
       "home_form": "LDLLW",
       "away_form": "DDWWD",
@@ -250,9 +148,9 @@
       "kickoff_utc": "2026-06-27T23:30Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 4.2,
-        "draw": 3.8,
-        "away": 1.8333333333333335
+        "home": 4.1,
+        "draw": 3.75,
+        "away": 1.8695652173913042
       },
       "home_form": "WWWWL",
       "away_form": "WDWWW",
@@ -267,8 +165,8 @@
       "kickoff_utc": "2026-06-27T23:30Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.7407407407407407,
-        "draw": 4.2,
+        "home": 1.8,
+        "draw": 4.0,
         "away": 4.3
       },
       "home_form": "LDLDW",
@@ -284,8 +182,8 @@
       "kickoff_utc": "2026-06-28T02:00Z",
       "venue": "GEHA Field at Arrowhead Stadium",
       "odds": {
-        "home": 3.95,
-        "draw": 2.25,
+        "home": 4.1,
+        "draw": 2.2,
         "away": 2.9
       },
       "home_form": "WLWWD",
@@ -303,12 +201,29 @@
       "odds": {
         "home": 15.0,
         "draw": 7.5,
-        "away": 1.1904761904761905
+        "away": 1.1818181818181819
       },
       "home_form": "LLLLD",
       "away_form": "WWWWW",
       "source": "override",
       "mpp_copy": "Jordanie 0 - 3 Argentine"
+    },
+    {
+      "match": "Afrique du Sud - Canada",
+      "home": "Afrique du Sud",
+      "away": "Canada",
+      "score": "1-1",
+      "kickoff_utc": "2026-06-28T19:00Z",
+      "venue": "SoFi Stadium",
+      "odds": {
+        "home": 5.5,
+        "draw": 3.7,
+        "away": 1.7142857142857144
+      },
+      "home_form": "WDLWD",
+      "away_form": "LWDDW",
+      "source": "espn_poisson",
+      "mpp_copy": "Afrique du Sud 1 - 1 Canada"
     }
   ]
 }
