@@ -35,6 +35,7 @@
     "info|—|Klement (37/62 1N/2) devance ta grille (31/62)",
     "info|—|Klement (39/64 1N/2) devance ta grille (33/64)",
     "info|—|Klement (41/66 1N/2) devance ta grille (34/66)",
+    "info|—|Klement (42/67 1N/2) devance ta grille (35/67)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -100,6 +101,7 @@
     "Nouvelle-Zélande - Belgique",
     "Nouvelle-Zélande - Égypte",
     "Ouzbékistan - Colombie",
+    "Panama - Angleterre",
     "Panama - Croatie",
     "Paraguay - Australie",
     "Pays-Bas - Japon",
@@ -127,7 +129,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Nouvelle-Zélande - Belgique|Égypte - Iran|",
+  "last_email_fingerprint": "Panama - Angleterre|",
   "urgent_notified": [
     "Colombie - RD Congo",
     "Croatie - Ghana",
