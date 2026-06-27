@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-27T06:48:15.564655+00:00",
+  "updated_at": "2026-06-27T09:23:11.310755+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -1682,60 +1682,8 @@
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Nouvelle-Zélande - Belgique",
-    "Égypte - Iran"
-  ],
-  "recent_results": [
-    {
-      "key": "Égypte - Iran",
-      "home": "Égypte",
-      "away": "Iran",
-      "actual_score": "1-1",
-      "actual_outcome": "draw",
-      "user_score": "2-0",
-      "user_outcome": "home",
-      "user_1n2": false,
-      "user_exact": false,
-      "model_outcome": "home",
-      "model_1n2": false,
-      "klement_outcome": "draw",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "1",
-      "user_home": "2",
-      "user_away": "0",
-      "actual_direction": "Match nul",
-      "user_direction": "Victoire Égypte",
-      "klement_direction": "Match nul",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ · Lisa ✗ — Klement avait mieux vu"
-    },
-    {
-      "key": "Nouvelle-Zélande - Belgique",
-      "home": "Nouvelle-Zélande",
-      "away": "Belgique",
-      "actual_score": "1-5",
-      "actual_outcome": "away",
-      "user_score": "0-3",
-      "user_outcome": "away",
-      "user_1n2": true,
-      "user_exact": false,
-      "model_outcome": "away",
-      "model_1n2": true,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "5",
-      "user_home": "0",
-      "user_away": "3",
-      "actual_direction": "Victoire Belgique",
-      "user_direction": "Victoire Belgique",
-      "klement_direction": "Victoire Belgique",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -1744,8 +1692,8 @@
       "away": "Ghana",
       "date": "27/06",
       "kickoff_paris": "27/06 à 23:00",
-      "hours_until": 14.2,
-      "hours_label": "dans 14.2 h",
+      "hours_until": 11.6,
+      "hours_label": "dans 11.6 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1760,8 +1708,8 @@
       "away": "Angleterre",
       "date": "27/06",
       "kickoff_paris": "27/06 à 23:00",
-      "hours_until": 14.2,
-      "hours_label": "dans 14.2 h",
+      "hours_until": 11.6,
+      "hours_label": "dans 11.6 h",
       "score": "0-3",
       "score_home": "0",
       "score_away": "3",
@@ -1776,8 +1724,8 @@
       "away": "Portugal",
       "date": "28/06",
       "kickoff_paris": "28/06 à 01:30",
-      "hours_until": 16.7,
-      "hours_label": "dans 16.7 h",
+      "hours_until": 14.1,
+      "hours_label": "dans 14.1 h",
       "score": "0-2",
       "score_home": "0",
       "score_away": "2",
@@ -1792,8 +1740,8 @@
       "away": "Ouzbékistan",
       "date": "28/06",
       "kickoff_paris": "28/06 à 01:30",
-      "hours_until": 16.7,
-      "hours_label": "dans 16.7 h",
+      "hours_until": 14.1,
+      "hours_label": "dans 14.1 h",
       "score": "2-0",
       "score_home": "2",
       "score_away": "0",
@@ -1808,8 +1756,8 @@
       "away": "Autriche",
       "date": "28/06",
       "kickoff_paris": "28/06 à 04:00",
-      "hours_until": 19.2,
-      "hours_label": "dans 19.2 h",
+      "hours_until": 16.6,
+      "hours_label": "dans 16.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1824,8 +1772,8 @@
       "away": "Argentine",
       "date": "28/06",
       "kickoff_paris": "28/06 à 04:00",
-      "hours_until": 19.2,
-      "hours_label": "dans 19.2 h",
+      "hours_until": 16.6,
+      "hours_label": "dans 16.6 h",
       "score": "0-3",
       "score_home": "0",
       "score_away": "3",
@@ -1840,8 +1788,8 @@
       "away": "Canada",
       "date": "28/06",
       "kickoff_paris": "28/06 à 21:00",
-      "hours_until": 36.2,
-      "hours_label": "dans 1 j 12 h",
+      "hours_until": 33.6,
+      "hours_label": "dans 1 j 9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1851,12 +1799,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (41/66 1N/2) devance ta grille (34/66)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
