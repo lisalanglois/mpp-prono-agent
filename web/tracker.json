@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T07:45:46.122611+00:00",
+  "updated_at": "2026-06-28T09:53:13.690710+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -1826,60 +1826,8 @@
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Algérie - Autriche",
-    "Jordanie - Argentine"
-  ],
-  "recent_results": [
-    {
-      "key": "Algérie - Autriche",
-      "home": "Algérie",
-      "away": "Autriche",
-      "actual_score": "3-3",
-      "actual_outcome": "draw",
-      "user_score": "1-1",
-      "user_outcome": "draw",
-      "user_1n2": true,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": true,
-      "klement_outcome": "away",
-      "klement_1n2": false,
-      "actual_home": "3",
-      "actual_away": "3",
-      "user_home": "1",
-      "user_away": "1",
-      "actual_direction": "Match nul",
-      "user_direction": "Match nul",
-      "klement_direction": "Victoire Autriche",
-      "direction_winner": "lisa",
-      "verdict_short": "Lisa ✓ · Klement ✗ — Lisa avait mieux vu"
-    },
-    {
-      "key": "Jordanie - Argentine",
-      "home": "Jordanie",
-      "away": "Argentine",
-      "actual_score": "1-3",
-      "actual_outcome": "away",
-      "user_score": "0-3",
-      "user_outcome": "away",
-      "user_1n2": true,
-      "user_exact": false,
-      "model_outcome": "away",
-      "model_1n2": true,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "3",
-      "user_home": "0",
-      "user_away": "3",
-      "actual_direction": "Victoire Argentine",
-      "user_direction": "Victoire Argentine",
-      "klement_direction": "Victoire Argentine",
-      "direction_winner": "égalité",
-      "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -1888,8 +1836,8 @@
       "away": "Canada",
       "date": "28/06",
       "kickoff_paris": "28/06 à 21:00",
-      "hours_until": 11.2,
-      "hours_label": "dans 11.2 h",
+      "hours_until": 9.1,
+      "hours_label": "dans 9.1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1904,8 +1852,8 @@
       "away": "Japon",
       "date": "29/06",
       "kickoff_paris": "29/06 à 19:00",
-      "hours_until": 33.2,
-      "hours_label": "dans 1 j 9 h",
+      "hours_until": 31.1,
+      "hours_label": "dans 1 j 7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1920,8 +1868,8 @@
       "away": "Paraguay",
       "date": "29/06",
       "kickoff_paris": "29/06 à 22:30",
-      "hours_until": 36.7,
-      "hours_label": "dans 1 j 12 h",
+      "hours_until": 34.6,
+      "hours_label": "dans 1 j 10 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1936,8 +1884,8 @@
       "away": "Maroc",
       "date": "30/06",
       "kickoff_paris": "30/06 à 03:00",
-      "hours_until": 41.2,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 39.1,
+      "hours_label": "dans 1 j 15 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1947,12 +1895,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (44/72 1N/2) devance ta grille (39/72)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
