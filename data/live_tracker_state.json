@@ -37,6 +37,7 @@
     "info|—|Klement (41/66 1N/2) devance ta grille (34/66)",
     "info|—|Klement (42/67 1N/2) devance ta grille (35/67)",
     "info|—|Klement (43/70 1N/2) devance ta grille (37/70)",
+    "info|—|Klement (44/72 1N/2) devance ta grille (39/72)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -63,6 +64,7 @@
   ],
   "finished_keys": [
     "Afrique du Sud - Corée du Sud",
+    "Algérie - Autriche",
     "Allemagne - Curaçao",
     "Allemagne - Côte d'Ivoire",
     "Angleterre - Croatie",
@@ -96,6 +98,7 @@
     "Iran - Nouvelle-Zélande",
     "Japon - Suède",
     "Jordanie - Algérie",
+    "Jordanie - Argentine",
     "Maroc - Haïti",
     "Mexique - Afrique du Sud",
     "Mexique - Corée du Sud",
@@ -133,7 +136,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Colombie - Portugal|Croatie - Ghana|RD Congo - Ouzbékistan|",
+  "last_email_fingerprint": "Algérie - Autriche|Jordanie - Argentine|",
   "urgent_notified": [
     "Colombie - RD Congo",
     "Croatie - Ghana",
