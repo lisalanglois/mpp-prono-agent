@@ -38,6 +38,7 @@
     "info|—|Klement (42/67 1N/2) devance ta grille (35/67)",
     "info|—|Klement (43/70 1N/2) devance ta grille (37/70)",
     "info|—|Klement (44/72 1N/2) devance ta grille (39/72)",
+    "info|—|Klement (45/73 1N/2) devance ta grille (39/73)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -45,6 +46,7 @@
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
+    "warning|Afrique du Sud - Canada|Score non suivi par le tracker pour Afrique du Sud - Canada (0-1)",
     "warning|Allemagne - Curaçao|Match joué sans prono dans ta grille (7-1)",
     "warning|Arabie saoudite - Uruguay|Score non suivi par le tracker pour Arabie saoudite - Uruguay (1-1)",
     "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
@@ -63,6 +65,7 @@
     "warning|Équateur - Allemagne|Favori Allemagne n'a pas gagné comme prévu (2-1)"
   ],
   "finished_keys": [
+    "Afrique du Sud - Canada",
     "Afrique du Sud - Corée du Sud",
     "Algérie - Autriche",
     "Allemagne - Curaçao",
@@ -136,7 +139,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Algérie - Autriche|Jordanie - Argentine|",
+  "last_email_fingerprint": "Afrique du Sud - Canada|",
   "urgent_notified": [
     "Colombie - RD Congo",
     "Croatie - Ghana",

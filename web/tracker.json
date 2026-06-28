@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-28T20:55:06.033488+00:00",
+  "updated_at": "2026-06-28T22:57:38.773342+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 72,
+    "played": 73,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 47,
-    "klement_1n2": 44,
-    "user_1n2_pct": 54.2,
-    "model_1n2_pct": 65.3,
-    "klement_1n2_pct": 61.1,
-    "user_exact_pct": 9.7
+    "klement_1n2": 45,
+    "user_1n2_pct": 53.4,
+    "model_1n2_pct": 64.4,
+    "klement_1n2_pct": 61.6,
+    "user_exact_pct": 9.6
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -90,9 +90,15 @@
       "action": "Revoir les pronos restants impliquant cette équipe"
     },
     {
+      "level": "warning",
+      "match": "Afrique du Sud - Canada",
+      "message": "Score non suivi par le tracker pour Afrique du Sud - Canada (0-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (44/72 1N/2) devance ta grille (39/72)",
+      "message": "Klement (45/73 1N/2) devance ta grille (39/73)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -1824,10 +1830,61 @@
       "klement_direction": "Victoire Argentine",
       "direction_winner": "égalité",
       "verdict_short": "Lisa ✓ · Klement ✓ — même bonne direction"
+    },
+    {
+      "key": "Afrique du Sud - Canada",
+      "home": "Afrique du Sud",
+      "away": "Canada",
+      "actual_score": "0-1",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Canada",
+      "user_direction": "—",
+      "klement_direction": "Victoire Canada",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Afrique du Sud - Canada"
+  ],
+  "recent_results": [
+    {
+      "key": "Afrique du Sud - Canada",
+      "home": "Afrique du Sud",
+      "away": "Canada",
+      "actual_score": "0-1",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Canada",
+      "user_direction": "—",
+      "klement_direction": "Victoire Canada",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -1836,8 +1893,8 @@
       "away": "Japon",
       "date": "29/06",
       "kickoff_paris": "29/06 à 19:00",
-      "hours_until": 20.1,
-      "hours_label": "dans 20.1 h",
+      "hours_until": 18.0,
+      "hours_label": "dans 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1852,8 +1909,8 @@
       "away": "Paraguay",
       "date": "29/06",
       "kickoff_paris": "29/06 à 22:30",
-      "hours_until": 23.6,
-      "hours_label": "dans 23.6 h",
+      "hours_until": 21.5,
+      "hours_label": "dans 21.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1868,8 +1925,8 @@
       "away": "Maroc",
       "date": "30/06",
       "kickoff_paris": "30/06 à 03:00",
-      "hours_until": 28.1,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 26.0,
+      "hours_label": "dans 1 j 2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1884,8 +1941,8 @@
       "away": "Norvège",
       "date": "30/06",
       "kickoff_paris": "30/06 à 19:00",
-      "hours_until": 44.1,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 42.0,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1893,7 +1950,36 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Côte d'Ivoire vs Norvège → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "France - Suède",
+      "home": "France",
+      "away": "Suède",
+      "date": "30/06",
+      "kickoff_paris": "30/06 à 23:00",
+      "hours_until": 46.0,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → France vs Suède → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Afrique du Sud - Canada",
+      "message": "Score non suivi par le tracker pour Afrique du Sud - Canada (0-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (45/73 1N/2) devance ta grille (39/73)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
