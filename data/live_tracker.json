@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-28T22:57:38.773342+00:00",
+  "updated_at": "2026-06-29T02:48:27.469694+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -1856,35 +1856,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Afrique du Sud - Canada"
-  ],
-  "recent_results": [
-    {
-      "key": "Afrique du Sud - Canada",
-      "home": "Afrique du Sud",
-      "away": "Canada",
-      "actual_score": "0-1",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "0",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Canada",
-      "user_direction": "—",
-      "klement_direction": "Victoire Canada",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -1893,8 +1866,8 @@
       "away": "Japon",
       "date": "29/06",
       "kickoff_paris": "29/06 à 19:00",
-      "hours_until": 18.0,
-      "hours_label": "dans 18 h",
+      "hours_until": 14.2,
+      "hours_label": "dans 14.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1909,8 +1882,8 @@
       "away": "Paraguay",
       "date": "29/06",
       "kickoff_paris": "29/06 à 22:30",
-      "hours_until": 21.5,
-      "hours_label": "dans 21.5 h",
+      "hours_until": 17.7,
+      "hours_label": "dans 17.7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1925,8 +1898,8 @@
       "away": "Maroc",
       "date": "30/06",
       "kickoff_paris": "30/06 à 03:00",
-      "hours_until": 26.0,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 22.2,
+      "hours_label": "dans 22.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1941,8 +1914,8 @@
       "away": "Norvège",
       "date": "30/06",
       "kickoff_paris": "30/06 à 19:00",
-      "hours_until": 42.0,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 38.2,
+      "hours_label": "dans 1 j 14 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1957,8 +1930,8 @@
       "away": "Suède",
       "date": "30/06",
       "kickoff_paris": "30/06 à 23:00",
-      "hours_until": 46.0,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 42.2,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1966,20 +1939,23 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → France vs Suède → 1 - 1",
       "changed": false
-    }
-  ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Afrique du Sud - Canada",
-      "message": "Score non suivi par le tracker pour Afrique du Sud - Canada (0-1)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (45/73 1N/2) devance ta grille (39/73)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+      "key": "Mexique - Équateur",
+      "home": "Mexique",
+      "away": "Équateur",
+      "date": "01/07",
+      "kickoff_paris": "01/07 à 03:00",
+      "hours_until": 46.2,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Mexique vs Équateur → 1 - 1",
+      "changed": false
     }
-  ]
+  ],
+  "new_alerts": []
 }
