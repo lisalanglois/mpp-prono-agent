@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-29T16:55:55.933792+00:00",
+  "updated_at": "2026-06-29T19:48:14.829066+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 73,
+    "played": 74,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 47,
-    "klement_1n2": 45,
-    "user_1n2_pct": 53.4,
-    "model_1n2_pct": 64.4,
-    "klement_1n2_pct": 61.6,
-    "user_exact_pct": 9.6
+    "klement_1n2": 46,
+    "user_1n2_pct": 52.7,
+    "model_1n2_pct": 63.5,
+    "klement_1n2_pct": 62.2,
+    "user_exact_pct": 9.5
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -96,9 +96,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Brésil - Japon",
+      "message": "Score non suivi par le tracker pour Brésil - Japon (2-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (45/73 1N/2) devance ta grille (39/73)",
+      "message": "Klement (46/74 1N/2) devance ta grille (39/74)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -1854,36 +1860,71 @@
       "klement_direction": "Victoire Canada",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [],
-  "recent_results": [],
-  "upcoming_updates": [],
-  "urgent_mpp": [
+    },
     {
       "key": "Brésil - Japon",
       "home": "Brésil",
       "away": "Japon",
-      "date": "29/06",
-      "kickoff_paris": "29/06 à 19:00",
-      "hours_until": 0.1,
-      "hours_label": "dans 6 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
       "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Brésil vs Japon → 1 - 1",
-      "changed": false
-    },
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Brésil",
+      "user_direction": "—",
+      "klement_direction": "Victoire Brésil",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "Brésil - Japon"
+  ],
+  "recent_results": [
+    {
+      "key": "Brésil - Japon",
+      "home": "Brésil",
+      "away": "Japon",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Brésil",
+      "user_direction": "—",
+      "klement_direction": "Victoire Brésil",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "upcoming_updates": [],
+  "urgent_mpp": [
     {
       "key": "Allemagne - Paraguay",
       "home": "Allemagne",
       "away": "Paraguay",
       "date": "29/06",
       "kickoff_paris": "29/06 à 22:30",
-      "hours_until": 3.6,
-      "hours_label": "dans 3.6 h",
+      "hours_until": 0.7,
+      "hours_label": "dans 42 min",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1898,8 +1939,8 @@
       "away": "Maroc",
       "date": "30/06",
       "kickoff_paris": "30/06 à 03:00",
-      "hours_until": 8.1,
-      "hours_label": "dans 8.1 h",
+      "hours_until": 5.2,
+      "hours_label": "dans 5.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1914,8 +1955,8 @@
       "away": "Norvège",
       "date": "30/06",
       "kickoff_paris": "30/06 à 19:00",
-      "hours_until": 24.1,
-      "hours_label": "dans 1 j",
+      "hours_until": 21.2,
+      "hours_label": "dans 21.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1930,8 +1971,8 @@
       "away": "Suède",
       "date": "30/06",
       "kickoff_paris": "30/06 à 23:00",
-      "hours_until": 28.1,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 25.2,
+      "hours_label": "dans 1 j 1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1946,8 +1987,8 @@
       "away": "Équateur",
       "date": "01/07",
       "kickoff_paris": "01/07 à 03:00",
-      "hours_until": 32.1,
-      "hours_label": "dans 1 j 8 h",
+      "hours_until": 29.2,
+      "hours_label": "dans 1 j 5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1962,8 +2003,8 @@
       "away": "RD Congo",
       "date": "01/07",
       "kickoff_paris": "01/07 à 18:00",
-      "hours_until": 47.1,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 44.2,
+      "hours_label": "dans 1 j 20 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1973,5 +2014,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Brésil - Japon",
+      "message": "Score non suivi par le tracker pour Brésil - Japon (2-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (46/74 1N/2) devance ta grille (39/74)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
