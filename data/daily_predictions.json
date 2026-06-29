@@ -1,26 +1,9 @@
 {
-  "generated_at": "2026-06-28T10:23:55.376787+00:00",
+  "generated_at": "2026-06-29T12:27:59.083112+00:00",
   "days": 3,
-  "count": 7,
+  "count": 9,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Afrique du Sud - Canada",
-      "home": "Afrique du Sud",
-      "away": "Canada",
-      "score": "0-1",
-      "kickoff_utc": "2026-06-28T19:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 6.0,
-        "draw": 3.75,
-        "away": 1.6451612903225805
-      },
-      "home_form": "WDLWD",
-      "away_form": "LWDDW",
-      "source": "espn_poisson",
-      "mpp_copy": "Afrique du Sud 0 - 1 Canada"
-    },
     {
       "match": "Brésil - Japon",
       "home": "Brésil",
@@ -29,8 +12,8 @@
       "kickoff_utc": "2026-06-29T17:00Z",
       "venue": "NRG Stadium",
       "odds": {
-        "home": 1.6896551724137931,
-        "draw": 3.9,
+        "home": 1.7407407407407407,
+        "draw": 3.7,
         "away": 5.0
       },
       "home_form": "WWDWW",
@@ -46,9 +29,9 @@
       "kickoff_utc": "2026-06-29T20:30Z",
       "venue": "Gillette Stadium",
       "odds": {
-        "home": 1.3773584905660377,
+        "home": 1.3636363636363638,
         "draw": 5.0,
-        "away": 8.5
+        "away": 9.0
       },
       "home_form": "LWWWW",
       "away_form": "DWLWL",
@@ -59,18 +42,18 @@
       "match": "Pays-Bas - Maroc",
       "home": "Pays-Bas",
       "away": "Maroc",
-      "score": "1-1",
+      "score": "0-0",
       "kickoff_utc": "2026-06-30T01:00Z",
       "venue": "Estadio BBVA",
       "odds": {
-        "home": 2.15,
-        "draw": 3.25,
-        "away": 3.7
+        "home": 2.3,
+        "draw": 3.1,
+        "away": 3.5
       },
       "home_form": "WWDWL",
       "away_form": "WWDDW",
       "source": "espn_poisson",
-      "mpp_copy": "Pays-Bas 1 - 1 Maroc"
+      "mpp_copy": "Pays-Bas 0 - 0 Maroc"
     },
     {
       "match": "Côte d'Ivoire - Norvège",
@@ -81,7 +64,7 @@
       "venue": "AT&T Stadium",
       "odds": {
         "home": 3.65,
-        "draw": 3.5,
+        "draw": 3.6,
         "away": 2.05
       },
       "home_form": "WLWWW",
@@ -97,9 +80,9 @@
       "kickoff_utc": "2026-06-30T21:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 1.2941176470588236,
+        "home": 1.2702702702702702,
         "draw": 6.0,
-        "away": 10.0
+        "away": 10.5
       },
       "home_form": "WWWWL",
       "away_form": "DLWDL",
@@ -115,13 +98,64 @@
       "venue": "Estadio Banorte",
       "odds": {
         "home": 2.2,
-        "draw": 3.05,
-        "away": 3.8
+        "draw": 2.95,
+        "away": 4.0
       },
       "home_form": "WWWWW",
       "away_form": "WDLWW",
       "source": "espn_poisson",
       "mpp_copy": "Mexique 0 - 0 Équateur"
+    },
+    {
+      "match": "Angleterre - RD Congo",
+      "home": "Angleterre",
+      "away": "RD Congo",
+      "score": "3-0",
+      "kickoff_utc": "2026-07-01T16:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "odds": {
+        "home": 1.2857142857142856,
+        "draw": 5.5,
+        "away": 12.0
+      },
+      "home_form": "WDWWW",
+      "away_form": "WLDLD",
+      "source": "espn_poisson",
+      "mpp_copy": "Angleterre 3 - 0 RD Congo"
+    },
+    {
+      "match": "Belgique - Sénégal",
+      "home": "Belgique",
+      "away": "Sénégal",
+      "score": "1-1",
+      "kickoff_utc": "2026-07-01T20:00Z",
+      "venue": "Lumen Field",
+      "odds": {
+        "home": 2.2,
+        "draw": 3.3,
+        "away": 3.55
+      },
+      "home_form": "WDDWW",
+      "away_form": "WLLDL",
+      "source": "espn_poisson",
+      "mpp_copy": "Belgique 1 - 1 Sénégal"
+    },
+    {
+      "match": "États-Unis - Bosnie-Herzégovine",
+      "home": "États-Unis",
+      "away": "Bosnie-Herzégovine",
+      "score": "3-0",
+      "kickoff_utc": "2026-07-02T00:00Z",
+      "venue": "Levi's Stadium",
+      "odds": {
+        "home": 1.3703703703703702,
+        "draw": 5.0,
+        "away": 9.0
+      },
+      "home_form": "LWWLW",
+      "away_form": "WLDDD",
+      "source": "espn_poisson",
+      "mpp_copy": "États-Unis 3 - 0 Bosnie-Herzégovine"
     }
   ]
 }
