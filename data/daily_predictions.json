@@ -1,60 +1,9 @@
 {
-  "generated_at": "2026-06-29T12:27:59.083112+00:00",
+  "generated_at": "2026-06-30T10:53:28.332474+00:00",
   "days": 3,
   "count": 9,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Brésil - Japon",
-      "home": "Brésil",
-      "away": "Japon",
-      "score": "1-0",
-      "kickoff_utc": "2026-06-29T17:00Z",
-      "venue": "NRG Stadium",
-      "odds": {
-        "home": 1.7407407407407407,
-        "draw": 3.7,
-        "away": 5.0
-      },
-      "home_form": "WWDWW",
-      "away_form": "DWDWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Brésil 1 - 0 Japon"
-    },
-    {
-      "match": "Allemagne - Paraguay",
-      "home": "Allemagne",
-      "away": "Paraguay",
-      "score": "3-0",
-      "kickoff_utc": "2026-06-29T20:30Z",
-      "venue": "Gillette Stadium",
-      "odds": {
-        "home": 1.3636363636363638,
-        "draw": 5.0,
-        "away": 9.0
-      },
-      "home_form": "LWWWW",
-      "away_form": "DWLWL",
-      "source": "espn_poisson",
-      "mpp_copy": "Allemagne 3 - 0 Paraguay"
-    },
-    {
-      "match": "Pays-Bas - Maroc",
-      "home": "Pays-Bas",
-      "away": "Maroc",
-      "score": "0-0",
-      "kickoff_utc": "2026-06-30T01:00Z",
-      "venue": "Estadio BBVA",
-      "odds": {
-        "home": 2.3,
-        "draw": 3.1,
-        "away": 3.5
-      },
-      "home_form": "WWDWL",
-      "away_form": "WWDDW",
-      "source": "espn_poisson",
-      "mpp_copy": "Pays-Bas 0 - 0 Maroc"
-    },
     {
       "match": "Côte d'Ivoire - Norvège",
       "home": "Côte d'Ivoire",
@@ -63,9 +12,9 @@
       "kickoff_utc": "2026-06-30T17:00Z",
       "venue": "AT&T Stadium",
       "odds": {
-        "home": 3.65,
-        "draw": 3.6,
-        "away": 2.05
+        "home": 3.55,
+        "draw": 3.4,
+        "away": 2.15
       },
       "home_form": "WLWWW",
       "away_form": "LWWDW",
@@ -80,9 +29,9 @@
       "kickoff_utc": "2026-06-30T21:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 1.2702702702702702,
-        "draw": 6.0,
-        "away": 10.5
+        "home": 1.2941176470588236,
+        "draw": 5.75,
+        "away": 10.0
       },
       "home_form": "WWWWL",
       "away_form": "DLWDL",
@@ -97,9 +46,9 @@
       "kickoff_utc": "2026-07-01T01:00Z",
       "venue": "Estadio Banorte",
       "odds": {
-        "home": 2.2,
-        "draw": 2.95,
-        "away": 4.0
+        "home": 2.3,
+        "draw": 2.9,
+        "away": 3.85
       },
       "home_form": "WWWWW",
       "away_form": "WDLWW",
@@ -114,9 +63,9 @@
       "kickoff_utc": "2026-07-01T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.2857142857142856,
+        "home": 1.2777777777777777,
         "draw": 5.5,
-        "away": 12.0
+        "away": 13.0
       },
       "home_form": "WDWWW",
       "away_form": "WLDLD",
@@ -131,9 +80,9 @@
       "kickoff_utc": "2026-07-01T20:00Z",
       "venue": "Lumen Field",
       "odds": {
-        "home": 2.2,
-        "draw": 3.3,
-        "away": 3.55
+        "home": 2.25,
+        "draw": 3.25,
+        "away": 3.5
       },
       "home_form": "WDDWW",
       "away_form": "WLLDL",
@@ -144,18 +93,69 @@
       "match": "États-Unis - Bosnie-Herzégovine",
       "home": "États-Unis",
       "away": "Bosnie-Herzégovine",
-      "score": "3-0",
+      "score": "1-0",
       "kickoff_utc": "2026-07-02T00:00Z",
       "venue": "Levi's Stadium",
       "odds": {
-        "home": 1.3703703703703702,
-        "draw": 5.0,
+        "home": 1.3773584905660377,
+        "draw": 4.9,
         "away": 9.0
       },
       "home_form": "LWWLW",
       "away_form": "WLDDD",
       "source": "espn_poisson",
-      "mpp_copy": "États-Unis 3 - 0 Bosnie-Herzégovine"
+      "mpp_copy": "États-Unis 1 - 0 Bosnie-Herzégovine"
+    },
+    {
+      "match": "Espagne - Autriche",
+      "home": "Espagne",
+      "away": "Autriche",
+      "score": "3-0",
+      "kickoff_utc": "2026-07-02T19:00Z",
+      "venue": "SoFi Stadium",
+      "odds": {
+        "home": 1.3333333333333333,
+        "draw": 5.25,
+        "away": 10.0
+      },
+      "home_form": "WWDWD",
+      "away_form": "DLWWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Espagne 3 - 0 Autriche"
+    },
+    {
+      "match": "Portugal - Croatie",
+      "home": "Portugal",
+      "away": "Croatie",
+      "score": "1-1",
+      "kickoff_utc": "2026-07-02T23:00Z",
+      "venue": "BMO Field",
+      "odds": {
+        "home": 1.7692307692307692,
+        "draw": 3.65,
+        "away": 5.0
+      },
+      "home_form": "DWDWW",
+      "away_form": "WWLWL",
+      "source": "espn_poisson",
+      "mpp_copy": "Portugal 1 - 1 Croatie"
+    },
+    {
+      "match": "Suisse - Algérie",
+      "home": "Suisse",
+      "away": "Algérie",
+      "score": "1-1",
+      "kickoff_utc": "2026-07-03T03:00Z",
+      "venue": "BC Place",
+      "odds": {
+        "home": 2.1,
+        "draw": 3.3,
+        "away": 3.9
+      },
+      "home_form": "WWDDW",
+      "away_form": "DWLWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Suisse 1 - 1 Algérie"
     }
   ]
 }
