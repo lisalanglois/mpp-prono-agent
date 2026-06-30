@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-30T17:48:27.388031+00:00",
+  "updated_at": "2026-06-30T19:45:57.446998+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 76,
+    "played": 77,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 46,
-    "user_1n2_pct": 51.3,
-    "model_1n2_pct": 64.5,
-    "klement_1n2_pct": 60.5,
-    "user_exact_pct": 9.2
+    "klement_1n2": 47,
+    "user_1n2_pct": 50.6,
+    "model_1n2_pct": 63.6,
+    "klement_1n2_pct": 61.0,
+    "user_exact_pct": 9.1
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -114,9 +114,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Côte d'Ivoire - Norvège",
+      "message": "Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (46/76 1N/2) devance ta grille (39/76)",
+      "message": "Klement (47/77 1N/2) devance ta grille (39/77)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -1944,10 +1950,61 @@
       "klement_direction": "Victoire Pays-Bas",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
+    },
+    {
+      "key": "Côte d'Ivoire - Norvège",
+      "home": "Côte d'Ivoire",
+      "away": "Norvège",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Norvège",
+      "user_direction": "—",
+      "klement_direction": "Victoire Norvège",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Côte d'Ivoire - Norvège"
+  ],
+  "recent_results": [
+    {
+      "key": "Côte d'Ivoire - Norvège",
+      "home": "Côte d'Ivoire",
+      "away": "Norvège",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Norvège",
+      "user_direction": "—",
+      "klement_direction": "Victoire Norvège",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -1956,8 +2013,8 @@
       "away": "Suède",
       "date": "30/06",
       "kickoff_paris": "30/06 à 23:00",
-      "hours_until": 3.2,
-      "hours_label": "dans 3.2 h",
+      "hours_until": 1.2,
+      "hours_label": "dans 1.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1972,8 +2029,8 @@
       "away": "Équateur",
       "date": "01/07",
       "kickoff_paris": "01/07 à 03:00",
-      "hours_until": 7.2,
-      "hours_label": "dans 7.2 h",
+      "hours_until": 5.2,
+      "hours_label": "dans 5.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1988,8 +2045,8 @@
       "away": "RD Congo",
       "date": "01/07",
       "kickoff_paris": "01/07 à 18:00",
-      "hours_until": 22.2,
-      "hours_label": "dans 22.2 h",
+      "hours_until": 20.2,
+      "hours_label": "dans 20.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2004,8 +2061,8 @@
       "away": "Sénégal",
       "date": "01/07",
       "kickoff_paris": "01/07 à 22:00",
-      "hours_until": 26.2,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 24.2,
+      "hours_label": "dans 1 j",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2020,8 +2077,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "02/07",
       "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 30.2,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 28.2,
+      "hours_label": "dans 1 j 4 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2029,7 +2086,36 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → États-Unis vs Bosnie-Herzégovine → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Espagne - Autriche",
+      "home": "Espagne",
+      "away": "Autriche",
+      "date": "02/07",
+      "kickoff_paris": "02/07 à 21:00",
+      "hours_until": 47.2,
+      "hours_label": "dans 1 j 23 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Espagne vs Autriche → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Côte d'Ivoire - Norvège",
+      "message": "Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (47/77 1N/2) devance ta grille (39/77)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
