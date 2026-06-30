@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-30T02:42:26.479656+00:00",
+  "updated_at": "2026-06-30T07:45:00.678964+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 75,
+    "played": 76,
     "user_1n2": 39,
     "user_exact": 7,
-    "model_1n2": 48,
+    "model_1n2": 49,
     "klement_1n2": 46,
-    "user_1n2_pct": 52.0,
-    "model_1n2_pct": 64.0,
-    "klement_1n2_pct": 61.3,
-    "user_exact_pct": 9.3
+    "user_1n2_pct": 51.3,
+    "model_1n2_pct": 64.5,
+    "klement_1n2_pct": 60.5,
+    "user_exact_pct": 9.2
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -108,9 +108,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Pays-Bas - Maroc",
+      "message": "Score non suivi par le tracker pour Pays-Bas - Maroc (1-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (46/75 1N/2) devance ta grille (39/75)",
+      "message": "Klement (46/76 1N/2) devance ta grille (39/76)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -1914,16 +1920,11 @@
       "klement_direction": "Victoire Allemagne",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
-    }
-  ],
-  "new_finished_keys": [
-    "Allemagne - Paraguay"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Allemagne - Paraguay",
-      "home": "Allemagne",
-      "away": "Paraguay",
+      "key": "Pays-Bas - Maroc",
+      "home": "Pays-Bas",
+      "away": "Maroc",
       "actual_score": "1-1",
       "actual_outcome": "draw",
       "user_score": null,
@@ -1940,7 +1941,36 @@
       "user_away": "—",
       "actual_direction": "Match nul",
       "user_direction": "—",
-      "klement_direction": "Victoire Allemagne",
+      "klement_direction": "Victoire Pays-Bas",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
+  "new_finished_keys": [
+    "Pays-Bas - Maroc"
+  ],
+  "recent_results": [
+    {
+      "key": "Pays-Bas - Maroc",
+      "home": "Pays-Bas",
+      "away": "Maroc",
+      "actual_score": "1-1",
+      "actual_outcome": "draw",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Match nul",
+      "user_direction": "—",
+      "klement_direction": "Victoire Pays-Bas",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
     }
@@ -1953,8 +1983,8 @@
       "away": "Norvège",
       "date": "30/06",
       "kickoff_paris": "30/06 à 19:00",
-      "hours_until": 14.3,
-      "hours_label": "dans 14.3 h",
+      "hours_until": 9.2,
+      "hours_label": "dans 9.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1969,8 +1999,8 @@
       "away": "Suède",
       "date": "30/06",
       "kickoff_paris": "30/06 à 23:00",
-      "hours_until": 18.3,
-      "hours_label": "dans 18.3 h",
+      "hours_until": 13.2,
+      "hours_label": "dans 13.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -1985,8 +2015,8 @@
       "away": "Équateur",
       "date": "01/07",
       "kickoff_paris": "01/07 à 03:00",
-      "hours_until": 22.3,
-      "hours_label": "dans 22.3 h",
+      "hours_until": 17.2,
+      "hours_label": "dans 17.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2001,8 +2031,8 @@
       "away": "RD Congo",
       "date": "01/07",
       "kickoff_paris": "01/07 à 18:00",
-      "hours_until": 37.3,
-      "hours_label": "dans 1 j 13 h",
+      "hours_until": 32.2,
+      "hours_label": "dans 1 j 8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2017,8 +2047,8 @@
       "away": "Sénégal",
       "date": "01/07",
       "kickoff_paris": "01/07 à 22:00",
-      "hours_until": 41.3,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 36.2,
+      "hours_label": "dans 1 j 12 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2033,8 +2063,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "02/07",
       "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 45.3,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 40.2,
+      "hours_label": "dans 1 j 16 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2047,14 +2077,14 @@
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Allemagne - Paraguay",
-      "message": "Score non suivi par le tracker pour Allemagne - Paraguay (1-1)",
+      "match": "Pays-Bas - Maroc",
+      "message": "Score non suivi par le tracker pour Pays-Bas - Maroc (1-1)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (46/75 1N/2) devance ta grille (39/75)",
+      "message": "Klement (46/76 1N/2) devance ta grille (39/76)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
