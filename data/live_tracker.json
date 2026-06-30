@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-06-30T19:45:57.446998+00:00",
+  "updated_at": "2026-06-30T23:05:03.335259+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 77,
+    "played": 78,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 47,
-    "user_1n2_pct": 50.6,
-    "model_1n2_pct": 63.6,
-    "klement_1n2_pct": 61.0,
-    "user_exact_pct": 9.1
+    "klement_1n2": 48,
+    "user_1n2_pct": 50.0,
+    "model_1n2_pct": 62.8,
+    "klement_1n2_pct": 61.5,
+    "user_exact_pct": 9.0
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -120,9 +120,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "France - Suède",
+      "message": "Score non suivi par le tracker pour France - Suède (3-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (47/77 1N/2) devance ta grille (39/77)",
+      "message": "Klement (48/78 1N/2) devance ta grille (39/78)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -1974,33 +1980,57 @@
       "klement_direction": "Victoire Norvège",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Côte d'Ivoire - Norvège"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Côte d'Ivoire - Norvège",
-      "home": "Côte d'Ivoire",
-      "away": "Norvège",
-      "actual_score": "1-2",
-      "actual_outcome": "away",
+      "key": "France - Suède",
+      "home": "France",
+      "away": "Suède",
+      "actual_score": "3-0",
+      "actual_outcome": "home",
       "user_score": null,
       "user_outcome": null,
       "user_1n2": null,
       "user_exact": false,
       "model_outcome": "draw",
       "model_1n2": false,
-      "klement_outcome": "away",
+      "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "2",
+      "actual_home": "3",
+      "actual_away": "0",
       "user_home": "—",
       "user_away": "—",
-      "actual_direction": "Victoire Norvège",
+      "actual_direction": "Victoire France",
       "user_direction": "—",
-      "klement_direction": "Victoire Norvège",
+      "klement_direction": "Victoire France",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "France - Suède"
+  ],
+  "recent_results": [
+    {
+      "key": "France - Suède",
+      "home": "France",
+      "away": "Suède",
+      "actual_score": "3-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire France",
+      "user_direction": "—",
+      "klement_direction": "Victoire France",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
     }
@@ -2008,29 +2038,13 @@
   "upcoming_updates": [],
   "urgent_mpp": [
     {
-      "key": "France - Suède",
-      "home": "France",
-      "away": "Suède",
-      "date": "30/06",
-      "kickoff_paris": "30/06 à 23:00",
-      "hours_until": 1.2,
-      "hours_label": "dans 1.2 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → France vs Suède → 1 - 1",
-      "changed": false
-    },
-    {
       "key": "Mexique - Équateur",
       "home": "Mexique",
       "away": "Équateur",
       "date": "01/07",
       "kickoff_paris": "01/07 à 03:00",
-      "hours_until": 5.2,
-      "hours_label": "dans 5.2 h",
+      "hours_until": 1.9,
+      "hours_label": "dans 1.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2045,8 +2059,8 @@
       "away": "RD Congo",
       "date": "01/07",
       "kickoff_paris": "01/07 à 18:00",
-      "hours_until": 20.2,
-      "hours_label": "dans 20.2 h",
+      "hours_until": 16.9,
+      "hours_label": "dans 16.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2061,8 +2075,8 @@
       "away": "Sénégal",
       "date": "01/07",
       "kickoff_paris": "01/07 à 22:00",
-      "hours_until": 24.2,
-      "hours_label": "dans 1 j",
+      "hours_until": 20.9,
+      "hours_label": "dans 20.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2077,8 +2091,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "02/07",
       "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 28.2,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 24.9,
+      "hours_label": "dans 1 j",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2093,8 +2107,8 @@
       "away": "Autriche",
       "date": "02/07",
       "kickoff_paris": "02/07 à 21:00",
-      "hours_until": 47.2,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 43.9,
+      "hours_label": "dans 1 j 19 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2102,19 +2116,35 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Espagne vs Autriche → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Portugal - Croatie",
+      "home": "Portugal",
+      "away": "Croatie",
+      "date": "03/07",
+      "kickoff_paris": "03/07 à 01:00",
+      "hours_until": 47.9,
+      "hours_label": "dans 1 j 23 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Portugal vs Croatie → 1 - 1",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Côte d'Ivoire - Norvège",
-      "message": "Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
+      "match": "France - Suède",
+      "message": "Score non suivi par le tracker pour France - Suède (3-0)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (47/77 1N/2) devance ta grille (39/77)",
+      "message": "Klement (48/78 1N/2) devance ta grille (39/78)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
