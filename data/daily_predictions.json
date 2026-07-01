@@ -1,60 +1,9 @@
 {
-  "generated_at": "2026-06-30T10:53:28.332474+00:00",
+  "generated_at": "2026-07-01T11:19:59.356839+00:00",
   "days": 3,
   "count": 9,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Côte d'Ivoire - Norvège",
-      "home": "Côte d'Ivoire",
-      "away": "Norvège",
-      "score": "1-1",
-      "kickoff_utc": "2026-06-30T17:00Z",
-      "venue": "AT&T Stadium",
-      "odds": {
-        "home": 3.55,
-        "draw": 3.4,
-        "away": 2.15
-      },
-      "home_form": "WLWWW",
-      "away_form": "LWWDW",
-      "source": "espn_poisson",
-      "mpp_copy": "Côte d'Ivoire 1 - 1 Norvège"
-    },
-    {
-      "match": "France - Suède",
-      "home": "France",
-      "away": "Suède",
-      "score": "3-0",
-      "kickoff_utc": "2026-06-30T21:00Z",
-      "venue": "MetLife Stadium",
-      "odds": {
-        "home": 1.2941176470588236,
-        "draw": 5.75,
-        "away": 10.0
-      },
-      "home_form": "WWWWL",
-      "away_form": "DLWDL",
-      "source": "espn_poisson",
-      "mpp_copy": "France 3 - 0 Suède"
-    },
-    {
-      "match": "Mexique - Équateur",
-      "home": "Mexique",
-      "away": "Équateur",
-      "score": "0-0",
-      "kickoff_utc": "2026-07-01T01:00Z",
-      "venue": "Estadio Banorte",
-      "odds": {
-        "home": 2.3,
-        "draw": 2.9,
-        "away": 3.85
-      },
-      "home_form": "WWWWW",
-      "away_form": "WDLWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Mexique 0 - 0 Équateur"
-    },
     {
       "match": "Angleterre - RD Congo",
       "home": "Angleterre",
@@ -63,8 +12,8 @@
       "kickoff_utc": "2026-07-01T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.2777777777777777,
-        "draw": 5.5,
+        "home": 1.2941176470588236,
+        "draw": 5.25,
         "away": 13.0
       },
       "home_form": "WDWWW",
@@ -80,9 +29,9 @@
       "kickoff_utc": "2026-07-01T20:00Z",
       "venue": "Lumen Field",
       "odds": {
-        "home": 2.25,
-        "draw": 3.25,
-        "away": 3.5
+        "home": 2.15,
+        "draw": 3.3,
+        "away": 3.65
       },
       "home_form": "WDDWW",
       "away_form": "WLLDL",
@@ -97,9 +46,9 @@
       "kickoff_utc": "2026-07-02T00:00Z",
       "venue": "Levi's Stadium",
       "odds": {
-        "home": 1.3773584905660377,
-        "draw": 4.9,
-        "away": 9.0
+        "home": 1.392156862745098,
+        "draw": 4.8,
+        "away": 8.5
       },
       "home_form": "LWWLW",
       "away_form": "WLDDD",
@@ -131,9 +80,9 @@
       "kickoff_utc": "2026-07-02T23:00Z",
       "venue": "BMO Field",
       "odds": {
-        "home": 1.7692307692307692,
-        "draw": 3.65,
-        "away": 5.0
+        "home": 1.8,
+        "draw": 3.6,
+        "away": 4.8
       },
       "home_form": "DWDWW",
       "away_form": "WWLWL",
@@ -148,14 +97,65 @@
       "kickoff_utc": "2026-07-03T03:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 2.1,
+        "home": 2.05,
         "draw": 3.3,
-        "away": 3.9
+        "away": 4.0
       },
       "home_form": "WWDDW",
       "away_form": "DWLWW",
       "source": "espn_poisson",
       "mpp_copy": "Suisse 1 - 1 Algérie"
+    },
+    {
+      "match": "Australie - Égypte",
+      "home": "Australie",
+      "away": "Égypte",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-03T18:00Z",
+      "venue": "AT&T Stadium",
+      "odds": {
+        "home": 3.3,
+        "draw": 2.9,
+        "away": 2.5
+      },
+      "home_form": "DLWDL",
+      "away_form": "DWDLW",
+      "source": "espn_poisson",
+      "mpp_copy": "Australie 0 - 0 Égypte"
+    },
+    {
+      "match": "Argentine - Cap-Vert",
+      "home": "Argentine",
+      "away": "Cap-Vert",
+      "score": "3-0",
+      "kickoff_utc": "2026-07-03T22:00Z",
+      "venue": "Hard Rock Stadium",
+      "odds": {
+        "home": 1.1739130434782608,
+        "draw": 7.5,
+        "away": 18.0
+      },
+      "home_form": "WWWWW",
+      "away_form": "DDDWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Argentine 3 - 0 Cap-Vert"
+    },
+    {
+      "match": "Colombie - Ghana",
+      "home": "Colombie",
+      "away": "Ghana",
+      "score": "1-0",
+      "kickoff_utc": "2026-07-04T01:30Z",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "odds": {
+        "home": 1.526315789473684,
+        "draw": 4.1,
+        "away": 7.0
+      },
+      "home_form": "DWWWW",
+      "away_form": "LDWDL",
+      "source": "espn_poisson",
+      "mpp_copy": "Colombie 1 - 0 Ghana"
     }
   ]
 }
