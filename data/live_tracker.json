@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-01T16:21:38.604163+00:00",
+  "updated_at": "2026-07-01T19:43:51.009037+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 79,
+    "played": 80,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 48,
-    "user_1n2_pct": 49.4,
-    "model_1n2_pct": 62.0,
-    "klement_1n2_pct": 60.8,
-    "user_exact_pct": 8.9
+    "klement_1n2": 49,
+    "user_1n2_pct": 48.8,
+    "model_1n2_pct": 61.2,
+    "klement_1n2_pct": 61.2,
+    "user_exact_pct": 8.8
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -132,9 +132,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Angleterre - RD Congo",
+      "message": "Score non suivi par le tracker pour Angleterre - RD Congo (2-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (48/79 1N/2) devance ta grille (39/79)",
+      "message": "Klement (49/80 1N/2) devance ta grille (39/80)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2034,10 +2040,61 @@
       "klement_direction": "Match nul",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
+    },
+    {
+      "key": "Angleterre - RD Congo",
+      "home": "Angleterre",
+      "away": "RD Congo",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Angleterre",
+      "user_direction": "—",
+      "klement_direction": "Victoire Angleterre",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Angleterre - RD Congo"
+  ],
+  "recent_results": [
+    {
+      "key": "Angleterre - RD Congo",
+      "home": "Angleterre",
+      "away": "RD Congo",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Angleterre",
+      "user_direction": "—",
+      "klement_direction": "Victoire Angleterre",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2046,8 +2103,8 @@
       "away": "Sénégal",
       "date": "01/07",
       "kickoff_paris": "01/07 à 22:00",
-      "hours_until": 3.6,
-      "hours_label": "dans 3.6 h",
+      "hours_until": 0.3,
+      "hours_label": "dans 18 min",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2062,8 +2119,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "02/07",
       "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 7.6,
-      "hours_label": "dans 7.6 h",
+      "hours_until": 4.3,
+      "hours_label": "dans 4.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2078,8 +2135,8 @@
       "away": "Autriche",
       "date": "02/07",
       "kickoff_paris": "02/07 à 21:00",
-      "hours_until": 26.6,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 23.3,
+      "hours_label": "dans 23.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2094,8 +2151,8 @@
       "away": "Croatie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 30.6,
-      "hours_label": "dans 1 j 6 h",
+      "hours_until": 27.3,
+      "hours_label": "dans 1 j 3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2110,8 +2167,8 @@
       "away": "Algérie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 05:00",
-      "hours_until": 34.6,
-      "hours_label": "dans 1 j 10 h",
+      "hours_until": 31.3,
+      "hours_label": "dans 1 j 7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2119,7 +2176,36 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Suisse vs Algérie → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Australie - Égypte",
+      "home": "Australie",
+      "away": "Égypte",
+      "date": "03/07",
+      "kickoff_paris": "03/07 à 20:00",
+      "hours_until": 46.3,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Australie vs Égypte → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Angleterre - RD Congo",
+      "message": "Score non suivi par le tracker pour Angleterre - RD Congo (2-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (49/80 1N/2) devance ta grille (39/80)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
