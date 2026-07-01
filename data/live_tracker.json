@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-01T02:48:18.821773+00:00",
+  "updated_at": "2026-07-01T08:06:04.266651+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 78,
+    "played": 79,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
     "klement_1n2": 48,
-    "user_1n2_pct": 50.0,
-    "model_1n2_pct": 62.8,
-    "klement_1n2_pct": 61.5,
-    "user_exact_pct": 9.0
+    "user_1n2_pct": 49.4,
+    "model_1n2_pct": 62.0,
+    "klement_1n2_pct": 60.8,
+    "user_exact_pct": 8.9
   },
   "leader_1n2": "modèle",
   "mpp_winner_pick": "France",
@@ -126,9 +126,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Mexique - Équateur",
+      "message": "Score non suivi par le tracker pour Mexique - Équateur (2-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (48/78 1N/2) devance ta grille (39/78)",
+      "message": "Klement (48/79 1N/2) devance ta grille (39/79)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2004,10 +2010,61 @@
       "klement_direction": "Victoire France",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Mexique - Équateur",
+      "home": "Mexique",
+      "away": "Équateur",
+      "actual_score": "2-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "2",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Mexique",
+      "user_direction": "—",
+      "klement_direction": "Match nul",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Mexique - Équateur"
+  ],
+  "recent_results": [
+    {
+      "key": "Mexique - Équateur",
+      "home": "Mexique",
+      "away": "Équateur",
+      "actual_score": "2-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "draw",
+      "klement_1n2": false,
+      "actual_home": "2",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Mexique",
+      "user_direction": "—",
+      "klement_direction": "Match nul",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2016,8 +2073,8 @@
       "away": "RD Congo",
       "date": "01/07",
       "kickoff_paris": "01/07 à 18:00",
-      "hours_until": 13.2,
-      "hours_label": "dans 13.2 h",
+      "hours_until": 7.9,
+      "hours_label": "dans 7.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2032,8 +2089,8 @@
       "away": "Sénégal",
       "date": "01/07",
       "kickoff_paris": "01/07 à 22:00",
-      "hours_until": 17.2,
-      "hours_label": "dans 17.2 h",
+      "hours_until": 11.9,
+      "hours_label": "dans 11.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2048,8 +2105,8 @@
       "away": "Bosnie-Herzégovine",
       "date": "02/07",
       "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 21.2,
-      "hours_label": "dans 21.2 h",
+      "hours_until": 15.9,
+      "hours_label": "dans 15.9 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2064,8 +2121,8 @@
       "away": "Autriche",
       "date": "02/07",
       "kickoff_paris": "02/07 à 21:00",
-      "hours_until": 40.2,
-      "hours_label": "dans 1 j 16 h",
+      "hours_until": 34.9,
+      "hours_label": "dans 1 j 10 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2080,8 +2137,8 @@
       "away": "Croatie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 44.2,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 38.9,
+      "hours_label": "dans 1 j 14 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2089,7 +2146,36 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Portugal vs Croatie → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Suisse - Algérie",
+      "home": "Suisse",
+      "away": "Algérie",
+      "date": "03/07",
+      "kickoff_paris": "03/07 à 05:00",
+      "hours_until": 42.9,
+      "hours_label": "dans 1 j 18 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Suisse vs Algérie → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Mexique - Équateur",
+      "message": "Score non suivi par le tracker pour Mexique - Équateur (2-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (48/79 1N/2) devance ta grille (39/79)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }

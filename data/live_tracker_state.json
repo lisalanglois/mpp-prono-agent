@@ -44,6 +44,7 @@
     "info|—|Klement (46/76 1N/2) devance ta grille (39/76)",
     "info|—|Klement (47/77 1N/2) devance ta grille (39/77)",
     "info|—|Klement (48/78 1N/2) devance ta grille (39/78)",
+    "info|—|Klement (48/79 1N/2) devance ta grille (39/79)",
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
@@ -65,6 +66,7 @@
     "warning|Irak - Norvège|Score non suivi par le tracker pour Irak - Norvège (1-4)",
     "warning|Iran - Nouvelle-Zélande|Score non suivi par le tracker pour Iran - Nouvelle-Zélande (2-2)",
     "warning|Jordanie - Algérie|Score non suivi par le tracker pour Jordanie - Algérie (1-2)",
+    "warning|Mexique - Équateur|Score non suivi par le tracker pour Mexique - Équateur (2-0)",
     "warning|Norvège - Sénégal|Score non suivi par le tracker pour Norvège - Sénégal (3-2)",
     "warning|Ouzbékistan - Colombie|Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
     "warning|Pays-Bas - Maroc|Score non suivi par le tracker pour Pays-Bas - Maroc (1-1)",
@@ -119,6 +121,7 @@
     "Maroc - Haïti",
     "Mexique - Afrique du Sud",
     "Mexique - Corée du Sud",
+    "Mexique - Équateur",
     "Norvège - France",
     "Norvège - Sénégal",
     "Nouvelle-Zélande - Belgique",
@@ -154,7 +157,7 @@
     "États-Unis - Australie",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "France - Suède|",
+  "last_email_fingerprint": "Mexique - Équateur|",
   "urgent_notified": [
     "Espagne - Arabie saoudite",
     "Espagne - Cap-Vert",
