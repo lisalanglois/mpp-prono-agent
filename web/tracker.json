@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-02T02:38:08.986668+00:00",
+  "updated_at": "2026-07-02T07:25:09.626866+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2126,35 +2126,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "États-Unis - Bosnie-Herzégovine"
-  ],
-  "recent_results": [
-    {
-      "key": "États-Unis - Bosnie-Herzégovine",
-      "home": "États-Unis",
-      "away": "Bosnie-Herzégovine",
-      "actual_score": "2-0",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "2",
-      "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire États-Unis",
-      "user_direction": "—",
-      "klement_direction": "Victoire États-Unis",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2163,8 +2136,8 @@
       "away": "Autriche",
       "date": "02/07",
       "kickoff_paris": "02/07 à 21:00",
-      "hours_until": 16.4,
-      "hours_label": "dans 16.4 h",
+      "hours_until": 11.6,
+      "hours_label": "dans 11.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2179,8 +2152,8 @@
       "away": "Croatie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 20.4,
-      "hours_label": "dans 20.4 h",
+      "hours_until": 15.6,
+      "hours_label": "dans 15.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2195,8 +2168,8 @@
       "away": "Algérie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 05:00",
-      "hours_until": 24.4,
-      "hours_label": "dans 1 j",
+      "hours_until": 19.6,
+      "hours_label": "dans 19.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2211,8 +2184,8 @@
       "away": "Égypte",
       "date": "03/07",
       "kickoff_paris": "03/07 à 20:00",
-      "hours_until": 39.4,
-      "hours_label": "dans 1 j 15 h",
+      "hours_until": 34.6,
+      "hours_label": "dans 1 j 10 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2227,8 +2200,8 @@
       "away": "Cap-Vert",
       "date": "04/07",
       "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 43.4,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 38.6,
+      "hours_label": "dans 1 j 14 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2243,8 +2216,8 @@
       "away": "Ghana",
       "date": "04/07",
       "kickoff_paris": "04/07 à 03:30",
-      "hours_until": 46.9,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 42.1,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2254,18 +2227,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "États-Unis - Bosnie-Herzégovine",
-      "message": "Score non suivi par le tracker pour États-Unis - Bosnie-Herzégovine (2-0)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (51/82 1N/2) devance ta grille (39/82)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
