@@ -49,6 +49,7 @@
     "info|—|Klement (5/8 1N/2) devance ta grille (2/8)",
     "info|—|Klement (50/81 1N/2) devance ta grille (39/81)",
     "info|—|Klement (51/82 1N/2) devance ta grille (39/82)",
+    "info|—|Klement (52/83 1N/2) devance ta grille (39/83)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
@@ -66,6 +67,7 @@
     "warning|Brésil - Japon|Score non suivi par le tracker pour Brésil - Japon (2-1)",
     "warning|Côte d'Ivoire - Norvège|Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
     "warning|Espagne - Arabie saoudite|Score non suivi par le tracker pour Espagne - Arabie saoudite (4-0)",
+    "warning|Espagne - Autriche|Score non suivi par le tracker pour Espagne - Autriche (3-0)",
     "warning|France - Suède|Score non suivi par le tracker pour France - Suède (3-0)",
     "warning|Haïti - Écosse|Match joué sans prono dans ta grille (0-1)",
     "warning|Irak - Norvège|Score non suivi par le tracker pour Irak - Norvège (1-4)",
@@ -115,6 +117,7 @@
     "Côte d'Ivoire - Norvège",
     "Côte d'Ivoire - Équateur",
     "Espagne - Arabie saoudite",
+    "Espagne - Autriche",
     "Espagne - Cap-Vert",
     "France - Irak",
     "France - Suède",
@@ -166,7 +169,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "États-Unis - Bosnie-Herzégovine|",
+  "last_email_fingerprint": "Espagne - Autriche|",
   "urgent_notified": [
     "France - Irak",
     "France - Suède",

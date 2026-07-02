@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-02T20:58:10.170990+00:00",
+  "updated_at": "2026-07-02T22:59:15.066166+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 82,
+    "played": 83,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 51,
-    "user_1n2_pct": 47.6,
-    "model_1n2_pct": 59.8,
-    "klement_1n2_pct": 62.2,
-    "user_exact_pct": 8.5
+    "klement_1n2": 52,
+    "user_1n2_pct": 47.0,
+    "model_1n2_pct": 59.0,
+    "klement_1n2_pct": 62.7,
+    "user_exact_pct": 8.4
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -150,9 +150,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Espagne - Autriche",
+      "message": "Score non suivi par le tracker pour Espagne - Autriche (3-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (51/82 1N/2) devance ta grille (39/82)",
+      "message": "Klement (52/83 1N/2) devance ta grille (39/83)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2124,10 +2130,61 @@
       "klement_direction": "Victoire États-Unis",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Espagne - Autriche",
+      "home": "Espagne",
+      "away": "Autriche",
+      "actual_score": "3-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Espagne - Autriche"
+  ],
+  "recent_results": [
+    {
+      "key": "Espagne - Autriche",
+      "home": "Espagne",
+      "away": "Autriche",
+      "actual_score": "3-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2136,8 +2193,8 @@
       "away": "Croatie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 2.0,
-      "hours_label": "dans 2 h",
+      "hours_until": 0.0,
+      "hours_label": "dans 0 min",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2152,8 +2209,8 @@
       "away": "Algérie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 05:00",
-      "hours_until": 6.0,
-      "hours_label": "dans 6 h",
+      "hours_until": 4.0,
+      "hours_label": "dans 4 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2168,8 +2225,8 @@
       "away": "Égypte",
       "date": "03/07",
       "kickoff_paris": "03/07 à 20:00",
-      "hours_until": 21.0,
-      "hours_label": "dans 21 h",
+      "hours_until": 19.0,
+      "hours_label": "dans 19 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2184,8 +2241,8 @@
       "away": "Cap-Vert",
       "date": "04/07",
       "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 25.0,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 23.0,
+      "hours_label": "dans 23 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2200,8 +2257,8 @@
       "away": "Ghana",
       "date": "04/07",
       "kickoff_paris": "04/07 à 03:30",
-      "hours_until": 28.5,
-      "hours_label": "dans 1 j 4 h",
+      "hours_until": 26.5,
+      "hours_label": "dans 1 j 2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2216,8 +2273,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 44.0,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 42.0,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2225,7 +2282,36 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Canada vs Maroc → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Paraguay - France",
+      "home": "Paraguay",
+      "away": "France",
+      "date": "04/07",
+      "kickoff_paris": "04/07 à 23:00",
+      "hours_until": 46.0,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Paraguay vs France → 1 - 1",
+      "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Espagne - Autriche",
+      "message": "Score non suivi par le tracker pour Espagne - Autriche (3-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (52/83 1N/2) devance ta grille (39/83)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
