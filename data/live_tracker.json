@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-01T23:06:33.818850+00:00",
+  "updated_at": "2026-07-02T02:38:08.986668+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 81,
+    "played": 82,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 50,
-    "user_1n2_pct": 48.1,
-    "model_1n2_pct": 60.5,
-    "klement_1n2_pct": 61.7,
-    "user_exact_pct": 8.6
+    "klement_1n2": 51,
+    "user_1n2_pct": 47.6,
+    "model_1n2_pct": 59.8,
+    "klement_1n2_pct": 62.2,
+    "user_exact_pct": 8.5
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -144,9 +144,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "États-Unis - Bosnie-Herzégovine",
+      "message": "Score non suivi par le tracker pour États-Unis - Bosnie-Herzégovine (2-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (50/81 1N/2) devance ta grille (39/81)",
+      "message": "Klement (51/82 1N/2) devance ta grille (39/82)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2094,17 +2100,12 @@
       "klement_direction": "Victoire Belgique",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Belgique - Sénégal"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Belgique - Sénégal",
-      "home": "Belgique",
-      "away": "Sénégal",
-      "actual_score": "3-2",
+      "key": "États-Unis - Bosnie-Herzégovine",
+      "home": "États-Unis",
+      "away": "Bosnie-Herzégovine",
+      "actual_score": "2-0",
       "actual_outcome": "home",
       "user_score": null,
       "user_outcome": null,
@@ -2114,13 +2115,42 @@
       "model_1n2": false,
       "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "3",
-      "actual_away": "2",
+      "actual_home": "2",
+      "actual_away": "0",
       "user_home": "—",
       "user_away": "—",
-      "actual_direction": "Victoire Belgique",
+      "actual_direction": "Victoire États-Unis",
       "user_direction": "—",
-      "klement_direction": "Victoire Belgique",
+      "klement_direction": "Victoire États-Unis",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "États-Unis - Bosnie-Herzégovine"
+  ],
+  "recent_results": [
+    {
+      "key": "États-Unis - Bosnie-Herzégovine",
+      "home": "États-Unis",
+      "away": "Bosnie-Herzégovine",
+      "actual_score": "2-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire États-Unis",
+      "user_direction": "—",
+      "klement_direction": "Victoire États-Unis",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
     }
@@ -2128,29 +2158,13 @@
   "upcoming_updates": [],
   "urgent_mpp": [
     {
-      "key": "États-Unis - Bosnie-Herzégovine",
-      "home": "États-Unis",
-      "away": "Bosnie-Herzégovine",
-      "date": "02/07",
-      "kickoff_paris": "02/07 à 02:00",
-      "hours_until": 0.9,
-      "hours_label": "dans 54 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → États-Unis vs Bosnie-Herzégovine → 1 - 1",
-      "changed": false
-    },
-    {
       "key": "Espagne - Autriche",
       "home": "Espagne",
       "away": "Autriche",
       "date": "02/07",
       "kickoff_paris": "02/07 à 21:00",
-      "hours_until": 19.9,
-      "hours_label": "dans 19.9 h",
+      "hours_until": 16.4,
+      "hours_label": "dans 16.4 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2165,8 +2179,8 @@
       "away": "Croatie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 23.9,
-      "hours_label": "dans 23.9 h",
+      "hours_until": 20.4,
+      "hours_label": "dans 20.4 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2181,8 +2195,8 @@
       "away": "Algérie",
       "date": "03/07",
       "kickoff_paris": "03/07 à 05:00",
-      "hours_until": 27.9,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 24.4,
+      "hours_label": "dans 1 j",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2197,8 +2211,8 @@
       "away": "Égypte",
       "date": "03/07",
       "kickoff_paris": "03/07 à 20:00",
-      "hours_until": 42.9,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 39.4,
+      "hours_label": "dans 1 j 15 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2213,8 +2227,8 @@
       "away": "Cap-Vert",
       "date": "04/07",
       "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 46.9,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 43.4,
+      "hours_label": "dans 1 j 19 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2222,19 +2236,35 @@
       "klement_override": false,
       "mpp_instruction": "mpp.football → Argentine vs Cap-Vert → 1 - 1",
       "changed": false
+    },
+    {
+      "key": "Colombie - Ghana",
+      "home": "Colombie",
+      "away": "Ghana",
+      "date": "04/07",
+      "kickoff_paris": "04/07 à 03:30",
+      "hours_until": 46.9,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Colombie vs Ghana → 1 - 1",
+      "changed": false
     }
   ],
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Belgique - Sénégal",
-      "message": "Score non suivi par le tracker pour Belgique - Sénégal (3-2)",
+      "match": "États-Unis - Bosnie-Herzégovine",
+      "message": "Score non suivi par le tracker pour États-Unis - Bosnie-Herzégovine (2-0)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (50/81 1N/2) devance ta grille (39/81)",
+      "message": "Klement (51/82 1N/2) devance ta grille (39/82)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
