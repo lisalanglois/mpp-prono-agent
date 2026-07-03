@@ -1,60 +1,9 @@
 {
-  "generated_at": "2026-07-02T10:33:18.785018+00:00",
+  "generated_at": "2026-07-03T10:30:59.398265+00:00",
   "days": 3,
-  "count": 8,
+  "count": 7,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Espagne - Autriche",
-      "home": "Espagne",
-      "away": "Autriche",
-      "score": "3-0",
-      "kickoff_utc": "2026-07-02T19:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 1.3225806451612903,
-        "draw": 5.25,
-        "away": 10.5
-      },
-      "home_form": "WWDWD",
-      "away_form": "DLWWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Espagne 3 - 0 Autriche"
-    },
-    {
-      "match": "Portugal - Croatie",
-      "home": "Portugal",
-      "away": "Croatie",
-      "score": "1-0",
-      "kickoff_utc": "2026-07-02T23:00Z",
-      "venue": "BMO Field",
-      "odds": {
-        "home": 1.7142857142857144,
-        "draw": 3.8,
-        "away": 5.0
-      },
-      "home_form": "DWDWW",
-      "away_form": "WWLWL",
-      "source": "espn_poisson",
-      "mpp_copy": "Portugal 1 - 0 Croatie"
-    },
-    {
-      "match": "Suisse - Algérie",
-      "home": "Suisse",
-      "away": "Algérie",
-      "score": "1-1",
-      "kickoff_utc": "2026-07-03T03:00Z",
-      "venue": "BC Place",
-      "odds": {
-        "home": 2.0,
-        "draw": 3.25,
-        "away": 4.2
-      },
-      "home_form": "WWDDW",
-      "away_form": "DWLWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Suisse 1 - 1 Algérie"
-    },
     {
       "match": "Australie - Égypte",
       "home": "Australie",
@@ -63,9 +12,9 @@
       "kickoff_utc": "2026-07-03T18:00Z",
       "venue": "AT&T Stadium",
       "odds": {
-        "home": 3.3,
-        "draw": 2.9,
-        "away": 2.5
+        "home": 3.65,
+        "draw": 2.95,
+        "away": 2.35
       },
       "home_form": "DLWDL",
       "away_form": "DWDLW",
@@ -80,9 +29,9 @@
       "kickoff_utc": "2026-07-03T22:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 1.1666666666666667,
-        "draw": 8.0,
-        "away": 19.0
+        "home": 1.1428571428571428,
+        "draw": 8.5,
+        "away": 20.0
       },
       "home_form": "WWWWW",
       "away_form": "DDDWW",
@@ -97,9 +46,9 @@
       "kickoff_utc": "2026-07-04T01:30Z",
       "venue": "GEHA Field at Arrowhead Stadium",
       "odds": {
-        "home": 1.526315789473684,
-        "draw": 4.1,
-        "away": 7.0
+        "home": 1.434782608695652,
+        "draw": 4.4,
+        "away": 8.5
       },
       "home_form": "DWWWW",
       "away_form": "LDWDL",
@@ -131,14 +80,48 @@
       "kickoff_utc": "2026-07-04T21:00Z",
       "venue": "Lincoln Financial Field",
       "odds": {
-        "home": 19.0,
+        "home": 18.0,
         "draw": 7.0,
-        "away": 1.1739130434782608
+        "away": 1.1818181818181819
       },
       "home_form": "WDWLW",
       "away_form": "WWWWW",
       "source": "espn_poisson",
       "mpp_copy": "Paraguay 0 - 2 France"
+    },
+    {
+      "match": "Brésil - Norvège",
+      "home": "Brésil",
+      "away": "Norvège",
+      "score": "1-0",
+      "kickoff_utc": "2026-07-05T20:00Z",
+      "venue": "MetLife Stadium",
+      "odds": {
+        "home": 1.8695652173913042,
+        "draw": 3.8,
+        "away": 4.1
+      },
+      "home_form": "WWWDW",
+      "away_form": "WLWWD",
+      "source": "espn_poisson",
+      "mpp_copy": "Brésil 1 - 0 Norvège"
+    },
+    {
+      "match": "Mexique - Angleterre",
+      "home": "Mexique",
+      "away": "Angleterre",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-06T00:00Z",
+      "venue": "Estadio Banorte",
+      "odds": {
+        "home": 3.2,
+        "draw": 3.15,
+        "away": 2.4
+      },
+      "home_form": "WWWWW",
+      "away_form": "WWDWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Mexique 0 - 0 Angleterre"
     }
   ]
 }
