@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-03T20:56:41.255520+00:00",
+  "updated_at": "2026-07-03T22:57:05.801221+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 85,
+    "played": 86,
     "user_1n2": 39,
     "user_exact": 7,
-    "model_1n2": 49,
+    "model_1n2": 50,
     "klement_1n2": 54,
-    "user_1n2_pct": 45.9,
-    "model_1n2_pct": 57.6,
-    "klement_1n2_pct": 63.5,
-    "user_exact_pct": 8.2
+    "user_1n2_pct": 45.3,
+    "model_1n2_pct": 58.1,
+    "klement_1n2_pct": 62.8,
+    "user_exact_pct": 8.1
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -168,9 +168,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Australie - Égypte",
+      "message": "Score non suivi par le tracker pour Australie - Égypte (1-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (54/85 1N/2) devance ta grille (39/85)",
+      "message": "Klement (54/86 1N/2) devance ta grille (39/86)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2214,36 +2220,71 @@
       "klement_direction": "Victoire Suisse",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Australie - Égypte",
+      "home": "Australie",
+      "away": "Égypte",
+      "actual_score": "1-1",
+      "actual_outcome": "draw",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Match nul",
+      "user_direction": "—",
+      "klement_direction": "Victoire Australie",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Australie - Égypte"
+  ],
+  "recent_results": [
+    {
+      "key": "Australie - Égypte",
+      "home": "Australie",
+      "away": "Égypte",
+      "actual_score": "1-1",
+      "actual_outcome": "draw",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": true,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Match nul",
+      "user_direction": "—",
+      "klement_direction": "Victoire Australie",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
-    {
-      "key": "Argentine - Cap-Vert",
-      "home": "Argentine",
-      "away": "Cap-Vert",
-      "date": "04/07",
-      "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 1.1,
-      "hours_label": "dans 1.1 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Argentine vs Cap-Vert → 1 - 1",
-      "changed": false
-    },
     {
       "key": "Colombie - Ghana",
       "home": "Colombie",
       "away": "Ghana",
       "date": "04/07",
       "kickoff_paris": "04/07 à 03:30",
-      "hours_until": 4.6,
-      "hours_label": "dans 4.6 h",
+      "hours_until": 2.5,
+      "hours_label": "dans 2.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2258,8 +2299,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 20.1,
-      "hours_label": "dans 20.1 h",
+      "hours_until": 18.0,
+      "hours_label": "dans 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2274,8 +2315,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 24.1,
-      "hours_label": "dans 1 j",
+      "hours_until": 22.0,
+      "hours_label": "dans 22 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2290,8 +2331,8 @@
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 47.1,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.0,
+      "hours_label": "dans 1 j 21 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2301,5 +2342,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Australie - Égypte",
+      "message": "Score non suivi par le tracker pour Australie - Égypte (1-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (54/86 1N/2) devance ta grille (39/86)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
