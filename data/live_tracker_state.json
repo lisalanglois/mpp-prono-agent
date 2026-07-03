@@ -50,6 +50,7 @@
     "info|—|Klement (50/81 1N/2) devance ta grille (39/81)",
     "info|—|Klement (51/82 1N/2) devance ta grille (39/82)",
     "info|—|Klement (52/83 1N/2) devance ta grille (39/83)",
+    "info|—|Klement (53/84 1N/2) devance ta grille (39/84)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
@@ -77,6 +78,7 @@
     "warning|Norvège - Sénégal|Score non suivi par le tracker pour Norvège - Sénégal (3-2)",
     "warning|Ouzbékistan - Colombie|Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
     "warning|Pays-Bas - Maroc|Score non suivi par le tracker pour Pays-Bas - Maroc (1-1)",
+    "warning|Portugal - Croatie|Score non suivi par le tracker pour Portugal - Croatie (2-1)",
     "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)",
     "warning|Tchéquie - Afrique du Sud|Score non suivi par le tracker pour Tchéquie - Afrique du Sud (1-1)",
     "warning|Tunisie - Japon|Score non suivi par le tracker pour Tunisie - Japon (0-4)",
@@ -144,6 +146,7 @@
     "Pays-Bas - Japon",
     "Pays-Bas - Maroc",
     "Pays-Bas - Suède",
+    "Portugal - Croatie",
     "Portugal - Ouzbékistan",
     "Portugal - RD Congo",
     "Qatar - Suisse",
@@ -169,7 +172,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Espagne - Autriche|",
+  "last_email_fingerprint": "Portugal - Croatie|",
   "urgent_notified": [
     "France - Irak",
     "France - Suède",

@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-02T22:59:15.066166+00:00",
+  "updated_at": "2026-07-03T02:13:36.900480+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 83,
+    "played": 84,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 49,
-    "klement_1n2": 52,
-    "user_1n2_pct": 47.0,
-    "model_1n2_pct": 59.0,
-    "klement_1n2_pct": 62.7,
-    "user_exact_pct": 8.4
+    "klement_1n2": 53,
+    "user_1n2_pct": 46.4,
+    "model_1n2_pct": 58.3,
+    "klement_1n2_pct": 63.1,
+    "user_exact_pct": 8.3
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -156,9 +156,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Portugal - Croatie",
+      "message": "Score non suivi par le tracker pour Portugal - Croatie (2-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (52/83 1N/2) devance ta grille (39/83)",
+      "message": "Klement (53/84 1N/2) devance ta grille (39/84)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2154,17 +2160,12 @@
       "klement_direction": "Victoire Espagne",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Espagne - Autriche"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Espagne - Autriche",
-      "home": "Espagne",
-      "away": "Autriche",
-      "actual_score": "3-0",
+      "key": "Portugal - Croatie",
+      "home": "Portugal",
+      "away": "Croatie",
+      "actual_score": "2-1",
       "actual_outcome": "home",
       "user_score": null,
       "user_outcome": null,
@@ -2174,13 +2175,42 @@
       "model_1n2": false,
       "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "3",
-      "actual_away": "0",
+      "actual_home": "2",
+      "actual_away": "1",
       "user_home": "—",
       "user_away": "—",
-      "actual_direction": "Victoire Espagne",
+      "actual_direction": "Victoire Portugal",
       "user_direction": "—",
-      "klement_direction": "Victoire Espagne",
+      "klement_direction": "Victoire Portugal",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "Portugal - Croatie"
+  ],
+  "recent_results": [
+    {
+      "key": "Portugal - Croatie",
+      "home": "Portugal",
+      "away": "Croatie",
+      "actual_score": "2-1",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "2",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Portugal",
+      "user_direction": "—",
+      "klement_direction": "Victoire Portugal",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
     }
@@ -2188,45 +2218,13 @@
   "upcoming_updates": [],
   "urgent_mpp": [
     {
-      "key": "Portugal - Croatie",
-      "home": "Portugal",
-      "away": "Croatie",
-      "date": "03/07",
-      "kickoff_paris": "03/07 à 01:00",
-      "hours_until": 0.0,
-      "hours_label": "dans 0 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Portugal vs Croatie → 1 - 1",
-      "changed": false
-    },
-    {
-      "key": "Suisse - Algérie",
-      "home": "Suisse",
-      "away": "Algérie",
-      "date": "03/07",
-      "kickoff_paris": "03/07 à 05:00",
-      "hours_until": 4.0,
-      "hours_label": "dans 4 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Suisse vs Algérie → 1 - 1",
-      "changed": false
-    },
-    {
       "key": "Australie - Égypte",
       "home": "Australie",
       "away": "Égypte",
       "date": "03/07",
       "kickoff_paris": "03/07 à 20:00",
-      "hours_until": 19.0,
-      "hours_label": "dans 19 h",
+      "hours_until": 15.8,
+      "hours_label": "dans 15.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2241,8 +2239,8 @@
       "away": "Cap-Vert",
       "date": "04/07",
       "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 23.0,
-      "hours_label": "dans 23 h",
+      "hours_until": 19.8,
+      "hours_label": "dans 19.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2257,8 +2255,8 @@
       "away": "Ghana",
       "date": "04/07",
       "kickoff_paris": "04/07 à 03:30",
-      "hours_until": 26.5,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 23.3,
+      "hours_label": "dans 23.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2273,8 +2271,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 42.0,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 38.8,
+      "hours_label": "dans 1 j 14 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2289,8 +2287,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 46.0,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 42.8,
+      "hours_label": "dans 1 j 18 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2303,14 +2301,14 @@
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Espagne - Autriche",
-      "message": "Score non suivi par le tracker pour Espagne - Autriche (3-0)",
+      "match": "Portugal - Croatie",
+      "message": "Score non suivi par le tracker pour Portugal - Croatie (2-1)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (52/83 1N/2) devance ta grille (39/83)",
+      "message": "Klement (53/84 1N/2) devance ta grille (39/84)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
