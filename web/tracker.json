@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T06:56:26.859037+00:00",
+  "updated_at": "2026-07-03T09:49:38.903258+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2216,35 +2216,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Suisse - Algérie"
-  ],
-  "recent_results": [
-    {
-      "key": "Suisse - Algérie",
-      "home": "Suisse",
-      "away": "Algérie",
-      "actual_score": "2-0",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "2",
-      "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Suisse",
-      "user_direction": "—",
-      "klement_direction": "Victoire Suisse",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2253,8 +2226,8 @@
       "away": "Égypte",
       "date": "03/07",
       "kickoff_paris": "03/07 à 20:00",
-      "hours_until": 11.1,
-      "hours_label": "dans 11.1 h",
+      "hours_until": 8.2,
+      "hours_label": "dans 8.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2269,8 +2242,8 @@
       "away": "Cap-Vert",
       "date": "04/07",
       "kickoff_paris": "04/07 à 00:00",
-      "hours_until": 15.1,
-      "hours_label": "dans 15.1 h",
+      "hours_until": 12.2,
+      "hours_label": "dans 12.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2285,8 +2258,8 @@
       "away": "Ghana",
       "date": "04/07",
       "kickoff_paris": "04/07 à 03:30",
-      "hours_until": 18.6,
-      "hours_label": "dans 18.6 h",
+      "hours_until": 15.7,
+      "hours_label": "dans 15.7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2301,8 +2274,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 34.1,
-      "hours_label": "dans 1 j 10 h",
+      "hours_until": 31.2,
+      "hours_label": "dans 1 j 7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2317,8 +2290,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 38.1,
-      "hours_label": "dans 1 j 14 h",
+      "hours_until": 35.2,
+      "hours_label": "dans 1 j 11 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2328,18 +2301,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Suisse - Algérie",
-      "message": "Score non suivi par le tracker pour Suisse - Algérie (2-0)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (54/85 1N/2) devance ta grille (39/85)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
