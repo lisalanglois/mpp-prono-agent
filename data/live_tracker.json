@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-04T19:00:31.232758+00:00",
+  "updated_at": "2026-07-04T20:47:35.094395+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 88,
+    "played": 89,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 50,
-    "klement_1n2": 56,
-    "user_1n2_pct": 44.3,
-    "model_1n2_pct": 56.8,
-    "klement_1n2_pct": 63.6,
-    "user_exact_pct": 8.0
+    "klement_1n2": 57,
+    "user_1n2_pct": 43.8,
+    "model_1n2_pct": 56.2,
+    "klement_1n2_pct": 64.0,
+    "user_exact_pct": 7.9
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -186,9 +186,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Canada - Maroc",
+      "message": "Score non suivi par le tracker pour Canada - Maroc (0-3)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (56/88 1N/2) devance ta grille (39/88)",
+      "message": "Klement (57/89 1N/2) devance ta grille (39/89)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2304,10 +2310,61 @@
       "klement_direction": "Victoire Colombie",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Canada - Maroc",
+      "home": "Canada",
+      "away": "Maroc",
+      "actual_score": "0-3",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
+      "actual_away": "3",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Maroc",
+      "user_direction": "—",
+      "klement_direction": "Victoire Maroc",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Canada - Maroc"
+  ],
+  "recent_results": [
+    {
+      "key": "Canada - Maroc",
+      "home": "Canada",
+      "away": "Maroc",
+      "actual_score": "0-3",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "away",
+      "klement_1n2": true,
+      "actual_home": "0",
+      "actual_away": "3",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Maroc",
+      "user_direction": "—",
+      "klement_direction": "Victoire Maroc",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2316,8 +2373,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 2.0,
-      "hours_label": "dans 2 h",
+      "hours_until": 0.2,
+      "hours_label": "dans 12 min",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2332,8 +2389,8 @@
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 25.0,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 23.2,
+      "hours_label": "dans 23.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2348,8 +2405,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 29.0,
-      "hours_label": "dans 1 j 5 h",
+      "hours_until": 27.2,
+      "hours_label": "dans 1 j 3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2364,8 +2421,8 @@
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 48.0,
-      "hours_label": "dans 2 j",
+      "hours_until": 46.2,
+      "hours_label": "dans 1 j 22 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2375,5 +2432,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Canada - Maroc",
+      "message": "Score non suivi par le tracker pour Canada - Maroc (0-3)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (57/89 1N/2) devance ta grille (39/89)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
