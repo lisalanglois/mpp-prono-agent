@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T20:47:35.094395+00:00",
+  "updated_at": "2026-07-04T22:51:54.597306+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2336,61 +2336,18 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Canada - Maroc"
-  ],
-  "recent_results": [
-    {
-      "key": "Canada - Maroc",
-      "home": "Canada",
-      "away": "Maroc",
-      "actual_score": "0-3",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "0",
-      "actual_away": "3",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Maroc",
-      "user_direction": "—",
-      "klement_direction": "Victoire Maroc",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
-    {
-      "key": "Paraguay - France",
-      "home": "Paraguay",
-      "away": "France",
-      "date": "04/07",
-      "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 0.2,
-      "hours_label": "dans 12 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Paraguay vs France → 1 - 1",
-      "changed": false
-    },
     {
       "key": "Brésil - Norvège",
       "home": "Brésil",
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 23.2,
-      "hours_label": "dans 23.2 h",
+      "hours_until": 21.1,
+      "hours_label": "dans 21.1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2405,8 +2362,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 27.2,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 25.1,
+      "hours_label": "dans 1 j 1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2421,8 +2378,8 @@
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 46.2,
-      "hours_label": "dans 1 j 22 h",
+      "hours_until": 44.1,
+      "hours_label": "dans 1 j 20 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2432,18 +2389,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Canada - Maroc",
-      "message": "Score non suivi par le tracker pour Canada - Maroc (0-3)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (57/89 1N/2) devance ta grille (39/89)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
