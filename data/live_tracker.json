@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T06:41:38.548642+00:00",
+  "updated_at": "2026-07-04T09:13:44.611798+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2306,35 +2306,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Colombie - Ghana"
-  ],
-  "recent_results": [
-    {
-      "key": "Colombie - Ghana",
-      "home": "Colombie",
-      "away": "Ghana",
-      "actual_score": "1-0",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Colombie",
-      "user_direction": "—",
-      "klement_direction": "Victoire Colombie",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2343,8 +2316,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 10.3,
-      "hours_label": "dans 10.3 h",
+      "hours_until": 7.8,
+      "hours_label": "dans 7.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2359,8 +2332,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 14.3,
-      "hours_label": "dans 14.3 h",
+      "hours_until": 11.8,
+      "hours_label": "dans 11.8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2375,8 +2348,8 @@
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 37.3,
-      "hours_label": "dans 1 j 13 h",
+      "hours_until": 34.8,
+      "hours_label": "dans 1 j 10 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2391,8 +2364,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 41.3,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 38.8,
+      "hours_label": "dans 1 j 14 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2402,18 +2375,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Colombie - Ghana",
-      "message": "Score non suivi par le tracker pour Colombie - Ghana (1-0)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (56/88 1N/2) devance ta grille (39/88)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
