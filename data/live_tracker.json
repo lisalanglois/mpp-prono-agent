@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-04T02:12:19.976553+00:00",
+  "updated_at": "2026-07-04T06:41:38.548642+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 87,
+    "played": 88,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 50,
-    "klement_1n2": 55,
-    "user_1n2_pct": 44.8,
-    "model_1n2_pct": 57.5,
-    "klement_1n2_pct": 63.2,
+    "klement_1n2": 56,
+    "user_1n2_pct": 44.3,
+    "model_1n2_pct": 56.8,
+    "klement_1n2_pct": 63.6,
     "user_exact_pct": 8.0
   },
   "leader_1n2": "klement",
@@ -180,9 +180,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Colombie - Ghana",
+      "message": "Score non suivi par le tracker pour Colombie - Ghana (1-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (55/87 1N/2) devance ta grille (39/87)",
+      "message": "Klement (56/88 1N/2) devance ta grille (39/88)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2274,17 +2280,12 @@
       "klement_direction": "Victoire Argentine",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Argentine - Cap-Vert"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Argentine - Cap-Vert",
-      "home": "Argentine",
-      "away": "Cap-Vert",
-      "actual_score": "3-2",
+      "key": "Colombie - Ghana",
+      "home": "Colombie",
+      "away": "Ghana",
+      "actual_score": "1-0",
       "actual_outcome": "home",
       "user_score": null,
       "user_outcome": null,
@@ -2294,13 +2295,42 @@
       "model_1n2": false,
       "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "3",
-      "actual_away": "2",
+      "actual_home": "1",
+      "actual_away": "0",
       "user_home": "—",
       "user_away": "—",
-      "actual_direction": "Victoire Argentine",
+      "actual_direction": "Victoire Colombie",
       "user_direction": "—",
-      "klement_direction": "Victoire Argentine",
+      "klement_direction": "Victoire Colombie",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "Colombie - Ghana"
+  ],
+  "recent_results": [
+    {
+      "key": "Colombie - Ghana",
+      "home": "Colombie",
+      "away": "Ghana",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Colombie",
+      "user_direction": "—",
+      "klement_direction": "Victoire Colombie",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
     }
@@ -2313,8 +2343,8 @@
       "away": "Maroc",
       "date": "04/07",
       "kickoff_paris": "04/07 à 19:00",
-      "hours_until": 14.8,
-      "hours_label": "dans 14.8 h",
+      "hours_until": 10.3,
+      "hours_label": "dans 10.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2329,8 +2359,8 @@
       "away": "France",
       "date": "04/07",
       "kickoff_paris": "04/07 à 23:00",
-      "hours_until": 18.8,
-      "hours_label": "dans 18.8 h",
+      "hours_until": 14.3,
+      "hours_label": "dans 14.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2345,8 +2375,8 @@
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 41.8,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 37.3,
+      "hours_label": "dans 1 j 13 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2361,8 +2391,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 45.8,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 41.3,
+      "hours_label": "dans 1 j 17 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2375,14 +2405,14 @@
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Argentine - Cap-Vert",
-      "message": "Score non suivi par le tracker pour Argentine - Cap-Vert (3-2)",
+      "match": "Colombie - Ghana",
+      "message": "Score non suivi par le tracker pour Colombie - Ghana (1-0)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (55/87 1N/2) devance ta grille (39/87)",
+      "message": "Klement (56/88 1N/2) devance ta grille (39/88)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
