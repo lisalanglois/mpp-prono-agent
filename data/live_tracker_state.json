@@ -57,6 +57,7 @@
     "info|—|Klement (56/88 1N/2) devance ta grille (39/88)",
     "info|—|Klement (57/89 1N/2) devance ta grille (39/89)",
     "info|—|Klement (58/90 1N/2) devance ta grille (39/90)",
+    "info|—|Klement (58/91 1N/2) devance ta grille (39/91)",
     "info|—|Klement (6/10 1N/2) devance ta grille (2/10)",
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
@@ -74,6 +75,7 @@
     "warning|Belgique - Sénégal|Score non suivi par le tracker pour Belgique - Sénégal (3-2)",
     "warning|Brésil - Haïti|Score non suivi par le tracker pour Brésil - Haïti (3-0)",
     "warning|Brésil - Japon|Score non suivi par le tracker pour Brésil - Japon (2-1)",
+    "warning|Brésil - Norvège|Score non suivi par le tracker pour Brésil - Norvège (1-2)",
     "warning|Canada - Maroc|Score non suivi par le tracker pour Canada - Maroc (0-3)",
     "warning|Colombie - Ghana|Score non suivi par le tracker pour Colombie - Ghana (1-0)",
     "warning|Côte d'Ivoire - Norvège|Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
@@ -122,6 +124,7 @@
     "Brésil - Haïti",
     "Brésil - Japon",
     "Brésil - Maroc",
+    "Brésil - Norvège",
     "Canada - Bosnie-Herzégovine",
     "Canada - Maroc",
     "Canada - Qatar",
@@ -190,7 +193,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Paraguay - France|",
+  "last_email_fingerprint": "Brésil - Norvège|",
   "urgent_notified": [
     "Ghana - Panama",
     "Haïti - Écosse",

@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-05T20:50:54.389332+00:00",
+  "updated_at": "2026-07-05T22:56:25.543902+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 90,
+    "played": 91,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 50,
     "klement_1n2": 58,
-    "user_1n2_pct": 43.3,
-    "model_1n2_pct": 55.6,
-    "klement_1n2_pct": 64.4,
-    "user_exact_pct": 7.8
+    "user_1n2_pct": 42.9,
+    "model_1n2_pct": 54.9,
+    "klement_1n2_pct": 63.7,
+    "user_exact_pct": 7.7
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -198,9 +198,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Brésil - Norvège",
+      "message": "Score non suivi par le tracker pour Brésil - Norvège (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (58/90 1N/2) devance ta grille (39/90)",
+      "message": "Klement (58/91 1N/2) devance ta grille (39/91)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2364,10 +2370,61 @@
       "klement_direction": "Victoire France",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Brésil - Norvège",
+      "home": "Brésil",
+      "away": "Norvège",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Norvège",
+      "user_direction": "—",
+      "klement_direction": "Victoire Brésil",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Brésil - Norvège"
+  ],
+  "recent_results": [
+    {
+      "key": "Brésil - Norvège",
+      "home": "Brésil",
+      "away": "Norvège",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Norvège",
+      "user_direction": "—",
+      "klement_direction": "Victoire Brésil",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2376,8 +2433,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 3.2,
-      "hours_label": "dans 3.2 h",
+      "hours_until": 1.1,
+      "hours_label": "dans 1.1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2392,8 +2449,8 @@
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 22.2,
-      "hours_label": "dans 22.2 h",
+      "hours_until": 20.1,
+      "hours_label": "dans 20.1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2408,8 +2465,8 @@
       "away": "Belgique",
       "date": "07/07",
       "kickoff_paris": "07/07 à 02:00",
-      "hours_until": 27.2,
-      "hours_label": "dans 1 j 3 h",
+      "hours_until": 25.1,
+      "hours_label": "dans 1 j 1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2424,8 +2481,8 @@
       "away": "Égypte",
       "date": "07/07",
       "kickoff_paris": "07/07 à 18:00",
-      "hours_until": 43.2,
-      "hours_label": "dans 1 j 19 h",
+      "hours_until": 41.1,
+      "hours_label": "dans 1 j 17 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2440,8 +2497,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 47.2,
-      "hours_label": "dans 1 j 23 h",
+      "hours_until": 45.1,
+      "hours_label": "dans 1 j 21 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2451,5 +2508,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Brésil - Norvège",
+      "message": "Score non suivi par le tracker pour Brésil - Norvège (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (58/91 1N/2) devance ta grille (39/91)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
