@@ -1,43 +1,9 @@
 {
-  "generated_at": "2026-07-04T10:04:02.224068+00:00",
+  "generated_at": "2026-07-05T10:06:57.706180+00:00",
   "days": 3,
   "count": 6,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Canada - Maroc",
-      "home": "Canada",
-      "away": "Maroc",
-      "score": "1-1",
-      "kickoff_utc": "2026-07-04T17:00Z",
-      "venue": "NRG Stadium",
-      "odds": {
-        "home": 5.0,
-        "draw": 3.45,
-        "away": 1.7692307692307692
-      },
-      "home_form": "WLWDD",
-      "away_form": "WWWDD",
-      "source": "espn_poisson",
-      "mpp_copy": "Canada 1 - 1 Maroc"
-    },
-    {
-      "match": "Paraguay - France",
-      "home": "Paraguay",
-      "away": "France",
-      "score": "0-2",
-      "kickoff_utc": "2026-07-04T21:00Z",
-      "venue": "Lincoln Financial Field",
-      "odds": {
-        "home": 19.0,
-        "draw": 6.5,
-        "away": 1.1739130434782608
-      },
-      "home_form": "WDWLW",
-      "away_form": "WWWWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Paraguay 0 - 2 France"
-    },
     {
       "match": "Brésil - Norvège",
       "home": "Brésil",
@@ -47,8 +13,8 @@
       "venue": "MetLife Stadium",
       "odds": {
         "home": 1.8,
-        "draw": 3.85,
-        "away": 4.2
+        "draw": 3.8,
+        "away": 4.4
       },
       "home_form": "WWWDW",
       "away_form": "WLWWD",
@@ -63,9 +29,9 @@
       "kickoff_utc": "2026-07-06T00:00Z",
       "venue": "Estadio Banorte",
       "odds": {
-        "home": 3.05,
-        "draw": 3.2,
-        "away": 2.4
+        "home": 3.1,
+        "draw": 3.1,
+        "away": 2.45
       },
       "home_form": "WWWWW",
       "away_form": "WWDWW",
@@ -98,13 +64,47 @@
       "venue": "Lumen Field",
       "odds": {
         "home": 2.6,
-        "draw": 3.4,
-        "away": 2.65
+        "draw": 3.3,
+        "away": 2.7
       },
       "home_form": "WLWWL",
       "away_form": "WWDDW",
       "source": "espn_poisson",
       "mpp_copy": "États-Unis 0 - 0 Belgique"
+    },
+    {
+      "match": "Argentine - Égypte",
+      "home": "Argentine",
+      "away": "Égypte",
+      "score": "3-0",
+      "kickoff_utc": "2026-07-07T16:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "odds": {
+        "home": 1.3846153846153846,
+        "draw": 4.6,
+        "away": 8.5
+      },
+      "home_form": "WWWWW",
+      "away_form": "WDWDL",
+      "source": "espn_poisson",
+      "mpp_copy": "Argentine 3 - 0 Égypte"
+    },
+    {
+      "match": "Suisse - Colombie",
+      "home": "Suisse",
+      "away": "Colombie",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-07T20:00Z",
+      "venue": "BC Place",
+      "odds": {
+        "home": 3.45,
+        "draw": 3.1,
+        "away": 2.25
+      },
+      "home_form": "WWWDD",
+      "away_form": "WDWWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Suisse 0 - 0 Colombie"
     }
   ]
 }
