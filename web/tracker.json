@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T02:27:44.169111+00:00",
+  "updated_at": "2026-07-05T07:19:21.854652+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2366,35 +2366,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Paraguay - France"
-  ],
-  "recent_results": [
-    {
-      "key": "Paraguay - France",
-      "home": "Paraguay",
-      "away": "France",
-      "actual_score": "0-1",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "0",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire France",
-      "user_direction": "—",
-      "klement_direction": "Victoire France",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2403,8 +2376,8 @@
       "away": "Norvège",
       "date": "05/07",
       "kickoff_paris": "05/07 à 22:00",
-      "hours_until": 17.5,
-      "hours_label": "dans 17.5 h",
+      "hours_until": 12.7,
+      "hours_label": "dans 12.7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2419,8 +2392,8 @@
       "away": "Angleterre",
       "date": "06/07",
       "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 21.5,
-      "hours_label": "dans 21.5 h",
+      "hours_until": 16.7,
+      "hours_label": "dans 16.7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2435,8 +2408,8 @@
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 40.5,
-      "hours_label": "dans 1 j 16 h",
+      "hours_until": 35.7,
+      "hours_label": "dans 1 j 11 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2451,8 +2424,8 @@
       "away": "Belgique",
       "date": "07/07",
       "kickoff_paris": "07/07 à 02:00",
-      "hours_until": 45.5,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 40.7,
+      "hours_label": "dans 1 j 16 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2462,18 +2435,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Paraguay - France",
-      "message": "Score non suivi par le tracker pour Paraguay - France (0-1)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (58/90 1N/2) devance ta grille (39/90)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
