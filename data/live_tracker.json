@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T21:23:52.943116+00:00",
+  "updated_at": "2026-07-06T23:00:58.776099+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2456,35 +2456,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Portugal - Espagne"
-  ],
-  "recent_results": [
-    {
-      "key": "Portugal - Espagne",
-      "home": "Portugal",
-      "away": "Espagne",
-      "actual_score": "0-1",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "0",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Espagne",
-      "user_direction": "—",
-      "klement_direction": "Victoire Espagne",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2493,8 +2466,8 @@
       "away": "Belgique",
       "date": "07/07",
       "kickoff_paris": "07/07 à 02:00",
-      "hours_until": 2.6,
-      "hours_label": "dans 2.6 h",
+      "hours_until": 1.0,
+      "hours_label": "dans 1 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2509,8 +2482,8 @@
       "away": "Égypte",
       "date": "07/07",
       "kickoff_paris": "07/07 à 18:00",
-      "hours_until": 18.6,
-      "hours_label": "dans 18.6 h",
+      "hours_until": 17.0,
+      "hours_label": "dans 17 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2525,8 +2498,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 22.6,
-      "hours_label": "dans 22.6 h",
+      "hours_until": 21.0,
+      "hours_label": "dans 21 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2536,18 +2509,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Portugal - Espagne",
-      "message": "Score non suivi par le tracker pour Portugal - Espagne (0-1)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (60/93 1N/2) devance ta grille (39/93)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
