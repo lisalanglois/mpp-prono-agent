@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T22:56:25.543902+00:00",
+  "updated_at": "2026-07-06T02:32:24.179749+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2396,61 +2396,18 @@
       "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [
-    "Brésil - Norvège"
-  ],
-  "recent_results": [
-    {
-      "key": "Brésil - Norvège",
-      "home": "Brésil",
-      "away": "Norvège",
-      "actual_score": "1-2",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": false,
-      "actual_home": "1",
-      "actual_away": "2",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Norvège",
-      "user_direction": "—",
-      "klement_direction": "Victoire Brésil",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
-    {
-      "key": "Mexique - Angleterre",
-      "home": "Mexique",
-      "away": "Angleterre",
-      "date": "06/07",
-      "kickoff_paris": "06/07 à 02:00",
-      "hours_until": 1.1,
-      "hours_label": "dans 1.1 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Mexique vs Angleterre → 1 - 1",
-      "changed": false
-    },
     {
       "key": "Portugal - Espagne",
       "home": "Portugal",
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 20.1,
-      "hours_label": "dans 20.1 h",
+      "hours_until": 16.5,
+      "hours_label": "dans 16.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2465,8 +2422,8 @@
       "away": "Belgique",
       "date": "07/07",
       "kickoff_paris": "07/07 à 02:00",
-      "hours_until": 25.1,
-      "hours_label": "dans 1 j 1 h",
+      "hours_until": 21.5,
+      "hours_label": "dans 21.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2481,8 +2438,8 @@
       "away": "Égypte",
       "date": "07/07",
       "kickoff_paris": "07/07 à 18:00",
-      "hours_until": 41.1,
-      "hours_label": "dans 1 j 17 h",
+      "hours_until": 37.5,
+      "hours_label": "dans 1 j 13 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2497,8 +2454,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 45.1,
-      "hours_label": "dans 1 j 21 h",
+      "hours_until": 41.5,
+      "hours_label": "dans 1 j 17 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2508,18 +2465,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Brésil - Norvège",
-      "message": "Score non suivi par le tracker pour Brésil - Norvège (1-2)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (58/91 1N/2) devance ta grille (39/91)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
