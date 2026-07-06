@@ -1,43 +1,9 @@
 {
-  "generated_at": "2026-07-05T10:06:57.706180+00:00",
+  "generated_at": "2026-07-06T11:59:19.697766+00:00",
   "days": 3,
-  "count": 6,
+  "count": 4,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Brésil - Norvège",
-      "home": "Brésil",
-      "away": "Norvège",
-      "score": "1-0",
-      "kickoff_utc": "2026-07-05T20:00Z",
-      "venue": "MetLife Stadium",
-      "odds": {
-        "home": 1.8,
-        "draw": 3.8,
-        "away": 4.4
-      },
-      "home_form": "WWWDW",
-      "away_form": "WLWWD",
-      "source": "espn_poisson",
-      "mpp_copy": "Brésil 1 - 0 Norvège"
-    },
-    {
-      "match": "Mexique - Angleterre",
-      "home": "Mexique",
-      "away": "Angleterre",
-      "score": "0-0",
-      "kickoff_utc": "2026-07-06T00:00Z",
-      "venue": "Estadio Banorte",
-      "odds": {
-        "home": 3.1,
-        "draw": 3.1,
-        "away": 2.45
-      },
-      "home_form": "WWWWW",
-      "away_form": "WWDWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Mexique 0 - 0 Angleterre"
-    },
     {
       "match": "Portugal - Espagne",
       "home": "Portugal",
@@ -63,9 +29,9 @@
       "kickoff_utc": "2026-07-07T00:00Z",
       "venue": "Lumen Field",
       "odds": {
-        "home": 2.6,
-        "draw": 3.3,
-        "away": 2.7
+        "home": 2.5,
+        "draw": 3.4,
+        "away": 2.8
       },
       "home_form": "WLWWL",
       "away_form": "WWDDW",
@@ -80,9 +46,9 @@
       "kickoff_utc": "2026-07-07T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.3846153846153846,
+        "home": 1.3773584905660377,
         "draw": 4.6,
-        "away": 8.5
+        "away": 9.0
       },
       "home_form": "WWWWW",
       "away_form": "WDWDL",
@@ -97,9 +63,9 @@
       "kickoff_utc": "2026-07-07T20:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 3.45,
+        "home": 3.4,
         "draw": 3.1,
-        "away": 2.25
+        "away": 2.3
       },
       "home_form": "WWWDD",
       "away_form": "WDWWW",
