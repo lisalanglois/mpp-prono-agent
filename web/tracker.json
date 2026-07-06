@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T08:14:32.862725+00:00",
+  "updated_at": "2026-07-06T11:22:55.834031+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2426,35 +2426,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Mexique - Angleterre"
-  ],
-  "recent_results": [
-    {
-      "key": "Mexique - Angleterre",
-      "home": "Mexique",
-      "away": "Angleterre",
-      "actual_score": "2-3",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "2",
-      "actual_away": "3",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Angleterre",
-      "user_direction": "—",
-      "klement_direction": "Victoire Angleterre",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2463,8 +2436,8 @@
       "away": "Espagne",
       "date": "06/07",
       "kickoff_paris": "06/07 à 21:00",
-      "hours_until": 10.8,
-      "hours_label": "dans 10.8 h",
+      "hours_until": 7.6,
+      "hours_label": "dans 7.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2479,8 +2452,8 @@
       "away": "Belgique",
       "date": "07/07",
       "kickoff_paris": "07/07 à 02:00",
-      "hours_until": 15.8,
-      "hours_label": "dans 15.8 h",
+      "hours_until": 12.6,
+      "hours_label": "dans 12.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2495,8 +2468,8 @@
       "away": "Égypte",
       "date": "07/07",
       "kickoff_paris": "07/07 à 18:00",
-      "hours_until": 31.8,
-      "hours_label": "dans 1 j 7 h",
+      "hours_until": 28.6,
+      "hours_label": "dans 1 j 4 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2511,8 +2484,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 35.8,
-      "hours_label": "dans 1 j 11 h",
+      "hours_until": 32.6,
+      "hours_label": "dans 1 j 8 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2522,18 +2495,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Mexique - Angleterre",
-      "message": "Score non suivi par le tracker pour Mexique - Angleterre (2-3)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (59/92 1N/2) devance ta grille (39/92)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
