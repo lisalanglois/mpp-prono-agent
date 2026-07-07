@@ -1,7 +1,5 @@
 {
   "sent_alerts": [
-    "info|—|Klement (13/22 1N/2) devance ta grille (9/22)",
-    "info|—|Klement (13/23 1N/2) devance ta grille (9/23)",
     "info|—|Klement (14/24 1N/2) devance ta grille (9/24)",
     "info|—|Klement (14/25 1N/2) devance ta grille (9/25)",
     "info|—|Klement (15/26 1N/2) devance ta grille (10/26)",
@@ -60,6 +58,7 @@
     "info|—|Klement (6/11 1N/2) devance ta grille (2/11)",
     "info|—|Klement (6/9 1N/2) devance ta grille (2/9)",
     "info|—|Klement (60/93 1N/2) devance ta grille (39/93)",
+    "info|—|Klement (61/94 1N/2) devance ta grille (39/94)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
@@ -99,6 +98,7 @@
     "warning|Tunisie - Japon|Score non suivi par le tracker pour Tunisie - Japon (0-4)",
     "warning|Turquie - Paraguay|Score non suivi par le tracker pour Turquie - Paraguay (0-1)",
     "warning|Équateur - Allemagne|Favori Allemagne n'a pas gagné comme prévu (2-1)",
+    "warning|États-Unis - Belgique|Score non suivi par le tracker pour États-Unis - Belgique (1-4)",
     "warning|États-Unis - Bosnie-Herzégovine|Score non suivi par le tracker pour États-Unis - Bosnie-Herzégovine (2-0)"
   ],
   "finished_keys": [
@@ -193,10 +193,11 @@
     "Équateur - Allemagne",
     "Équateur - Curaçao",
     "États-Unis - Australie",
+    "États-Unis - Belgique",
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Portugal - Espagne|",
+  "last_email_fingerprint": "États-Unis - Belgique|",
   "urgent_notified": [
     "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
