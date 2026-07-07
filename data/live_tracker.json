@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-07T17:54:20.612573+00:00",
+  "updated_at": "2026-07-07T19:45:46.784521+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 94,
+    "played": 95,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 50,
-    "klement_1n2": 61,
-    "user_1n2_pct": 41.5,
-    "model_1n2_pct": 53.2,
-    "klement_1n2_pct": 64.9,
+    "klement_1n2": 62,
+    "user_1n2_pct": 41.1,
+    "model_1n2_pct": 52.6,
+    "klement_1n2_pct": 65.3,
     "user_exact_pct": 7.4
   },
   "leader_1n2": "klement",
@@ -222,9 +222,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Argentine - Égypte",
+      "message": "Score non suivi par le tracker pour Argentine - Égypte (3-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (61/94 1N/2) devance ta grille (39/94)",
+      "message": "Klement (62/95 1N/2) devance ta grille (39/95)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2484,10 +2490,61 @@
       "klement_direction": "Victoire Belgique",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
+    },
+    {
+      "key": "Argentine - Égypte",
+      "home": "Argentine",
+      "away": "Égypte",
+      "actual_score": "3-2",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Argentine",
+      "user_direction": "—",
+      "klement_direction": "Victoire Argentine",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Argentine - Égypte"
+  ],
+  "recent_results": [
+    {
+      "key": "Argentine - Égypte",
+      "home": "Argentine",
+      "away": "Égypte",
+      "actual_score": "3-2",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Argentine",
+      "user_direction": "—",
+      "klement_direction": "Victoire Argentine",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2496,8 +2553,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 2.1,
-      "hours_label": "dans 2.1 h",
+      "hours_until": 0.2,
+      "hours_label": "dans 12 min",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2507,5 +2564,18 @@
       "changed": false
     }
   ],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Argentine - Égypte",
+      "message": "Score non suivi par le tracker pour Argentine - Égypte (3-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (62/95 1N/2) devance ta grille (39/95)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
