@@ -1,43 +1,9 @@
 {
-  "generated_at": "2026-07-06T11:59:19.697766+00:00",
+  "generated_at": "2026-07-07T10:51:01.879125+00:00",
   "days": 3,
-  "count": 4,
+  "count": 3,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Portugal - Espagne",
-      "home": "Portugal",
-      "away": "Espagne",
-      "score": "1-1",
-      "kickoff_utc": "2026-07-06T19:00Z",
-      "venue": "AT&T Stadium",
-      "odds": {
-        "home": 3.95,
-        "draw": 3.65,
-        "away": 1.9090909090909092
-      },
-      "home_form": "WDWDW",
-      "away_form": "WWWDW",
-      "source": "espn_poisson",
-      "mpp_copy": "Portugal 1 - 1 Espagne"
-    },
-    {
-      "match": "États-Unis - Belgique",
-      "home": "États-Unis",
-      "away": "Belgique",
-      "score": "0-0",
-      "kickoff_utc": "2026-07-07T00:00Z",
-      "venue": "Lumen Field",
-      "odds": {
-        "home": 2.5,
-        "draw": 3.4,
-        "away": 2.8
-      },
-      "home_form": "WLWWL",
-      "away_form": "WWDDW",
-      "source": "espn_poisson",
-      "mpp_copy": "États-Unis 0 - 0 Belgique"
-    },
     {
       "match": "Argentine - Égypte",
       "home": "Argentine",
@@ -46,9 +12,9 @@
       "kickoff_utc": "2026-07-07T16:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 1.3773584905660377,
-        "draw": 4.6,
-        "away": 9.0
+        "home": 1.3333333333333333,
+        "draw": 4.9,
+        "away": 10.0
       },
       "home_form": "WWWWW",
       "away_form": "WDWDL",
@@ -63,14 +29,31 @@
       "kickoff_utc": "2026-07-07T20:00Z",
       "venue": "BC Place",
       "odds": {
-        "home": 3.4,
+        "home": 3.45,
         "draw": 3.1,
-        "away": 2.3
+        "away": 2.25
       },
       "home_form": "WWWDD",
       "away_form": "WDWWW",
       "source": "espn_poisson",
       "mpp_copy": "Suisse 0 - 0 Colombie"
+    },
+    {
+      "match": "France - Maroc",
+      "home": "France",
+      "away": "Maroc",
+      "score": "1-0",
+      "kickoff_utc": "2026-07-09T20:00Z",
+      "venue": "Gillette Stadium",
+      "odds": {
+        "home": 1.5882352941176472,
+        "draw": 3.85,
+        "away": 6.0
+      },
+      "home_form": "WWWWW",
+      "away_form": "WWWWD",
+      "source": "espn_poisson",
+      "mpp_copy": "France 1 - 0 Maroc"
     }
   ]
 }
