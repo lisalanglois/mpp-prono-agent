@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-07T02:27:48.868474+00:00",
+  "updated_at": "2026-07-07T07:32:48.233971+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2486,35 +2486,8 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "États-Unis - Belgique"
-  ],
-  "recent_results": [
-    {
-      "key": "États-Unis - Belgique",
-      "home": "États-Unis",
-      "away": "Belgique",
-      "actual_score": "1-4",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "away",
-      "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "4",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Belgique",
-      "user_direction": "—",
-      "klement_direction": "Victoire Belgique",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2523,8 +2496,8 @@
       "away": "Égypte",
       "date": "07/07",
       "kickoff_paris": "07/07 à 18:00",
-      "hours_until": 13.5,
-      "hours_label": "dans 13.5 h",
+      "hours_until": 8.5,
+      "hours_label": "dans 8.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2539,8 +2512,8 @@
       "away": "Colombie",
       "date": "07/07",
       "kickoff_paris": "07/07 à 22:00",
-      "hours_until": 17.5,
-      "hours_label": "dans 17.5 h",
+      "hours_until": 12.5,
+      "hours_label": "dans 12.5 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2550,18 +2523,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "États-Unis - Belgique",
-      "message": "Score non suivi par le tracker pour États-Unis - Belgique (1-4)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (61/94 1N/2) devance ta grille (39/94)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
