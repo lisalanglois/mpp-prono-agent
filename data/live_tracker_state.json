@@ -1,7 +1,5 @@
 {
   "sent_alerts": [
-    "info|—|Klement (15/26 1N/2) devance ta grille (10/26)",
-    "info|—|Klement (16/28 1N/2) devance ta grille (12/28)",
     "info|—|Klement (17/29 1N/2) devance ta grille (13/29)",
     "info|—|Klement (19/31 1N/2) devance ta grille (14/31)",
     "info|—|Klement (19/32 1N/2) devance ta grille (14/32)",
@@ -58,6 +56,7 @@
     "info|—|Klement (60/93 1N/2) devance ta grille (39/93)",
     "info|—|Klement (61/94 1N/2) devance ta grille (39/94)",
     "info|—|Klement (62/95 1N/2) devance ta grille (39/95)",
+    "info|—|Klement (62/96 1N/2) devance ta grille (39/96)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
@@ -94,6 +93,7 @@
     "warning|Portugal - Espagne|Score non suivi par le tracker pour Portugal - Espagne (0-1)",
     "warning|Qatar - Suisse|Match joué sans prono dans ta grille (1-1)",
     "warning|Suisse - Algérie|Score non suivi par le tracker pour Suisse - Algérie (2-0)",
+    "warning|Suisse - Colombie|Score non suivi par le tracker pour Suisse - Colombie (0-0)",
     "warning|Tchéquie - Afrique du Sud|Score non suivi par le tracker pour Tchéquie - Afrique du Sud (1-1)",
     "warning|Tunisie - Japon|Score non suivi par le tracker pour Tunisie - Japon (0-4)",
     "warning|Turquie - Paraguay|Score non suivi par le tracker pour Turquie - Paraguay (0-1)",
@@ -178,6 +178,7 @@
     "Suisse - Algérie",
     "Suisse - Bosnie-Herzégovine",
     "Suisse - Canada",
+    "Suisse - Colombie",
     "Suède - Tunisie",
     "Sénégal - Irak",
     "Tchéquie - Afrique du Sud",
@@ -198,7 +199,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Argentine - Égypte|",
+  "last_email_fingerprint": "Suisse - Colombie|",
   "urgent_notified": [
     "Irak - Norvège",
     "Iran - Nouvelle-Zélande",
