@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T02:01:51.145417+00:00",
+  "updated_at": "2026-07-08T06:23:14.065844+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2546,35 +2546,8 @@
       "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [
-    "Suisse - Colombie"
-  ],
-  "recent_results": [
-    {
-      "key": "Suisse - Colombie",
-      "home": "Suisse",
-      "away": "Colombie",
-      "actual_score": "0-0",
-      "actual_outcome": "draw",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": true,
-      "klement_outcome": "away",
-      "klement_1n2": false,
-      "actual_home": "0",
-      "actual_away": "0",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Match nul",
-      "user_direction": "—",
-      "klement_direction": "Victoire Colombie",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2583,8 +2556,8 @@
       "away": "Maroc",
       "date": "09/07",
       "kickoff_paris": "09/07 à 22:00",
-      "hours_until": 42.0,
-      "hours_label": "dans 1 j 18 h",
+      "hours_until": 37.6,
+      "hours_label": "dans 1 j 13 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2594,18 +2567,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Suisse - Colombie",
-      "message": "Score non suivi par le tracker pour Suisse - Colombie (0-0)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (62/96 1N/2) devance ta grille (39/96)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
