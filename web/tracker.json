@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T19:27:46.589344+00:00",
+  "updated_at": "2026-07-09T21:16:29.217177+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2551,35 +2551,35 @@
   "upcoming_updates": [],
   "urgent_mpp": [
     {
-      "key": "France - Maroc",
-      "home": "France",
-      "away": "Maroc",
-      "date": "09/07",
-      "kickoff_paris": "09/07 à 22:00",
-      "hours_until": 0.5,
-      "hours_label": "dans 30 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → France vs Maroc → 1 - 1",
-      "changed": false
-    },
-    {
       "key": "Espagne - Belgique",
       "home": "Espagne",
       "away": "Belgique",
       "date": "10/07",
       "kickoff_paris": "10/07 à 21:00",
-      "hours_until": 23.5,
-      "hours_label": "dans 23.5 h",
+      "hours_until": 21.7,
+      "hours_label": "dans 21.7 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
       "user_score": null,
       "klement_override": false,
       "mpp_instruction": "mpp.football → Espagne vs Belgique → 1 - 1",
+      "changed": false
+    },
+    {
+      "key": "Norvège - Angleterre",
+      "home": "Norvège",
+      "away": "Angleterre",
+      "date": "11/07",
+      "kickoff_paris": "11/07 à 23:00",
+      "hours_until": 47.7,
+      "hours_label": "dans 1 j 23 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Norvège vs Angleterre → 1 - 1",
       "changed": false
     }
   ],
