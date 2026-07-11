@@ -1,42 +1,25 @@
 {
-  "generated_at": "2026-07-10T10:48:37.740410+00:00",
+  "generated_at": "2026-07-11T09:22:52.668497+00:00",
   "days": 3,
-  "count": 3,
+  "count": 2,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "Espagne - Belgique",
-      "home": "Espagne",
-      "away": "Belgique",
-      "score": "1-0",
-      "kickoff_utc": "2026-07-10T19:00Z",
-      "venue": "SoFi Stadium",
-      "odds": {
-        "home": 1.625,
-        "draw": 3.95,
-        "away": 5.5
-      },
-      "home_form": "WWWWD",
-      "away_form": "WWWDD",
-      "source": "espn_poisson",
-      "mpp_copy": "Espagne 1 - 0 Belgique"
-    },
     {
       "match": "Norvège - Angleterre",
       "home": "Norvège",
       "away": "Angleterre",
-      "score": "0-1",
+      "score": "1-1",
       "kickoff_utc": "2026-07-11T21:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 4.1,
-        "draw": 3.7,
-        "away": 1.8695652173913042
+        "home": 3.8,
+        "draw": 3.65,
+        "away": 1.9523809523809523
       },
       "home_form": "WWLWW",
       "away_form": "WWWDW",
       "source": "espn_poisson",
-      "mpp_copy": "Norvège 0 - 1 Angleterre"
+      "mpp_copy": "Norvège 1 - 1 Angleterre"
     },
     {
       "match": "Argentine - Suisse",
