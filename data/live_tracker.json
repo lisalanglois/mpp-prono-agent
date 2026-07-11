@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T20:41:02.541115+00:00",
+  "updated_at": "2026-07-11T22:40:37.162571+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2611,29 +2611,13 @@
   "upcoming_updates": [],
   "urgent_mpp": [
     {
-      "key": "Norvège - Angleterre",
-      "home": "Norvège",
-      "away": "Angleterre",
-      "date": "11/07",
-      "kickoff_paris": "11/07 à 23:00",
-      "hours_until": 0.3,
-      "hours_label": "dans 18 min",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Norvège vs Angleterre → 1 - 1",
-      "changed": false
-    },
-    {
       "key": "Argentine - Suisse",
       "home": "Argentine",
       "away": "Suisse",
       "date": "12/07",
       "kickoff_paris": "12/07 à 03:00",
-      "hours_until": 4.3,
-      "hours_label": "dans 4.3 h",
+      "hours_until": 2.3,
+      "hours_label": "dans 2.3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
