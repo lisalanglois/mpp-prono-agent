@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T18:55:51.844274+00:00",
+  "updated_at": "2026-07-12T20:37:34.066468+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2669,6 +2669,23 @@
   "new_finished_keys": [],
   "recent_results": [],
   "upcoming_updates": [],
-  "urgent_mpp": [],
+  "urgent_mpp": [
+    {
+      "key": "France - Espagne",
+      "home": "France",
+      "away": "Espagne",
+      "date": "14/07",
+      "kickoff_paris": "14/07 à 21:00",
+      "hours_until": 46.4,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → France vs Espagne → 1 - 1",
+      "changed": false
+    }
+  ],
   "new_alerts": []
 }
