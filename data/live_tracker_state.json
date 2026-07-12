@@ -1,7 +1,5 @@
 {
   "sent_alerts": [
-    "info|—|Klement (22/36 1N/2) devance ta grille (16/36)",
-    "info|—|Klement (23/37 1N/2) devance ta grille (16/37)",
     "info|—|Klement (23/38 1N/2) devance ta grille (16/38)",
     "info|—|Klement (23/40 1N/2) devance ta grille (17/40)",
     "info|—|Klement (24/41 1N/2) devance ta grille (18/41)",
@@ -54,6 +52,7 @@
     "info|—|Klement (63/97 1N/2) devance ta grille (39/97)",
     "info|—|Klement (64/98 1N/2) devance ta grille (39/98)",
     "info|—|Klement (65/99 1N/2) devance ta grille (39/99)",
+    "info|—|Klement (66/100 1N/2) devance ta grille (39/100)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
@@ -63,6 +62,7 @@
     "warning|Angleterre - RD Congo|Score non suivi par le tracker pour Angleterre - RD Congo (2-1)",
     "warning|Arabie saoudite - Uruguay|Score non suivi par le tracker pour Arabie saoudite - Uruguay (1-1)",
     "warning|Argentine - Cap-Vert|Score non suivi par le tracker pour Argentine - Cap-Vert (3-2)",
+    "warning|Argentine - Suisse|Score non suivi par le tracker pour Argentine - Suisse (3-1)",
     "warning|Argentine - Égypte|Score non suivi par le tracker pour Argentine - Égypte (3-2)",
     "warning|Australie - Türkiye|Match joué sans prono dans ta grille (2-0)",
     "warning|Australie - Égypte|Score non suivi par le tracker pour Australie - Égypte (1-1)",
@@ -115,6 +115,7 @@
     "Argentine - Algérie",
     "Argentine - Autriche",
     "Argentine - Cap-Vert",
+    "Argentine - Suisse",
     "Argentine - Égypte",
     "Australie - Turquie",
     "Australie - Égypte",
@@ -202,7 +203,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Norvège - Angleterre|",
+  "last_email_fingerprint": "Argentine - Suisse|",
   "urgent_notified": [
     "Iran - Nouvelle-Zélande",
     "Japon - Suède",

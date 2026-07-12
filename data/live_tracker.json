@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-12T02:04:01.065548+00:00",
+  "updated_at": "2026-07-12T06:27:52.748771+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 99,
+    "played": 100,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 51,
-    "klement_1n2": 65,
-    "user_1n2_pct": 39.4,
-    "model_1n2_pct": 51.5,
-    "klement_1n2_pct": 65.7,
-    "user_exact_pct": 7.1
+    "klement_1n2": 66,
+    "user_1n2_pct": 39.0,
+    "model_1n2_pct": 51.0,
+    "klement_1n2_pct": 66.0,
+    "user_exact_pct": 7.0
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -252,9 +252,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Argentine - Suisse",
+      "message": "Score non suivi par le tracker pour Argentine - Suisse (3-1)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (65/99 1N/2) devance ta grille (39/99)",
+      "message": "Klement (66/100 1N/2) devance ta grille (39/100)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2634,33 +2640,57 @@
       "klement_direction": "Victoire Angleterre",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
-  "new_finished_keys": [
-    "Norvège - Angleterre"
-  ],
-  "recent_results": [
+    },
     {
-      "key": "Norvège - Angleterre",
-      "home": "Norvège",
-      "away": "Angleterre",
-      "actual_score": "1-2",
-      "actual_outcome": "away",
+      "key": "Argentine - Suisse",
+      "home": "Argentine",
+      "away": "Suisse",
+      "actual_score": "3-1",
+      "actual_outcome": "home",
       "user_score": null,
       "user_outcome": null,
       "user_1n2": null,
       "user_exact": false,
       "model_outcome": "draw",
       "model_1n2": false,
-      "klement_outcome": "away",
+      "klement_outcome": "home",
       "klement_1n2": true,
-      "actual_home": "1",
-      "actual_away": "2",
+      "actual_home": "3",
+      "actual_away": "1",
       "user_home": "—",
       "user_away": "—",
-      "actual_direction": "Victoire Angleterre",
+      "actual_direction": "Victoire Argentine",
       "user_direction": "—",
-      "klement_direction": "Victoire Angleterre",
+      "klement_direction": "Victoire Argentine",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
+  "new_finished_keys": [
+    "Argentine - Suisse"
+  ],
+  "recent_results": [
+    {
+      "key": "Argentine - Suisse",
+      "home": "Argentine",
+      "away": "Suisse",
+      "actual_score": "3-1",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "3",
+      "actual_away": "1",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Argentine",
+      "user_direction": "—",
+      "klement_direction": "Victoire Argentine",
       "direction_winner": "klement",
       "verdict_short": "Klement ✓ — bonne direction"
     }
@@ -2670,14 +2700,14 @@
   "new_alerts": [
     {
       "level": "warning",
-      "match": "Norvège - Angleterre",
-      "message": "Score non suivi par le tracker pour Norvège - Angleterre (1-2)",
+      "match": "Argentine - Suisse",
+      "message": "Score non suivi par le tracker pour Argentine - Suisse (3-1)",
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
       "level": "info",
       "match": "—",
-      "message": "Klement (65/99 1N/2) devance ta grille (39/99)",
+      "message": "Klement (66/100 1N/2) devance ta grille (39/100)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ]
