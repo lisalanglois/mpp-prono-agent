@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T06:27:52.748771+00:00",
+  "updated_at": "2026-07-12T08:58:40.761912+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2666,49 +2666,9 @@
       "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [
-    "Argentine - Suisse"
-  ],
-  "recent_results": [
-    {
-      "key": "Argentine - Suisse",
-      "home": "Argentine",
-      "away": "Suisse",
-      "actual_score": "3-1",
-      "actual_outcome": "home",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "home",
-      "klement_1n2": true,
-      "actual_home": "3",
-      "actual_away": "1",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Argentine",
-      "user_direction": "—",
-      "klement_direction": "Victoire Argentine",
-      "direction_winner": "klement",
-      "verdict_short": "Klement ✓ — bonne direction"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "Argentine - Suisse",
-      "message": "Score non suivi par le tracker pour Argentine - Suisse (3-1)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (66/100 1N/2) devance ta grille (39/100)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
