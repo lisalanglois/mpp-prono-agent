@@ -1,7 +1,5 @@
 {
   "sent_alerts": [
-    "info|—|Klement (21/34 1N/2) devance ta grille (16/34)",
-    "info|—|Klement (21/35 1N/2) devance ta grille (16/35)",
     "info|—|Klement (22/36 1N/2) devance ta grille (16/36)",
     "info|—|Klement (23/37 1N/2) devance ta grille (16/37)",
     "info|—|Klement (23/38 1N/2) devance ta grille (16/38)",
@@ -55,6 +53,7 @@
     "info|—|Klement (62/96 1N/2) devance ta grille (39/96)",
     "info|—|Klement (63/97 1N/2) devance ta grille (39/97)",
     "info|—|Klement (64/98 1N/2) devance ta grille (39/98)",
+    "info|—|Klement (65/99 1N/2) devance ta grille (39/99)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
@@ -85,6 +84,7 @@
     "warning|Jordanie - Algérie|Score non suivi par le tracker pour Jordanie - Algérie (1-2)",
     "warning|Mexique - Angleterre|Score non suivi par le tracker pour Mexique - Angleterre (2-3)",
     "warning|Mexique - Équateur|Score non suivi par le tracker pour Mexique - Équateur (2-0)",
+    "warning|Norvège - Angleterre|Score non suivi par le tracker pour Norvège - Angleterre (1-2)",
     "warning|Norvège - Sénégal|Score non suivi par le tracker pour Norvège - Sénégal (3-2)",
     "warning|Ouzbékistan - Colombie|Score non suivi par le tracker pour Ouzbékistan - Colombie (1-3)",
     "warning|Paraguay - France|Score non suivi par le tracker pour Paraguay - France (0-1)",
@@ -159,6 +159,7 @@
     "Mexique - Angleterre",
     "Mexique - Corée du Sud",
     "Mexique - Équateur",
+    "Norvège - Angleterre",
     "Norvège - France",
     "Norvège - Sénégal",
     "Nouvelle-Zélande - Belgique",
@@ -201,7 +202,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "Espagne - Belgique|",
+  "last_email_fingerprint": "Norvège - Angleterre|",
   "urgent_notified": [
     "Iran - Nouvelle-Zélande",
     "Japon - Suède",
