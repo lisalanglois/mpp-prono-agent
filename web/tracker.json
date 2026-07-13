@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12T22:40:33.992777+00:00",
+  "updated_at": "2026-07-13T02:05:23.896569+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2676,8 +2676,8 @@
       "away": "Espagne",
       "date": "14/07",
       "kickoff_paris": "14/07 à 21:00",
-      "hours_until": 44.3,
-      "hours_label": "dans 1 j 20 h",
+      "hours_until": 40.9,
+      "hours_label": "dans 1 j 16 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
