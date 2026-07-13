@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-07-11T09:22:52.668497+00:00",
+  "generated_at": "2026-07-13T10:55:14.428520+00:00",
   "days": 3,
   "count": 2,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
     {
-      "match": "Norvège - Angleterre",
-      "home": "Norvège",
-      "away": "Angleterre",
-      "score": "1-1",
-      "kickoff_utc": "2026-07-11T21:00Z",
-      "venue": "Hard Rock Stadium",
+      "match": "France - Espagne",
+      "home": "France",
+      "away": "Espagne",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-14T19:00Z",
+      "venue": "AT&T Stadium",
       "odds": {
-        "home": 3.8,
-        "draw": 3.65,
-        "away": 1.9523809523809523
-      },
-      "home_form": "WWLWW",
-      "away_form": "WWWDW",
-      "source": "espn_poisson",
-      "mpp_copy": "Norvège 1 - 1 Angleterre"
-    },
-    {
-      "match": "Argentine - Suisse",
-      "home": "Argentine",
-      "away": "Suisse",
-      "score": "1-1",
-      "kickoff_utc": "2026-07-12T01:00Z",
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "odds": {
-        "home": 1.6896551724137931,
-        "draw": 3.55,
-        "away": 5.5
+        "home": 2.35,
+        "draw": 3.15,
+        "away": 3.25
       },
       "home_form": "WWWWW",
-      "away_form": "WWWWD",
+      "away_form": "WWWWW",
       "source": "espn_poisson",
-      "mpp_copy": "Argentine 1 - 1 Suisse"
+      "mpp_copy": "France 0 - 0 Espagne"
+    },
+    {
+      "match": "Angleterre - Argentine",
+      "home": "Angleterre",
+      "away": "Argentine",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-15T19:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "odds": {
+        "home": 2.6,
+        "draw": 2.95,
+        "away": 3.05
+      },
+      "home_form": "WWWWD",
+      "away_form": "WWWWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Angleterre 0 - 0 Argentine"
     }
   ]
 }
