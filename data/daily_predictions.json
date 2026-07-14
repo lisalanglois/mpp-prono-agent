@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T10:55:14.428520+00:00",
+  "generated_at": "2026-07-14T09:52:55.269340+00:00",
   "days": 3,
   "count": 2,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
@@ -12,9 +12,9 @@
       "kickoff_utc": "2026-07-14T19:00Z",
       "venue": "AT&T Stadium",
       "odds": {
-        "home": 2.35,
+        "home": 2.4,
         "draw": 3.15,
-        "away": 3.25
+        "away": 3.15
       },
       "home_form": "WWWWW",
       "away_form": "WWWWW",
@@ -29,9 +29,9 @@
       "kickoff_utc": "2026-07-15T19:00Z",
       "venue": "Mercedes-Benz Stadium",
       "odds": {
-        "home": 2.6,
-        "draw": 2.95,
-        "away": 3.05
+        "home": 2.65,
+        "draw": 2.9,
+        "away": 3.0
       },
       "home_form": "WWWWD",
       "away_form": "WWWWW",
