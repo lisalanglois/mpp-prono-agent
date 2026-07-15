@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T22:51:45.261653+00:00",
+  "updated_at": "2026-07-15T01:47:49.899275+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2696,35 +2696,8 @@
       "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [
-    "France - Espagne"
-  ],
-  "recent_results": [
-    {
-      "key": "France - Espagne",
-      "home": "France",
-      "away": "Espagne",
-      "actual_score": "0-2",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "draw",
-      "klement_1n2": false,
-      "actual_home": "0",
-      "actual_away": "2",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Espagne",
-      "user_direction": "—",
-      "klement_direction": "Match nul",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2733,8 +2706,8 @@
       "away": "Argentine",
       "date": "15/07",
       "kickoff_paris": "15/07 à 21:00",
-      "hours_until": 20.1,
-      "hours_label": "dans 20.1 h",
+      "hours_until": 17.2,
+      "hours_label": "dans 17.2 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2744,18 +2717,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "France - Espagne",
-      "message": "Score non suivi par le tracker pour France - Espagne (0-2)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (66/101 1N/2) devance ta grille (39/101)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
