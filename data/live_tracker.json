@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T17:09:43.607103+00:00",
+  "updated_at": "2026-07-15T19:00:02.427390+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2699,23 +2699,6 @@
   "new_finished_keys": [],
   "recent_results": [],
   "upcoming_updates": [],
-  "urgent_mpp": [
-    {
-      "key": "Angleterre - Argentine",
-      "home": "Angleterre",
-      "away": "Argentine",
-      "date": "15/07",
-      "kickoff_paris": "15/07 à 21:00",
-      "hours_until": 1.8,
-      "hours_label": "dans 1.8 h",
-      "score": "1-1",
-      "score_home": "1",
-      "score_away": "1",
-      "user_score": null,
-      "klement_override": false,
-      "mpp_instruction": "mpp.football → Angleterre vs Argentine → 1 - 1",
-      "changed": false
-    }
-  ],
+  "urgent_mpp": [],
   "new_alerts": []
 }
