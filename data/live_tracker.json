@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-07-15T20:52:46.640518+00:00",
+  "updated_at": "2026-07-15T22:52:54.725197+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 101,
+    "played": 102,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 51,
     "klement_1n2": 66,
-    "user_1n2_pct": 38.6,
-    "model_1n2_pct": 50.5,
-    "klement_1n2_pct": 65.3,
+    "user_1n2_pct": 38.2,
+    "model_1n2_pct": 50.0,
+    "klement_1n2_pct": 64.7,
     "user_exact_pct": 6.9
   },
   "leader_1n2": "klement",
@@ -264,9 +264,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Angleterre - Argentine",
+      "message": "Score non suivi par le tracker pour Angleterre - Argentine (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (66/101 1N/2) devance ta grille (39/101)",
+      "message": "Klement (66/102 1N/2) devance ta grille (39/102)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2694,11 +2700,75 @@
       "klement_direction": "Match nul",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
+    },
+    {
+      "key": "Angleterre - Argentine",
+      "home": "Angleterre",
+      "away": "Argentine",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Argentine",
+      "user_direction": "—",
+      "klement_direction": "Victoire Angleterre",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Angleterre - Argentine"
+  ],
+  "recent_results": [
+    {
+      "key": "Angleterre - Argentine",
+      "home": "Angleterre",
+      "away": "Argentine",
+      "actual_score": "1-2",
+      "actual_outcome": "away",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": false,
+      "actual_home": "1",
+      "actual_away": "2",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Argentine",
+      "user_direction": "—",
+      "klement_direction": "Victoire Angleterre",
+      "direction_winner": "—",
+      "verdict_short": "Pas assez de données"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Angleterre - Argentine",
+      "message": "Score non suivi par le tracker pour Angleterre - Argentine (1-2)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (66/102 1N/2) devance ta grille (39/102)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }
