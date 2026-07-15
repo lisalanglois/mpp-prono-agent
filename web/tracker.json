@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T13:21:11.191085+00:00",
+  "updated_at": "2026-07-15T15:21:29.074029+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2706,8 +2706,8 @@
       "away": "Argentine",
       "date": "15/07",
       "kickoff_paris": "15/07 à 21:00",
-      "hours_until": 5.6,
-      "hours_label": "dans 5.6 h",
+      "hours_until": 3.6,
+      "hours_label": "dans 3.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
