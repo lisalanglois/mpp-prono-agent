@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T18:57:30.752587+00:00",
+  "updated_at": "2026-07-17T20:45:16.465695+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2736,14 +2736,30 @@
       "away": "Angleterre",
       "date": "18/07",
       "kickoff_paris": "18/07 à 23:00",
-      "hours_until": 26.0,
-      "hours_label": "dans 1 j 2 h",
+      "hours_until": 24.2,
+      "hours_label": "dans 1 j",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
       "user_score": null,
       "klement_override": false,
       "mpp_instruction": "mpp.football → France vs Angleterre → 1 - 1",
+      "changed": false
+    },
+    {
+      "key": "Espagne - Argentine",
+      "home": "Espagne",
+      "away": "Argentine",
+      "date": "19/07",
+      "kickoff_paris": "19/07 à 21:00",
+      "hours_until": 46.2,
+      "hours_label": "dans 1 j 22 h",
+      "score": "1-1",
+      "score_home": "1",
+      "score_away": "1",
+      "user_score": null,
+      "klement_override": false,
+      "mpp_instruction": "mpp.football → Espagne vs Argentine → 1 - 1",
       "changed": false
     }
   ],
