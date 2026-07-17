@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T10:03:24.257524+00:00",
+  "generated_at": "2026-07-17T09:52:15.096159+00:00",
   "days": 3,
-  "count": 1,
+  "count": 2,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
     {
@@ -12,14 +12,31 @@
       "kickoff_utc": "2026-07-18T21:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 1.8695652173913042,
+        "home": 1.9090909090909092,
         "draw": 3.85,
-        "away": 3.85
+        "away": 3.7
       },
       "home_form": "LWWWW",
       "away_form": "LWWWW",
       "source": "espn_poisson",
       "mpp_copy": "France 1 - 0 Angleterre"
+    },
+    {
+      "match": "Espagne - Argentine",
+      "home": "Espagne",
+      "away": "Argentine",
+      "score": "0-0",
+      "kickoff_utc": "2026-07-19T19:00Z",
+      "venue": "MetLife Stadium",
+      "odds": {
+        "home": 2.3,
+        "draw": 2.95,
+        "away": 3.55
+      },
+      "home_form": "WWWWW",
+      "away_form": "WWWWW",
+      "source": "espn_poisson",
+      "mpp_copy": "Espagne 0 - 0 Argentine"
     }
   ]
 }
