@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T15:08:40.265901+00:00",
+  "updated_at": "2026-07-17T17:05:18.883836+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2736,8 +2736,8 @@
       "away": "Angleterre",
       "date": "18/07",
       "kickoff_paris": "18/07 à 23:00",
-      "hours_until": 29.9,
-      "hours_label": "dans 1 j 5 h",
+      "hours_until": 27.9,
+      "hours_label": "dans 1 j 3 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
