@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T09:52:15.096159+00:00",
+  "generated_at": "2026-07-18T09:18:48.539918+00:00",
   "days": 3,
   "count": 2,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
@@ -12,9 +12,9 @@
       "kickoff_utc": "2026-07-18T21:00Z",
       "venue": "Hard Rock Stadium",
       "odds": {
-        "home": 1.9090909090909092,
-        "draw": 3.85,
-        "away": 3.7
+        "home": 1.8695652173913042,
+        "draw": 3.95,
+        "away": 3.75
       },
       "home_form": "LWWWW",
       "away_form": "LWWWW",
@@ -29,8 +29,8 @@
       "kickoff_utc": "2026-07-19T19:00Z",
       "venue": "MetLife Stadium",
       "odds": {
-        "home": 2.3,
-        "draw": 2.95,
+        "home": 2.25,
+        "draw": 3.0,
         "away": 3.55
       },
       "home_form": "WWWWW",
