@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-19T20:39:46.200890+00:00",
+  "updated_at": "2026-07-19T22:43:50.685494+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
-    "played": 103,
+    "played": 104,
     "user_1n2": 39,
     "user_exact": 7,
     "model_1n2": 51,
-    "klement_1n2": 66,
-    "user_1n2_pct": 37.9,
-    "model_1n2_pct": 49.5,
-    "klement_1n2_pct": 64.1,
-    "user_exact_pct": 6.8
+    "klement_1n2": 67,
+    "user_1n2_pct": 37.5,
+    "model_1n2_pct": 49.0,
+    "klement_1n2_pct": 64.4,
+    "user_exact_pct": 6.7
   },
   "leader_1n2": "klement",
   "mpp_winner_pick": "France",
@@ -276,9 +276,15 @@
       "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
     },
     {
+      "level": "warning",
+      "match": "Espagne - Argentine",
+      "message": "Score non suivi par le tracker pour Espagne - Argentine (1-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
       "level": "info",
       "match": "—",
-      "message": "Klement (66/103 1N/2) devance ta grille (39/103)",
+      "message": "Klement (67/104 1N/2) devance ta grille (39/104)",
       "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
     }
   ],
@@ -2754,11 +2760,75 @@
       "klement_direction": "Match nul",
       "direction_winner": "—",
       "verdict_short": "Pas assez de données"
+    },
+    {
+      "key": "Espagne - Argentine",
+      "home": "Espagne",
+      "away": "Argentine",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
     }
   ],
-  "new_finished_keys": [],
-  "recent_results": [],
+  "new_finished_keys": [
+    "Espagne - Argentine"
+  ],
+  "recent_results": [
+    {
+      "key": "Espagne - Argentine",
+      "home": "Espagne",
+      "away": "Argentine",
+      "actual_score": "1-0",
+      "actual_outcome": "home",
+      "user_score": null,
+      "user_outcome": null,
+      "user_1n2": null,
+      "user_exact": false,
+      "model_outcome": "draw",
+      "model_1n2": false,
+      "klement_outcome": "home",
+      "klement_1n2": true,
+      "actual_home": "1",
+      "actual_away": "0",
+      "user_home": "—",
+      "user_away": "—",
+      "actual_direction": "Victoire Espagne",
+      "user_direction": "—",
+      "klement_direction": "Victoire Espagne",
+      "direction_winner": "klement",
+      "verdict_short": "Klement ✓ — bonne direction"
+    }
+  ],
   "upcoming_updates": [],
   "urgent_mpp": [],
-  "new_alerts": []
+  "new_alerts": [
+    {
+      "level": "warning",
+      "match": "Espagne - Argentine",
+      "message": "Score non suivi par le tracker pour Espagne - Argentine (1-0)",
+      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
+    },
+    {
+      "level": "info",
+      "match": "—",
+      "message": "Klement (67/104 1N/2) devance ta grille (39/104)",
+      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
+    }
+  ]
 }

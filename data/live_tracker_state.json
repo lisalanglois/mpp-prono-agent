@@ -1,7 +1,5 @@
 {
   "sent_alerts": [
-    "info|—|Klement (27/46 1N/2) devance ta grille (20/46)",
-    "info|—|Klement (28/47 1N/2) devance ta grille (21/47)",
     "info|—|Klement (29/48 1N/2) devance ta grille (22/48)",
     "info|—|Klement (31/50 1N/2) devance ta grille (24/50)",
     "info|—|Klement (33/52 1N/2) devance ta grille (26/52)",
@@ -50,6 +48,7 @@
     "info|—|Klement (66/101 1N/2) devance ta grille (39/101)",
     "info|—|Klement (66/102 1N/2) devance ta grille (39/102)",
     "info|—|Klement (66/103 1N/2) devance ta grille (39/103)",
+    "info|—|Klement (67/104 1N/2) devance ta grille (39/104)",
     "info|—|Klement (7/12 1N/2) devance ta grille (3/12)",
     "info|—|Klement (8/16 1N/2) devance ta grille (5/16)",
     "info|—|Klement (9/17 1N/2) devance ta grille (6/17)",
@@ -72,6 +71,7 @@
     "warning|Colombie - Ghana|Score non suivi par le tracker pour Colombie - Ghana (1-0)",
     "warning|Côte d'Ivoire - Norvège|Score non suivi par le tracker pour Côte d'Ivoire - Norvège (1-2)",
     "warning|Espagne - Arabie saoudite|Score non suivi par le tracker pour Espagne - Arabie saoudite (4-0)",
+    "warning|Espagne - Argentine|Score non suivi par le tracker pour Espagne - Argentine (1-0)",
     "warning|Espagne - Autriche|Score non suivi par le tracker pour Espagne - Autriche (3-0)",
     "warning|Espagne - Belgique|Score non suivi par le tracker pour Espagne - Belgique (2-1)",
     "warning|France - Angleterre|Score non suivi par le tracker pour France - Angleterre (4-6)",
@@ -142,6 +142,7 @@
     "Côte d'Ivoire - Norvège",
     "Côte d'Ivoire - Équateur",
     "Espagne - Arabie saoudite",
+    "Espagne - Argentine",
     "Espagne - Autriche",
     "Espagne - Belgique",
     "Espagne - Cap-Vert",
@@ -206,7 +207,7 @@
     "États-Unis - Bosnie-Herzégovine",
     "États-Unis - Paraguay"
   ],
-  "last_email_fingerprint": "France - Angleterre|",
+  "last_email_fingerprint": "Espagne - Argentine|",
   "urgent_notified": [
     "Iran - Nouvelle-Zélande",
     "Japon - Suède",
