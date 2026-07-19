@@ -1,26 +1,9 @@
 {
-  "generated_at": "2026-07-18T09:18:48.539918+00:00",
+  "generated_at": "2026-07-19T09:47:45.411668+00:00",
   "days": 3,
-  "count": 2,
+  "count": 1,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
   "predictions": [
-    {
-      "match": "France - Angleterre",
-      "home": "France",
-      "away": "Angleterre",
-      "score": "1-0",
-      "kickoff_utc": "2026-07-18T21:00Z",
-      "venue": "Hard Rock Stadium",
-      "odds": {
-        "home": 1.8695652173913042,
-        "draw": 3.95,
-        "away": 3.75
-      },
-      "home_form": "LWWWW",
-      "away_form": "LWWWW",
-      "source": "espn_poisson",
-      "mpp_copy": "France 1 - 0 Angleterre"
-    },
     {
       "match": "Espagne - Argentine",
       "home": "Espagne",
@@ -31,7 +14,7 @@
       "odds": {
         "home": 2.25,
         "draw": 3.0,
-        "away": 3.55
+        "away": 3.6
       },
       "home_form": "WWWWW",
       "away_form": "WWWWW",
