@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T02:00:56.007540+00:00",
+  "updated_at": "2026-07-19T06:25:18.940599+00:00",
   "competition_id": "cdm2026",
   "competition_name": "Coupe du Monde 2026",
   "stats": {
@@ -2756,35 +2756,8 @@
       "verdict_short": "Pas assez de données"
     }
   ],
-  "new_finished_keys": [
-    "France - Angleterre"
-  ],
-  "recent_results": [
-    {
-      "key": "France - Angleterre",
-      "home": "France",
-      "away": "Angleterre",
-      "actual_score": "4-6",
-      "actual_outcome": "away",
-      "user_score": null,
-      "user_outcome": null,
-      "user_1n2": null,
-      "user_exact": false,
-      "model_outcome": "draw",
-      "model_1n2": false,
-      "klement_outcome": "draw",
-      "klement_1n2": false,
-      "actual_home": "4",
-      "actual_away": "6",
-      "user_home": "—",
-      "user_away": "—",
-      "actual_direction": "Victoire Angleterre",
-      "user_direction": "—",
-      "klement_direction": "Match nul",
-      "direction_winner": "—",
-      "verdict_short": "Pas assez de données"
-    }
-  ],
+  "new_finished_keys": [],
+  "recent_results": [],
   "upcoming_updates": [],
   "urgent_mpp": [
     {
@@ -2793,8 +2766,8 @@
       "away": "Argentine",
       "date": "19/07",
       "kickoff_paris": "19/07 à 21:00",
-      "hours_until": 17.0,
-      "hours_label": "dans 17 h",
+      "hours_until": 12.6,
+      "hours_label": "dans 12.6 h",
       "score": "1-1",
       "score_home": "1",
       "score_away": "1",
@@ -2804,18 +2777,5 @@
       "changed": false
     }
   ],
-  "new_alerts": [
-    {
-      "level": "warning",
-      "match": "France - Angleterre",
-      "message": "Score non suivi par le tracker pour France - Angleterre (4-6)",
-      "action": "Ajouter ce match dans export_web.py (le tracker ne lit pas mpp.football)"
-    },
-    {
-      "level": "info",
-      "match": "—",
-      "message": "Klement (66/103 1N/2) devance ta grille (39/103)",
-      "action": "Réfléchir à passer vainqueur MPP sur Pays-Bas ? (optionnel)"
-    }
-  ]
+  "new_alerts": []
 }
