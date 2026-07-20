@@ -1,25 +1,7 @@
 {
-  "generated_at": "2026-07-19T09:47:45.411668+00:00",
+  "generated_at": "2026-07-20T10:46:32.320794+00:00",
   "days": 3,
-  "count": 1,
+  "count": 0,
   "disclaimer": "Pronostics probabilistes — à recopier manuellement sur mpp.football",
-  "predictions": [
-    {
-      "match": "Espagne - Argentine",
-      "home": "Espagne",
-      "away": "Argentine",
-      "score": "0-0",
-      "kickoff_utc": "2026-07-19T19:00Z",
-      "venue": "MetLife Stadium",
-      "odds": {
-        "home": 2.25,
-        "draw": 3.0,
-        "away": 3.6
-      },
-      "home_form": "WWWWW",
-      "away_form": "WWWWW",
-      "source": "espn_poisson",
-      "mpp_copy": "Espagne 0 - 0 Argentine"
-    }
-  ]
+  "predictions": []
 }
